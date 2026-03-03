@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cat_cell_phones_accessories",
+    "type": "Category",
+    "label": "cell phones & accessories"
+  },
+  {
+    "id": "cat_cell_phones",
+    "type": "Category",
+    "label": "cell phones"
+  }
+]

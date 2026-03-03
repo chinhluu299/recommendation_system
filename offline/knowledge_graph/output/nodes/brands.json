@@ -1,0 +1,3412 @@
+[
+  {
+    "id": "brand_alcatel",
+    "type": "Brand",
+    "label": "alcatel"
+  },
+  {
+    "id": "brand_blu",
+    "type": "Brand",
+    "label": "blu"
+  },
+  {
+    "id": "brand_samsung",
+    "type": "Brand",
+    "label": "samsung"
+  },
+  {
+    "id": "brand_motorola",
+    "type": "Brand",
+    "label": "motorola"
+  },
+  {
+    "id": "brand_ulefone",
+    "type": "Brand",
+    "label": "ulefone"
+  },
+  {
+    "id": "brand_umidigi",
+    "type": "Brand",
+    "label": "umidigi"
+  },
+  {
+    "id": "brand_nuu",
+    "type": "Brand",
+    "label": "nuu"
+  },
+  {
+    "id": "brand_apple",
+    "type": "Brand",
+    "label": "apple"
+  },
+  {
+    "id": "brand_oukitel",
+    "type": "Brand",
+    "label": "oukitel"
+  },
+  {
+    "id": "brand_google",
+    "type": "Brand",
+    "label": "google"
+  },
+  {
+    "id": "brand_blackview",
+    "type": "Brand",
+    "label": "blackview"
+  },
+  {
+    "id": "brand_asus",
+    "type": "Brand",
+    "label": "asus"
+  },
+  {
+    "id": "brand_zte",
+    "type": "Brand",
+    "label": "zte"
+  },
+  {
+    "id": "brand_acogedor",
+    "type": "Brand",
+    "label": "acogedor"
+  },
+  {
+    "id": "brand_tracfone",
+    "type": "Brand",
+    "label": "tracfone"
+  },
+  {
+    "id": "brand_lg",
+    "type": "Brand",
+    "label": "lg"
+  },
+  {
+    "id": "brand_sudroid",
+    "type": "Brand",
+    "label": "sudroid"
+  },
+  {
+    "id": "brand_sonim",
+    "type": "Brand",
+    "label": "sonim"
+  },
+  {
+    "id": "brand_xiaomi",
+    "type": "Brand",
+    "label": "xiaomi"
+  },
+  {
+    "id": "brand_folosafenar",
+    "type": "Brand",
+    "label": "folosafenar"
+  },
+  {
+    "id": "brand_xuele",
+    "type": "Brand",
+    "label": "xuele"
+  },
+  {
+    "id": "brand_acer",
+    "type": "Brand",
+    "label": "acer"
+  },
+  {
+    "id": "brand_kxd",
+    "type": "Brand",
+    "label": "kxd"
+  },
+  {
+    "id": "brand_1801tech",
+    "type": "Brand",
+    "label": "1801tech"
+  },
+  {
+    "id": "brand_palm",
+    "type": "Brand",
+    "label": "palm"
+  },
+  {
+    "id": "brand_htc",
+    "type": "Brand",
+    "label": "htc"
+  },
+  {
+    "id": "brand_sony",
+    "type": "Brand",
+    "label": "sony"
+  },
+  {
+    "id": "brand_indigi",
+    "type": "Brand",
+    "label": "indigi"
+  },
+  {
+    "id": "brand_huawei",
+    "type": "Brand",
+    "label": "huawei"
+  },
+  {
+    "id": "brand_tosuny",
+    "type": "Brand",
+    "label": "tosuny"
+  },
+  {
+    "id": "brand_oneplus",
+    "type": "Brand",
+    "label": "oneplus"
+  },
+  {
+    "id": "brand_microsoft",
+    "type": "Brand",
+    "label": "microsoft"
+  },
+  {
+    "id": "brand_tcl",
+    "type": "Brand",
+    "label": "tcl"
+  },
+  {
+    "id": "brand_aspercreme",
+    "type": "Brand",
+    "label": "aspercreme"
+  },
+  {
+    "id": "brand_kyocera",
+    "type": "Brand",
+    "label": "kyocera"
+  },
+  {
+    "id": "brand_azfunn",
+    "type": "Brand",
+    "label": "azfunn"
+  },
+  {
+    "id": "brand_cubot",
+    "type": "Brand",
+    "label": "cubot"
+  },
+  {
+    "id": "brand_slideco",
+    "type": "Brand",
+    "label": "slide-co"
+  },
+  {
+    "id": "brand_total_by_verizon",
+    "type": "Brand",
+    "label": "total by verizon"
+  },
+  {
+    "id": "brand_cellallure",
+    "type": "Brand",
+    "label": "cellallure"
+  },
+  {
+    "id": "brand_mgxin",
+    "type": "Brand",
+    "label": "mgxin"
+  },
+  {
+    "id": "brand_sony_ericsson",
+    "type": "Brand",
+    "label": "sony ericsson"
+  },
+  {
+    "id": "brand_doogee",
+    "type": "Brand",
+    "label": "doogee"
+  },
+  {
+    "id": "brand_uleway",
+    "type": "Brand",
+    "label": "uleway"
+  },
+  {
+    "id": "brand_ctmiami_llc",
+    "type": "Brand",
+    "label": "ct-miami llc"
+  },
+  {
+    "id": "brand_tianhoo",
+    "type": "Brand",
+    "label": "tianhoo"
+  },
+  {
+    "id": "brand_gigaset",
+    "type": "Brand",
+    "label": "gigaset"
+  },
+  {
+    "id": "brand_pantech",
+    "type": "Brand",
+    "label": "pantech"
+  },
+  {
+    "id": "brand_net10",
+    "type": "Brand",
+    "label": "net10"
+  },
+  {
+    "id": "brand_plum",
+    "type": "Brand",
+    "label": "plum"
+  },
+  {
+    "id": "brand_sidekick",
+    "type": "Brand",
+    "label": "sidekick"
+  },
+  {
+    "id": "brand_agm",
+    "type": "Brand",
+    "label": "agm"
+  },
+  {
+    "id": "brand_sprint",
+    "type": "Brand",
+    "label": "sprint"
+  },
+  {
+    "id": "brand_galaxy_buds",
+    "type": "Brand",
+    "label": "galaxy buds"
+  },
+  {
+    "id": "brand_u_l_e_f_o_n_e",
+    "type": "Brand",
+    "label": "u l e f o n e"
+  },
+  {
+    "id": "brand_pomya",
+    "type": "Brand",
+    "label": "pomya"
+  },
+  {
+    "id": "brand_firefly",
+    "type": "Brand",
+    "label": "firefly"
+  },
+  {
+    "id": "brand_ecandy",
+    "type": "Brand",
+    "label": "ecandy"
+  },
+  {
+    "id": "brand_iridium",
+    "type": "Brand",
+    "label": "iridium"
+  },
+  {
+    "id": "brand_idroid",
+    "type": "Brand",
+    "label": "idroid"
+  },
+  {
+    "id": "brand_generic",
+    "type": "Brand",
+    "label": "generic"
+  },
+  {
+    "id": "brand_xgody",
+    "type": "Brand",
+    "label": "xgody"
+  },
+  {
+    "id": "brand_easyfone",
+    "type": "Brand",
+    "label": "easyfone"
+  },
+  {
+    "id": "brand_lansxxy",
+    "type": "Brand",
+    "label": "lansxxy"
+  },
+  {
+    "id": "brand_audiovox",
+    "type": "Brand",
+    "label": "audiovox"
+  },
+  {
+    "id": "brand_sanyo",
+    "type": "Brand",
+    "label": "sanyo"
+  },
+  {
+    "id": "brand_ilight",
+    "type": "Brand",
+    "label": "ilight"
+  },
+  {
+    "id": "brand_sony_ericsson_mobile",
+    "type": "Brand",
+    "label": "sony ericsson mobile"
+  },
+  {
+    "id": "brand_phonemax",
+    "type": "Brand",
+    "label": "phonemax"
+  },
+  {
+    "id": "brand_dpofirs",
+    "type": "Brand",
+    "label": "dpofirs"
+  },
+  {
+    "id": "brand_pusokei",
+    "type": "Brand",
+    "label": "pusokei"
+  },
+  {
+    "id": "brand_lcydz",
+    "type": "Brand",
+    "label": "lcydz"
+  },
+  {
+    "id": "brand_yoidesu",
+    "type": "Brand",
+    "label": "yoidesu"
+  },
+  {
+    "id": "brand_servo",
+    "type": "Brand",
+    "label": "servo"
+  },
+  {
+    "id": "brand_googleelectronics",
+    "type": "Brand",
+    "label": "google_electronics"
+  },
+  {
+    "id": "brand_exachat",
+    "type": "Brand",
+    "label": "exachat"
+  },
+  {
+    "id": "brand_kronu_llc",
+    "type": "Brand",
+    "label": "kronu llc"
+  },
+  {
+    "id": "brand_ciglow",
+    "type": "Brand",
+    "label": "ciglow"
+  },
+  {
+    "id": "brand_instant_innovations",
+    "type": "Brand",
+    "label": "instant innovations"
+  },
+  {
+    "id": "brand_lavir",
+    "type": "Brand",
+    "label": "lavir"
+  },
+  {
+    "id": "brand_kta_mobile_communications",
+    "type": "Brand",
+    "label": "kta mobile communications"
+  },
+  {
+    "id": "brand_sanshreuni",
+    "type": "Brand",
+    "label": "sanshreuni"
+  },
+  {
+    "id": "brand_fujitsu",
+    "type": "Brand",
+    "label": "fujitsu"
+  },
+  {
+    "id": "brand_total_wireless",
+    "type": "Brand",
+    "label": "total wireless"
+  },
+  {
+    "id": "brand_vbestlife",
+    "type": "Brand",
+    "label": "vbestlife"
+  },
+  {
+    "id": "brand_atevense",
+    "type": "Brand",
+    "label": "atevense"
+  },
+  {
+    "id": "brand_tihebeyan",
+    "type": "Brand",
+    "label": "tihebeyan"
+  },
+  {
+    "id": "brand_iocean",
+    "type": "Brand",
+    "label": "iocean"
+  },
+  {
+    "id": "brand_samsung_electronics_store",
+    "type": "Brand",
+    "label": "samsung electronics store"
+  },
+  {
+    "id": "brand_realme",
+    "type": "Brand",
+    "label": "realme"
+  },
+  {
+    "id": "brand_hotwav",
+    "type": "Brand",
+    "label": "hotwav"
+  },
+  {
+    "id": "brand_sharp",
+    "type": "Brand",
+    "label": "sharp"
+  },
+  {
+    "id": "brand_ken_xin_da",
+    "type": "Brand",
+    "label": "ken xin da"
+  },
+  {
+    "id": "brand_black_shark",
+    "type": "Brand",
+    "label": "black shark"
+  },
+  {
+    "id": "brand_unknown",
+    "type": "Brand",
+    "label": "unknown"
+  },
+  {
+    "id": "brand_ge",
+    "type": "Brand",
+    "label": "ge"
+  },
+  {
+    "id": "brand_amazon_renewed",
+    "type": "Brand",
+    "label": "amazon renewed"
+  },
+  {
+    "id": "brand_conquest",
+    "type": "Brand",
+    "label": "conquest"
+  },
+  {
+    "id": "brand_yuntab",
+    "type": "Brand",
+    "label": "yuntab"
+  },
+  {
+    "id": "brand_sharp_he",
+    "type": "Brand",
+    "label": "sharp he"
+  },
+  {
+    "id": "brand_ps_mobile",
+    "type": "Brand",
+    "label": "ps mobile"
+  },
+  {
+    "id": "brand_yezz",
+    "type": "Brand",
+    "label": "yezz"
+  },
+  {
+    "id": "brand_yunseity",
+    "type": "Brand",
+    "label": "yunseity"
+  },
+  {
+    "id": "brand_straight_talk",
+    "type": "Brand",
+    "label": "straight talk"
+  },
+  {
+    "id": "brand_gsm_harbour",
+    "type": "Brand",
+    "label": "gsm harbour"
+  },
+  {
+    "id": "brand_victony",
+    "type": "Brand",
+    "label": "victony"
+  },
+  {
+    "id": "brand_logic",
+    "type": "Brand",
+    "label": "logic"
+  },
+  {
+    "id": "brand_saitek",
+    "type": "Brand",
+    "label": "saitek"
+  },
+  {
+    "id": "brand_freedompop",
+    "type": "Brand",
+    "label": "freedompop"
+  },
+  {
+    "id": "brand_redmagic",
+    "type": "Brand",
+    "label": "redmagic"
+  },
+  {
+    "id": "brand_ushining",
+    "type": "Brand",
+    "label": "ushining"
+  },
+  {
+    "id": "brand_danger",
+    "type": "Brand",
+    "label": "danger"
+  },
+  {
+    "id": "brand_lenovo",
+    "type": "Brand",
+    "label": "lenovo"
+  },
+  {
+    "id": "brand_lock_socket",
+    "type": "Brand",
+    "label": "lock socket"
+  },
+  {
+    "id": "brand_winntech",
+    "type": "Brand",
+    "label": "winn-tech"
+  },
+  {
+    "id": "brand_novatel",
+    "type": "Brand",
+    "label": "novatel"
+  },
+  {
+    "id": "brand_simple_mobile",
+    "type": "Brand",
+    "label": "simple mobile"
+  },
+  {
+    "id": "brand_a_m_a_z_o_n",
+    "type": "Brand",
+    "label": "a m a z o n"
+  },
+  {
+    "id": "brand_hewlett_packard",
+    "type": "Brand",
+    "label": "hewlett packard"
+  },
+  {
+    "id": "brand_hp",
+    "type": "Brand",
+    "label": "hp"
+  },
+  {
+    "id": "brand_aderroo",
+    "type": "Brand",
+    "label": "aderroo"
+  },
+  {
+    "id": "brand_xplora",
+    "type": "Brand",
+    "label": "xplora"
+  },
+  {
+    "id": "brand_binj",
+    "type": "Brand",
+    "label": "binj"
+  },
+  {
+    "id": "brand_newmind",
+    "type": "Brand",
+    "label": "newmind"
+  },
+  {
+    "id": "brand_egen",
+    "type": "Brand",
+    "label": "egen"
+  },
+  {
+    "id": "brand_poco_llc",
+    "type": "Brand",
+    "label": "poco, llc"
+  },
+  {
+    "id": "brand_l8star",
+    "type": "Brand",
+    "label": "l8star"
+  },
+  {
+    "id": "brand_virgin_mobile",
+    "type": "Brand",
+    "label": "virgin mobile"
+  },
+  {
+    "id": "brand_redmi",
+    "type": "Brand",
+    "label": "redmi"
+  },
+  {
+    "id": "brand_v_mobile",
+    "type": "Brand",
+    "label": "v mobile"
+  },
+  {
+    "id": "brand_setpot",
+    "type": "Brand",
+    "label": "setpot"
+  },
+  {
+    "id": "brand_panasonic",
+    "type": "Brand",
+    "label": "panasonic"
+  },
+  {
+    "id": "brand_diydeg",
+    "type": "Brand",
+    "label": "diydeg"
+  },
+  {
+    "id": "brand_yasashe",
+    "type": "Brand",
+    "label": "yasashe"
+  },
+  {
+    "id": "brand_republicwireless",
+    "type": "Brand",
+    "label": "republicwireless"
+  },
+  {
+    "id": "brand_tuanzi",
+    "type": "Brand",
+    "label": "tuanzi"
+  },
+  {
+    "id": "brand_hilitand",
+    "type": "Brand",
+    "label": "hilitand"
+  },
+  {
+    "id": "brand_s_smooth",
+    "type": "Brand",
+    "label": "s smooth"
+  },
+  {
+    "id": "brand_zanco",
+    "type": "Brand",
+    "label": "zanco"
+  },
+  {
+    "id": "brand_dilwe",
+    "type": "Brand",
+    "label": "dilwe"
+  },
+  {
+    "id": "brand_siemens",
+    "type": "Brand",
+    "label": "siemens"
+  },
+  {
+    "id": "brand_kudoo",
+    "type": "Brand",
+    "label": "kudoo"
+  },
+  {
+    "id": "brand_artist_unknown",
+    "type": "Brand",
+    "label": "artist unknown"
+  },
+  {
+    "id": "brand_jiake",
+    "type": "Brand",
+    "label": "jiake"
+  },
+  {
+    "id": "brand_sanyo_rl2500",
+    "type": "Brand",
+    "label": "sanyo rl-2500"
+  },
+  {
+    "id": "brand_cat_phone",
+    "type": "Brand",
+    "label": "cat phone"
+  },
+  {
+    "id": "brand_tmobile",
+    "type": "Brand",
+    "label": "t-mobile"
+  },
+  {
+    "id": "brand_honor",
+    "type": "Brand",
+    "label": "honor"
+  },
+  {
+    "id": "brand_rca",
+    "type": "Brand",
+    "label": "rca"
+  },
+  {
+    "id": "brand_ciciglow",
+    "type": "Brand",
+    "label": "ciciglow"
+  },
+  {
+    "id": "brand_kata",
+    "type": "Brand",
+    "label": "kata"
+  },
+  {
+    "id": "brand_yealink",
+    "type": "Brand",
+    "label": "yealink"
+  },
+  {
+    "id": "brand_uniwa",
+    "type": "Brand",
+    "label": "uniwa"
+  },
+  {
+    "id": "brand_ctmia_pallet_ordering",
+    "type": "Brand",
+    "label": "ctmia - pallet ordering"
+  },
+  {
+    "id": "brand_nuu_mobile",
+    "type": "Brand",
+    "label": "nuu mobile"
+  },
+  {
+    "id": "brand_kidsconnect",
+    "type": "Brand",
+    "label": "kidsconnect"
+  },
+  {
+    "id": "brand_slide",
+    "type": "Brand",
+    "label": "slide"
+  },
+  {
+    "id": "brand_attwireless",
+    "type": "Brand",
+    "label": "at&t-wireless"
+  },
+  {
+    "id": "brand_samsung_electronics",
+    "type": "Brand",
+    "label": "samsung electronics"
+  },
+  {
+    "id": "brand_vtech",
+    "type": "Brand",
+    "label": "vtech"
+  },
+  {
+    "id": "brand_zerone",
+    "type": "Brand",
+    "label": "zerone"
+  },
+  {
+    "id": "brand_aivmolikjafuam",
+    "type": "Brand",
+    "label": "aivmolik?jafuam"
+  },
+  {
+    "id": "brand_jethro_trading_ltd",
+    "type": "Brand",
+    "label": "jethro trading ltd."
+  },
+  {
+    "id": "brand_artfone",
+    "type": "Brand",
+    "label": "artfone"
+  },
+  {
+    "id": "brand_xboss",
+    "type": "Brand",
+    "label": "xboss"
+  },
+  {
+    "id": "brand_apple_computer",
+    "type": "Brand",
+    "label": "apple computer"
+  },
+  {
+    "id": "brand_simbros",
+    "type": "Brand",
+    "label": "simbros"
+  },
+  {
+    "id": "brand_heayzoki",
+    "type": "Brand",
+    "label": "heayzoki"
+  },
+  {
+    "id": "brand_chefzbest",
+    "type": "Brand",
+    "label": "chefzbest"
+  },
+  {
+    "id": "brand_peedeu",
+    "type": "Brand",
+    "label": "peedeu"
+  },
+  {
+    "id": "brand_drop",
+    "type": "Brand",
+    "label": "drop"
+  },
+  {
+    "id": "brand_schok",
+    "type": "Brand",
+    "label": "schok"
+  },
+  {
+    "id": "brand_hipipooo",
+    "type": "Brand",
+    "label": "hipipooo"
+  },
+  {
+    "id": "brand_hot_pepper",
+    "type": "Brand",
+    "label": "hot pepper"
+  },
+  {
+    "id": "brand_firzero",
+    "type": "Brand",
+    "label": "firzero"
+  },
+  {
+    "id": "brand_att",
+    "type": "Brand",
+    "label": "at&t"
+  },
+  {
+    "id": "brand_cat",
+    "type": "Brand",
+    "label": "cat"
+  },
+  {
+    "id": "brand_unihertz",
+    "type": "Brand",
+    "label": "unihertz"
+  },
+  {
+    "id": "brand_jiasen",
+    "type": "Brand",
+    "label": "jiasen"
+  },
+  {
+    "id": "brand_lively",
+    "type": "Brand",
+    "label": "lively"
+  },
+  {
+    "id": "brand_sky_devices",
+    "type": "Brand",
+    "label": "sky devices"
+  },
+  {
+    "id": "brand_asinno",
+    "type": "Brand",
+    "label": "asinno"
+  },
+  {
+    "id": "brand_himalayan_chandra",
+    "type": "Brand",
+    "label": "himalayan chandra"
+  },
+  {
+    "id": "brand_red",
+    "type": "Brand",
+    "label": "(red)"
+  },
+  {
+    "id": "brand_covus",
+    "type": "Brand",
+    "label": "covus"
+  },
+  {
+    "id": "brand_homtom",
+    "type": "Brand",
+    "label": "homtom"
+  },
+  {
+    "id": "brand_chargedy",
+    "type": "Brand",
+    "label": "chargedy"
+  },
+  {
+    "id": "brand_tomengbeiaabbcc",
+    "type": "Brand",
+    "label": "tomengbeiaabbcc"
+  },
+  {
+    "id": "brand_razer",
+    "type": "Brand",
+    "label": "razer"
+  },
+  {
+    "id": "brand_longxtx",
+    "type": "Brand",
+    "label": "longxtx"
+  },
+  {
+    "id": "brand_rokit",
+    "type": "Brand",
+    "label": "rokit"
+  },
+  {
+    "id": "brand_star",
+    "type": "Brand",
+    "label": "star"
+  },
+  {
+    "id": "brand_azumi",
+    "type": "Brand",
+    "label": "azumi"
+  },
+  {
+    "id": "brand_consumer_cellular",
+    "type": "Brand",
+    "label": "consumer cellular"
+  },
+  {
+    "id": "brand_garsentx",
+    "type": "Brand",
+    "label": "garsentx"
+  },
+  {
+    "id": "brand_wwj",
+    "type": "Brand",
+    "label": "wwj"
+  },
+  {
+    "id": "brand_china",
+    "type": "Brand",
+    "label": "china"
+  },
+  {
+    "id": "brand_a_phone",
+    "type": "Brand",
+    "label": "a phone"
+  },
+  {
+    "id": "brand_vktech",
+    "type": "Brand",
+    "label": "vktech"
+  },
+  {
+    "id": "brand_ebtools",
+    "type": "Brand",
+    "label": "ebtools"
+  },
+  {
+    "id": "brand_meizu",
+    "type": "Brand",
+    "label": "meizu"
+  },
+  {
+    "id": "brand_htc_wing",
+    "type": "Brand",
+    "label": "htc wing"
+  },
+  {
+    "id": "brand_cuei",
+    "type": "Brand",
+    "label": "cuei"
+  },
+  {
+    "id": "brand_sonyericsson",
+    "type": "Brand",
+    "label": "sonyericsson"
+  },
+  {
+    "id": "brand_arcci",
+    "type": "Brand",
+    "label": "arcci"
+  },
+  {
+    "id": "brand_x_gody",
+    "type": "Brand",
+    "label": "x gody"
+  },
+  {
+    "id": "brand_sxyrn",
+    "type": "Brand",
+    "label": "sxyrn"
+  },
+  {
+    "id": "brand_cuifati",
+    "type": "Brand",
+    "label": "cuifati"
+  },
+  {
+    "id": "brand_epik_one",
+    "type": "Brand",
+    "label": "epik one"
+  },
+  {
+    "id": "brand_freetex",
+    "type": "Brand",
+    "label": "freetex"
+  },
+  {
+    "id": "brand_essential",
+    "type": "Brand",
+    "label": "essential"
+  },
+  {
+    "id": "brand_vizio",
+    "type": "Brand",
+    "label": "vizio"
+  },
+  {
+    "id": "brand_ytwtech",
+    "type": "Brand",
+    "label": "ytwtech"
+  },
+  {
+    "id": "brand_galaxy_black",
+    "type": "Brand",
+    "label": "galaxy black"
+  },
+  {
+    "id": "brand_kiaora_fit_apparel_llc",
+    "type": "Brand",
+    "label": "kiaora fit apparel llc"
+  },
+  {
+    "id": "brand_loothive",
+    "type": "Brand",
+    "label": "loothive"
+  },
+  {
+    "id": "brand_orbic",
+    "type": "Brand",
+    "label": "orbic"
+  },
+  {
+    "id": "brand_teracube",
+    "type": "Brand",
+    "label": "teracube"
+  },
+  {
+    "id": "brand_shyekyo",
+    "type": "Brand",
+    "label": "shyekyo"
+  },
+  {
+    "id": "brand_earl_brown_consumer_electronics",
+    "type": "Brand",
+    "label": "earl & brown - consumer electronics"
+  },
+  {
+    "id": "brand_doctor_guard",
+    "type": "Brand",
+    "label": "doctor guard"
+  },
+  {
+    "id": "brand_imate",
+    "type": "Brand",
+    "label": "i-mate"
+  },
+  {
+    "id": "brand_bewinner",
+    "type": "Brand",
+    "label": "bewinner"
+  },
+  {
+    "id": "brand_archuu",
+    "type": "Brand",
+    "label": "archuu"
+  },
+  {
+    "id": "brand_mophie",
+    "type": "Brand",
+    "label": "mophie"
+  },
+  {
+    "id": "brand_anycall_a",
+    "type": "Brand",
+    "label": "anycall a"
+  },
+  {
+    "id": "brand_one_plus",
+    "type": "Brand",
+    "label": "one plus"
+  },
+  {
+    "id": "brand_4glte",
+    "type": "Brand",
+    "label": "4glte"
+  },
+  {
+    "id": "brand_pixel",
+    "type": "Brand",
+    "label": "pixel"
+  },
+  {
+    "id": "brand_dell",
+    "type": "Brand",
+    "label": "dell"
+  },
+  {
+    "id": "brand_sierra_wireless",
+    "type": "Brand",
+    "label": "sierra wireless"
+  },
+  {
+    "id": "brand_q_link_wireless",
+    "type": "Brand",
+    "label": "q link wireless"
+  },
+  {
+    "id": "brand_irulu",
+    "type": "Brand",
+    "label": "irulu"
+  },
+  {
+    "id": "brand_bhht",
+    "type": "Brand",
+    "label": "bhht"
+  },
+  {
+    "id": "brand_ruggear",
+    "type": "Brand",
+    "label": "ruggear"
+  },
+  {
+    "id": "brand_nextel",
+    "type": "Brand",
+    "label": "nextel"
+  },
+  {
+    "id": "brand_cell_phone",
+    "type": "Brand",
+    "label": "cell phone"
+  },
+  {
+    "id": "brand_bestdealusa",
+    "type": "Brand",
+    "label": "bestdealusa"
+  },
+  {
+    "id": "brand_usbnovel",
+    "type": "Brand",
+    "label": "usbnovel"
+  },
+  {
+    "id": "brand_ut_starcom",
+    "type": "Brand",
+    "label": "ut starcom"
+  },
+  {
+    "id": "brand_t_osuny",
+    "type": "Brand",
+    "label": "t osuny"
+  },
+  {
+    "id": "brand_ulimag",
+    "type": "Brand",
+    "label": "ulimag"
+  },
+  {
+    "id": "brand_riv",
+    "type": "Brand",
+    "label": "riv"
+  },
+  {
+    "id": "brand_mijue",
+    "type": "Brand",
+    "label": "mijue"
+  },
+  {
+    "id": "brand_truely",
+    "type": "Brand",
+    "label": "truely"
+  },
+  {
+    "id": "brand_vivo",
+    "type": "Brand",
+    "label": "vivo"
+  },
+  {
+    "id": "brand_rainbuvvy",
+    "type": "Brand",
+    "label": "rainbuvvy"
+  },
+  {
+    "id": "brand_oterkin",
+    "type": "Brand",
+    "label": "oterkin"
+  },
+  {
+    "id": "brand_tiamat",
+    "type": "Brand",
+    "label": "tiamat+"
+  },
+  {
+    "id": "brand_zunate",
+    "type": "Brand",
+    "label": "zunate"
+  },
+  {
+    "id": "brand_at_t",
+    "type": "Brand",
+    "label": "at & t"
+  },
+  {
+    "id": "brand_original_oppo",
+    "type": "Brand",
+    "label": "original oppo"
+  },
+  {
+    "id": "brand_polaroid",
+    "type": "Brand",
+    "label": "polaroid"
+  },
+  {
+    "id": "brand_suwen",
+    "type": "Brand",
+    "label": "suwen"
+  },
+  {
+    "id": "brand_oppo",
+    "type": "Brand",
+    "label": "oppo"
+  },
+  {
+    "id": "brand_phonevendor",
+    "type": "Brand",
+    "label": "phone_vendor"
+  },
+  {
+    "id": "brand_verizon_wireless",
+    "type": "Brand",
+    "label": "verizon wireless"
+  },
+  {
+    "id": "brand_uniden",
+    "type": "Brand",
+    "label": "uniden"
+  },
+  {
+    "id": "brand_odyssey",
+    "type": "Brand",
+    "label": "odyssey"
+  },
+  {
+    "id": "brand_punkt",
+    "type": "Brand",
+    "label": "punkt."
+  },
+  {
+    "id": "brand_hafury",
+    "type": "Brand",
+    "label": "hafury"
+  },
+  {
+    "id": "brand_china_oem",
+    "type": "Brand",
+    "label": "china oem"
+  },
+  {
+    "id": "brand_winhoo",
+    "type": "Brand",
+    "label": "winhoo"
+  },
+  {
+    "id": "brand_hakeeta",
+    "type": "Brand",
+    "label": "hakeeta"
+  },
+  {
+    "id": "brand_kmusculo",
+    "type": "Brand",
+    "label": "k-musculo"
+  },
+  {
+    "id": "brand_essential_products",
+    "type": "Brand",
+    "label": "essential products"
+  },
+  {
+    "id": "brand_topkech",
+    "type": "Brand",
+    "label": "topkech"
+  },
+  {
+    "id": "brand_shotbow",
+    "type": "Brand",
+    "label": "shotbow"
+  },
+  {
+    "id": "brand_portable_deals",
+    "type": "Brand",
+    "label": "portable deals"
+  },
+  {
+    "id": "brand_vkworld",
+    "type": "Brand",
+    "label": "vkworld"
+  },
+  {
+    "id": "brand_lg_electronics_mobilecomm_usa",
+    "type": "Brand",
+    "label": "lg electronics mobilecomm usa"
+  },
+  {
+    "id": "brand_nextbit",
+    "type": "Brand",
+    "label": "nextbit"
+  },
+  {
+    "id": "brand_speck",
+    "type": "Brand",
+    "label": "speck"
+  },
+  {
+    "id": "brand_poptel",
+    "type": "Brand",
+    "label": "poptel"
+  },
+  {
+    "id": "brand_lenovo_united_states_inc",
+    "type": "Brand",
+    "label": "lenovo (united states), inc."
+  },
+  {
+    "id": "brand_casio",
+    "type": "Brand",
+    "label": "casio"
+  },
+  {
+    "id": "brand_therj",
+    "type": "Brand",
+    "label": "therj"
+  },
+  {
+    "id": "brand_axcelle",
+    "type": "Brand",
+    "label": "axcelle"
+  },
+  {
+    "id": "brand_gowenic",
+    "type": "Brand",
+    "label": "gowenic"
+  },
+  {
+    "id": "brand_att_prepaid",
+    "type": "Brand",
+    "label": "at&t prepaid"
+  },
+  {
+    "id": "brand_yugioh",
+    "type": "Brand",
+    "label": "yu-gi-oh!"
+  },
+  {
+    "id": "brand_boost_mobile",
+    "type": "Brand",
+    "label": "boost mobile"
+  },
+  {
+    "id": "brand_republic_wireless",
+    "type": "Brand",
+    "label": "republic wireless"
+  },
+  {
+    "id": "brand_honor_huawei",
+    "type": "Brand",
+    "label": "honor, huawei"
+  },
+  {
+    "id": "brand_fisherprice",
+    "type": "Brand",
+    "label": "fisher-price"
+  },
+  {
+    "id": "brand_novatel_wireless",
+    "type": "Brand",
+    "label": "novatel wireless"
+  },
+  {
+    "id": "brand_phone_merchant",
+    "type": "Brand",
+    "label": "phone merchant"
+  },
+  {
+    "id": "brand_otterbox",
+    "type": "Brand",
+    "label": "otterbox"
+  },
+  {
+    "id": "brand_honor_devices",
+    "type": "Brand",
+    "label": "honor devices"
+  },
+  {
+    "id": "brand_gatca",
+    "type": "Brand",
+    "label": "gatca"
+  },
+  {
+    "id": "brand_shenzhen_jinwanyi_company",
+    "type": "Brand",
+    "label": "shenzhen jinwanyi company"
+  },
+  {
+    "id": "brand_towing_planet",
+    "type": "Brand",
+    "label": "towing planet"
+  },
+  {
+    "id": "brand_nothing",
+    "type": "Brand",
+    "label": "nothing"
+  },
+  {
+    "id": "brand_jxd",
+    "type": "Brand",
+    "label": "jxd"
+  },
+  {
+    "id": "brand_eboxer1",
+    "type": "Brand",
+    "label": "eboxer-1"
+  },
+  {
+    "id": "brand_ashata",
+    "type": "Brand",
+    "label": "ashata"
+  },
+  {
+    "id": "brand_argin",
+    "type": "Brand",
+    "label": "argin"
+  },
+  {
+    "id": "brand_kinggoo",
+    "type": "Brand",
+    "label": "kinggoo"
+  },
+  {
+    "id": "brand_mlais",
+    "type": "Brand",
+    "label": "mlais"
+  },
+  {
+    "id": "brand_hrwireless",
+    "type": "Brand",
+    "label": "hrwireless"
+  },
+  {
+    "id": "brand_shoretel",
+    "type": "Brand",
+    "label": "shoretel"
+  },
+  {
+    "id": "brand_figo",
+    "type": "Brand",
+    "label": "figo"
+  },
+  {
+    "id": "brand_open_mobile",
+    "type": "Brand",
+    "label": "open mobile"
+  },
+  {
+    "id": "brand_janizz",
+    "type": "Brand",
+    "label": "janizz"
+  },
+  {
+    "id": "brand_cingular",
+    "type": "Brand",
+    "label": "cingular"
+  },
+  {
+    "id": "brand_durakings",
+    "type": "Brand",
+    "label": "durakings"
+  },
+  {
+    "id": "brand_fosa",
+    "type": "Brand",
+    "label": "fosa"
+  },
+  {
+    "id": "brand_fairphone",
+    "type": "Brand",
+    "label": "fairphone"
+  },
+  {
+    "id": "brand_obihai",
+    "type": "Brand",
+    "label": "obihai"
+  },
+  {
+    "id": "brand_just_1",
+    "type": "Brand",
+    "label": "just 1"
+  },
+  {
+    "id": "brand_infinix",
+    "type": "Brand",
+    "label": "infinix"
+  },
+  {
+    "id": "brand_ztotop",
+    "type": "Brand",
+    "label": "ztotop"
+  },
+  {
+    "id": "brand_maxwest",
+    "type": "Brand",
+    "label": "maxwest"
+  },
+  {
+    "id": "brand_avaya",
+    "type": "Brand",
+    "label": "avaya"
+  },
+  {
+    "id": "brand_gggarden",
+    "type": "Brand",
+    "label": "gggarden"
+  },
+  {
+    "id": "brand_talkase",
+    "type": "Brand",
+    "label": "talkase"
+  },
+  {
+    "id": "brand_sorandy",
+    "type": "Brand",
+    "label": "sorandy"
+  },
+  {
+    "id": "brand_coolpad",
+    "type": "Brand",
+    "label": "coolpad"
+  },
+  {
+    "id": "brand_yrmjk",
+    "type": "Brand",
+    "label": "yrmjk"
+  },
+  {
+    "id": "brand_at",
+    "type": "Brand",
+    "label": "at"
+  },
+  {
+    "id": "brand_unnecto",
+    "type": "Brand",
+    "label": "unnecto"
+  },
+  {
+    "id": "brand_etigood",
+    "type": "Brand",
+    "label": "etigood"
+  },
+  {
+    "id": "brand_niega",
+    "type": "Brand",
+    "label": "niega"
+  },
+  {
+    "id": "brand_clarity",
+    "type": "Brand",
+    "label": "clarity"
+  },
+  {
+    "id": "brand_ocye",
+    "type": "Brand",
+    "label": "ocye"
+  },
+  {
+    "id": "brand_satellite_phone_store",
+    "type": "Brand",
+    "label": "satellite phone store"
+  },
+  {
+    "id": "brand_wv_leisuremaster",
+    "type": "Brand",
+    "label": "wv leisuremaster"
+  },
+  {
+    "id": "brand_supersonic",
+    "type": "Brand",
+    "label": "supersonic"
+  },
+  {
+    "id": "brand_ernestwoolomd",
+    "type": "Brand",
+    "label": "ernestwoolomd"
+  },
+  {
+    "id": "brand_amz_original",
+    "type": "Brand",
+    "label": "amz original"
+  },
+  {
+    "id": "brand_posh_mobile",
+    "type": "Brand",
+    "label": "posh mobile"
+  },
+  {
+    "id": "brand_timmy",
+    "type": "Brand",
+    "label": "timmy"
+  },
+  {
+    "id": "brand_parla",
+    "type": "Brand",
+    "label": "parla"
+  },
+  {
+    "id": "brand_net_10",
+    "type": "Brand",
+    "label": "net 10"
+  },
+  {
+    "id": "brand_amazon_renewed_store",
+    "type": "Brand",
+    "label": "amazon renewed store"
+  },
+  {
+    "id": "brand_hiegou",
+    "type": "Brand",
+    "label": "hiegou"
+  },
+  {
+    "id": "brand_zyyini",
+    "type": "Brand",
+    "label": "zyyini"
+  },
+  {
+    "id": "brand_el",
+    "type": "Brand",
+    "label": "e&l"
+  },
+  {
+    "id": "brand_seals",
+    "type": "Brand",
+    "label": "seals"
+  },
+  {
+    "id": "brand_dcp_products",
+    "type": "Brand",
+    "label": "dcp products"
+  },
+  {
+    "id": "brand_tgllc",
+    "type": "Brand",
+    "label": "tg,llc"
+  },
+  {
+    "id": "brand_lbstar",
+    "type": "Brand",
+    "label": "lbstar"
+  },
+  {
+    "id": "brand_epassion",
+    "type": "Brand",
+    "label": "e-passion"
+  },
+  {
+    "id": "brand_wese",
+    "type": "Brand",
+    "label": "wese"
+  },
+  {
+    "id": "brand_luckyu",
+    "type": "Brand",
+    "label": "luckyu"
+  },
+  {
+    "id": "brand_smartphones_by_ets",
+    "type": "Brand",
+    "label": "smartphones by ets"
+  },
+  {
+    "id": "brand_alps",
+    "type": "Brand",
+    "label": "alps"
+  },
+  {
+    "id": "brand_blindshell",
+    "type": "Brand",
+    "label": "blindshell"
+  },
+  {
+    "id": "brand_cricket",
+    "type": "Brand",
+    "label": "cricket"
+  },
+  {
+    "id": "brand_snapfon",
+    "type": "Brand",
+    "label": "snapfon"
+  },
+  {
+    "id": "brand_orfilaa",
+    "type": "Brand",
+    "label": "orfilaa"
+  },
+  {
+    "id": "brand_lgic",
+    "type": "Brand",
+    "label": "lgic"
+  },
+  {
+    "id": "brand_verizon",
+    "type": "Brand",
+    "label": "verizon"
+  },
+  {
+    "id": "brand_otter_products_llc",
+    "type": "Brand",
+    "label": "otter products, llc"
+  },
+  {
+    "id": "brand_visit_the_blu_store",
+    "type": "Brand",
+    "label": "visit the blu store"
+  },
+  {
+    "id": "brand_ulcool",
+    "type": "Brand",
+    "label": "ulcool"
+  },
+  {
+    "id": "brand_thl",
+    "type": "Brand",
+    "label": "thl"
+  },
+  {
+    "id": "brand_wawei",
+    "type": "Brand",
+    "label": "wawei"
+  },
+  {
+    "id": "brand_tracphone",
+    "type": "Brand",
+    "label": "tracphone"
+  },
+  {
+    "id": "brand_nubia",
+    "type": "Brand",
+    "label": "nubia"
+  },
+  {
+    "id": "brand_garmin",
+    "type": "Brand",
+    "label": "garmin"
+  },
+  {
+    "id": "brand_luqeeg",
+    "type": "Brand",
+    "label": "luqeeg"
+  },
+  {
+    "id": "brand_sole_mobile",
+    "type": "Brand",
+    "label": "sole mobile"
+  },
+  {
+    "id": "brand_idroid_usa",
+    "type": "Brand",
+    "label": "idroid usa"
+  },
+  {
+    "id": "brand_nbz",
+    "type": "Brand",
+    "label": "nbz"
+  },
+  {
+    "id": "brand_sony_htc_lg_samsung",
+    "type": "Brand",
+    "label": "sony, htc, lg, samsung"
+  },
+  {
+    "id": "brand_ecoo",
+    "type": "Brand",
+    "label": "ecoo"
+  },
+  {
+    "id": "brand_relay",
+    "type": "Brand",
+    "label": "relay"
+  },
+  {
+    "id": "brand_dilwe1",
+    "type": "Brand",
+    "label": "dilwe1"
+  },
+  {
+    "id": "brand_kosher_cell_inc",
+    "type": "Brand",
+    "label": "kosher cell inc."
+  },
+  {
+    "id": "brand_mirusi",
+    "type": "Brand",
+    "label": "mirusi"
+  },
+  {
+    "id": "brand_besiva",
+    "type": "Brand",
+    "label": "besiva"
+  },
+  {
+    "id": "brand_monasay",
+    "type": "Brand",
+    "label": "monasay"
+  },
+  {
+    "id": "brand_alcateltcl",
+    "type": "Brand",
+    "label": "alcatel-tcl"
+  },
+  {
+    "id": "brand_cpr_call_blocker",
+    "type": "Brand",
+    "label": "cpr call blocker"
+  },
+  {
+    "id": "brand_echoamo",
+    "type": "Brand",
+    "label": "echoamo"
+  },
+  {
+    "id": "brand_utstarcom",
+    "type": "Brand",
+    "label": "utstarcom"
+  },
+  {
+    "id": "brand_hopon",
+    "type": "Brand",
+    "label": "hop-on"
+  },
+  {
+    "id": "brand_ttfone",
+    "type": "Brand",
+    "label": "ttfone"
+  },
+  {
+    "id": "brand_diyeeni",
+    "type": "Brand",
+    "label": "diyeeni"
+  },
+  {
+    "id": "brand_doro",
+    "type": "Brand",
+    "label": "doro"
+  },
+  {
+    "id": "brand_hadad_bros",
+    "type": "Brand",
+    "label": "hadad bros."
+  },
+  {
+    "id": "brand_hopon_wireless",
+    "type": "Brand",
+    "label": "hop-on wireless"
+  },
+  {
+    "id": "brand_lucky_goldstar",
+    "type": "Brand",
+    "label": "lucky goldstar"
+  },
+  {
+    "id": "brand_gostcai",
+    "type": "Brand",
+    "label": "gostcai"
+  },
+  {
+    "id": "brand_zopsc",
+    "type": "Brand",
+    "label": "zopsc"
+  },
+  {
+    "id": "brand_page_plus",
+    "type": "Brand",
+    "label": "page plus"
+  },
+  {
+    "id": "brand_argom_tech",
+    "type": "Brand",
+    "label": "argom tech"
+  },
+  {
+    "id": "brand_kyocera_international",
+    "type": "Brand",
+    "label": "kyocera international"
+  },
+  {
+    "id": "brand_otium",
+    "type": "Brand",
+    "label": "otium"
+  },
+  {
+    "id": "brand_coolpad_technologies_inc",
+    "type": "Brand",
+    "label": "coolpad technologies, inc."
+  },
+  {
+    "id": "brand_verizon_home_phone",
+    "type": "Brand",
+    "label": "verizon home phone"
+  },
+  {
+    "id": "brand_duoduogo",
+    "type": "Brand",
+    "label": "duoduogo"
+  },
+  {
+    "id": "brand_hightech_place",
+    "type": "Brand",
+    "label": "high-tech place"
+  },
+  {
+    "id": "brand_fosa1",
+    "type": "Brand",
+    "label": "fosa1"
+  },
+  {
+    "id": "brand_unbrand",
+    "type": "Brand",
+    "label": "unbrand"
+  },
+  {
+    "id": "brand_toto",
+    "type": "Brand",
+    "label": "toto"
+  },
+  {
+    "id": "brand_note_ultra",
+    "type": "Brand",
+    "label": "note ultra"
+  },
+  {
+    "id": "brand_hisense",
+    "type": "Brand",
+    "label": "hisense"
+  },
+  {
+    "id": "brand_gzone",
+    "type": "Brand",
+    "label": "g-zone"
+  },
+  {
+    "id": "brand_crisis",
+    "type": "Brand",
+    "label": "crisis"
+  },
+  {
+    "id": "brand_iphone",
+    "type": "Brand",
+    "label": "iphone"
+  },
+  {
+    "id": "brand_sierra_wireless_data_inc",
+    "type": "Brand",
+    "label": "sierra wireless data inc."
+  },
+  {
+    "id": "brand_luminira",
+    "type": "Brand",
+    "label": "luminira"
+  },
+  {
+    "id": "brand_pansonite",
+    "type": "Brand",
+    "label": "pansonite"
+  },
+  {
+    "id": "brand_longcz",
+    "type": "Brand",
+    "label": "long-cz"
+  },
+  {
+    "id": "brand_resway",
+    "type": "Brand",
+    "label": "resway"
+  },
+  {
+    "id": "brand_kacul",
+    "type": "Brand",
+    "label": "kacul"
+  },
+  {
+    "id": "brand_plum_products",
+    "type": "Brand",
+    "label": "plum products"
+  },
+  {
+    "id": "brand_gb",
+    "type": "Brand",
+    "label": "gbâ"
+  },
+  {
+    "id": "brand_bm01",
+    "type": "Brand",
+    "label": "bm-01"
+  },
+  {
+    "id": "brand_intex",
+    "type": "Brand",
+    "label": "intex"
+  },
+  {
+    "id": "brand_lg_electronics",
+    "type": "Brand",
+    "label": "lg electronics"
+  },
+  {
+    "id": "brand_paddsun",
+    "type": "Brand",
+    "label": "paddsun"
+  },
+  {
+    "id": "brand_metropcs",
+    "type": "Brand",
+    "label": "metropcs"
+  },
+  {
+    "id": "brand_goophone",
+    "type": "Brand",
+    "label": "goophone"
+  },
+  {
+    "id": "brand_niu_niu",
+    "type": "Brand",
+    "label": "niu niu"
+  },
+  {
+    "id": "brand_leagoo",
+    "type": "Brand",
+    "label": "leagoo"
+  },
+  {
+    "id": "brand_easysmx",
+    "type": "Brand",
+    "label": "easysmx"
+  },
+  {
+    "id": "brand_alltravel",
+    "type": "Brand",
+    "label": "alltravel"
+  },
+  {
+    "id": "brand_vivo_dealer",
+    "type": "Brand",
+    "label": "vivo dealer"
+  },
+  {
+    "id": "brand_yapple",
+    "type": "Brand",
+    "label": "yapple"
+  },
+  {
+    "id": "brand_dracotek",
+    "type": "Brand",
+    "label": "dracotek"
+  },
+  {
+    "id": "brand_telestial",
+    "type": "Brand",
+    "label": "telestial"
+  },
+  {
+    "id": "brand_sky",
+    "type": "Brand",
+    "label": "sky"
+  },
+  {
+    "id": "brand_mitel",
+    "type": "Brand",
+    "label": "mitel"
+  },
+  {
+    "id": "brand_otw_samsung",
+    "type": "Brand",
+    "label": "otw samsung"
+  },
+  {
+    "id": "brand_oppo_digital",
+    "type": "Brand",
+    "label": "oppo digital"
+  },
+  {
+    "id": "brand_sanpyl",
+    "type": "Brand",
+    "label": "sanpyl"
+  },
+  {
+    "id": "brand_mode_money_phone",
+    "type": "Brand",
+    "label": "mode money phone"
+  },
+  {
+    "id": "brand_realme_dealer",
+    "type": "Brand",
+    "label": "realme dealer"
+  },
+  {
+    "id": "brand_oem",
+    "type": "Brand",
+    "label": "oem"
+  },
+  {
+    "id": "brand_virgin",
+    "type": "Brand",
+    "label": "virgin"
+  },
+  {
+    "id": "brand_mgdyss",
+    "type": "Brand",
+    "label": "mgdyss"
+  },
+  {
+    "id": "brand_honor_google_huawei",
+    "type": "Brand",
+    "label": "honor, google, huawei"
+  },
+  {
+    "id": "brand_quikunlock",
+    "type": "Brand",
+    "label": "quikunlock"
+  },
+  {
+    "id": "brand_greatcall",
+    "type": "Brand",
+    "label": "greatcall"
+  },
+  {
+    "id": "brand_essential_products_inc",
+    "type": "Brand",
+    "label": "essential products inc."
+  },
+  {
+    "id": "brand_sam",
+    "type": "Brand",
+    "label": "sam"
+  },
+  {
+    "id": "brand_jopwkuin",
+    "type": "Brand",
+    "label": "jopwkuin"
+  },
+  {
+    "id": "brand_tradeage",
+    "type": "Brand",
+    "label": "tradeage"
+  },
+  {
+    "id": "brand_newrang",
+    "type": "Brand",
+    "label": "newrang"
+  },
+  {
+    "id": "brand_prepaid",
+    "type": "Brand",
+    "label": "prepaid"
+  },
+  {
+    "id": "brand_saunders",
+    "type": "Brand",
+    "label": "saunders"
+  },
+  {
+    "id": "brand_tangxi",
+    "type": "Brand",
+    "label": "tangxi"
+  },
+  {
+    "id": "brand_insignia",
+    "type": "Brand",
+    "label": "insignia"
+  },
+  {
+    "id": "brand_xiaoqiao",
+    "type": "Brand",
+    "label": "xiaoqiao"
+  },
+  {
+    "id": "brand_dtlake",
+    "type": "Brand",
+    "label": "dtlake"
+  },
+  {
+    "id": "brand_kpyja",
+    "type": "Brand",
+    "label": "kpyja"
+  },
+  {
+    "id": "brand_tpu",
+    "type": "Brand",
+    "label": "tpu"
+  },
+  {
+    "id": "brand_radiotone",
+    "type": "Brand",
+    "label": "radio-tone"
+  },
+  {
+    "id": "brand_free_light",
+    "type": "Brand",
+    "label": "free light"
+  },
+  {
+    "id": "brand_kikyo",
+    "type": "Brand",
+    "label": "kikyo"
+  },
+  {
+    "id": "brand_cellphoneunlock",
+    "type": "Brand",
+    "label": "cellphoneunlock"
+  },
+  {
+    "id": "brand_jivi",
+    "type": "Brand",
+    "label": "jivi"
+  },
+  {
+    "id": "brand_jitterbug",
+    "type": "Brand",
+    "label": "jitterbug"
+  },
+  {
+    "id": "brand_hualong_technology_limited",
+    "type": "Brand",
+    "label": "hualong technology limited"
+  },
+  {
+    "id": "brand_adz",
+    "type": "Brand",
+    "label": "adz"
+  },
+  {
+    "id": "brand_bter",
+    "type": "Brand",
+    "label": "bter"
+  },
+  {
+    "id": "brand_lisaistore",
+    "type": "Brand",
+    "label": "lisaistore"
+  },
+  {
+    "id": "brand_sn",
+    "type": "Brand",
+    "label": "s/n"
+  },
+  {
+    "id": "brand_vmobile",
+    "type": "Brand",
+    "label": "vmobile"
+  },
+  {
+    "id": "brand_thuraya",
+    "type": "Brand",
+    "label": "thuraya"
+  },
+  {
+    "id": "brand_ips_ip_smart",
+    "type": "Brand",
+    "label": "ips ip smart"
+  },
+  {
+    "id": "brand_sam_sung",
+    "type": "Brand",
+    "label": "sam sung"
+  },
+  {
+    "id": "brand_fineusea",
+    "type": "Brand",
+    "label": "fineusea"
+  },
+  {
+    "id": "brand_freetel",
+    "type": "Brand",
+    "label": "freetel"
+  },
+  {
+    "id": "brand_ep",
+    "type": "Brand",
+    "label": "ep"
+  },
+  {
+    "id": "brand_duet",
+    "type": "Brand",
+    "label": "duet"
+  },
+  {
+    "id": "brand_ans",
+    "type": "Brand",
+    "label": "ans"
+  },
+  {
+    "id": "brand_peek_inc",
+    "type": "Brand",
+    "label": "peek, inc."
+  },
+  {
+    "id": "brand_nokia_mobile",
+    "type": "Brand",
+    "label": "nokia mobile"
+  },
+  {
+    "id": "brand_6t",
+    "type": "Brand",
+    "label": "6t"
+  },
+  {
+    "id": "brand_infinix_mobility",
+    "type": "Brand",
+    "label": "infinix mobility"
+  },
+  {
+    "id": "brand_netgear",
+    "type": "Brand",
+    "label": "netgear"
+  },
+  {
+    "id": "brand_nldk",
+    "type": "Brand",
+    "label": "nldk"
+  },
+  {
+    "id": "brand_motorola_inc",
+    "type": "Brand",
+    "label": "motorola inc"
+  },
+  {
+    "id": "brand_verykool",
+    "type": "Brand",
+    "label": "verykool"
+  },
+  {
+    "id": "brand_zini_mobiles",
+    "type": "Brand",
+    "label": "zini mobiles"
+  },
+  {
+    "id": "brand_virtualmaqazin",
+    "type": "Brand",
+    "label": "virtualmaqazin"
+  },
+  {
+    "id": "brand_xindali",
+    "type": "Brand",
+    "label": "xindali"
+  },
+  {
+    "id": "brand_shen_zhen_yixun_electronic_technology_co_ltd",
+    "type": "Brand",
+    "label": "shen zhen yixun electronic technology co., ltd"
+  },
+  {
+    "id": "brand_emblem",
+    "type": "Brand",
+    "label": "emblem"
+  },
+  {
+    "id": "brand_sprint_pcs",
+    "type": "Brand",
+    "label": "sprint pcs"
+  },
+  {
+    "id": "brand_rwaceh",
+    "type": "Brand",
+    "label": "r-waceh"
+  },
+  {
+    "id": "brand_fosler_corporation",
+    "type": "Brand",
+    "label": "fosler corporation"
+  },
+  {
+    "id": "brand_s_erounder",
+    "type": "Brand",
+    "label": "s erounder"
+  },
+  {
+    "id": "brand_digimaxis_llc",
+    "type": "Brand",
+    "label": "digimaxis llc"
+  },
+  {
+    "id": "brand_s2b",
+    "type": "Brand",
+    "label": "s2b"
+  },
+  {
+    "id": "brand_liberty_mobile",
+    "type": "Brand",
+    "label": "liberty mobile"
+  },
+  {
+    "id": "brand_iview",
+    "type": "Brand",
+    "label": "iview"
+  },
+  {
+    "id": "brand_inmarsat",
+    "type": "Brand",
+    "label": "inmarsat"
+  },
+  {
+    "id": "brand_huawei_device_usa_inc",
+    "type": "Brand",
+    "label": "huawei device usa inc"
+  },
+  {
+    "id": "brand_reliance_communications",
+    "type": "Brand",
+    "label": "reliance communications"
+  },
+  {
+    "id": "brand_red_chili",
+    "type": "Brand",
+    "label": "red chili"
+  },
+  {
+    "id": "brand_gshock",
+    "type": "Brand",
+    "label": "g-shock"
+  },
+  {
+    "id": "brand_xdoria",
+    "type": "Brand",
+    "label": "x-doria"
+  },
+  {
+    "id": "brand_motorola_mobility_llc",
+    "type": "Brand",
+    "label": "motorola mobility llc"
+  },
+  {
+    "id": "brand_asus_computers",
+    "type": "Brand",
+    "label": "asus computers"
+  },
+  {
+    "id": "brand_sdp_inactive",
+    "type": "Brand",
+    "label": "sdp - inactive"
+  },
+  {
+    "id": "brand_micromax",
+    "type": "Brand",
+    "label": "micromax"
+  },
+  {
+    "id": "brand_erwazi",
+    "type": "Brand",
+    "label": "erwazi"
+  },
+  {
+    "id": "brand_national_geographic",
+    "type": "Brand",
+    "label": "national geographic"
+  },
+  {
+    "id": "brand_bittium",
+    "type": "Brand",
+    "label": "bittium"
+  },
+  {
+    "id": "brand_johns",
+    "type": "Brand",
+    "label": "john's"
+  },
+  {
+    "id": "brand_mslan",
+    "type": "Brand",
+    "label": "mslan"
+  },
+  {
+    "id": "brand_h2o_wireless",
+    "type": "Brand",
+    "label": "h2o wireless"
+  },
+  {
+    "id": "brand_yota",
+    "type": "Brand",
+    "label": "yota"
+  },
+  {
+    "id": "brand_lg_optimus_s_android_22_sprint_phone_purple",
+    "type": "Brand",
+    "label": "lg optimus s android 2.2 sprint phone purple"
+  },
+  {
+    "id": "brand_yingtai",
+    "type": "Brand",
+    "label": "yingtai"
+  },
+  {
+    "id": "brand_alcatel_cingular_flip_2_att_32_bundle",
+    "type": "Brand",
+    "label": "alcatel cingular flip 2 at&t 32 bundle"
+  },
+  {
+    "id": "brand_pcd",
+    "type": "Brand",
+    "label": "pcd"
+  },
+  {
+    "id": "brand_chattem_labs",
+    "type": "Brand",
+    "label": "chattem labs"
+  },
+  {
+    "id": "brand_zsddzzy",
+    "type": "Brand",
+    "label": "zsddzzy"
+  },
+  {
+    "id": "brand_eastoan",
+    "type": "Brand",
+    "label": "eastoan"
+  },
+  {
+    "id": "brand_autel",
+    "type": "Brand",
+    "label": "autel"
+  },
+  {
+    "id": "brand_simplicity",
+    "type": "Brand",
+    "label": "simplicity"
+  },
+  {
+    "id": "brand_obihai_technology",
+    "type": "Brand",
+    "label": "obihai technology"
+  },
+  {
+    "id": "brand_yixin",
+    "type": "Brand",
+    "label": "yixin"
+  },
+  {
+    "id": "brand_umi",
+    "type": "Brand",
+    "label": "umi"
+  },
+  {
+    "id": "brand_tmobile_sidekick_slider",
+    "type": "Brand",
+    "label": "tmobile sidekick slider"
+  },
+  {
+    "id": "brand_jovers",
+    "type": "Brand",
+    "label": "jovers"
+  },
+  {
+    "id": "brand_dijkoo",
+    "type": "Brand",
+    "label": "dijkoo"
+  },
+  {
+    "id": "brand_long_cz",
+    "type": "Brand",
+    "label": "long cz"
+  },
+  {
+    "id": "brand_ericsson",
+    "type": "Brand",
+    "label": "ericsson"
+  },
+  {
+    "id": "brand_stop_signs_and_more",
+    "type": "Brand",
+    "label": "stop signs and more"
+  },
+  {
+    "id": "brand_insky",
+    "type": "Brand",
+    "label": "insky"
+  },
+  {
+    "id": "brand_razer_inc_wireless",
+    "type": "Brand",
+    "label": "razer inc. (wireless)"
+  },
+  {
+    "id": "brand_sennheiser",
+    "type": "Brand",
+    "label": "sennheiser"
+  },
+  {
+    "id": "brand_argom_mobile",
+    "type": "Brand",
+    "label": "argom mobile"
+  },
+  {
+    "id": "brand_brakites",
+    "type": "Brand",
+    "label": "brakites"
+  },
+  {
+    "id": "brand_lifeproof",
+    "type": "Brand",
+    "label": "lifeproof"
+  },
+  {
+    "id": "brand_spypoint",
+    "type": "Brand",
+    "label": "spypoint"
+  },
+  {
+    "id": "brand_alcatel_one_touch",
+    "type": "Brand",
+    "label": "alcatel one touch"
+  },
+  {
+    "id": "brand_kraiovim",
+    "type": "Brand",
+    "label": "kraiovim"
+  },
+  {
+    "id": "brand_speedtalk_mobile",
+    "type": "Brand",
+    "label": "speedtalk mobile"
+  },
+  {
+    "id": "brand_energizer",
+    "type": "Brand",
+    "label": "energizer"
+  },
+  {
+    "id": "brand_dauerhaft",
+    "type": "Brand",
+    "label": "dauerhaft"
+  },
+  {
+    "id": "brand_firefly_mobile",
+    "type": "Brand",
+    "label": "firefly mobile"
+  },
+  {
+    "id": "brand_lilyhood",
+    "type": "Brand",
+    "label": "lilyhood"
+  },
+  {
+    "id": "brand_caterpillar",
+    "type": "Brand",
+    "label": "caterpillar"
+  },
+  {
+    "id": "brand_wuyi",
+    "type": "Brand",
+    "label": "wuyi"
+  },
+  {
+    "id": "brand_virizon",
+    "type": "Brand",
+    "label": "virizon"
+  },
+  {
+    "id": "brand_dewalt",
+    "type": "Brand",
+    "label": "dewalt"
+  },
+  {
+    "id": "brand_creazydog",
+    "type": "Brand",
+    "label": "creazydog"
+  },
+  {
+    "id": "brand_zoji",
+    "type": "Brand",
+    "label": "zoji"
+  },
+  {
+    "id": "brand_net10_unlimited",
+    "type": "Brand",
+    "label": "net10 unlimited"
+  },
+  {
+    "id": "brand_houmat",
+    "type": "Brand",
+    "label": "houmat"
+  },
+  {
+    "id": "brand_parktel_usa",
+    "type": "Brand",
+    "label": "parktel usa"
+  },
+  {
+    "id": "brand_alcatel5",
+    "type": "Brand",
+    "label": "alcatel5"
+  },
+  {
+    "id": "brand_spareone",
+    "type": "Brand",
+    "label": "spareone"
+  },
+  {
+    "id": "brand_voiceping",
+    "type": "Brand",
+    "label": "voiceping"
+  },
+  {
+    "id": "brand_sprint_prepaid",
+    "type": "Brand",
+    "label": "sprint prepaid"
+  },
+  {
+    "id": "brand_betsey_johnson",
+    "type": "Brand",
+    "label": "betsey johnson"
+  },
+  {
+    "id": "brand_elyan",
+    "type": "Brand",
+    "label": "elyan"
+  },
+  {
+    "id": "brand_insta360",
+    "type": "Brand",
+    "label": "insta360"
+  },
+  {
+    "id": "brand_wblue",
+    "type": "Brand",
+    "label": "wblue"
+  },
+  {
+    "id": "brand_amoi",
+    "type": "Brand",
+    "label": "amoi"
+  },
+  {
+    "id": "brand_mysaga",
+    "type": "Brand",
+    "label": "mysaga"
+  },
+  {
+    "id": "brand_rendon",
+    "type": "Brand",
+    "label": "rendon"
+  },
+  {
+    "id": "brand_qtek",
+    "type": "Brand",
+    "label": "qtek"
+  },
+  {
+    "id": "brand_masai_store",
+    "type": "Brand",
+    "label": "masai store"
+  },
+  {
+    "id": "brand_tbest",
+    "type": "Brand",
+    "label": "tbest"
+  },
+  {
+    "id": "brand_fvh",
+    "type": "Brand",
+    "label": "fvh"
+  },
+  {
+    "id": "brand_phonak",
+    "type": "Brand",
+    "label": "phonak"
+  },
+  {
+    "id": "brand_vertu",
+    "type": "Brand",
+    "label": "vertu"
+  },
+  {
+    "id": "brand_yunir",
+    "type": "Brand",
+    "label": "yunir"
+  },
+  {
+    "id": "brand_qimhai",
+    "type": "Brand",
+    "label": "qimhai"
+  },
+  {
+    "id": "brand_oukite",
+    "type": "Brand",
+    "label": "oukite"
+  },
+  {
+    "id": "brand_mann",
+    "type": "Brand",
+    "label": "mann"
+  },
+  {
+    "id": "brand_alvinlite",
+    "type": "Brand",
+    "label": "alvinlite"
+  },
+  {
+    "id": "brand_handmade_in_england",
+    "type": "Brand",
+    "label": "handmade in england"
+  },
+  {
+    "id": "brand_wholesale_center",
+    "type": "Brand",
+    "label": "wholesale center"
+  },
+  {
+    "id": "brand_lqiqikel",
+    "type": "Brand",
+    "label": "lqiqikel"
+  },
+  {
+    "id": "brand_comdy",
+    "type": "Brand",
+    "label": "comdy"
+  },
+  {
+    "id": "brand_polycom",
+    "type": "Brand",
+    "label": "polycom"
+  },
+  {
+    "id": "brand_kajeet",
+    "type": "Brand",
+    "label": "kajeet"
+  },
+  {
+    "id": "brand_sky_phone_llc",
+    "type": "Brand",
+    "label": "sky phone, llc"
+  },
+  {
+    "id": "brand_nicexx",
+    "type": "Brand",
+    "label": "nicexx"
+  },
+  {
+    "id": "brand_fossibot",
+    "type": "Brand",
+    "label": "fossibot"
+  },
+  {
+    "id": "brand_oneplu",
+    "type": "Brand",
+    "label": "oneplu"
+  },
+  {
+    "id": "brand_asixxsix",
+    "type": "Brand",
+    "label": "asixxsix"
+  },
+  {
+    "id": "brand_amazoncom_llc_keep_porules_active",
+    "type": "Brand",
+    "label": "amazon.com, llc *** keep porules active ***"
+  },
+  {
+    "id": "brand_lyj",
+    "type": "Brand",
+    "label": "lyj"
+  },
+  {
+    "id": "brand_black_shark_3",
+    "type": "Brand",
+    "label": "black shark 3"
+  },
+  {
+    "id": "brand_sharp_tmobile",
+    "type": "Brand",
+    "label": "sharp t-mobile"
+  },
+  {
+    "id": "brand_spiny_turtle",
+    "type": "Brand",
+    "label": "spiny turtle"
+  },
+  {
+    "id": "brand_dorland",
+    "type": "Brand",
+    "label": "dorland"
+  },
+  {
+    "id": "brand_qiilu",
+    "type": "Brand",
+    "label": "qiilu"
+  },
+  {
+    "id": "brand_poco",
+    "type": "Brand",
+    "label": "poco"
+  },
+  {
+    "id": "brand_ebasy",
+    "type": "Brand",
+    "label": "ebasy"
+  },
+  {
+    "id": "brand_oukitel_direct_store",
+    "type": "Brand",
+    "label": "oukitel direct store"
+  },
+  {
+    "id": "brand_ocaler",
+    "type": "Brand",
+    "label": "ocaler"
+  },
+  {
+    "id": "brand_xixaomiro",
+    "type": "Brand",
+    "label": "xixaomiro"
+  },
+  {
+    "id": "brand_vipxyc",
+    "type": "Brand",
+    "label": "vipxyc"
+  },
+  {
+    "id": "brand_hyundai",
+    "type": "Brand",
+    "label": "hyundai"
+  },
+  {
+    "id": "brand_apobob",
+    "type": "Brand",
+    "label": "apobob"
+  },
+  {
+    "id": "brand_liquidnano",
+    "type": "Brand",
+    "label": "liquidnano"
+  },
+  {
+    "id": "brand_elephone",
+    "type": "Brand",
+    "label": "elephone"
+  },
+  {
+    "id": "brand_planet_cellular_inc",
+    "type": "Brand",
+    "label": "planet cellular inc."
+  },
+  {
+    "id": "brand_lumigon",
+    "type": "Brand",
+    "label": "lumigon"
+  },
+  {
+    "id": "brand_quanta",
+    "type": "Brand",
+    "label": "quanta"
+  },
+  {
+    "id": "brand_bml_one_mini",
+    "type": "Brand",
+    "label": "bml one mini"
+  },
+  {
+    "id": "brand_oukitelus",
+    "type": "Brand",
+    "label": "oukitel-us"
+  },
+  {
+    "id": "brand_camworx",
+    "type": "Brand",
+    "label": "camworx"
+  },
+  {
+    "id": "brand_simbrostclalcatel",
+    "type": "Brand",
+    "label": "simbros/tcl/alcatel/"
+  },
+  {
+    "id": "brand_emax",
+    "type": "Brand",
+    "label": "emax"
+  },
+  {
+    "id": "brand_poropl",
+    "type": "Brand",
+    "label": "poropl"
+  },
+  {
+    "id": "brand_unilever_hpc_usa",
+    "type": "Brand",
+    "label": "unilever hpc - usa"
+  },
+  {
+    "id": "brand_thailand",
+    "type": "Brand",
+    "label": "thailand"
+  },
+  {
+    "id": "brand_houshu",
+    "type": "Brand",
+    "label": "houshu"
+  },
+  {
+    "id": "brand_oreilet",
+    "type": "Brand",
+    "label": "oreilet"
+  },
+  {
+    "id": "brand_ariarly",
+    "type": "Brand",
+    "label": "ariarly"
+  },
+  {
+    "id": "brand_shuibing",
+    "type": "Brand",
+    "label": "shui&bing"
+  },
+  {
+    "id": "brand_septpenta",
+    "type": "Brand",
+    "label": "septpenta"
+  },
+  {
+    "id": "brand_nokia",
+    "type": "Brand",
+    "label": "nokia"
+  },
+  {
+    "id": "brand_galaxy_z_fold",
+    "type": "Brand",
+    "label": "galaxy z fold"
+  },
+  {
+    "id": "brand_nothing_phone1",
+    "type": "Brand",
+    "label": "nothing phone1"
+  },
+  {
+    "id": "brand_gaqingyu",
+    "type": "Brand",
+    "label": "ga-qingyu"
+  },
+  {
+    "id": "brand_galaxy_telecom",
+    "type": "Brand",
+    "label": "galaxy telecom"
+  },
+  {
+    "id": "brand_smartphones",
+    "type": "Brand",
+    "label": "smartphones"
+  },
+  {
+    "id": "brand_telular",
+    "type": "Brand",
+    "label": "telular"
+  },
+  {
+    "id": "brand_momker",
+    "type": "Brand",
+    "label": "momker"
+  },
+  {
+    "id": "brand_snorain",
+    "type": "Brand",
+    "label": "snorain"
+  },
+  {
+    "id": "brand_detroit_packing_co",
+    "type": "Brand",
+    "label": "detroit packing co."
+  },
+  {
+    "id": "brand_qualcomm",
+    "type": "Brand",
+    "label": "qualcomm"
+  },
+  {
+    "id": "brand_sugift",
+    "type": "Brand",
+    "label": "sugift"
+  },
+  {
+    "id": "brand_snopow",
+    "type": "Brand",
+    "label": "snopow"
+  },
+  {
+    "id": "brand_shenzhencity_aidier_technology_co_ltd",
+    "type": "Brand",
+    "label": "shenzhencity aidier technology co ltd"
+  },
+  {
+    "id": "brand_innos",
+    "type": "Brand",
+    "label": "innos"
+  },
+  {
+    "id": "brand_goawtfafs",
+    "type": "Brand",
+    "label": "goawtfafs"
+  },
+  {
+    "id": "brand_fydun",
+    "type": "Brand",
+    "label": "fydun"
+  },
+  {
+    "id": "brand_gaoag",
+    "type": "Brand",
+    "label": "gaoag"
+  },
+  {
+    "id": "brand_sunion",
+    "type": "Brand",
+    "label": "sunion"
+  },
+  {
+    "id": "brand_dozen",
+    "type": "Brand",
+    "label": "dozen"
+  },
+  {
+    "id": "brand_blujoy",
+    "type": "Brand",
+    "label": "blujoy"
+  },
+  {
+    "id": "brand_lairun",
+    "type": "Brand",
+    "label": "lairun"
+  },
+  {
+    "id": "brand_wava",
+    "type": "Brand",
+    "label": "wava"
+  },
+  {
+    "id": "brand_research_in_motion",
+    "type": "Brand",
+    "label": "research in motion"
+  },
+  {
+    "id": "brand_zapoos",
+    "type": "Brand",
+    "label": "zapoos"
+  },
+  {
+    "id": "brand_henghongshangmao",
+    "type": "Brand",
+    "label": "henghongshangmao"
+  },
+  {
+    "id": "brand_lgg",
+    "type": "Brand",
+    "label": "lgg"
+  },
+  {
+    "id": "brand_polycom_inc",
+    "type": "Brand",
+    "label": "polycom inc."
+  },
+  {
+    "id": "brand_kripto_mobile",
+    "type": "Brand",
+    "label": "kripto mobile"
+  },
+  {
+    "id": "brand_amzer",
+    "type": "Brand",
+    "label": "amzer"
+  },
+  {
+    "id": "brand_qdh",
+    "type": "Brand",
+    "label": "q-dh"
+  },
+  {
+    "id": "brand_power_idea_technology",
+    "type": "Brand",
+    "label": "power idea technology"
+  },
+  {
+    "id": "brand_lumen",
+    "type": "Brand",
+    "label": "lumen"
+  },
+  {
+    "id": "brand_smart_walkie",
+    "type": "Brand",
+    "label": "smart walkie"
+  },
+  {
+    "id": "brand_vernee",
+    "type": "Brand",
+    "label": "vernee"
+  },
+  {
+    "id": "brand_glgzzom",
+    "type": "Brand",
+    "label": "glgzzom"
+  },
+  {
+    "id": "brand_readymobile_sanyo_pro_200_cell_phone_brand_new",
+    "type": "Brand",
+    "label": "readymobile sanyo pro 200 cell phone brand new"
+  },
+  {
+    "id": "brand_jazar",
+    "type": "Brand",
+    "label": "jazar"
+  },
+  {
+    "id": "brand_inew",
+    "type": "Brand",
+    "label": "inew"
+  },
+  {
+    "id": "brand_generic_artist_unknown",
+    "type": "Brand",
+    "label": "generic artist unknown"
+  },
+  {
+    "id": "brand_svp",
+    "type": "Brand",
+    "label": "svp"
+  },
+  {
+    "id": "brand_red_magic_official",
+    "type": "Brand",
+    "label": "red magic official"
+  },
+  {
+    "id": "brand_4smarts",
+    "type": "Brand",
+    "label": "4smarts"
+  },
+  {
+    "id": "brand_0",
+    "type": "Brand",
+    "label": "0"
+  },
+  {
+    "id": "brand_cisco",
+    "type": "Brand",
+    "label": "cisco"
+  },
+  {
+    "id": "brand_ropel",
+    "type": "Brand",
+    "label": "ropel"
+  },
+  {
+    "id": "brand_lhclotus",
+    "type": "Brand",
+    "label": "lhclotus"
+  },
+  {
+    "id": "brand_vivo_v",
+    "type": "Brand",
+    "label": "vivo v"
+  },
+  {
+    "id": "brand_shenzhen_xin_sheng_shang_technology_coltd",
+    "type": "Brand",
+    "label": "shenzhen xin sheng shang technology co.,ltd"
+  },
+  {
+    "id": "brand_zte_corporation",
+    "type": "Brand",
+    "label": "zte corporation"
+  },
+  {
+    "id": "brand_huleo",
+    "type": "Brand",
+    "label": "huleo"
+  },
+  {
+    "id": "brand_junlucki",
+    "type": "Brand",
+    "label": "junlucki"
+  },
+  {
+    "id": "brand_coach",
+    "type": "Brand",
+    "label": "coach"
+  },
+  {
+    "id": "brand_ccylez",
+    "type": "Brand",
+    "label": "ccylez"
+  },
+  {
+    "id": "brand_the_light_phone",
+    "type": "Brand",
+    "label": "the light phone"
+  },
+  {
+    "id": "brand_satphonestore",
+    "type": "Brand",
+    "label": "satphonestore"
+  },
+  {
+    "id": "brand_lg220",
+    "type": "Brand",
+    "label": "lg220"
+  },
+  {
+    "id": "brand_shenzhen_aidier_technology_co_ltd",
+    "type": "Brand",
+    "label": "shenzhen aidier technology co ltd"
+  },
+  {
+    "id": "brand_cricket_wireless",
+    "type": "Brand",
+    "label": "cricket wireless"
+  },
+  {
+    "id": "brand_pet_caree",
+    "type": "Brand",
+    "label": "pet caree"
+  },
+  {
+    "id": "brand_phoneki",
+    "type": "Brand",
+    "label": "phone-ki"
+  },
+  {
+    "id": "brand_amgoo_telecom",
+    "type": "Brand",
+    "label": "amgoo telecom"
+  },
+  {
+    "id": "brand_ipro",
+    "type": "Brand",
+    "label": "ipro"
+  },
+  {
+    "id": "brand_just5",
+    "type": "Brand",
+    "label": "just5"
+  },
+  {
+    "id": "brand_sendo",
+    "type": "Brand",
+    "label": "sendo"
+  },
+  {
+    "id": "brand_digital_mobile",
+    "type": "Brand",
+    "label": "digital mobile"
+  },
+  {
+    "id": "brand_aeku",
+    "type": "Brand",
+    "label": "aeku"
+  }
+]

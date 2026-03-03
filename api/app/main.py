@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app.core.config import settings
@@ -10,12 +11,14 @@ from app.routers.health import router as health_router
 from app.routers.interactions import router as interactions_router
 from app.routers.products import router as products_router
 from app.routers.recommendations import router as recommendations_router
+from app.routers.users import router as users_router
 
 Base.metadata.create_all(bind=engine)
 
 tags_metadata = [
     {"name": "Health", "description": "Kiểm tra trạng thái API."},
     {"name": "Auth", "description": "Đăng ký và đăng nhập lấy JWT token."},
+    {"name": "Users", "description": "Danh sách user cho demo login."},
     {"name": "Products", "description": "Tìm kiếm và lấy chi tiết sản phẩm."},
     {"name": "Interactions", "description": "Ghi nhận hành vi người dùng (view/purchase)."},
     {"name": "Recommendations", "description": "Lấy danh sách gợi ý từ Core service."},
@@ -28,8 +31,17 @@ app = FastAPI(
     openapi_tags=tags_metadata,
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(health_router)
 app.include_router(auth_router, prefix="/api/v1")
+app.include_router(users_router, prefix="/api/v1")
 app.include_router(products_router, prefix="/api/v1")
 app.include_router(interactions_router, prefix="/api/v1")
 app.include_router(recommendations_router, prefix="/api/v1")

@@ -1,0 +1,259 @@
+## System Prompt
+
+```
+Bạn là một chuyên gia xây dựng Knowledge Graph. Nhiệm vụ của bạn là phân tích dữ liệu sản phẩm (CSV/JSON) và viết code xây dựng graph theo cấu trúc sau:
+
+## QUY TẮC TRÍCH XUẤT
+
+### Node Types (Loại node):
+1. **Product** — Sản phẩm chính (ASIN làm ID)
+2. **Brand** — Thương hiệu
+3. **Category** — Danh mục sản phẩm
+4. **Feature** — Tính năng nổi bật
+5. **Spec** — Thông số kỹ thuật (key-value)
+6. **Carrier** — Nhà mạng hỗ trợ
+7. **Technology** — Công nghệ kết nối (LTE, Wi-Fi, GSM...)
+8. **Accessory** — Phụ kiện đi kèm
+9. **Store** — Cửa hàng/Người bán
+
+### Edge Types (Loại quan hệ):
+- Product —BELONGS_TO→ Category
+- Product —MANUFACTURED_BY→ Brand
+- Product —SOLD_BY→ Store
+- Product —HAS_FEATURE→ Feature
+- Product —HAS_SPEC→ Spec
+- Product —SUPPORTS_CARRIER→ Carrier
+- Product —USES_TECHNOLOGY→ Technology
+- Product —INCLUDES_ACCESSORY→ Accessory
+- Product —BOUGHT_TOGETHER→ Product
+- Category —SUBCATEGORY_OF→ Category
+
+### Quy tắc quan trọng:
+1. Mỗi node phải có `id` duy nhất (dùng snake_case), `type`, và `properties`.
+2. Mỗi edge phải có `source`, `target`, `relationship`, và `properties` (nếu có).
+3. Tách các giá trị composite: ví dụ "32GB+3GB RAM" → 2 Spec nodes riêng biệt (storage, ram).
+4. Chuẩn hoá giá trị: loại bỏ ký tự thừa, thống nhất đơn vị.
+5. Trích xuất implicit relationships: ví dụ từ features text, suy ra carriers, technologies.
+6. Giữ rating & review count như properties của Product node.
+
+## OUTPUT FORMAT
+
+Viết code Trả về JSON với cấu trúc:
+
+{
+  "nodes": [
+    {
+      "id": "string",
+      "type": "Product|Brand|Category|...",
+      "label": "Tên hiển thị",
+      "properties": { ... }
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_id",
+      "target": "node_id",
+      "relationship": "BELONGS_TO|HAS_FEATURE|...",
+      "properties": { ... }
+    }
+  ]
+}
+```
+
+## User Prompt
+
+```
+Hãy chuyển dữ liệu sản phẩm dưới đây thành Knowledge Graph (nodes và edges).
+
+### DATA:
+Lấy ver2/data/meta_filterd.csv 
+
+### YÊU CẦU BỔ SUNG:
+- Chuẩn hoá các loại dữ liệu
+- Nếu price rỗng, đặt property price = null
+
+Trả về JSON hoàn chỉnh.
+```
+
+---
+
+## Ví dụ Output Mong Đợi (cho dữ liệu BLU Vivo XL4 - dữ liệu đầu tiên)
+
+```json
+{
+  "nodes": [
+    {
+      "id": "product_B07SDQ483V",
+      "type": "Product",
+      "label": "BLU Vivo XL4",
+      "properties": {
+        "asin": "B07SDQ483V",
+        "title": "BLU Vivo XL4 6.2\" HD Display Smartphone 32Gb+3Gb RAM, Black",
+        "average_rating": 4.2,
+        "rating_number": 3362,
+        "price": null,
+        "color": "Black",
+        "dimensions": "6.19 x 0.3 x 3 inches",
+        "weight": "8 ounces",
+        "model_number": "V0350WW BLACK",
+        "date_first_available": "2018-10-24",
+        "screen_size": "6.2 inches",
+        "display_resolution": "720x1520",
+        "form_factor": "Smartphone"
+      }
+    },
+    {
+      "id": "brand_blu",
+      "type": "Brand",
+      "label": "BLU"
+    },
+    {
+      "id": "store_blu",
+      "type": "Store",
+      "label": "BLU"
+    },
+    {
+      "id": "cat_cell_phones_accessories",
+      "type": "Category",
+      "label": "Cell Phones & Accessories"
+    },
+    {
+      "id": "cat_cell_phones",
+      "type": "Category",
+      "label": "Cell Phones"
+    },
+    {
+      "id": "feature_display",
+      "type": "Feature",
+      "label": "6.2\" HD+ 19:9 All Screen Design with Curved Glass Display"
+    },
+    {
+      "id": "feature_rear_camera",
+      "type": "Feature",
+      "label": "Dual AI Camera 13MP + 2MP with flash",
+      "properties": { "camera_position": "rear", "megapixels": [13, 2] }
+    },
+    {
+      "id": "feature_front_camera",
+      "type": "Feature",
+      "label": "Front Camera 13MP with flash",
+      "properties": { "camera_position": "front", "megapixels": 13 }
+    },
+    {
+      "id": "feature_battery",
+      "type": "Feature",
+      "label": "4000mAh Battery with Quick Charge",
+      "properties": { "capacity_mah": 4000, "quick_charge": "5V/2A" }
+    },
+    {
+      "id": "feature_fingerprint",
+      "type": "Feature",
+      "label": "Encrypted Fingerprint Sensor"
+    },
+    {
+      "id": "spec_storage",
+      "type": "Spec",
+      "label": "Internal Storage",
+      "properties": { "key": "storage", "value": "32GB" }
+    },
+    {
+      "id": "spec_ram",
+      "type": "Spec",
+      "label": "RAM",
+      "properties": { "key": "ram", "value": "3GB" }
+    },
+    {
+      "id": "spec_expandable_storage",
+      "type": "Spec",
+      "label": "Expandable Storage",
+      "properties": { "key": "micro_sd", "value": "up to 128GB" }
+    },
+    {
+      "id": "spec_processor",
+      "type": "Spec",
+      "label": "Processor",
+      "properties": { "key": "processor", "value": "Mediatek Helio P22", "clock_speed": "2.0GHz", "cores": 8 }
+    },
+    {
+      "id": "carrier_att",
+      "type": "Carrier",
+      "label": "AT&T"
+    },
+    {
+      "id": "carrier_tmobile",
+      "type": "Carrier",
+      "label": "T-Mobile"
+    },
+    {
+      "id": "carrier_cricket",
+      "type": "Carrier",
+      "label": "Cricket"
+    },
+    {
+      "id": "carrier_metro_pcs",
+      "type": "Carrier",
+      "label": "Metro PCS"
+    },
+    {
+      "id": "tech_4g_lte",
+      "type": "Technology",
+      "label": "4G LTE",
+      "properties": { "bands": [1,2,3,4,5,7,8,12,17,28,66] }
+    },
+    {
+      "id": "tech_3g",
+      "type": "Technology",
+      "label": "3G",
+      "properties": { "bands_mhz": [850,900,1700,1900,2100] }
+    },
+    {
+      "id": "tech_wifi",
+      "type": "Technology",
+      "label": "Wi-Fi"
+    },
+    {
+      "id": "tech_gsm",
+      "type": "Technology",
+      "label": "GSM"
+    },
+    {
+      "id": "accessory_charger",
+      "type": "Accessory",
+      "label": "Charger"
+    },
+    {
+      "id": "accessory_usb_cable",
+      "type": "Accessory",
+      "label": "USB Cable"
+    }
+  ],
+  "edges": [
+    { "source": "product_B07SDQ483V", "target": "brand_blu", "relationship": "MANUFACTURED_BY" },
+    { "source": "product_B07SDQ483V", "target": "store_blu", "relationship": "SOLD_BY" },
+    { "source": "product_B07SDQ483V", "target": "cat_cell_phones", "relationship": "BELONGS_TO" },
+    { "source": "cat_cell_phones", "target": "cat_cell_phones_accessories", "relationship": "SUBCATEGORY_OF" },
+    { "source": "product_B07SDQ483V", "target": "feature_display", "relationship": "HAS_FEATURE" },
+    { "source": "product_B07SDQ483V", "target": "feature_rear_camera", "relationship": "HAS_FEATURE" },
+    { "source": "product_B07SDQ483V", "target": "feature_front_camera", "relationship": "HAS_FEATURE" },
+    { "source": "product_B07SDQ483V", "target": "feature_battery", "relationship": "HAS_FEATURE" },
+    { "source": "product_B07SDQ483V", "target": "feature_fingerprint", "relationship": "HAS_FEATURE" },
+    { "source": "product_B07SDQ483V", "target": "spec_storage", "relationship": "HAS_SPEC" },
+    { "source": "product_B07SDQ483V", "target": "spec_ram", "relationship": "HAS_SPEC" },
+    { "source": "product_B07SDQ483V", "target": "spec_expandable_storage", "relationship": "HAS_SPEC" },
+    { "source": "product_B07SDQ483V", "target": "spec_processor", "relationship": "HAS_SPEC" },
+    { "source": "product_B07SDQ483V", "target": "carrier_att", "relationship": "SUPPORTS_CARRIER" },
+    { "source": "product_B07SDQ483V", "target": "carrier_tmobile", "relationship": "SUPPORTS_CARRIER" },
+    { "source": "product_B07SDQ483V", "target": "carrier_cricket", "relationship": "SUPPORTS_CARRIER" },
+    { "source": "product_B07SDQ483V", "target": "carrier_metro_pcs", "relationship": "SUPPORTS_CARRIER" },
+    { "source": "product_B07SDQ483V", "target": "tech_4g_lte", "relationship": "USES_TECHNOLOGY" },
+    { "source": "product_B07SDQ483V", "target": "tech_3g", "relationship": "USES_TECHNOLOGY" },
+    { "source": "product_B07SDQ483V", "target": "tech_wifi", "relationship": "USES_TECHNOLOGY" },
+    { "source": "product_B07SDQ483V", "target": "tech_gsm", "relationship": "USES_TECHNOLOGY" },
+    { "source": "product_B07SDQ483V", "target": "accessory_charger", "relationship": "INCLUDES_ACCESSORY" },
+    { "source": "product_B07SDQ483V", "target": "accessory_usb_cable", "relationship": "INCLUDES_ACCESSORY" }
+  ]
+}
+```
+
+---
+

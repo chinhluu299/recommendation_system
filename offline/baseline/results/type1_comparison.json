@@ -1,0 +1,30 @@
+[
+  {
+    "model": "Random",
+    "recall@10": 0.0,
+    "ndcg@10": 0.0,
+    "recall@20": 0.005,
+    "ndcg@20": 0.002403
+  },
+  {
+    "model": "Popularity",
+    "recall@10": 0.087,
+    "ndcg@10": 0.044705,
+    "recall@20": 0.128,
+    "ndcg@20": 0.054986
+  },
+  {
+    "model": "MF / SVD",
+    "recall@10": 0.05,
+    "ndcg@10": 0.028113,
+    "recall@20": 0.077,
+    "ndcg@20": 0.034858
+  },
+  {
+    "model": "KGAT (epoch=54, Recall@10=0.0810)",
+    "recall@10": 0.072,
+    "ndcg@10": 0.032611,
+    "recall@20": 0.112,
+    "ndcg@20": 0.042648
+  }
+]

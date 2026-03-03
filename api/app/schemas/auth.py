@@ -31,8 +31,20 @@ class LoginRequest(BaseModel):
     }
 
 
+class LoginAsRequest(BaseModel):
+    """Demo login: đăng nhập bằng external_user_id, không cần password."""
+    external_user_id: str = Field(description="Amazon user ID từ dataset")
+
+    model_config = {
+        "json_schema_extra": {
+            "example": {"external_user_id": "AHATA6X6MYTC3VNBFJ3WIYVK257A"}
+        }
+    }
+
+
 class AuthTokenResponse(BaseModel):
     access_token: str = Field(description="JWT access token")
     token_type: str = Field(default="bearer", description="Loại token")
     user_id: int = Field(description="ID người dùng")
-    email: EmailStr = Field(description="Email người dùng")
+    email: str | None = Field(default=None, description="Email người dùng")
+    external_user_id: str | None = Field(default=None, description="Amazon user ID")

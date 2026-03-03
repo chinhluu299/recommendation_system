@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Search, X, ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 import {
   Dialog,
@@ -11,16 +12,16 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-// TODO: Replace with real search API results
 const TRENDING_SEARCHES = [
-  "Wireless Headphones",
-  "Noise Cancellation",
-  "Gaming Headset",
-  "Bluetooth Earbuds",
-  "Studio Monitor",
+  "Samsung Galaxy",
+  "iPhone unlocked",
+  "điện thoại pin lớn",
+  "smartphone dưới 200 dollar",
+  "Motorola 5G",
 ];
 
 const SearchBar = () => {
+  const router = useRouter();
   const [open, setOpen] = React.useState(false);
   const [query, setQuery] = React.useState("");
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -38,6 +39,12 @@ const SearchBar = () => {
       setQuery("");
     }
   }, [open]);
+
+  const doSearch = (q: string) => {
+    if (!q.trim()) return;
+    setOpen(false);
+    router.push(`/?q=${encodeURIComponent(q)}`);
+  };
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
@@ -71,6 +78,11 @@ const SearchBar = () => {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.nativeEvent.isComposing) {
+                  doSearch(query);
+                }
+              }}
               placeholder="Search products…"
               className="flex-1 bg-transparent text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none"
             />
@@ -99,10 +111,7 @@ const SearchBar = () => {
                 <li key={item}>
                   <button
                     type="button"
-                    onClick={() => {
-                      setQuery(item);
-                      // TODO: trigger actual search / navigate to results
-                    }}
+                    onClick={() => doSearch(item)}
                     className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-gray-700 transition-colors hover:bg-emerald-50 hover:text-emerald-800"
                   >
                     <Search className="size-3.5 shrink-0 text-gray-400" />

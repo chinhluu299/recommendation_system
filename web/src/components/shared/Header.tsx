@@ -2,12 +2,14 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { ShoppingCart } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { ShoppingCart, LogOut, PanelRightOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import UserInteractionsSidebar from "@/components/features/UserInteractionsSidebar";
 import {
   AUTH_STATE_CHANGE_EVENT,
+  clearStoredAuthUser,
   getUserInitials,
   readStoredAuthUser,
   type AuthUser,
@@ -15,7 +17,10 @@ import {
 
 const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const [currentUser, setCurrentUser] = React.useState<AuthUser | null>(null);
+  const [showUserMenu, setShowUserMenu] = React.useState(false);
+  const [isInteractionsSidebarOpen, setIsInteractionsSidebarOpen] = React.useState(false);
   const navigationItems = [
     { label: "Home", href: "/" },
     { label: "Products", href: "/products" },
@@ -35,6 +40,13 @@ const Header = () => {
       window.removeEventListener(AUTH_STATE_CHANGE_EVENT, syncCurrentUser);
     };
   }, []);
+
+  const handleSignOut = () => {
+    clearStoredAuthUser();
+    setShowUserMenu(false);
+    setIsInteractionsSidebarOpen(false);
+    router.push("/auth/signin");
+  };
 
   return (
     <nav className="border-b bg-transparent backdrop-blur-md w-full md:sticky md:top-0 md:z-50">
@@ -91,17 +103,60 @@ const Header = () => {
             </Link>
           </Button>
 
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            disabled={!currentUser}
+            onClick={() => setIsInteractionsSidebarOpen(true)}
+            className="size-8 rounded-full hover:bg-gray-100 disabled:opacity-50 sm:size-10"
+            aria-label="Open user interactions"
+          >
+            <PanelRightOpen className="size-4 text-gray-700 sm:size-5" />
+          </Button>
+
           {currentUser ? (
-            <Button
-              type="button"
-              variant="outline"
-              className="flex h-9 items-center gap-2 rounded-full border-emerald-200 bg-white/70 px-3 text-sm font-medium text-[#003d29] shadow-sm backdrop-blur-sm hover:bg-white sm:h-10 sm:px-4"
-            >
-              <Avatar className="size-7 border border-emerald-200 sm:size-8">
-                <AvatarFallback>{getUserInitials(currentUser)}</AvatarFallback>
-              </Avatar>
-              <span>Account</span>
-            </Button>
+            <div className="relative">
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => setShowUserMenu((v) => !v)}
+                className="flex h-9 items-center gap-2 rounded-full border-emerald-200 bg-white/70 px-3 text-sm font-medium text-[#003d29] shadow-sm backdrop-blur-sm hover:bg-white sm:h-10 sm:px-4"
+              >
+                <Avatar className="size-7 border border-emerald-200 sm:size-8">
+                  <AvatarFallback>{getUserInitials(currentUser)}</AvatarFallback>
+                </Avatar>
+                <span className="hidden sm:inline">{currentUser.name || "Account"}</span>
+              </Button>
+
+              {showUserMenu && (
+                <>
+                  {/* Backdrop để đóng menu khi click ra ngoài */}
+                  <div
+                    className="fixed inset-0 z-10"
+                    onClick={() => setShowUserMenu(false)}
+                  />
+                  <div className="absolute right-0 top-full z-20 mt-1 w-44 rounded-xl border border-gray-100 bg-white py-1 shadow-lg">
+                    <div className="border-b border-gray-100 px-4 py-2">
+                      <p className="truncate text-xs font-medium text-gray-900">
+                        {currentUser.name}
+                      </p>
+                      <p className="truncate text-xs text-gray-400">
+                        {currentUser.externalUserId ?? currentUser.email}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={handleSignOut}
+                      className="flex w-full items-center gap-2 px-4 py-2 text-sm text-red-600 hover:bg-red-50"
+                    >
+                      <LogOut className="size-4" />
+                      Sign Out
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
           ) : (
             <Button
               asChild
@@ -112,6 +167,12 @@ const Header = () => {
           )}
         </div>
       </div>
+
+      <UserInteractionsSidebar
+        open={isInteractionsSidebarOpen}
+        onOpenChange={setIsInteractionsSidebarOpen}
+        currentUser={currentUser}
+      />
     </nav>
   );
 };

@@ -1,6 +1,9 @@
 export type AuthUser = {
   name: string;
   email: string;
+  token: string;
+  userId: number;
+  externalUserId: string | null;
 };
 
 export const AUTH_STORAGE_KEY = "vibe.auth.user";
@@ -30,7 +33,7 @@ export const readStoredAuthUser = (): AuthUser | null => {
 
 export const writeStoredAuthUser = (
   user: AuthUser,
-  rememberMe: boolean,
+  rememberMe: boolean = true,
 ): void => {
   if (!isBrowser()) {
     return;
@@ -56,11 +59,15 @@ export const clearStoredAuthUser = (): void => {
   window.dispatchEvent(new Event(AUTH_STATE_CHANGE_EVENT));
 };
 
+export const getAuthToken = (): string | null => {
+  return readStoredAuthUser()?.token ?? null;
+};
+
 export const getUserInitials = (user: AuthUser): string => {
   const parts = user.name.trim().split(/\s+/).filter(Boolean);
 
   if (parts.length === 0) {
-    return user.email.slice(0, 2).toUpperCase();
+    return (user.email || user.externalUserId || "U").slice(0, 2).toUpperCase();
   }
 
   return parts
