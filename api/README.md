@@ -3,7 +3,7 @@
 ## 1) Setup
 
 ```bash
-cd api
+cd recommendation_system/api
 cp .env.example .env
 python3 -m venv venv
 source venv/bin/activate
@@ -27,7 +27,30 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 Swagger: `http://localhost:8000/docs`
 
-## 2) API Design
+## 2) Import Product Data (JSONL)
+
+Project có sẵn command import dữ liệu JSONL vào bảng `products`:
+Note: Tải dữ liệu 65k trên nhóm Zalo
+
+```bash
+python3 -m app.command.import_products_jsonl \
+  --input ../../data_format/meta_Cell_Phones_and_Accessories_65k_cleaned.jsonl
+```
+
+Nếu muốn xóa toàn bộ dữ liệu cũ trước khi import:
+
+```bash
+python3 -m app.command.import_products_jsonl \
+  --input ../../data_format/meta_Cell_Phones_and_Accessories_65k_cleaned.jsonl \
+  --truncate
+```
+
+Lưu ý:
+- Nếu bạn đang đứng ở thư mục `recommendation_system/api`, đường dẫn đúng tới dữ liệu là `../../data_format/...` (không phải `../data_format/...`).
+- Command cũng hỗ trợ chạy trực tiếp file:
+  `python3 app/command/import_products_jsonl.py --input ../../data_format/...`
+
+## 3) API Design
 
 Base path: `/api/v1`
 Response chuẩn chung cho tất cả endpoint:
@@ -48,15 +71,13 @@ Response chuẩn chung cho tất cả endpoint:
 - `POST /recommendations`: gọi core service `/recommend` để lấy gợi ý
 - `GET /health`: kiểm tra service
 
-## 3) Database Tables
+## 4) Database Tables
 
 - `users`
 - `products`
 - `interactions`
 
-Bạn có thể tự nạp dữ liệu Amazon Review 2023 (Cellphone & accessories) vào bảng `products`.
-
-## 4) Example Recommendation Payload
+## 5) Example Recommendation Payload
 
 ```json
 {
