@@ -1,0 +1,9 @@
+
+fastapi
+uvicorn
+pandas
+numpy
+torch
+torch_geometric
+sentence-transformers
+requests
