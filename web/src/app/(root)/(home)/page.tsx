@@ -1,5 +1,6 @@
 import Banner from "@/components/features/Banner";
 import ProductList from "@/components/features/ProducList";
+import SearchBar from "@/components/features/SearchBar";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -7,6 +8,10 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Banner />
+
+      <section className="mx-auto w-full max-w-7xl px-3 sm:px-4 md:px-0">
+        <SearchBar />
+      </section>
 
       <section className="mx-auto w-full max-w-7xl px-3 pt-4 sm:px-4 sm:pt-6 md:px-0 md:pt-8 lg:pt-10">
         <div className="mb-2 flex flex-col items-start gap-4 sm:gap-2 md:flex-row md:items-center md:justify-between">
