@@ -1,19 +1,43 @@
 "use client";
 
+import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import {
+  AUTH_STATE_CHANGE_EVENT,
+  getUserInitials,
+  readStoredAuthUser,
+  type AuthUser,
+} from "@/lib/auth";
 
 const Header = () => {
   const pathname = usePathname();
+  const [currentUser, setCurrentUser] = React.useState<AuthUser | null>(null);
   const navigationItems = [
     { label: "Home", href: "/" },
     { label: "Products", href: "/products" },
   ];
 
+  React.useEffect(() => {
+    const syncCurrentUser = () => {
+      setCurrentUser(readStoredAuthUser());
+    };
+
+    syncCurrentUser();
+    window.addEventListener("storage", syncCurrentUser);
+    window.addEventListener(AUTH_STATE_CHANGE_EVENT, syncCurrentUser);
+
+    return () => {
+      window.removeEventListener("storage", syncCurrentUser);
+      window.removeEventListener(AUTH_STATE_CHANGE_EVENT, syncCurrentUser);
+    };
+  }, []);
+
   return (
-    <nav className="border-b bg-white w-full">
+    <nav className="border-b bg-transparent backdrop-blur-md w-full md:sticky md:top-0 md:z-50">
       <div className="mx-auto flex h-14 w-full max-w-7xl items-center gap-3 px-3 sm:h-16 sm:gap-6 sm:px-4 md:px-0">
         {/* 1. LOGO */}
         <Link href="/" className="flex items-center shrink-0">
@@ -67,13 +91,25 @@ const Header = () => {
             </Link>
           </Button>
 
-          {/* AUTH BUTTON */}
-          <Button
-            asChild
-            className="rounded-full bg-[#003d29] px-3 py-1.5 text-[11px] font-medium text-white hover:bg-[#002a1c] sm:px-6 sm:py-2 sm:text-sm"
-          >
-            <Link href="/auth">Sign In</Link>
-          </Button>
+          {currentUser ? (
+            <Button
+              type="button"
+              variant="outline"
+              className="flex h-9 items-center gap-2 rounded-full border-emerald-200 bg-white/70 px-3 text-sm font-medium text-[#003d29] shadow-sm backdrop-blur-sm hover:bg-white sm:h-10 sm:px-4"
+            >
+              <Avatar className="size-7 border border-emerald-200 sm:size-8">
+                <AvatarFallback>{getUserInitials(currentUser)}</AvatarFallback>
+              </Avatar>
+              <span>Account</span>
+            </Button>
+          ) : (
+            <Button
+              asChild
+              className="rounded-full bg-[#003d29] px-3 py-1.5 text-[11px] font-medium text-white hover:bg-[#002a1c] sm:px-6 sm:py-2 sm:text-sm"
+            >
+              <Link href="/auth">Sign In</Link>
+            </Button>
+          )}
         </div>
       </div>
     </nav>
