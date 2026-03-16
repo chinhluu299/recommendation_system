@@ -2,6 +2,7 @@
 
 import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { z } from "zod";
@@ -13,6 +14,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { writeStoredAuthUser } from "@/lib/auth";
 
 const signInSchema = z.object({
   email: z.email("Please enter a valid email address."),
@@ -42,6 +44,7 @@ const signIn = async (payload: SignInPayload) => {
 };
 
 export default function SignInPage() {
+  const router = useRouter();
   const [formData, setFormData] = useState<SignInFormState>({
     email: "",
     password: "",
@@ -51,8 +54,24 @@ export default function SignInPage() {
 
   const signInMutation = useMutation({
     mutationFn: signIn,
-    onSuccess: () => {
+    onSuccess: (_, payload) => {
+      const nameFromEmail = payload.email.split("@")[0] ?? "Account";
+      const formattedName = nameFromEmail
+        .split(/[._-]/)
+        .filter(Boolean)
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(" ");
+
+      writeStoredAuthUser(
+        {
+          name: formattedName || "Account",
+          email: payload.email,
+        },
+        payload.rememberMe,
+      );
       toast.success("Sign in successful.");
+      router.push("/");
+      router.refresh();
     },
     onError: (error) => {
       toast.error(
