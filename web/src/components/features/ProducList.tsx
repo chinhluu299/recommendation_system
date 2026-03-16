@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Heart, ShoppingCart } from "lucide-react";
 import {
   Card,
@@ -28,6 +29,7 @@ export type Product = {
   description: string;
   price: number;
   image: string;
+  images?: string[];
   isFavorite?: boolean;
 };
 
@@ -100,6 +102,7 @@ const ProductList = ({
   showPagination = false,
   paginationBasePath = "/products",
 }: ProductListProps) => {
+  const router = useRouter();
   const [favorites, setFavorites] = React.useState<Set<number>>(new Set());
 
   const toggleFavorite = (productId: number) => {
@@ -112,7 +115,11 @@ const ProductList = ({
     setFavorites(newFavorites);
   };
 
-  const addToCart = (productId: number) => {
+  const addToCart = (
+    event: React.MouseEvent<HTMLButtonElement>,
+    productId: number,
+  ) => {
+    event.stopPropagation();
     // TODO: Implement add to cart functionality
     console.log(`Added product ${productId} to cart`);
   };
@@ -123,7 +130,9 @@ const ProductList = ({
         {products.map((product) => (
           <Card
             key={product.id}
-            className="overflow-hidden hover:shadow-lg transition-shadow duration-300 p-0"
+            data-product-id={product.id}
+            onClick={() => router.push(`/products/${product.id}`)}
+            className="overflow-hidden hover:shadow-lg transition-shadow duration-300 p-0 cursor-pointer"
           >
             {/* PRODUCT IMAGE WITH HEART ICON */}
             <CardContent className="p-0 relative group">
@@ -138,7 +147,11 @@ const ProductList = ({
 
                 {/* HEART ICON - ABSOLUTE TOP RIGHT */}
                 <button
-                  onClick={() => toggleFavorite(product.id)}
+                  type="button"
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    toggleFavorite(product.id);
+                  }}
                   className="absolute top-3 right-3 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors duration-200 shadow-md"
                   aria-label="Add to favorites"
                 >
@@ -171,7 +184,8 @@ const ProductList = ({
             {/* CARD FOOTER - ADD TO CART BUTTON */}
             <CardFooter className="pb-8 md:pb-2 flex justify-start">
               <Button
-                onClick={() => addToCart(product.id)}
+                type="button"
+                onClick={(event) => addToCart(event, product.id)}
                 className="w-3/4 text-black rounded-full bg-transparent hover:bg-emerald-600 hover:text-white border border-black hover:border-emerald-600 px-6 text-sm sm:text-base transition-all"
               >
                 <ShoppingCart className="size-4 mr-1" />
