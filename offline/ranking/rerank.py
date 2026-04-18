@@ -1,33 +1,5 @@
 #!/usr/bin/env python3
-"""
-rerank.py – KGAT-based re-ranker cho query pipeline.
 
-Nhận top-K sản phẩm từ Neo4j query engine → re-rank theo personalization.
-
-─── Cách dùng ──────────────────────────────────────────────────────────────────
-
-  from ranking.rerank import KGATReranker
-
-  ranker = KGATReranker()   # load checkpoint một lần duy nhất
-
-  # 1. Re-rank danh sách ASIN
-  ranked_asins = ranker.rerank(
-      user_id="AHATA6X6MYTC3VNBFJ3WIYVK257A",
-      product_asins=["B00M78E4MS", "B075QWLV3J", "B01N9JY4JT"],
-  )
-
-  # 2. Re-rank trực tiếp records từ pipeline.ask()
-  result = pipeline.ask("điện thoại pin lớn dưới 300k")
-  ranked_records = ranker.rerank_records(
-      user_id="AHATA6X6MYTC3VNBFJ3WIYVK257A",
-      records=result.records,
-  )
-
-─── Cold-start ─────────────────────────────────────────────────────────────────
-  Nếu user_id chưa từng xuất hiện trong tập huấn luyện, reranker dùng
-  centroid embedding của tất cả users (average user). Điều này cho phép
-  pipeline hoạt động ngay cả với user mới, dù chất lượng cá nhân hoá thấp hơn.
-"""
 
 from __future__ import annotations
 

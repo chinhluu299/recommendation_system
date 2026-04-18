@@ -1,28 +1,3 @@
-#!/usr/bin/env python3
-"""
-Build Knowledge Graph from Amazon product metadata CSV.
-
-Node types  : Product, Brand, Category, Feature, Spec,
-              Carrier, Technology, Accessory, Store, User
-Edge types  : MANUFACTURED_BY, SOLD_BY, BELONGS_TO, SUBCATEGORY_OF,
-              HAS_FEATURE, HAS_SPEC, SUPPORTS_CARRIER,
-              USES_TECHNOLOGY, INCLUDES_ACCESSORY, BOUGHT_TOGETHER,
-              RATE
-
-Output layout:
-  output/
-    nodes/
-      products.json, brands.json, categories.json, features.json,
-      specs.json, carriers.json, technologies.json, accessories.json,
-      stores.json, users.json
-    edges/
-      manufactured_by.json, sold_by.json, belongs_to.json,
-      subcategory_of.json, has_feature.json, has_spec.json,
-      supports_carrier.json, uses_technology.json,
-      includes_accessory.json, bought_together.json, rate.json
-    summary.json
-"""
-
 import ast
 import csv
 import json

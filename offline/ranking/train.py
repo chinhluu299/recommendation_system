@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""
-train.py – Huấn luyện KGAT với BPR loss trên Collaborative Knowledge Graph.
-
-Chạy từ ver2/:
-    python -m ranking.train
-    python -m ranking.train --epochs 50 --embed_dim 64 --n_layers 3
-
-Trước khi chạy hãy chạy:
-    python -m ranking.build_data
-
-Checkpoint lưu vào ranking/checkpoints/:
-  best_model.pt   — model tốt nhất theo Recall@10 trên tập validate
-  last_model.pt   — model cuối cùng (checkpoint cuối epoch)
-"""
 
 import argparse
 import json

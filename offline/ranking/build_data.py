@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""
-build_data.py
-Đọc output của knowledge_graph/ (JSON) → serialize dữ liệu huấn luyện KGAT.
-
-Chạy từ ver2/:
-    python -m ranking.build_data
-
-Output lưu vào ranking/data/:
-  entity2id.json      {str_node_id -> int}        — mọi entity (user + item + KG)
-  relation2id.json    {relation_str -> int}        — chỉ quan hệ gốc (inverse = id + n_rel)
-  interactions.pkl    {user_int -> [item_int, ...]} — positive interactions (rating >= 3.0)
-  ckg_triples.npy     (N, 3) int32 [head, rel, tail] — CKG gồm cả forward + inverse
-  stats.json          thống kê dataset
-"""
 
 import json
 import pickle
