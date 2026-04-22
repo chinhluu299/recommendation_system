@@ -1,0 +1,1813 @@
+[
+  {
+    "id": 1,
+    "query_type": "filter",
+    "query": "điện thoại ASUS 5G 256GB RAM 8GB",
+    "target_asin": "B095S16FFL",
+    "product_title": "Asus Zenfone 8 ZS590KS 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+    "product_brand": "ASUS",
+    "product_price": 610.0,
+    "product_rating": 3.5,
+    "product_features": [
+      "NOTE: International Version. No Warranty. This device will work with GSM service providers like AT&T, T-Mobile, MetroPCS, and most other GSM service providers. It will not work with CDMA service providers like Verizon, US Cellular, Sprint, or any other CDMA service providers. Please check device compatibility with your cell phone provider before you place your order.",
+      "Storage: 256GB 8GB RAM",
+      "Display: 5.9-inch 20:9 (2400 x 1080) 120 Hz / 1 ms Samsung AMOLED display"
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "256GB",
+      "ram": "8GB"
+    }
+  },
+  {
+    "id": 2,
+    "query_type": "filter",
+    "query": "điện thoại rugged 5G 256GB RAM 15GB",
+    "target_asin": "B0BXXN6QFS",
+    "product_title": "DOOGEE V30 Rugged Smartphone(2023), eSIM Dual 5G 15GB+256GB Rugged Phone Unlocked, 6.6\" FHD+ /120Hz Rugged Cell Phone, Dual Hi-Res Speakers, Android 12, 108MP Triple Camera, Night Vision, NFC, OTG",
+    "product_brand": "DOOGEE",
+    "product_price": 529.99,
+    "product_rating": 3.6,
+    "product_features": [
+      "【Built-in eSIM Global Network Connected】Connecting with the global world is a breeze with built-in eSIM DOOGEE V30 rugged smartphone. Achieve multiple phone numbers and multiple countries' data plans in a phone. Before you go, activate an eSIM for the local you are visiting.",
+      "【MediaTek Dimensity 900 & 15GB+256GB】Equips MediaTek Dimensity 900 rugged 5G smartphone provides brilliant operating experience. 2.4Ghz & 6nm advanced processor to highly efficiently manage system to save energy for long-lasting, stay away from delayed, crashes or got hot on hand as well. With 15GB RAM (8GB+7GB virtual RAM) + 256GB ROM, TF card expands up to 1TB 5G android phone supports smoother multitasking and more powerful storage space. (Please activated the max 7GB virtual memory in settings if needed.)",
+      "【6.6\" FHD+ Immersive Audiovisual Experience】DOOGEE V30 5G rugged phone features 6.6\" Full HD+ vivid waterdrop screen, 2408*1080 resolution, 401 PPI, 19:9 Aspect Ratio, 480nits brightness, 120Hz refresh rate display and dual Hi-Res speakers to enhance more realistic audiovisual experience, smoother touching on hands while in playing games, watching videos, scrolling content and more."
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "256GB",
+      "ram": "15GB"
+    }
+  },
+  {
+    "id": 3,
+    "query_type": "filter",
+    "query": "điện thoại RCA 4G LTE 16GB RAM 2GB",
+    "target_asin": "B01MRHWQWV",
+    "product_title": "RCA Q1 4G LTE, 16GB, Unlocked Dual SIM Cell Phone, Android 6.0 - White",
+    "product_brand": "RCA",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [
+      "Unlocked Dual SIM 4G LTE smartphone, 5.0 inch HD display, quad core processing power in a great value product",
+      "Android 6.0 Marshmallow with 16 GB Internal memory and 2 GB RAM. Slot for an optional mircoSD card with up to 32 GB capacity",
+      "Great battery performance with a 2400 mAh battery, browse, stream music, watch video, and play games at blazing speed, WiFi networking with WiFi mobile hotspot and tethering capabilities, GPS for navigation and location services,"
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "16GB",
+      "ram": "2GB"
+    }
+  },
+  {
+    "id": 4,
+    "query_type": "filter",
+    "query": "smartphone 4G 16GB RAM 3GB",
+    "target_asin": "B00YOON8CA",
+    "product_title": "LETV LE 1 Unlocked 4G Smartphone Android 5.0 Octa Core 2.2GHZ 3GB RAM 16GB ROM with 5.5 Inch Screen (Sliver)",
+    "product_brand": "nan",
+    "product_price": null,
+    "product_rating": 2.8,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "16GB",
+      "ram": "3GB"
+    }
+  },
+  {
+    "id": 5,
+    "query_type": "filter",
+    "query": "điện thoại realme 5G 256GB RAM 12GB",
+    "target_asin": "B08ZBHZ25Q",
+    "product_title": "Realme GT 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - Not Compatible with Verizon/Sprint) China Version | No Google Play - Blue",
+    "product_brand": "Realme Dealer",
+    "product_price": null,
+    "product_rating": 2.0,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "256GB",
+      "ram": "12GB"
+    }
+  },
+  {
+    "id": 6,
+    "query_type": "filter",
+    "query": "điện thoại Kyocera nắp gập 4G LTE 16GB",
+    "target_asin": "B08C6YB4LY",
+    "product_title": "Kyocera DuraXV Extreme E4810 16GB Verizon | Ultra-Rugged Flip Phone IP68 Rated | 4G LTE HD Voice| 5MP Camera | 1770mAh Battery",
+    "product_brand": "Kyocera",
+    "product_price": 234.99,
+    "product_rating": 4.1,
+    "product_features": [
+      "Intelligent, compact and virtually indestructible, the ultra-rugged DuraXV Extreme performs under even the most challenging conditions.",
+      "Military Standard 810G for dust, shock, vibration, temperature extremes, blowing rain, low pressure, solar radiation, salt fog, humidity, freeze-thaw and icing/freezing rain | Drop proof up to 5 ft. (1.5m) onto concrete | IP68 dust proof, waterproof up to 6.5 ft. (2m) up to 30 minutes | Non-Incendive, Class I, Division 2 hazardous location certification | Rubberized housing for secure hold and extra durability",
+      "Customizable menu to set frequently used apps | Multiple programmable keys including SOS*, Push To Talk, Speaker key, Call List key, and 4-way navigation keys | Large font, tactile keypad and a clear display for superior readability | Headset jack includes an integrated camlock to securely fasten accessories to device"
+    ],
+    "extracted_specs": {
+      "brand": "Kyocera",
+      "network": "4G LTE",
+      "storage": "16GB",
+      "ram": "2GB"
+    }
+  },
+  {
+    "id": 7,
+    "query_type": "filter",
+    "query": "điện thoại 4G 16GB RAM 2GB giá rẻ",
+    "target_asin": "B00U78RBWU",
+    "product_title": "THL 2015 5 Inch IPS FHD Android 4.4 MTK6752L 8-Core 4G Phone SONY13MP CAM 2GB RAM 16GB ROM (Black)",
+    "product_brand": "Luminira",
+    "product_price": null,
+    "product_rating": 4.0,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "16GB",
+      "ram": "2GB"
+    }
+  },
+  {
+    "id": 8,
+    "query_type": "filter",
+    "query": "điện thoại 4G màn hình lớn 128GB RAM 4GB",
+    "target_asin": "B0BMPTQ253",
+    "product_title": "Dilwe 6.7'' Pro Max Smartphone Unlocked 4G, 6.7Inch Large Screen, 4GB 128GB Face Unlock Cell Phone for Android 12.0, 16MP 8MP Dual Camera, SIM Slots, 4000mAh Battery(6.7'' Black)",
+    "product_brand": "Dilwe",
+    "product_price": 118.61,
+    "product_rating": 1.6,
+    "product_features": [
+      "【6.7\" HD+ 4GB+128GB+ For Android】:This is an Android phone, not an IOS phone, please make sure you don't mind before you buy. The Pro Max unlocked phone adopts a 6.7inch large HD IPS touch screen, has extraordinary bright colors and brings a broader visual experience, with 4GB RAM+128GB ROM meet your productivity and entertainment needs, based on the in depth development for Android system, makes the operation simple and easy, support Bluetooth, 5G WIFI, GPS.",
+      "【3 Cards Slots +4G SIM Bands】This is 4G phone, SIM card frequency band support: 3G, WCDMA850, 1900, 2100MHz; 4G, B1, B2, B4, B5, B7, B8, B20, B28A, B28B, B40, dual SIM dual standby.; 3 card slots (Can be installed two nano sim card and a micro memory card at the same time). Micro memory card supports up to 128G. TF memory card supports up to 128GB. Due to different regional carriers, please contact your SIM card carriers to confirm whether the SIM bands are supported before purchase.",
+      "【Dual Camera +For Seniors And Children Gift】The smartphone with 16MP rear camera and 8MP front camera, easily for record your daily life and precious moments. This 6.7\" large screen smartphone is perfect for chatting, watching videos, listening to music, watching movies, is perfect as a backup phone for daily use or as a gift for the seniors and children. This phone cost effective yet powerful functionality but not suitable for playing large games, thank you for your support."
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "128GB",
+      "ram": "4GB"
+    }
+  },
+  {
+    "id": 9,
+    "query_type": "filter",
+    "query": "điện thoại 3G 8GB RAM 1GB nhỏ gọn",
+    "target_asin": "B08ZT1K3D5",
+    "product_title": "Unlocked Smartphone, Rino4 Pro Android Cell Phones Unlocked, 6.1in Full Screen, 1GB RAM 8GB ROM, 2200mAh Battery, 128GB Extension, Dual SIM, Face ID & Finger Reader, Global Version(Green)",
+    "product_brand": "Kudoo",
+    "product_price": 76.44,
+    "product_rating": 3.4,
+    "product_features": [
+      "3G Network & Dual SIM: Please Confirm Your SIM Card's Compatibility with Your Carrier Before Order! This Rino4 Pro support 3G (WCDMA2100,GSM4 frequency dual card dual standby). Please contact us if you’re not sure! Besides, it supports 3G Network Dual SIM Dual Standby. Please always feel free to contact us for a satisfactory solution if there is any issues.",
+      "5.45in Full HD Smartphone: The smartphone with 5.45in full HD screen to enhance your usage experience, 5-point touching screen, face unlock, smart wake up.Small size and lightweight, easy to carry and store, convenient to use.",
+      "1GB RAM + 8GB ROM + 128GB Expandable Storage: Powerful processor, greatly improved network, runtime speed, frame rate and image smoothness when playing large games and multitasking. Up to 128GB of expandable storage, supports simultaneous use of 2 SIM cards for data and phone calls, or simultaneous use of Micro memory cards for data storage."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "8GB",
+      "ram": "1GB"
+    }
+  },
+  {
+    "id": 10,
+    "query_type": "filter",
+    "query": "điện thoại 4G 8GB RAM 512GB màn hình lớn",
+    "target_asin": "B0B4NQKGTT",
+    "product_title": "4G Android Smartphone, S22 Ultra Dual Sim Cell Phone, 8G+512GB Factory Unlocked Mobile Phone with 7.3in Waterdrop Screen,48+100 MP | 7300mAh | Fingerprint Lock&Face ID | S Pen | US Version (Blue)",
+    "product_brand": "SHOTBOW",
+    "product_price": null,
+    "product_rating": 2.4,
+    "product_features": [
+      "【Global Bands Smart Phone】Factory unlocked android phone compatible with various 4G LTE network operators,unlocked phones does NOT Work with AT&T, Cricket , CDMA Networks like Verizon ,Sprint and Boost (support main carriers such as T-mobile, Metro PCS&etc. You need to ask to help set correct APN to use the 4G network.",
+      "【8GB+ 512GB Mobile Phone】Dual Card Dual Standby smartphone support for expansion of 128GB (support for simultaneous installation of two SIM cards and a TF card). 8GB RAM and 512GB ROM.s22 mobile phones built-in all-in-one computer, high-grade hot-bending glass back cover,7200mAh large-capacity battery can ensure 72 hours of standby",
+      "【Face ID& Fingerprint Unlock Cellphone】7.3 inch large screen unlocked android phones with face + Fingerprint recognition function, 5 points touch the capacitive touch screen. Magnesium aluminum body, Nano 3D electroplating gradient glass back cover.video brightest display S22 Cellphone Support WIFI+BT+FM+GPS function,USB C interface, 3.5mm standard headphone jack"
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "8GB",
+      "ram": "8GB"
+    }
+  },
+  {
+    "id": 11,
+    "query_type": "filter",
+    "query": "điện thoại mini 3G 8GB ROM 1GB RAM",
+    "target_asin": "B08CZXLG99",
+    "product_title": "Ytwtech Mini Smartphone, 3G Dual SIM 2.4 Inch Tiny Mobile Phone 1G+8G 5.0MP High Definition Kids Phone Unlocked Pocket Backup Cellphone (Black)",
+    "product_brand": "Ytwtech",
+    "product_price": null,
+    "product_rating": 3.5,
+    "product_features": [
+      "UNLOCKED CELL PHONE：this mini cell phone is unlocked, compatible with micro and SIM card and TF card. Supports 3G worknet. NOTE: This mini smartphone do not work with CDMA Carriers.",
+      "SUPER MINI: 2.4 inch Touchscreen is the smallest mini smartphone in the world hold in one hand, portable and very space saving, suitable for travel and daily life and work time.We send protect case for free, no worry about damage.Body Size：3.4*1.6*0.38 inch",
+      "FUNCTIONS: Tiny Phone with many functions. It supports Calling, Camera, Sound Record, Email, MP3 Player, GPRS, FM Radio, Touchscreen, GPS Navigation, Message, Bluetooth, Video Player, Wi-Fi, Memory Card Slots,internet browser, Google play store."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "8GB",
+      "ram": "1GB"
+    }
+  },
+  {
+    "id": 12,
+    "query_type": "filter",
+    "query": "smartphone nhỏ gọn 3G 1GB RAM 8GB ROM",
+    "target_asin": "B0B3J4PJWR",
+    "product_title": "Etigood Mini Smartphone Unlocked 1GB RAM 8GB ROM Small Cell Phones, 2.5'' Touch Screen Quad Core Android Tiny Phone/MTK6580/3G Dual SIM/HD Camera/Slim Body Mobile Phone(Black)",
+    "product_brand": "Etigood",
+    "product_price": 56.99,
+    "product_rating": 3.2,
+    "product_features": [
+      "📌Pocket smartphone - Pocket smartphone equipped with the powerful of MTK6580 quad-core processor, with 1GB RAM 8GB ROM storage, it's capable of smoothly handing everyday tasks without any delays while consuming less energy.",
+      "📌Touch screen - 2.5\" touch screen smartphone, holding it in one hand. your thumb can easily touch any part of the screen and experience the best possible manipulation. And you can also put it in any small bags and pocket for easy carrying.",
+      "📌Battery Life - Buil in polymer battery, upgraded to 800 mAh capacity, long-lasting endurance, no matter hiking outdoors, watching TV or listening to music, without having to worry about running out of battery."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "8GB",
+      "ram": "1GB"
+    }
+  },
+  {
+    "id": 13,
+    "query_type": "filter",
+    "query": "điện thoại rugged 4G 16GB RAM 2GB",
+    "target_asin": "B08XR2C5XB",
+    "product_title": "Plum Gator 6-4G Rugged Phone Water Shock Resistant Military Grade IP68 Certified, Not for use in The USA",
+    "product_brand": "Plum",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "NOT FOR USE IN THE USA - All US Service providers (ATT, Tmobile etc) no longer support 3G & 4G devices, This Phone will no longer work in USA, It is good for Use anywhere outside USA.",
+      "【4G Network Compatibility & Dual SIM Nano】",
+      "【4400mAh Battery & GPS / GLONASS / Compass】Equipped with an impressive 4400mAh battery, you can enjoy more than a day of call time without any fear of losing touch with friends. The rugged smartphone hosts GPS, Glonass, and Compass functions so you never get lost."
+    ],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "16GB",
+      "ram": "2GB"
+    }
+  },
+  {
+    "id": 14,
+    "query_type": "filter",
+    "query": "điện thoại 4G 64GB RAM 4GB màn hình 6.1 inch",
+    "target_asin": "B0B8YYN8KQ",
+    "product_title": "Zunate I14pro Max 4G Smartphone, 6.1in HD Screen Phone for Android 11 with Navigation System, Dual SIM 4GB RAM 64GB ROM 8MP 16MP 4000mAh Battery Unlocked Mobile Phone for Senior(White)",
+    "product_brand": "Zunate",
+    "product_price": 115.79,
+    "product_rating": 2.8,
+    "product_features": [
+      "[6.1 inch large screen smartphone] This unlocked phone features a 6.1in UHD screen and IPS high definition screen. It not only brings a broader visual experience, but also has extraordinary vibrant colors and amazing clarity, allowing you to explore every detail and maximize your viewing experience.",
+      "[4000mAh Large Battery] The smartphone comes with an above-average 4000mAh battery that lasts longer than you expect, 6-10 hours of talking, 8-15 hours of listening to music, 3-5 hours of playing games, and more. Smart and thoughtful AI battery management reduces excessive cache to save more power and thus prolong standby time.",
+      "[Android 11 + 3-in-1 Location System] Dual SIM unlocked phone is equipped with the latest for Android 11, MTK6737 and up to 2.0GHz with 12nm processor. The architecture runs multiple applications with enough smoothness and responsiveness to meet your productivity and entertainment needs. 4. 3-in-1 navigation system with GPS, GLONASS, and BeiDou navigation for faster positioning."
+    ],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "64GB",
+      "ram": "4GB"
+    }
+  },
+  {
+    "id": 15,
+    "query_type": "filter",
+    "query": "điện thoại 5G 32GB RAM 4GB giá tầm trung",
+    "target_asin": "B0BMVVT7SX",
+    "product_title": "FOSA I14proMax Smartphone, for Android11, Unlocked Cell Phone, with 6.1in HD Large Screen, Mobile Phone, 4GB RAM+32GB ROM, MTK6889, 8MP+16MP, 1440x3200, 6800mAh, Gold",
+    "product_brand": "FOSA",
+    "product_price": null,
+    "product_rating": 2.5,
+    "product_features": [
+      "High Resolution Large Screen: The 6.1in ultra HD screen also has 1440 x 3200 HD resolution, which not only brings a wider visual experience, but also has extraordinary vivid colors and amazing clarity, allowing you to explore every detail, maximize your visual experience.",
+      "HD Camera: 16MP rear camera and 8MP front camera, you can further edit your photos with filters, emoticons or other techniques, and supports multiple shooting modes such as panorama, time, etc. Face unlock phone only takes a second.",
+      "MTK6889 Ten Core CPU: Equipped with the latest for 11.0 system, MTK6889 ten core CPU and up to 2.0GHz, using 12nm processor. The architecture runs multiple applications with enough fluidity and responsiveness to meet your productivity and entertainment needs."
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "32GB",
+      "ram": "4GB"
+    }
+  },
+  {
+    "id": 16,
+    "query_type": "filter",
+    "query": "điện thoại Nothing 5G 256GB RAM 8GB",
+    "target_asin": "B0B76J71DJ",
+    "product_title": "Nothing Phone1 5G Dual 256GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) – White",
+    "product_brand": "Nothing",
+    "product_price": null,
+    "product_rating": 4.7,
+    "product_features": [
+      "NOTE: Global Version; No Warranty; This device is globally unlocked and ready to be used with your preferred GSM Carrier; THIS DEVICE IS NOT COMPATIBLE with CDMA carriers such as Cricket, Verizon, Sprint, Boost Mobile, US Cellular, etc; SIM CARD NOT INCLUDED; Please confirm device compatibility with your service provider before placing your order",
+      "NOTE: Global Version; No *; This device is globally unlocked and ready to be used with your preferred GSM Carrier; THIS DEVICE IS NOT COMPATIBLE with CDMA carriers such as Cricket, Verizon, Sprint, Boost Mobile, US Cellular, etc; SIM CARD NOT INCLUDED; Please confirm device compatibility with your service provider before placing your order",
+      "Dual-side Gorilla Glass gives toughness"
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "256GB",
+      "ram": "8GB"
+    }
+  },
+  {
+    "id": 17,
+    "query_type": "filter",
+    "query": "điện thoại 3G nhỏ gọn 1GB RAM 8GB ROM",
+    "target_asin": "B0C9486B99",
+    "product_title": "9 Pro, Unlocked Android Smartphone, 8GB ROM+1GB RAM Android Phone, 6.52IN HD Cell Phone, 2MP Rear Camera System, 2000mAh Phone Mobile Phone Large Storage (Rose Gold)",
+    "product_brand": "POROPL",
+    "product_price": null,
+    "product_rating": 1.0,
+    "product_features": [
+      "2200 mAh large battery: Although thin, the RIno9 pro model can carry a 2200 mAh large battery; the lithium polymer battery can be used for a whole day",
+      "Fluent operation, powerful performance: Supported by MTK6572 GHz dual-core processor, and runs on Android OPERATING SYSTEM 4.4.2",
+      "Display: 5.45 inches 480x854 high-definition screen, 2.5D capacitive screen to bring you a more comfortable gaming experienc"
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "8GB",
+      "ram": "1GB"
+    }
+  },
+  {
+    "id": 18,
+    "query_type": "filter",
+    "query": "điện thoại 3G 32GB RAM 3GB",
+    "target_asin": "B0B2K8MV1Z",
+    "product_title": "3G Unlocked Smartphone For 6.0 OS, 6.1 Inch HD Full Screen Mobile Phone Dual Card Dual Standby Cell Phone Support Face Recognition, 3GB 32GB, 6779 10 Core Processor, 5MP 8MP HD Camera, 2800mah(Black)",
+    "product_brand": "PUSOKEI",
+    "product_price": null,
+    "product_rating": 1.7,
+    "product_features": [
+      "High Definition Full Screen: The 6.1inch screen account for 93 percent, allowing you to experience a wider view. In games and videos, more content is displayed, and the phone remains small and light. Every time the screen lights up, it is a new experience.",
+      "10 Core CPU Processor: Equipped with MT6779 10 core CPU processor, which improves networking, running speed, frame rate and picture smoothness when playing games and multitasking, the unlocked smartphone greatly reduces the probability of stuck, crash, etc., improved network speed, frame rate and picture smoothness.",
+      "3 Card Slots: With 3GB RAM 32GB ROM, the phone can help you second level fast switch to other applications, hang up for a long time is not afraid of crash. Supports maximum expansion storage of 128GB, the mobile phone can uses two SIM cards and one small memory cards simultaneously for telephone calls and data storage."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "32GB",
+      "ram": "3GB"
+    }
+  },
+  {
+    "id": 19,
+    "query_type": "filter",
+    "query": "điện thoại rugged 4G LTE 32GB RAM 3GB",
+    "target_asin": "B074KGT9GL",
+    "product_title": "Rugged Unlocked Cellphone Android 7.0 Dual SIM 3GB RAM 32GB ROM Fingerprint Recognition Smartphone E&L S50 Phone IP68 Waterproof 4G LTE Cell Phones (Black)",
+    "product_brand": "E&L",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "32GB",
+      "ram": "3GB"
+    }
+  },
+  {
+    "id": 20,
+    "query_type": "filter",
+    "query": "điện thoại 4G LTE 32GB RAM 3GB pin lớn",
+    "target_asin": "B015FHP6GU",
+    "product_title": "Innos D6000 5.2inch FDD-LTE 4G Mobile Phone 1920x1080p Octa Core 1.5hz 16.0MP Camera Snapdragon 615 4G 6000mah Battery",
+    "product_brand": "innos",
+    "product_price": null,
+    "product_rating": 1.0,
+    "product_features": [
+      "Qua lcomm Snapgragon 615 64bit Octa Core CPU",
+      "3GB RAM 32GB ROM Support TF card extend to 64GB",
+      "5.2 inch FHD 1920X1080P high light LTPS screen"
+    ],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "32GB",
+      "ram": "3GB"
+    }
+  },
+  {
+    "id": 21,
+    "query_type": "filter",
+    "query": "smartphone 3G 4GB ROM 512MB RAM 4.66 inch",
+    "target_asin": "B0B16BRYLB",
+    "product_title": "GOWENIC IP12 Pro Unlocked Android Smartphone, 4.66 Inch FHD Cell Phone, 512MB RAM 4GB ROM 3G GSM Mobile Phone, 1500mAh Battery, Dual SIM, Face Unlock (Blue)",
+    "product_brand": "GOWENIC",
+    "product_price": 50.52,
+    "product_rating": 1.0,
+    "product_features": [
+      "【GSM UNLOCKED SMARTPHONE】IP12 Pro 4.66-inch 512MB+4GB dual SIM slim smartphone with up to 128GB expandable storage, supports both standard SIM and microSIM cards (3G (WCDMA2100, GSM4-band dual SIM)) and memory cards (three card slots) for calls and data storage.",
+      "【HD SMARTPHONE】4.66-inch HD+HD screen, the large screen allows you to experience a broader view. More content is displayed in games and videos, yet the phone remains compact and lightweight. HD camera with vivid and realistic colors, every photo is just as beautiful, and dual front and rear cameras are more widely used. Front camera 0.3 MP, F/2.0 aperture, fixed focal length, rear camera 2 MP (color, F/1.8 aperture) autofocus.",
+      "【EXCELLENT PERFORMANCE】MTK6572 dual-core CPU chip, system based on Android deep development, for Android 4.4.2, support WIFI + BT + FM function. Powerful processor greatly improves network speed, frame rate and screen smoothness when playing games and multitasking.More perfect and smooth."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "128GB",
+      "ram": "4GB"
+    }
+  },
+  {
+    "id": 22,
+    "query_type": "filter",
+    "query": "điện thoại 4G 5G 8GB ROM 2GB RAM dual SIM",
+    "target_asin": "B0BCKPJNVJ",
+    "product_title": "6.1Inch Unlocked Smartphone, 2 GB RAM 8GB ROM, Support WiFi/BT/FM/Facial Recognition Function, Dual Cards Dual Standby 4G 5G Cell Phone for Android 11 Black",
+    "product_brand": "Sanpyl",
+    "product_price": null,
+    "product_rating": 1.0,
+    "product_features": [
+      "6.1Inch HD IPS Screen: Equipped with 6.1inch display screen, the display screen adopts the round corner design with beautiful curve, which is clear and beautiful.",
+      "Multi Function: With face recognition function, WiFi, BT, FM function, for Android USB charging interface, 3.5mm standard headset interface and support for Android 11 system.",
+      "High Pixel Camera: The front camera has 24 megapixels, f/2.0 aperture and fixed focal length. Rear camera has 48 million pixels (color, f/1.8 aperture) and auto focus."
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "128GB",
+      "ram": "2GB"
+    }
+  },
+  {
+    "id": 23,
+    "query_type": "filter",
+    "query": "điện thoại bảo mật Bittium 4G LTE 64GB",
+    "target_asin": "B07YQ348Y2",
+    "product_title": "Bittium Encrypted Tough Mobile 2 Ultra Security 64GB Dual-SIM IP67 MIL-STD-810G (GSM Only, No CDMA) Factory Unlocked with Google Services 4G/LTE Smartphone (Black) - International Version",
+    "product_brand": "Bittium",
+    "product_price": null,
+    "product_rating": 2.5,
+    "product_features": [
+      "For USA Buyers : This Smartphone is compatible/will work with CERTAIN GSM Networks ONLY. For exact 2G GSM, 3G, 4G/LTE compatibility, please check with your network provider in advance prior to your purchase. This phone WILL NOT WORK with any CDMA Networks such as VERIZON, SPRINT, US CELLULAR and T-Mobile.",
+      "Dual SIM Dual Standby(DSDS), Network Compatibility : SIM CARD 1 & 2 [ 2G GSM 850 / 900 / 1800 / 1900 and/or 3G UMTS/HSPA 850(B5) / 900(B8) / 1700|2100(B4) / 1900(B2) / 2100(B1) and/or 4G LTE-FDD 700(B12) / 700(B13) / 700(B14) / 700(B17) / 700(B28) / 700(B29) / 800(B20) / 850(B5) / 850(B26) / 900(B8) / 1700|2100(B4) / 1700|2100(B66) / 1800(B3) / 1900(B2) / 1900(B25) / 2100(B1) / 2300(B30) / 2600(B7) : LTE-TDD 1900(B39) / 2600(B38) ]",
+      "5.2\" inch, Full HD, Sunlight Readable Display, 1080 X 1920 Pixels, IP67, MIL-STD-810G Shock Resistant"
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "64GB",
+      "ram": "4GB"
+    }
+  },
+  {
+    "id": 24,
+    "query_type": "filter",
+    "query": "điện thoại rugged 4G LTE 64GB RAM 6GB IP68",
+    "target_asin": "B07S1FJPYY",
+    "product_title": "ZOJI Z9 Android 8.1 Rugged 4G Unlocked Smartphone,IP68 6GB RAM 64GB ROM Helio P23 MTK6763 Octa-Core Mobile Phone, 5.7inch Face ID 5500mAh Waterproof FDDLTE 21MP Camera Cell Phone-Orange",
+    "product_brand": "HOMTOM",
+    "product_price": null,
+    "product_rating": 3.5,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "64GB",
+      "ram": "6GB"
+    }
+  },
+  {
+    "id": 25,
+    "query_type": "filter",
+    "query": "điện thoại AMOLED 4G LTE 32GB RAM 3GB",
+    "target_asin": "B06XNVFVFG",
+    "product_title": "AZUMI Kinzo A55 OLi - 5.5\" High Definition AMOLED Display 32GB +3GB 4G LTE US GSM Unlocked Dual Sim Smartphone Black (AT&T and T-Mobile Compatible)",
+    "product_brand": "Azumi",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "5.5 inch High Definition AMOLED Screen with 3GB RAM 32GB STORAGE expandable to 128GB",
+      "Ultra Fast LTE data speeds- up to 10X faster than 3G speeds and 2X faster than 4G - unlocked and ready to use with your favorite compatible carrier or for international travel",
+      "Beautiful Full Metal Ultra Slim Uni-body with Incorporated Fingerprint reader, Gyroscope, E-Compass and Gravity Sensor"
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "32GB",
+      "ram": "3GB"
+    }
+  },
+  {
+    "id": 26,
+    "query_type": "filter",
+    "query": "điện thoại Lumia 4G LTE 8GB",
+    "target_asin": "B07X7GY2TZ",
+    "product_title": "Lumia 640 4G LTE Smartphone, 6764A with 8GB Memory Cell GoPhone - Black - Compatible with Microsoft Nokia 8.1 Phones -Carrier Locked to AT&T Wireless",
+    "product_brand": "AT&T-Wireless",
+    "product_price": null,
+    "product_rating": 3.1,
+    "product_features": [
+      "Carrier Locked to AT&T Wireless. Cannot be used internationally or on any other cellular carrier",
+      "8 Megapixel Camera w/ Autofocus LED Flash / Front Facing Camera",
+      "5 inch IPS LCD Multi Touchscreen w/ ClearBlack display Protective Corning Gorilla Glass 3"
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "8GB",
+      "ram": "1GB"
+    }
+  },
+  {
+    "id": 27,
+    "query_type": "filter",
+    "query": "điện thoại VIZIO 32GB RAM 2GB 4G",
+    "target_asin": "B00H77IRJA",
+    "product_title": "VIZIO VP800 5-Inch 32GB Android Smartphone (IPS 19201080) Black- 2GB RAM 9.1mm Thickness with Google Play Store",
+    "product_brand": "VIZIO",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "5.0-inch 1920 x 1080px IPS capacitive touch screen",
+      "MSM8260A Dual Core CPU 1.5Ghz",
+      "2GB RAM + 32GB ROM; Android 4.1 Operating System"
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "32GB",
+      "ram": "2GB"
+    }
+  },
+  {
+    "id": 28,
+    "query_type": "filter",
+    "query": "điện thoại màn hình lớn 4G RAM 4GB bộ nhớ 128GB",
+    "target_asin": "B0BS43ZLN8",
+    "product_title": "JIASEN G14s 6.82inch HD Screen Smartphone,Pro MAX Unlocked Smartphones,4G RAM+128G ROM Dual Sim Cellphones,Android Smartphones 24+48MP,Fingerprinr Lock & Face ID(White)",
+    "product_brand": "JIASEN",
+    "product_price": 159.99,
+    "product_rating": 2.0,
+    "product_features": [
+      "【7.3inch HD+Android 11】Note that this is an Android phone with incell perforated big screen,2.5D curved edge,high grade thermal curved glass back cover.Magnesium aluminum body.5 point touch capacitive touch screen.You can unlock your smartphone by Face ID or Fingerprint.",
+      "【128GB Expansion TF Card Slot&MTK6737 Quad-core CPU】4GB RAM+128GB ROM can let you quickly open the app and easily play with your phone.You can create amazing videos and pictures anytime.(You can insert another 128G memory card for more storage space to easily store any music,videos,pictures you like.)-The memory card is a free included gift.",
+      "【Global Bands & Dual SIM 4G Phone】A14s support multiple bands 3G (WCDMA850/2100MHZ), 4G (FDD/TDD 124578 20 28A28B 40).(Note:5G card can only use 4G network,not support 5G network.)"
+    ],
+    "extracted_specs": {
+      "network": "5G",
+      "storage": "128GB",
+      "ram": "4GB"
+    }
+  },
+  {
+    "id": 29,
+    "query_type": "filter",
+    "query": "điện thoại Vivo Y81 4G LTE 32GB RAM 3GB",
+    "target_asin": "B07HNM6JW6",
+    "product_title": "Vivo Y81 3GB 32GB 6.22-inches Dual SIM Factory Unlocked GSM LTE Gold",
+    "product_brand": "VIVO",
+    "product_price": null,
+    "product_rating": 5.0,
+    "product_features": [
+      "13MP primary camera with take photo, HDR, pro mode, portrait bokeh mode, AI face beauty, slow motion, time lapse, panorama, doc mode, PDAF, filters, palm capture, voice control and 5MP front facing camera",
+      "15.46 centimeters (6.22-inch) full view HD+ capacitive touchscreen with 1520 x 720 pixels resolution 16M color support",
+      "Android v8.1 Oreo based on Funtouch OS 4.0 operating system with 2GHz Helio P22 MediaTek octa core processor, 3GB RAM, 32GB internal memory expandable up to 256GB and dual SIM dual-standby (4G+4G)"
+    ],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "32GB",
+      "ram": "3GB"
+    }
+  },
+  {
+    "id": 30,
+    "query_type": "filter",
+    "query": "điện thoại nắp gập 3G 512MB",
+    "target_asin": "B08174K64B",
+    "product_title": "ROKiT F-One Flip Phone - 2.4\" GSM Unlocked Cell Phone - 3G Dual Micro SIM - 512 MB Memory & 2MP Camera (Black)",
+    "product_brand": "ROKiT",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "THE FLIP PHONE IS BACK! - Just put in your SIM card and go! This new school GSM flip phone comes unlocked with the option to insert dual SIM cards, and operates on a 3G network. Compatible with GSM carriers such as T-Mobile, Cricket, Metro PCS, and AT&T. Not compatible with CDMA carriers such as Sprint or Verizon Wireless.",
+      "TN DISPLAY - A 240*320 (QVGA) 2.4\" display rounds out this sleek, lightweight phone while an easy-to-use interface make this phone perfect for the user who needs something simple, fast, and easy.",
+      "CHARGING SPEED / BATTERY LIFE - Charge the 1000 mAh Li-Ion battery fast and experience improved battery life with 170 hours of stand-by-time and 200 minutes of talk time. Underneath it all, the 1.2GHz single core processor gives you the performance you are looking for in a basic cell phone."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 31,
+    "query_type": "filter",
+    "query": "điện thoại AT&T 4G LTE 32GB",
+    "target_asin": "B09YBQS1HZ",
+    "product_title": "AT&T Motivate 2, 32GB, Maritime Blue - 4G LTE Prepaid Smartphone - Carrier Locked to AT&T",
+    "product_brand": "AT&T",
+    "product_price": 68.96,
+    "product_rating": 4.3,
+    "product_features": [
+      "Carrier locked to AT&T. Cannot be used on any cellular carrier other than AT&T.",
+      "6.5\" HD+ display with scratch-resistant glass . Does not include SIM card",
+      "8MP rear camera with LED flash; 5MP selfie"
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 32,
+    "query_type": "filter",
+    "query": "điện thoại unlocked 4G cơ bản",
+    "target_asin": "B00PIXXKC4",
+    "product_title": "Unnecto RUSH - Unlocked Cell Phones - Retail Packaging - Blue",
+    "product_brand": "Unnecto",
+    "product_price": null,
+    "product_rating": 2.7,
+    "product_features": [
+      "Unlocked Dual SIM Phone, Quad Core 1.2 GHz Processor, 8MP Main Camera 1.3 MP Front camera",
+      "5.0\" qHD IPS Capacitive Touch screen",
+      "3.5 mm Audio Jack, FM Radio, MP3 Player, MP4 Player Micro SD Slot up to 32GB Android 4.4.2 Kit Kat"
+    ],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 33,
+    "query_type": "filter",
+    "query": "smartphone 4G 32GB RAM 2GB",
+    "target_asin": "B00YVOZ60A",
+    "product_title": "NUU Mobile NU2S 4.5\" qHD Android Lollipop 4G Smartphone (Black)",
+    "product_brand": "NUU Mobile",
+    "product_price": null,
+    "product_rating": 3.4,
+    "product_features": [
+      "4.5\" qHD touchscreen — 960x540 resolution (245 pixels per inch)",
+      "Dual SIMs with 4G power",
+      "5 MP rear camera / 2 MP front camera"
+    ],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 34,
+    "query_type": "filter",
+    "query": "điện thoại nắp gập senior 3G có nút SOS",
+    "target_asin": "B09B1XDZKF",
+    "product_title": "ULEWAY Flip Phone Unlocked SOS Button Dual Screen Senior Flip Phone Unlocked Basic Cell Phone for Senior&Kids (Blue)",
+    "product_brand": "ULEWAY",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [
+      "【Use Prepaid SIM Card】 Unlocked 3G feature phone，compatible nation-widely with 2G/3G carriers like AT&T or any other carrier that use AT&T network(Select Prepaid SIM Card). NOT For T-Mobile New sim card (activated after August 4,2020) , NO CDMA Carriers (Verizon, Sprint, Boost, PagePlus)",
+      "【Large Button& Volume& Icon】Large and clear buttons,M1,M2,M3 Quick Dial Key,set 3 quick dial numbers, special design for the senior and kids, it is easy to make phone call and text.; High-quality speakers, enhanced volume; Large menu icons, convenient for who has poor eyesight.",
+      "【Special SOS Button】Emergency button for the seniors, set 5 numbers as you want, 3 seconds to dial, served as a first aid tool for seniors and kids when they are not accompanied with family.*** This function can be disable if you don’t need."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 35,
+    "query_type": "filter",
+    "query": "điện thoại HP Veer 8GB cổ điển",
+    "target_asin": "B00505SPYS",
+    "product_title": "HP Veer, Black 8GB (AT&T)",
+    "product_brand": "HP",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "Ultra-fast, 4G-enabled smartphone running HP webOS with 2.6-inch touchscreen, slide-out QWERTY keyboard, and multitasking capabilities",
+      "800 MHz processor; Wireless-N Wi-Fi networking (with optional Wi-Fi Mobile Hotspot service); GPS for navigation and location services",
+      "5-MP camera/camcorder; Bluetooth stereo music; 8 GB memory; HTML web browser with Flash support; corporate and personal e-mail"
+    ],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "8GB"
+    }
+  },
+  {
+    "id": 36,
+    "query_type": "filter",
+    "query": "điện thoại nắp gập 4G LTE cho AT&T",
+    "target_asin": "B0BTJTND75",
+    "product_title": "Detroit Packing Co. Unlocked AT&T Cinglur Flip 4 Smartflip U102AA 6275C IV 4G LTE Phone SIM Eject Tool Bundle",
+    "product_brand": "Detroit Packing Co.",
+    "product_price": 69.0,
+    "product_rating": 3.0,
+    "product_features": [
+      "This bundle includes the unlocked AT&T Cingular Flip IV flip phone and a Detroit Packing Co. branded SIM eject tool. SIM card is not included",
+      "Unlocked, compatible with GSM carriers such as AT&T and T-mobile. Not compatible with CDMA carriers such as Verizon nor Boost Mobile. SIM card is not included",
+      "4.13\" x 2.14\" x .74\", 4.59 ounces. 2.8-inch internal LCD display, 1.77-inch external display."
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 37,
+    "query_type": "filter",
+    "query": "điện thoại Doro thân thiện người lớn tuổi màn hình 5.5 inch",
+    "target_asin": "B07763R2X3",
+    "product_title": "Doro 824 SmartEasy Senior-Friendly GSM Unlocked - 1.2GHz Processor - 5.5\" Android Cell Phone - Blue",
+    "product_brand": "Doro",
+    "product_price": null,
+    "product_rating": 2.7,
+    "product_features": [
+      "Connectivity: 4G LTE; Display: 5.0\", 720 x 1280 pixel display",
+      "Rear Camera: 8 Megapixels, Digital Zoom (4x), 1080p video capture and playback; Front Facing Camera for Video Chat",
+      "Operating System: Android 5.; Processor: 1.2GHz Quad-core Processor, Supports up to 32GB MicroSD"
+    ],
+    "extracted_specs": {
+      "brand": "Doro",
+      "network": "4G LTE",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 38,
+    "query_type": "filter",
+    "query": "điện thoại nắp gập 3G phím to loa lớn",
+    "target_asin": "B07VGRRR2B",
+    "product_title": "USHINING 3G Unlocked Flip Phone SOS Big Button T Mobile Flip Phones Unlocked Large Volume Easy to Use Mobile Phone for Senior & Kids (Black)",
+    "product_brand": "USHINING",
+    "product_price": null,
+    "product_rating": 3.1,
+    "product_features": [
+      "【Carrier】Ushining 3G flip cell phone, compatible nation-widely with 2G/3G carriers like AT&T or any other carrier that use AT&T network(Select Prepaid SIM Card). NOT For T-Mobile New sim card( activated after August 4,2020) , NO CDMA Carriers (Verizon, Sprint, Boost, PagePlus)",
+      "【SOS Distress Calling Function】set 5 numbers as you want, when kids and the elderly go out or stay at home alone, it serves as a safeguard, a life-saving communication tool for them.*** It can be disabled if you don't need it.",
+      "【Large button&Large volume】large and clear buttons,M1,M2,M3 Quick Dial Key,set 3 quick dial numbers, special design for the senior and kids, it is easy to make phone call and text. Special speakers, amplifying the volume, tailor-made functions for the elderly."
+    ],
+    "extracted_specs": {
+      "network": "3G",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 39,
+    "query_type": "filter",
+    "query": "smartphone 4G 16GB RAM 2GB màn hình 6 inch",
+    "target_asin": "B077K2MHCV",
+    "product_title": "6.0\" Unlocked Cell Phones,4G FDD-LTE,2GB/16GB,Dual Sim Quad Core Android 7.0 Smartphone Rose by TIMMY",
+    "product_brand": "Timmy",
+    "product_price": null,
+    "product_rating": 2.1,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G",
+      "storage": "16GB"
+    }
+  },
+  {
+    "id": 40,
+    "query_type": "filter",
+    "query": "điện thoại rugged 4G LTE 5.99 inch",
+    "target_asin": "B07DMM4ZXP",
+    "product_title": "RugGear RG850 Android 8.1 Rugged Smartphone Unlocked 5.99\" 4G LTE for AT&T and T-Mobile (Black)",
+    "product_brand": "RugGear",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [
+      "World's first Rugged 18:9 Android 8.1 Oreo based 4G LTE smartphone. Unlocked rugged smartphone and compatible with AT&T, T-Mobile, Metro PCS, Simple Mobile, Tracfone, Cricket Wireless, Net10, Speedtalk, Straight Talk, Telcel America, Lyca, Go Smart, H2O Wireless, PureTalk USA, Walmart Family Mobile and All GSM Networks Worldwide. NOT COMPATIBLE WITH CDMA Sprint, Verizon, Boost or Virgin.",
+      "Water & Drop Resistance. Rugged smartphone base on MIL-STD-810G military standard. 1.5m drop protection.",
+      "Modern, stylish design with carbon fiber rear cover and round screen corner.Super thin(12.55mm) but still rugged ."
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 41,
+    "query_type": "filter",
+    "query": "điện thoại nắp gập AT&T kèm thẻ nhớ 32GB",
+    "target_asin": "B07YL4LNW4",
+    "product_title": "Prepaid AT&T Cingular Flip 2 Feature Phone - Dark Gray (4 GB + ADATA 32GB SD Card Bundle)",
+    "product_brand": "Prepaid",
+    "product_price": 104.99,
+    "product_rating": 3.7,
+    "product_features": [
+      "Qualcomm Snapdragon 210 processor Quad-core 1.1GHz processor and 512MB of RAM deliver outstanding overall performance for opening and running applications, flipping through menus, running home screens and more.",
+      "4G LTE speed Provides fast Web connection for downloading apps, streaming content and staying connected with social media.",
+      "2.8\" display With 240 x 320 resolution offers a clear view of messages, images, menus and more."
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "32GB"
+    }
+  },
+  {
+    "id": 42,
+    "query_type": "filter",
+    "query": "điện thoại 4G LTE 16GB giá phổ thông",
+    "target_asin": "B07SPGNRRS",
+    "product_title": "Simple Mobile - ZFIVE G Z557BL 4G LTE with 16GB Memory Cell Phone - Black",
+    "product_brand": "LootHive",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "storage": "16GB"
+    }
+  },
+  {
+    "id": 43,
+    "query_type": "filter",
+    "query": "điện thoại bút mini pen phone Bluetooth",
+    "target_asin": "B07NSB9ZTZ",
+    "product_title": "SERVO K07 Mini Pen Cellphone Dual SIM Camera Flashlight Bluetooth Dialer Mobile Phones with Recording Pen Unlocked (Black)",
+    "product_brand": "SERVO",
+    "product_price": null,
+    "product_rating": 2.8,
+    "product_features": [
+      "The world's first pen mobile phone, Dual SIM cards Dual standby. CAUTION: THIS IS ORIGINAL SERVO K07.ON AMAZON HAVE GOT FAKE ONES WHITH CHEAP PRICE.WE ARE OFFICIAL SERVO SALES",
+      "Frequency:GSM 900/1800/850/1900,Can use 2G,3G,4G Sim Card,But Remember Sim Card must Supports 2G GSM Frequency,LIKE T-MOBILE, LYCAMOBILE, SPEEDTALK, TING GSM, SIMPLE MOBILE OR ANY OTHER CARRIER THAT PROVIDE 2G GSM SIM CARD (SELECT PRE-PAID SIM CARD). WILL NOT WORK WITH AT&T AND ANY CDMA CARRIERS LIKE VERIZON, SPRINT, BOOST, PAGEPLUS",
+      "Bluetooth Dialer，Sync contacts，you can receive incoming call number /contact announcement"
+    ],
+    "extracted_specs": {
+      "network": "4G"
+    }
+  },
+  {
+    "id": 44,
+    "query_type": "filter",
+    "query": "điện thoại 3G màn hình 4.7 inch 4GB ROM",
+    "target_asin": "B00IMYIV9I",
+    "product_title": "AXCELLE L6 Unlocked Phone, with 4.7\" QHD Touch Screen, Android 4.2.2, 3G Support,512MB+4G ROM, Dual Core Dual Standby, Dual Cameras (Primary：5MP) Thinner and lighter design (White)",
+    "product_brand": "AXCELLE",
+    "product_price": null,
+    "product_rating": 3.1,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G"
+    }
+  },
+  {
+    "id": 45,
+    "query_type": "filter",
+    "query": "điện thoại nắp gập 4G LTE dual nano SIM",
+    "target_asin": "B095ZWBB3M",
+    "product_title": "Flip Phone 4G LTE Volte Unlocked Compatible with T-Mobile Mint GSM Worldwide Maxwest Neo 4G Dual Nano Sim LTE Bluetooth (NOT VERIZON/Boost) Radio FM",
+    "product_brand": "Maxwest",
+    "product_price": 57.5,
+    "product_rating": 3.3,
+    "product_features": [
+      "VOLTE GSM . NOT Compatible with at&t .Phone Does NOT Work on CDMA Carriers Virgin Verizon Sprint Net10 Tracfone).",
+      "Dual Nano Sim 4G: LTE: 2/4/5/12/17/66 3G h+: 850/1700/1900 2G Quad Band",
+      "Phone Works on Mint Metro Pcs Tmobile Any Gsm Provider in USA LATIN Caribbean Europe"
+    ],
+    "extracted_specs": {
+      "network": "4G LTE"
+    }
+  },
+  {
+    "id": 46,
+    "query_type": "filter",
+    "query": "điện thoại 5G Android 6.53 inch 16GB ROM",
+    "target_asin": "B09Y138H4D",
+    "product_title": "CAOY Smart Phone HD Full Screen Phone, 5G Android Smart Phone Unlocked 6.53-inch Ultrathin Water Drop Screen Touch Screen Smartphones, 2+16G Dual SIM 2400mAh Unlocked Smartphones (C)",
+    "product_brand": "CAOY",
+    "product_price": null,
+    "product_rating": 1.0,
+    "product_features": [
+      "🔥【Smartphone Available Frequency Regarding Service Provider】T-mobile:1700/2100(WCDMA)【Available✅】;　AT&T:1900MHz(WCDMA)【Available❎】;Verizon:800/1900(CDMA2000)【Not Available❎】;Sprint: 800/1900(CDMA2000)【Not Available❎】",
+      "🔥【Powerful Processor】The powerful processor greatly improves the network, running speed, frame rate and picture smoothness when playing large games.",
+      "🔥【Dual SIM Unlocked Phone】Dual card dual standby, high‑definition full screen, smart phone, high‑quality performance."
+    ],
+    "extracted_specs": {
+      "network": "5G"
+    }
+  },
+  {
+    "id": 47,
+    "query_type": "filter",
+    "query": "điện thoại nắp gập 4G LTE cho T-Mobile",
+    "target_asin": "B08M7NM28H",
+    "product_title": "ANS F30 4G LTE Unlocked Flip Phone - Unlocked, Compatible with T-Mobile & AT&T, Not Compatible with Verizon Nor Verizon MVNO's",
+    "product_brand": "ANS",
+    "product_price": 49.0,
+    "product_rating": 3.1,
+    "product_features": [
+      "GSM Unlocked phone, compatible with AT&T + T-mobile. Not compatible with Verizon nor Verizon MVNO's",
+      "Oversized keypad buttons",
+      "Not compatible with Verizon or any service provider that uses Verizon network"
+    ],
+    "extracted_specs": {
+      "network": "4G LTE"
+    }
+  },
+  {
+    "id": 48,
+    "query_type": "filter",
+    "query": "điện thoại rugged 5G 8GB RAM 256GB ROM",
+    "target_asin": "B09K537HQ9",
+    "product_title": "CONQUEST:S20 Rugged Smartphone,Global 5G Unlocked Android Phone 8000mAh Battery 8G+256G Infrared Night Vision 48MP Camera,6.3'' Screen,Android 11 IP68/IP69K Waterproof Fingerprint,Dual SIM,NFC,GSM",
+    "product_brand": "CONQUEST",
+    "product_price": null,
+    "product_rating": 4.3,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "5G"
+    }
+  },
+  {
+    "id": 49,
+    "query_type": "filter",
+    "query": "điện thoại mini siêu nhỏ 3G",
+    "target_asin": "B08MXPM6MJ",
+    "product_title": "zanco Tiny t2 World's Smallest 3G WCDMA Mobile Phone,Smallest Mini Phone Small Phone Travelling Phone,Pocket Cell Phone(with Voice Changer (Limited Stock Available)",
+    "product_brand": "Zanco",
+    "product_price": null,
+    "product_rating": 4.1,
+    "product_features": [
+      "Zanco Tiny T2 is equipped with 1 inch color screen, can store 300 contacts and 500 text messages, supports Nano SIM card, uses Micro USB interface, built-in 500mAh capacity battery, maximum talk time 4 hours, standby 7 day.",
+      "The world's smallest 3G mobile phone;",
+      "Other features include Bluetooth music connection so you can control a Bluetooth device; play music, pause, next and previous etc. You can also sync contacts, SMS and music with your smartphone through Bluetooth. Despite its size the phone is really easy to and will make the perfect novelty gift for family, friends or yourself."
+    ],
+    "extracted_specs": {
+      "network": "3G"
+    }
+  },
+  {
+    "id": 50,
+    "query_type": "filter",
+    "query": "điện thoại rugged 3G IP67 chống nước",
+    "target_asin": "B00L9ZQEG4",
+    "product_title": "LuMen 4 Inch IP67 Waterproof 3G Rugged Android 4.2 Smartphone 1.2GHz Dual Core Dual SIM Dustproof Shockproof Capacitive screen GPS 5MP",
+    "product_brand": "Lumen",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "IP68(waterproof, shockproof,dustproof) MTK6572W smartphone, Android 4.2.2; With chargerbaby function, long standby time, can be used as a power bank",
+      ".0\" hard glass 800X480 Resolution Latest Android 4.2 OS. MTK6572 Dual Core 1.2GHz Dual Sim Dual Standby 3000mAh Large Capactive Long Standby GPS : (Built-in GPS Navigation, navi software not included) IP 67 grade"
+    ],
+    "extracted_specs": {
+      "network": "3G"
+    }
+  },
+  {
+    "id": 51,
+    "query_type": "intent",
+    "query": "điện thoại 4G màn hình lớn pin ổn cho nhu cầu hằng ngày",
+    "target_asin": "B08KWPXSNN",
+    "product_title": "LG K22+ Plus (64GB,3GB) 6.2 inch HD+,Dual Camera,MIL-STD 810G,US+Latin 4G LTE Only GSM Factory Unlocked (AT and T,T-Mobile,Metro,Straight Talk) International Model LM-K200HAW (Red,W/ 64GB SD Bundle)",
+    "product_brand": "LG",
+    "product_price": null,
+    "product_rating": 3.7,
+    "product_features": [
+      "6.2\" HD+ 19:9 V-Notch Display, 720x1520 pixels (19:9), 271 PPI, TFT IPS LCD, Android 10, 3000mAh Battery, Dual SIM",
+      "64GB ROM, 3GB RAM, (64GB Micro SD Card Included), Qualcomm 215 QM215 (28nm), 1.3Ghz Quad-Core ARM Cortex-A53, Face detection",
+      "Rear Camera: 13MP + 2MP, Front Camera: 2MP Macro Camera, Bluetooth 5.0, WiFi 802.11 b/g/n (2.4Ghz)"
+    ],
+    "extracted_specs": {
+      "storage": "64GB",
+      "ram": "3GB",
+      "network": "4G LTE",
+      "screen": "6.2 inch"
+    }
+  },
+  {
+    "id": 52,
+    "query_type": "intent",
+    "query": "điện thoại rugged IP68 pin trâu cho công trường",
+    "target_asin": "B09FLDSJM2",
+    "product_title": "Ulefone Rugged Phone Unlocked Armor X9 Pro, Android 11 Octa-core 4GB + 64GB IP68 Waterproof Cell Phone, 13MP Triple Camera 5.5\" HD+ Screen 5000mAh Battery Dual SIM 4G Rugged Smartphone GPS NFC OTG",
+    "product_brand": "Ulefone",
+    "product_price": null,
+    "product_rating": 4.0,
+    "product_features": [
+      "🚀【Android 11 Octa-core Processor & 4GB + 64GB &5000mAh Battery】Thanks to the enhanced hardware configuration, the Ulefone Armor X9 Pro rugged phones unlocked can delivers outstanding performance and temperature control over long periods of game time. Meanwhile, the 4GB RAM & 64GB ROM large memory storage make sure a smooth apps operation and saving more picture and files. If you need more space, this android 11 phone supports microSD Card up to 256GB.",
+      "❄️【IP68/IP69K Waterproof Phone + Underwater Mode】The Ulefone Armor X9 Pro IP68 smartphone always remains perfectly functional despite wet and dusty environments, and Armor X5 Pro rugged smartphone can withstand water immersion for 30 minutes at 1.5m depth, handle 24 hours of immersion in 1m depth of concrete, and can withstand extreme temperatures between -4°F(-20°C) to 131°F(55°C) . The IP68 waterproof rating allows Ulefone X9 Pro smartphone to take photos and videos underwater.",
+      "📷【13MP + 5MP +2MP Triple Camera + Face Unlock】 Armor X9 Pro cell phone equips with a 13MP dual rear camera and comes with dual rear flash, helps to brighten up the scene in low light condition. And there is a face-fronting 5MP camera for swift face unlocking and exquisite selfie. A face glimpse or a slight fingertip press, unlock your phone immediately, which provide your property and privacy more safety, 0.2s with face unlock."
+    ],
+    "extracted_specs": {
+      "storage": "64GB",
+      "ram": "4GB",
+      "network": "4G",
+      "screen": "5.5 inch"
+    }
+  },
+  {
+    "id": 53,
+    "query_type": "intent",
+    "query": "OnePlus 5G hiệu năng mạnh chụp ảnh đẹp",
+    "target_asin": "B08TZZGBJC",
+    "product_title": "OnePlus 9 5G Dual LE2110 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) China Version | Astral Black",
+    "product_brand": "OnePlus",
+    "product_price": 419.0,
+    "product_rating": 4.5,
+    "product_features": [
+      "NOTE: International Version. No Warranty. This device will work with GSM service providers like AT&T, T-Mobile, MetroPCS, and most other GSM service providers. It will not work with CDMA service providers like Verizon, US Cellular, Sprint, or any other CDMA service providers. Please check device compatibility with your cell phone provider before you place your order.",
+      "Storage: 128GB 8GB RAM",
+      "Display: 1080 x 2400 pixels, 20:9 ratio (~402 ppi density) Corning Gorilla Glass 5"
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "8GB",
+      "network": "5G"
+    }
+  },
+  {
+    "id": 54,
+    "query_type": "intent",
+    "query": "điện thoại 4G màn hình 6.1 inch dùng cơ bản",
+    "target_asin": "B0BG8P7QJ7",
+    "product_title": "Dilwe 4G Unlocked Android Cellphone, 6.1Inch IPS FD Screen 4G 64G Dual SIM 4G Net for Android 11 Unlocked Smartphone Support 128G Card 4000mAh Battery(Blue)",
+    "product_brand": "Dilwe",
+    "product_price": 68.8,
+    "product_rating": 2.6,
+    "product_features": [
+      "【6.1\" HD+ 4GB+64GB+ For Android】:This is an Android phone, not an IOS phone, please make sure you don't mind before you buy. The unlocked phone adopts a 6.1inch HD IPS touch screen, has vivid colors allowing you to maximize your viewing experience, with 4GB RAM+64GB ROM meets your daily entertainment and daily use, adopts MTK6737 2.0GHz CPU, based on the in depth development for Android system, support Bluetooth, WIFI, GPS, makes the operation simple and easy.",
+      "【3 Cards Slots + SIM Bands】This is 4G phone which can be connected with GSM network carriers such as T Mobile, for Verizon, AT&T, etc. SIM card frequency band support: 3G: WCDMA850, 1700, 1900MHz, 4G: B2.B4.B5.B7.B12.B17.B20.B28A.B28B); 3 card slots (can be installed 2 NANO SIM cards or 1 NANO SIM and 1 MICRO SIM card(Depends on the old and new version) and one TF micro memory card ), TF card supports up to 128GB.Please note that the old and new versions will be sent randomly.",
+      "【Dual Camera +For Seniors And Children Gift】The smartphone with 16MP rear camera and 8MP front camera, easily for vivid colors pictures, record your daily life and precious moments. This large screen smartphone is perfect for chatting, watching videos, listening to music, browsing the web, is perfect as a backup phone for daily use or as a the seniors and children. This phone cost effective yet powerful functionality but not suitable for playing large games, thank you for your support."
+    ],
+    "extracted_specs": {
+      "storage": "64GB",
+      "ram": "4GB",
+      "network": "4G",
+      "screen": "6.1 inch"
+    }
+  },
+  {
+    "id": 55,
+    "query_type": "intent",
+    "query": "điện thoại gaming 120Hz hiệu năng cao giá tốt",
+    "target_asin": "B0CDFNPLS7",
+    "product_title": "POCO, LLC Poco X3 Pro (128GB, 6GB) 6.67In 120Hz, Snapdragon 860, 48MP 4K Quad Camera, All Day Battery, Dual SIM GSM Factory Unlocked - US & Global 4G LTE Version (Blue), M2102J20SG, Frost Blue",
+    "product_brand": "POCO, LLC",
+    "product_price": null,
+    "product_rating": 4.5,
+    "product_features": [
+      "6.67'' FHD+ DotDisplay, 2400x1080, 395ppi, 20:9 ratio, 120Hz refresh rate, 450 nits, Dual SIM",
+      "128GB ROM + 6GB RAM, Qualcomm Snapdragon 860 (7 nm), Octa-core, Adreno 640, Android 11, MIUI 12.5 for POCO",
+      "Rear Camera: 48MP, f/1.8 + 8MP, f/2.2 + 2MP, f/2.4 + 2MP, f/2.4, Front Camera: 20MP, f/2.2, Fingerprint (side-mounted), 5160mAh Battery"
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "6GB",
+      "network": "4G LTE",
+      "screen": "6.7 inch"
+    }
+  },
+  {
+    "id": 56,
+    "query_type": "intent",
+    "query": "điện thoại 128GB camera 48MP pin ổn",
+    "target_asin": "B08HQRDH29",
+    "product_title": "HAFURY GT20 Unlocked Smartphone, 6GB RAM/128GB, 6.4-Inch Display, 48MP Cameras, 4200mAh Battery, Android 10, Global Version, Dual SIM, Black",
+    "product_brand": "HAFURY",
+    "product_price": null,
+    "product_rating": 3.8,
+    "product_features": [
+      "【48MP Five AI Rear Cameras】HAFURY GT20 unlocked Phone with the 48MP Samsung S5KGM1 main camera, 32MP High-Resolution Al Selfie, and 16MP ultra wide-angle lens allows you to capture entire landscapes in one picture. The 5MP macro lens to get clear details.",
+      "【6GB RAM & Octa-core Processor】This unlocked smartphone runs smoothly with the latest MT6771 Helio P60 octa-core processor and 6GB of RAM. 128GB internal storage is enough to work and play.",
+      "【6.4 Inch Punch FullView Display 】HAFURY cell phone uses a 6.4 FHD Hole-punch display. That allows for a higher screen-to-body ratio and a wider field of view. 2310 * 1080P resolution providing clean and crisp imaging."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "6GB",
+      "network": "4G",
+      "screen": "6.4 inch"
+    }
+  },
+  {
+    "id": 57,
+    "query_type": "intent",
+    "query": "điện thoại 5G màn hình lớn pin khá",
+    "target_asin": "B0BVFVD416",
+    "product_title": "WV LeisureMaster M12 5G Unlocked Cell Phone,4GB RAM+128GB ROM Dual Sim Cellphone, Android Smartphone 48MP+72MP Dual Camera, 7300mAh Battery 7.3-inch HD+ Screen, Face Recognition",
+    "product_brand": "WV LeisureMaster",
+    "product_price": 148.88,
+    "product_rating": 2.3,
+    "product_features": [
+      "【Dual 4G VoLTE & global LTE bands】 Our smartphone is compatible with most of the GSM Networks and CDMA Networks. Both SIM card slots are compatible with 4G and support 4G VoLTE in both slots. A 24-Month manufacturer's warranty is promised, If you experience any problem with our products or service please don’t hesitate to contact us right away.",
+      "【48/100MP & 7.3 Inch HD Cellphones】 M12 smartphone with 48MP front camera, , 100MP rear camera autofocus, can brings more details to your creativity. Super night mode can help you take amazing photos in any light. Thanks to 7.3 inch big screen with 20:9 aspect ratio and dual speakers design, the M12 Android 11 Cellphone allows you to enjoy the pleasure of movies and games.",
+      "【Power To Keep Going】: M12 Smart cellphone is equipped with 7300mAh battery, Standby time will Up to 4-day ,you can watch your favorite show, chat or listen to music on your journey without battery anxiety. 18W fast charging adapter will charge your phone more efficiently."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "4GB",
+      "network": "5G",
+      "screen": "7.3 inch"
+    }
+  },
+  {
+    "id": 58,
+    "query_type": "intent",
+    "query": "điện thoại 5G màn hình cực lớn để xem phim",
+    "target_asin": "B08S453C4H",
+    "product_title": "Comdy Unlocked Smartphones 5G, Android 10 Unlocked Cell Phones, 7.2 Inch Waterdrop Full Screen, 10 Core Processor, 1GB RAM 16GB ROM, 2MP 5MP, Dual SIM, 6800mAh Battery, Face ID, WiFi, GPS",
+    "product_brand": "Comdry",
+    "product_price": null,
+    "product_rating": 1.4,
+    "product_features": [],
+    "extracted_specs": {
+      "storage": "16GB",
+      "ram": "1GB",
+      "network": "5G",
+      "screen": "7.2 inch"
+    }
+  },
+  {
+    "id": 59,
+    "query_type": "intent",
+    "query": "điện thoại nhỏ gọn 5.45 inch cho nhu cầu cơ bản",
+    "target_asin": "B098K12SSB",
+    "product_title": "Jopwkuin Smart Phones Android, 5.45in, Dual SIM, 512MB+4GB, Dual Camera, 1500mAh, F/1.8 Aperture, F/2.0 Aperture, Unlocked Smartphone with Dual-core CPU for Android 6.0(Gold)",
+    "product_brand": "Jopwkuin",
+    "product_price": 48.89,
+    "product_rating": 1.0,
+    "product_features": [
+      "【NO RISK PURCHASE】We offer a 90 days no reason to exchange or return guarantee, if you don't like our product, or you have some questions with our product please don't hesitate to contact with us before you leave a negative comment, we will solve the problem for you within 24 hours.",
+      "【DUAL CARD DUAL STANDBY & VERSATILE】- This boost mobile phone delivers dual card dual standby to well depart your recreation and work. BTW, our cellphone supports 3G SIM card.(WCDMA2100, GSM4 Frequency Dual Card Dual Standby) What's more, WIFI, BT, FM and GPS features are all there served for you if you need.",
+      "【HD DUAL CAMERA & 1500MAH BATTERY】- The front camera equipped with 0.3MP f/2.0 aperture and fixed focal length, while the rear camera comes with 2MP (Colorful, f/1.8 Aperture) autofocus, making sure that every photo is as beautiful as wallpaper. BTW, the equipped 1500mAh Li-ion battery can support a long time recording or playing."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "4GB",
+      "network": "3G"
+    }
+  },
+  {
+    "id": 60,
+    "query_type": "intent",
+    "query": "điện thoại RAM lớn bộ nhớ khủng chạy mượt",
+    "target_asin": "B0BG241KVZ",
+    "product_title": "Unlocked Smartphone, Smartphone Face Recognition 12GB RAM 512GB ROM Expandable Memory 4G 5G HD Plus Office Screen Green",
+    "product_brand": "Huleo",
+    "product_price": null,
+    "product_rating": 1.0,
+    "product_features": [
+      "Facial Recognition: The 6.1in cell phone supports facial recognition, making mobile phones more intelligent. The cell phone can scan your facial features and identify them, portable and intelligent.",
+      "Support Expansion: The maximum supported memory is 128GB, while the cell phone has 12GB RAM and 512GB ROM.The 6.1in smartphone supports simultaneous use of two SIM cards and a memory card for phone calls and data storage.",
+      "HD Plus Screen: With a curvy and rounded design, 6.1 inch is the diagonal length of the rounded corners of the screen when the corners are stretched to a right angle, allowing you to experience a wider field of view."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "12GB",
+      "network": "5G",
+      "screen": "6.1 inch"
+    }
+  },
+  {
+    "id": 61,
+    "query_type": "intent",
+    "query": "điện thoại thiết kế độc lạ màn hình lớn 256GB",
+    "target_asin": "B0C1G6YP6D",
+    "product_title": "Unihertz Luna 4G Smartphone Unlocked,256GB+8GB 6.81\" FHD Display Transparent Back Designed Light-Emitting Cell Phone,Android 12 108MP AI Camera 20MP Night Vision Dual Sim OTG NFC (Black)",
+    "product_brand": "ATEVENSE",
+    "product_price": null,
+    "product_rating": 5.0,
+    "product_features": [
+      "【Transparent Back Light-Emitting Designed & 6.81” FHD+ screen】Unihertz Luna is an unlocked smartphone that features a sleek clear glass panel and the latest technology in LED light bar material. It also comes with a premium metallic color plated phone body. The lights on the back of the phone can be customized with colors and display scenes using the app. In music mode, the phone's lights will change to the rhythm of the song. The device is equipped with a 6.81\" FHD+ LCD screen, boasting a resolution of 2400x1080, which delivers super sharp visuals and rich, vivid colors.",
+      "【108MP AI Main Camera+ 20MP Night Vision+2MP macro camera】Unihertz Luna unlocked cellphone has a 108MP AI Main Camera+ 20MP Night Vision+2MP macro lens + 2MP macro camera, with AI, portrait and other functions. You can snap ultra-high resolution photos with the 108MP main camera. The 20MP night vision camera provides excellent image quality in low light environments and the 2MP macro camera lets you get close-up shots of small objects. Capture the various moving moments in your life.",
+      "【5000mAh capacity battery & 18W fast charging & OTG】This Unihertz Luna tmobile phone is equipped with a large capacity battery of 5000mAh, supports 18W fast charging, can standby for 700 hours and talk continuously for 35 hours.Unihertz Luna phone also supports reverse charging function, which can be used as a power bank for other Unihertz Luna phone also supports reverse charging, which can be used as a power bank to charge other smartphones."
+    ],
+    "extracted_specs": {
+      "storage": "256GB",
+      "ram": "8GB",
+      "network": "4G LTE"
+    }
+  },
+  {
+    "id": 62,
+    "query_type": "intent",
+    "query": "điện thoại 5G pin lớn dùng cả ngày",
+    "target_asin": "B0BFH8K967",
+    "product_title": "Yunseity S22 Ultra 5G Smartphone, 6.4 Inch Unlocked Cell Phone, 4GB RAM 64GB ROM 13MP 5MP Camera, Unlocked Smartphone Mobile Phone for 11, 6000mAh Battery, Yunseityt6brd3k4o9-11, Silver",
+    "product_brand": "Yunseity",
+    "product_price": null,
+    "product_rating": 2.3,
+    "product_features": [],
+    "extracted_specs": {
+      "storage": "64GB",
+      "ram": "4GB",
+      "network": "5G",
+      "screen": "6.4 inch"
+    }
+  },
+  {
+    "id": 63,
+    "query_type": "intent",
+    "query": "điện thoại 5.5 inch pin trâu cầm vừa tay",
+    "target_asin": "B07GKMDK91",
+    "product_title": "Unlocked Cell Phone, 5.5 inch 5000mah Big Battery X9 Mobile Phone 16GB+2GB RAM Dual SIM 4G AT&T/T-Mobile 8MP Camera Unlocked Smartphone(Gold)",
+    "product_brand": "KEN XIN DA",
+    "product_price": null,
+    "product_rating": 2.9,
+    "product_features": [],
+    "extracted_specs": {
+      "storage": "16GB",
+      "ram": "2GB",
+      "network": "4G",
+      "screen": "5.5 inch"
+    }
+  },
+  {
+    "id": 64,
+    "query_type": "intent",
+    "query": "điện thoại 4G nhỏ gọn để nghe gọi và lướt web",
+    "target_asin": "B07GDKHJT8",
+    "product_title": "Unlocked Cell Phones, V Mobile A10 Dual Sim 4G Unlocked Smartphones with 5.0\" IPS Display - 1GB RAM - 8GB ROM - 2MP+5MP Dual Camera - Android 7.0 - 2800mAh Battery - Unlocked Phones",
+    "product_brand": "K-Musculo",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [],
+    "extracted_specs": {
+      "storage": "8GB",
+      "ram": "1GB",
+      "network": "4G",
+      "screen": "5.0 inch"
+    }
+  },
+  {
+    "id": 65,
+    "query_type": "intent",
+    "query": "Samsung 5G màn hình lớn pin ổn",
+    "target_asin": "B09CLMK872",
+    "product_title": "Simple Mobile Samsung Galaxy A32 5G, 64GB - Prepaid Smartphone (Locked), Black",
+    "product_brand": "Simple Mobile",
+    "product_price": null,
+    "product_rating": 4.0,
+    "product_features": [
+      "Capture the beauty in the everyday with Galaxy A32 5G’s next-level, five-lens 48MP Main camera, 8MP Ultra wide camera, 5MP Macro camera, 2MP Depth camera; 4K30fps camera system",
+      "Life happens on the go. Keep up with Galaxy A32 5G’s long-lasting 5,000mAh battery and super-quick Fast Charging",
+      "6.5\" HD+ TFT LCD Infi nity-V Display; 4GB RAM / 64GB internal memory Up to 1T expandable; Octa Core 8 x 2.0Ghz MediaTek DIMENSITY 720 5G"
+    ],
+    "extracted_specs": {
+      "storage": "64GB",
+      "ram": "4GB",
+      "network": "5G",
+      "screen": "6.5 inch"
+    }
+  },
+  {
+    "id": 66,
+    "query_type": "intent",
+    "query": "điện thoại mini siêu gọn cho du lịch và bỏ túi",
+    "target_asin": "B0BDDKXM9M",
+    "product_title": "Unlocked Smartphone,Mini Smartphone,Portable Phone 2.5inch HD Touchscreen Lightweight Cell Phone,1GB RAM 8GB ROM Mini Smartphone for Students(Pearl White)",
+    "product_brand": "Pomya",
+    "product_price": 51.52,
+    "product_rating": 4.0,
+    "product_features": [
+      "Basic Parameters: The basic parameters of this phone are, for Android 6.0 system, quad core CPU, 1GB RAM, 8GB ROM, HD touch screen, 3G support, 1580mAh battery, Bluetooth, WiFi, GPS, etc.",
+      "Light Weight: This phone has a light weight body, and with the 2.5inch screen, it is very easy to hold in your hand and operate.",
+      "Perfect Gift: Do you want to contact your kids at any moment, then you can give this phone to your kids on a holiday or birthday, this phone will become a perfect gift."
+    ],
+    "extracted_specs": {
+      "storage": "8GB",
+      "ram": "1GB",
+      "network": "3G"
+    }
+  },
+  {
+    "id": 67,
+    "query_type": "intent",
+    "query": "smartphone nhỏ gọn cho nhu cầu cơ bản",
+    "target_asin": "B08Z4F5CKF",
+    "product_title": "KIKYO Unlocked Smartphones,LANDVO Rino4 Pro 5.45in Dual SIM Unlocked Cell Phone,1GB RAM + 8GB ROM,2MP+5MP Dual Camera,Face ID Android Phone with 2200mAh Battery(Green)",
+    "product_brand": "KIKYO",
+    "product_price": 58.29,
+    "product_rating": 1.7,
+    "product_features": [
+      "5.45in Phones Unlocked : The 5.45in screen lets you experience a wider field of view and view more content in Games and videos while the phone is still small and liGht.",
+      "128G Expandable & HD Camera : Up to 128GB expandable storaGe, supports usinG 2 SIM cards at the same time for data and phone calls or usinG micro memory cards at the same time for data storaGe.HiGh resolution cameras, vivid colors and every photo is as beautiful as a backGround imaGe.",
+      "HiGh Performance : Powerful processor, Greatly improved network, runtime speed, frame rate and imaGe smoothness when playinG biG Games and multitaskinG."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "1GB",
+      "screen": "5.5 inch"
+    }
+  },
+  {
+    "id": 68,
+    "query_type": "intent",
+    "query": "điện thoại 5G Android 12 128GB giá tốt",
+    "target_asin": "B0B96V29CN",
+    "product_title": "CUEI 5G Unlocked Smartphone for Android 12, 6GB 128GB Dual SIM Unlocked Cell Phone, 6.5in IPS HD Screen Unlocked Android Smartphone, 12MP 16MP Camera, 10 Hours Talking, Face Recognition(Blue)",
+    "product_brand": "CUEI",
+    "product_price": 125.82,
+    "product_rating": 2.8,
+    "product_features": [
+      "6.5in Large Screen Phone: The unlocked mobile phone adopts a 6.5in ultra HD screen and an IPS HD screen. Not only brings a wider viewing experience, but also has extraordiry vivid colors and amazing clarity, allowing you to explore every detail and maximize your viewing experience",
+      "Large 5000mAh Battery: The smartphones are equipped with an above average 5000mAh battery that lasts longer than you expect, 6‑10 hours of talking, 8‑15 hours listening to music, 3‑5 hours playing games, and more. Smart and thoughtful AI battery magement can reduce excessive cache to save more power, thus extending standby time, and supports fast charging",
+      "Support System: The unlocked smartphone is equipped with the latest for Android 12 system, up to 2.0GHz, the architecture runs multiple apps with enough fluidity and responsiveness to meet your productivity and entertainment needs"
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "network": "5G",
+      "screen": "6.5 inch"
+    }
+  },
+  {
+    "id": 69,
+    "query_type": "intent",
+    "query": "điện thoại màn hình lớn 6 inch dễ xem",
+    "target_asin": "B01GWLL4N2",
+    "product_title": "6.0 inch Unlocked smartphone Phablet QHD IPS Android 5.1 MTK6580 1.3GHz Quad core 512MB RAM +8GB ROM 2G GSM 3G WCDMA Dual Sim 5.0MP cell phone (Pink)",
+    "product_brand": "Geameon",
+    "product_price": null,
+    "product_rating": 5.0,
+    "product_features": [],
+    "extracted_specs": {
+      "storage": "8GB",
+      "network": "3G",
+      "screen": "6.0 inch"
+    }
+  },
+  {
+    "id": 70,
+    "query_type": "intent",
+    "query": "điện thoại siêu bền chống nước cho môi trường khắc nghiệt",
+    "target_asin": "B07HMJ6DV1",
+    "product_title": "Sonim XP8 XP8800 Dual-SIM 64GB IP68/IP69 (GSM Only, No CDMA) Factory Unlocked 4G/LTE Rugged Smartphone (Black) - International Version",
+    "product_brand": "Sonim",
+    "product_price": 159.0,
+    "product_rating": 3.4,
+    "product_features": [],
+    "extracted_specs": {
+      "storage": "64GB",
+      "network": "4G"
+    }
+  },
+  {
+    "id": 71,
+    "query_type": "intent",
+    "query": "điện thoại 4G màn hình 5.5 inch giá rẻ",
+    "target_asin": "B07DC4K796",
+    "product_title": "Unlocked Cell Phones, Vmobile N8 4G, 16GB ROM Smartphone 5.5 inch 18:9 Widescreen, Dual 8.0MP Camera Android 7.0, Dual SIM & 2800mAh Battery Quad Core Mobile (Gold)",
+    "product_brand": "Vmobile",
+    "product_price": null,
+    "product_rating": 3.3,
+    "product_features": [],
+    "extracted_specs": {
+      "storage": "16GB",
+      "network": "4G",
+      "screen": "5.5 inch"
+    }
+  },
+  {
+    "id": 72,
+    "query_type": "intent",
+    "query": "điện thoại phím to âm lượng lớn cho người cao tuổi",
+    "target_asin": "B0BS9BCP6Q",
+    "product_title": "QIMHAI Smartphone Unlocked Cell Phones S22 Ultra 6.1in HD Screen Cheap Phones 2GB/16GB Android 10 Straight Talk Phone 5000mAh 128GB Extension Dual Sim Boost Mobile Phones Telefonos (Black)",
+    "product_brand": "QIMHAI",
+    "product_price": null,
+    "product_rating": 2.7,
+    "product_features": [
+      "📱【Real 6.1inch HD Full Screen】Android phone unlocked with 6.1 Inch screen allows you to experience a wider field of view,showing more content in games and videos,The wide screen view and the high color reproduction make the screen look very clear and the fine quality is better.",
+      "🚀【2GB RAM+ 16GB ROM】Unlocked smartphone is equipped with high-performance 2GB +16G and Android 10 system, the moblie phone can be expanded to 256GB through a microSD card,runs smoothly, and has a good user experience. Watch live broadcasts, swipe videos, play games, and video chat to enjoy a smooth and non-stuck experience.",
+      "🔋【5000mAh Long-lasting Battery】The unlocked mobile phones is equipped with 5000mAh large battery, which allows you to go on browsing, playing games, watching movies or so for hours.You can aslo enable the Face ID function to unlock the smartphone quickly at a glance."
+    ],
+    "extracted_specs": {
+      "storage": "16GB",
+      "ram": "2GB",
+      "screen": "6.1 inch"
+    }
+  },
+  {
+    "id": 73,
+    "query_type": "intent",
+    "query": "điện thoại nhỏ gọn 5.45 inch dễ cầm",
+    "target_asin": "B0B6C5PPWC",
+    "product_title": "GOWENIC Rino4 Pro Unlocked Smartphones, 5.45 Inch HD Screen Cell Phone, 512MB RAM 4GB ROM Cell Phones Unlocked, for Android Dual SIM Dual Standby Smartphone with Face Recognition(Black)",
+    "product_brand": "GOWENIC",
+    "product_price": 58.12,
+    "product_rating": 1.0,
+    "product_features": [
+      "[HD Full Screen] Every time you brighten the screen is a new experience. The 5.45 inch full screen has a screen ratio of up to 91%, allowing you to experience a wider field of vision. In games and videos, more content is displayed, and the phone remains small and light.",
+      "[CPU Processor] Using MTK6572 quad core CPU processor, the network, running speed, frame rate and picture smoothness are greatly improved when playing games and multitasking.",
+      "[ For Android 4.4 System] Greatly reduces the probability of freezes, crashes, etc., allowing you to grab red envelopes faster. The key experience between game engines, playing large games, greatly improves the network speed, frame rate and picture fluency."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "ram": "4GB"
+    }
+  },
+  {
+    "id": 74,
+    "query_type": "intent",
+    "query": "điện thoại màn hình lớn 6.7 inch xem video",
+    "target_asin": "B089T3K59V",
+    "product_title": "1 MTK6580P Quad core 6.7in Drop Screen Smartphone, Support Face Recognition,Fingerprint Unlock Mobile Phone Dual Card Dual Standby 800W Front 1300W Rear Camera with 128GB TF CardNot Include",
+    "product_brand": "fosa1",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "6.7 inch Drop down Screen Phone: Using MTK6580P quad core motherboard chip , Android 9.1 version , high definition mobile screen and a new interactive design 6.7 inch unlocked mobile phone , weighs only about 380g , easy to use , easy to operate , does not take up space , compact and portable.",
+      "Face Recognition Function: All in one design , built in 4800Mah non removable battery , magnesium aluminum alloy body , nano 3D electroplated gradient color hot bent glass back cover , 5 point touch screen , support face recognition , intelligent wake up , support G sensor , simple and clear , improve you feeling of using.",
+      "Dual SIM Card Dual Standby: Dual SIM dual standby mobile phones that support Nano SIM + Nano SIM cards , running memory + body memory is 2G + 16G (because the mobile phone software occupies memory , the running memory will be less than 2 + 16G) , the maximum support 128GB TF Card expansion memory (128G memory card is not included in this product list)."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "network": "3G",
+      "screen": "6.7 inch"
+    }
+  },
+  {
+    "id": 75,
+    "query_type": "intent",
+    "query": "điện thoại nhỏ gọn có face unlock cho nhu cầu nhẹ",
+    "target_asin": "B08XQ1YT2G",
+    "product_title": "EBTOOLS 5.45in Face Recognition Unlock Smart Cell Phone, HD Screen Android 512MB+4G Smartphone Dual Card Dual Standby(Black)",
+    "product_brand": "EBTOOLS",
+    "product_price": 58.27,
+    "product_rating": 2.4,
+    "product_features": [
+      "【5.45 \" Waterdrop Screen】5.45 inch water drop screen combines integrated technology to give you an unprecedented full screen experience, allows you to experience a wider view of the world, showing more content in games and videos, while the phone is still small and lightweight.",
+      "【Great Design】Powerful processor, greatly improved network, runtime speed, frame rate and image smoothness when playing large games and multitasking. Up to 128GB of expandable storage, supports simultaneous use of 2 SIM cards for data and phone calls, or simultaneous use of Micro memory cards for data storage.",
+      "【Dual Camera】Highdefinition cameras, vivid colors, and every photo is as beautiful as wallpaper."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "network": "4G"
+    }
+  },
+  {
+    "id": 76,
+    "query_type": "intent",
+    "query": "điện thoại màn hình lớn 6.26 inch cho giải trí",
+    "target_asin": "B09LCFBNCW",
+    "product_title": "WESE Unlocked Smartphone,IP12 PRO+ Android Smartphone 6.26in Large Screen Unlocked Cellphone Face Recognition Unlocked Android Smartphone Dual Card Dual Standby(Black)",
+    "product_brand": "WESE",
+    "product_price": 94.99,
+    "product_rating": 2.9,
+    "product_features": [
+      "[6.26In Large Screen]The smartphone with 6.26in large screen allows you to experience a wider field, 19:9 6.26in HD+, 2.5D arc edge, 5 points touch the capacitive touch screen. Magnesium aluminum body, Nano 3D electroplating gradient glass back cover. beauty camera, intelligent wake up, face unlock.",
+      "[About The Phone]Support maximum expansion 128GB memory card(not Include), support simultaneous installation of two SIM cards and a memory card(Not Included), 1950mah large capacity battery.",
+      "[1GB + 8GB]1GB+8GB Memory is enough for of apps including message, chat applications, This Smartphone better selfie pictures can be taken."
+    ],
+    "extracted_specs": {
+      "storage": "128GB",
+      "network": "3G",
+      "screen": "6.3 inch"
+    }
+  },
+  {
+    "id": 77,
+    "query_type": "intent",
+    "query": "điện thoại mini siêu nhỏ bỏ túi",
+    "target_asin": "B08KWFT5HK",
+    "product_title": "zanco Tiny t2 World's Smallest 3G WCDMA Mobile Phone,Smallest Mini Phone Small Phone Travelling Phone,Pocket Cell Phone",
+    "product_brand": "Zanco",
+    "product_price": null,
+    "product_rating": 4.2,
+    "product_features": [
+      "Zanco Tiny T2 is equipped with 1 inch color screen, can store 300 contacts and 500 text messages, supports Nano SIM card, uses Micro USB interface, built-in 500mAh capacity battery, maximum talk time 4 hours, standby 7 day.",
+      "The world's smallest 3G mobile phone;",
+      "Other features include Bluetooth music connection so you can control a Bluetooth device; play music, pause, next and previous etc. You can also sync contacts, SMS and music with your smartphone through Bluetooth. Despite its size the phone is really easy to and will make the perfect novelty gift for family, friends or yourself."
+    ],
+    "extracted_specs": {
+      "network": "3G"
+    }
+  },
+  {
+    "id": 78,
+    "query_type": "intent",
+    "query": "điện thoại nắp gập phím to cho người già",
+    "target_asin": "B08QYSD3HW",
+    "product_title": "TIANHOO Flip Phone for Seniors 4G, Senior Flip Phone Unlocked with Big Buttons Dual Card GSM LTE Flip Phone for Elderly with Large Buttons Flip Cell Phone for Seniors (Silver)",
+    "product_brand": "TIANHOO",
+    "product_price": 89.99,
+    "product_rating": 3.1,
+    "product_features": [
+      "Powerful Functions: Senior flip phone Unlocked with 4G dual card dual standby, WLAN, BT, GPS, FM, 3.5inch display, 5MP+2MP wide-angle camera, bright LED light. Our engineers always keep on updating software.",
+      "The flip phone for seniors includes easy charging dock, built-in whatsapp and skype, keep in touch at any time. Super Durable: 2000mAh large battery. Low power consumption: Standby ≈5 days, voice call ≈11 hours. Please fully charge the phone before using it for the first time.",
+      "This senior cell phone does not bond to any plan, suitable for GMS 2G, WCDMA 3G and 4G LTE networks, suitable for AT&T 3G and virtual carriers using AT&T network like Tracfone, H2O, Straight Talk, Simple Mobile, etc. NOT for CDMA network(Verizon, Sprint, Boost, PagePlus,Virgin)."
+    ],
+    "extracted_specs": {
+      "network": "4G LTE",
+      "screen": "3.5 inch"
+    }
+  },
+  {
+    "id": 79,
+    "query_type": "intent",
+    "query": "điện thoại 4G giá rẻ cho người cao tuổi",
+    "target_asin": "B0BRRTVSQV",
+    "product_title": "USHINING 4G LTE Unlocked Senior Cell Phone 1800mAh Battery Type-C Charger Seniors Feature Phone SOS Calling Basic Phone for Elderly Unlocked Feature Cell Phone with Charging Dock(Black)",
+    "product_brand": "USHINING",
+    "product_price": 75.99,
+    "product_rating": 3.1,
+    "product_features": [
+      "【Built for Seniors】USHINING 4G senior cell phone, easy to use operation system, Type-c charger, ultra long standby, big menu icon, large font, high volume and high-definition loudspeakers, equipped with a charging dock, very convenient for the elderly when charge the phone.",
+      "【4G LTE network】This senior 4G basic cell phone is compatible with T-Mobile(Prepaid Plan), MetroPCS, Tello Mobile, Ultra Mobile, SpeedTalk, Simple Mobile, Mint Mobile, Red Pocket(GSMT) and any other carriers that using T-Mobile service; NOT for CDMA Carriers (Verizon, Sprint, Boost, PagePlus) or AT&T. ( SIM CARD NOT INCLUDED )",
+      "【Practical Shortcut Keys】this senior feature phone has a SOS button on the rear cover for emergency call, preset 5 emergency contacts, allowing you immediately dialing to a preferred contact number in case of an emergency. Ideal for seniors, children or people with disabilities. 2-9 Speed dial buttons(Dedicated Direct dial keys)."
+    ],
+    "extracted_specs": {
+      "network": "4G LTE"
+    }
+  },
+  {
+    "id": 80,
+    "query_type": "intent",
+    "query": "điện thoại Android nhỏ gọn màn hình 4 inch",
+    "target_asin": "B09LCZ9J2Q",
+    "product_title": "Brakites Unlocked Cell Phones, Android 5.1 Smart Phone HD Dual SIM Unlocked Smartphones, 512MB + 4GB RAM 4.0inch Touch Screen Mobile Cell Phone for Father Childrens Christmas Gift (Blue)",
+    "product_brand": "Brakites",
+    "product_price": null,
+    "product_rating": 2.5,
+    "product_features": [
+      "🔥【Smartphone Available Frequency RegardingProvider】T-mobile:1700/2100(WCDMA)【Available✅】;　AT&T:1900MHz(WCDMA)【Available✅】;Verizon:800/1900(CDMA2000)【Not Available❎】;Sprint: 800/1900(CDMA2000)【Not Available❎】",
+      "🔥【Powerful Processor】The powerful processor greatly improves the network, running speed, frame rate and picture smoothness when playing large games.",
+      "🔥【Dual SIM Unlocked Phone】Dual card dual standby, high‑definition full screen, smart phone, high‑quality performance."
+    ],
+    "extracted_specs": {
+      "ram": "4GB",
+      "screen": "4.0 inch"
+    }
+  },
+  {
+    "id": 81,
+    "query_type": "intent",
+    "query": "bộ kích sóng 5G cho nhà xưởng và không gian lớn",
+    "target_asin": "B07ZNWDCRW",
+    "product_title": "Cell Phone Booster for Home & Metal Building - Up to 4,500 sq ft, All U.S. Carriers- Compatible with Verizon, AT&T, T-Mobile, Sprint & More - 5G 4G 3G LTE, FCC Approved",
+    "product_brand": "ANYCALL A",
+    "product_price": null,
+    "product_rating": 3.7,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "5G"
+    }
+  },
+  {
+    "id": 82,
+    "query_type": "intent",
+    "query": "điện thoại nắp gập chữ to cho người cao tuổi",
+    "target_asin": "B07XQBG9ND",
+    "product_title": "TTfone Titan TT950 Whatsapp 3G Touchscreen Senior Big Button Flip Mobile Phone - Simplified Android Menu",
+    "product_brand": "TTfone",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "3G"
+    }
+  },
+  {
+    "id": 83,
+    "query_type": "intent",
+    "query": "điện thoại Android nhỏ gọn pin vừa selfie cơ bản",
+    "target_asin": "B091Z2MYZX",
+    "product_title": "Unlocked Smartphone for Android, 5.45\" HD Full Screen Autofocus Dual SIM Cell Phone, Face Recognition Smartphone with 128G Expandable Storage, 0.3MP + 2MP Camera, 1500mAh Battery, 4GB + 512MB(green)",
+    "product_brand": "BTER",
+    "product_price": null,
+    "product_rating": 2.2,
+    "product_features": [
+      "【EASILY RECORD A GOOD LIFE】High definition camera, every photo is as beautiful as wallpaper with vivid colors, based on the in‑depth development for Android, which is more complete and smoothly. And it comes with up to 128GB of expandable storage, you can record your beautiful moments as you like!",
+      "【 GAMING EXPERIENCE】This dual sim mobile phone built in a powerful processor greatly improves the network, running speed, frame rate and picture smoothness when playing large games. And it is small and light, easy to grip while playing, bring you the gaming experience.",
+      "【5.45IN HD SCREEN】The 5.45in large screen allows you to experience a broader field of view in games and videos, more content is displayed, the face recognition can always be accurately identified, bringing you a science fiction experience."
+    ],
+    "extracted_specs": {
+      "storage": "128GB"
+    }
+  },
+  {
+    "id": 84,
+    "query_type": "intent",
+    "query": "điện thoại siêu bền chống nước chống bụi",
+    "target_asin": "B00BY3BGG4",
+    "product_title": "Rugged Mobile Phone - Shockproof, Dustproof, Waterproof",
+    "product_brand": "Dozen",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "OS Version: Custom OS, Memory: Internal: 4.1MB, Micro SD Card up to 8GB",
+      "Processor Speed (max): 260MHz, RAM: 128MB, 2G: GSM 850/900/1800/1900MHz",
+      "2 Megapixel Rear Camera, Video Resolution: 176x144. Mic and Speaker, Media Formats: Video: 3GP, MP4, AVI, Audio: MP3, WAV, Picture: JPG, eBook: TXT"
+    ],
+    "extracted_specs": {
+      "storage": "8GB"
+    }
+  },
+  {
+    "id": 85,
+    "query_type": "intent",
+    "query": "điện thoại nắp gập 4G có camera cho nhu cầu cơ bản",
+    "target_asin": "B07W94YTHD",
+    "product_title": "Coolpad Snap 3312A Sprint Android 4G LTE Flip Phone with Camera",
+    "product_brand": "Sprint",
+    "product_price": 94.99,
+    "product_rating": 2.9,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "4G LTE"
+    }
+  },
+  {
+    "id": 86,
+    "query_type": "intent",
+    "query": "điện thoại gập cao cấp đa nhiệm màn hình lớn",
+    "target_asin": "B0BCPMT7FL",
+    "product_title": "Galaxy Z Fold 4 Cell Phone, Factory Unlocked Android Smartphone, 256GB, Flex Mode, Dual Sim (1x eSim + 1x Nano) Multi Window View, Foldable Display, Korean International Version, Phantom Black",
+    "product_brand": "Galaxy Z Fold",
+    "product_price": null,
+    "product_rating": 2.5,
+    "product_features": [
+      "FLEX MODE: Free up your hands with Flex Mode on the Galaxy Z Fold4; This smartphone stands on its own so you can take notes during a conference call or follow along with instructional videos in real time",
+      "Any purchase NOT made from seller \"NEWCELLPHONE\" will NOT be guaranteed for any issues or warranty",
+      "HANDS FREE VIDEO: Don’t stay stuck to your cellphone; Set up your phone in Flex Mode and check off your to-dos while catching up with friends; Hands-free video chat lets you multitask and move freely while staying in frame"
+    ],
+    "extracted_specs": {
+      "storage": "256GB"
+    }
+  },
+  {
+    "id": 87,
+    "query_type": "intent",
+    "query": "smartphone 5.45 inch mượt để dùng hằng ngày",
+    "target_asin": "B09GPHS6GD",
+    "product_title": "SHYEKYO Smartphone, Mate40 Pro 5.45in Dual Card Dual Standby Unlocked Cellphone, HD Large Screen Face Unlock Smartphone, for Android (Black)",
+    "product_brand": "SHYEKYO",
+    "product_price": null,
+    "product_rating": 3.2,
+    "product_features": [
+      "High definition camera, every photo is as beautiful as wallpaper with vivid colors.",
+      "The 5.45in large screen allows you to experience a broader field of view in games and videos, more content is displayed, while the phone is still small and light.",
+      "Based on the in‑depth development for system, which is more complete and smoothly."
+    ],
+    "extracted_specs": {
+      "storage": "128GB"
+    }
+  },
+  {
+    "id": 88,
+    "query_type": "intent",
+    "query": "điện thoại rugged IP68 3G cho công việc ngoài trời",
+    "target_asin": "B07BBH9LCL",
+    "product_title": "RugGear RG160, Unlocked Rugged Smartphone - Waterproof IP68-3G Android Touchscreen (3G 850/1900MHz in The Americas, 3G 2100MHz in Europe, Asia, Middle East, Africa)",
+    "product_brand": "RugGear Americas",
+    "product_price": null,
+    "product_rating": 4.0,
+    "product_features": [],
+    "extracted_specs": {
+      "network": "3G"
+    }
+  },
+  {
+    "id": 89,
+    "query_type": "intent",
+    "query": "điện thoại cảm ứng đơn giản màn hình lớn",
+    "target_asin": "B001S08XSC",
+    "product_title": "Unlocked Quad Band Touchscreen Cell Phone - Large Display Silver Edition",
+    "product_brand": "DIGITAL MOBILE",
+    "product_price": null,
+    "product_rating": 4.0,
+    "product_features": [],
+    "extracted_specs": {}
+  },
+  {
+    "id": 90,
+    "query_type": "intent",
+    "query": "BlackBerry cho nhà mạng Open Mobile ở Puerto Rico",
+    "target_asin": "B00J945A08",
+    "product_title": "Blackberry Curve Open Mobile Cell Phone - For Puerto Rican Cell Phone Carriers ONLY (BLACK Blackberry 8530)",
+    "product_brand": "Open Mobile",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "ONLY compatible with the Puerto Rican cell phone carrier \"Open Mobile\", do not buy unless you live in Puerto Rico",
+      "Unable to activate / use in the United States",
+      "Blackberry Curve 8530 CDMA Cell Phone (NOT GSM)"
+    ],
+    "extracted_specs": {}
+  },
+  {
+    "id": 91,
+    "query_type": "intent",
+    "query": "điện thoại GSM cổ điển có MP3 và khe thẻ nhớ",
+    "target_asin": "B000KI71BS",
+    "product_title": "i-mate JAQ Unlocked Smartphone with MP3 Player, MiniSD Slot-U.S. Version with Warranty (Silver)",
+    "product_brand": "I-MATE",
+    "product_price": null,
+    "product_rating": 3.5,
+    "product_features": [
+      "This unlocked cell phone is compatible with GSM carriers like AT&T and T-Mobile. Not all carrier features may be supported. It will not work with CDMA carriers like Verizon Wireless, Alltel and Sprint.",
+      "Quad-band GSM cell phone compatible with 850/900/1800/1900 frequencies and GPRS/EDGE capabilities",
+      "Windows Mobile 5.0 operating system; 2.8-inch touchscreen"
+    ],
+    "extracted_specs": {}
+  },
+  {
+    "id": 92,
+    "query_type": "intent",
+    "query": "điện thoại siêu bền nắp gập cho môi trường khắc nghiệt",
+    "target_asin": "B00QA1R268",
+    "product_title": "CELLPHONEUNLOCK PCD Wrangler Cdm-2080 Us Cellular Rugged Flip Phone - Perfect for Extreme Abuse",
+    "product_brand": "CELLPHONEUNLOCK",
+    "product_price": null,
+    "product_rating": 3.0,
+    "product_features": [
+      "PCD Wrangler CDM-2080 US Cellular Rugged Flip Phone - Perfect for extreme abuse"
+    ],
+    "extracted_specs": {}
+  },
+  {
+    "id": 93,
+    "query_type": "intent",
+    "query": "điện thoại mini siêu nhỏ nghe gọi tiện mang theo",
+    "target_asin": "B01N1Q4OMO",
+    "product_title": "LONG CZ T3 Smallest Long Standby Mini Tiny Mobile Cell Phone Bluetooth Dialer 0.66 inch MP3 SMS Voice Changer with Vibrate Function (Black)",
+    "product_brand": "LONG-CZ",
+    "product_price": null,
+    "product_rating": 3.6,
+    "product_features": [],
+    "extracted_specs": {}
+  },
+  {
+    "id": 94,
+    "query_type": "intent",
+    "query": "điện thoại phím to loa lớn cho người lớn tuổi",
+    "target_asin": "B00LO3LVKA",
+    "product_title": "Vktech 2.0 Inch Ultra Thin Big Keypad Loud Mobile Phone Cellphone for Old People (White)",
+    "product_brand": "Vktech",
+    "product_price": null,
+    "product_rating": 3.3,
+    "product_features": [],
+    "extracted_specs": {}
+  },
+  {
+    "id": 95,
+    "query_type": "intent",
+    "query": "điện thoại mini bỏ túi pin 3000mAh",
+    "target_asin": "B085C6JCWY",
+    "product_title": "Zopsc 1.7inch Screen 3000 MAh M2090 Dual Card Dual Standby Mobile Phone with Whatsapp Multi-Function Cellphone 100-240V US (Black)",
+    "product_brand": "Zopsc",
+    "product_price": 21.59,
+    "product_rating": 1.0,
+    "product_features": [
+      "Multi-function mobile phone, support browser, flashlight, ebook, FM, music, video, camera, phone 300, SMS 50, alarm 3 groups, games, calendar, computer, recording, social and so on.",
+      "With 0.08MP camera, the small mobile phone is powerful and can be taken at any time to record a good life.",
+      "Using high quality PC materials, the phone is very resistant to falling and durable."
+    ],
+    "extracted_specs": {}
+  },
+  {
+    "id": 96,
+    "query_type": "intent",
+    "query": "điện thoại nắp gập đơn giản để gọi và nhắn tin",
+    "target_asin": "B01AQAX2JO",
+    "product_title": "NET10 Unlimited LG 220C Flip Cell Phone (TracFone) by Tracfone",
+    "product_brand": "net10 unlimited",
+    "product_price": null,
+    "product_rating": 1.0,
+    "product_features": [
+      "LG 220C Flip Cell Phone (TracFone) by Tracfone"
+    ],
+    "extracted_specs": {}
+  },
+  {
+    "id": 97,
+    "query_type": "intent",
+    "query": "điện thoại móc khóa siêu nhỏ độc lạ",
+    "target_asin": "B01BWWOEW4",
+    "product_title": "2016 New World's Smallest Car Key Fob Flip X6 Mobile Cell Phone Personality Key Ring Phone Gift BT Single SIM (Black)",
+    "product_brand": "NEW",
+    "product_price": null,
+    "product_rating": 5.0,
+    "product_features": [
+      "Delivery time: 7-13days to USA by EUB small packets tracked; if you need DHL 5-7days faster shipping, please contact with us",
+      "Personality car key ring small cell phone",
+      "When you press the button on the surface of this phone, it can make sound just like you are unlocking a real car"
+    ],
+    "extracted_specs": {}
+  },
+  {
+    "id": 98,
+    "query_type": "intent",
+    "query": "điện thoại nắp gập 4G LTE cho Verizon",
+    "target_asin": "B08975Q8GK",
+    "product_title": "Orbic Journey V Verizon Prepaid 4g LTE Flip Phone - Black",
+    "product_brand": "Prepaid",
+    "product_price": 65.0,
+    "product_rating": 3.6,
+    "product_features": [],
+    "extracted_specs": {}
+  },
+  {
+    "id": 99,
+    "query_type": "intent",
+    "query": "điện thoại cơ bản mở khóa để nghe gọi",
+    "target_asin": "B000817GX0",
+    "product_title": "Hop-On 1806 Unlocked Cell Phone-International Version with No Warranty (Ice Blue)",
+    "product_brand": "Hop-On Wireless",
+    "product_price": null,
+    "product_rating": 5.0,
+    "product_features": [
+      "This unlocked cell phone is compatible with GSM carriers like AT&T and T-Mobile. Not all carrier features may be supported. It will not work with CDMA carriers like Verizon Wireless, Alltel and Sprint.",
+      "Tri-band GSM cell phone compatible with 900/1800/1900 frequencies and GPRS capabilities",
+      "SMS/EMS/MMS messaging, voicemail, and email functions"
+    ],
+    "extracted_specs": {}
+  },
+  {
+    "id": 100,
+    "query_type": "intent",
+    "query": "điện thoại cổ điển mở khóa màu xanh cho nhu cầu cơ bản",
+    "target_asin": "B000817FSG",
+    "product_title": "Hop-On 1806 Unlocked Cell Phone-International Version with No Warranty (Cobalt Blue)",
+    "product_brand": "Hop-on",
+    "product_price": null,
+    "product_rating": 4.2,
+    "product_features": [
+      "This unlocked cell phone is compatible with GSM carriers like AT&T and T-Mobile. Not all carrier features may be supported. It will not work with CDMA carriers like Verizon Wireless, Alltel and Sprint.",
+      "Tri-band GSM cell phone compatible with 900/1800/1900 frequencies and GPRS capabilities",
+      "SMS/EMS/MMS messaging, voicemail, and email functions"
+    ],
+    "extracted_specs": {}
+  }
+]

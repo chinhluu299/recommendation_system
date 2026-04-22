@@ -1,0 +1,82 @@
+[
+  {
+    "id": "carrier_cricket",
+    "type": "Carrier",
+    "label": "cricket"
+  },
+  {
+    "id": "carrier_tmobile",
+    "type": "Carrier",
+    "label": "t-mobile"
+  },
+  {
+    "id": "carrier_verizon",
+    "type": "Carrier",
+    "label": "verizon"
+  },
+  {
+    "id": "carrier_virgin_mobile",
+    "type": "Carrier",
+    "label": "virgin mobile"
+  },
+  {
+    "id": "carrier_att",
+    "type": "Carrier",
+    "label": "at&t"
+  },
+  {
+    "id": "carrier_sprint",
+    "type": "Carrier",
+    "label": "sprint"
+  },
+  {
+    "id": "carrier_tracfone",
+    "type": "Carrier",
+    "label": "tracfone"
+  },
+  {
+    "id": "carrier_ting",
+    "type": "Carrier",
+    "label": "ting"
+  },
+  {
+    "id": "carrier_simple_mobile",
+    "type": "Carrier",
+    "label": "simple mobile"
+  },
+  {
+    "id": "carrier_straight_talk",
+    "type": "Carrier",
+    "label": "straight talk"
+  },
+  {
+    "id": "carrier_boost_mobile",
+    "type": "Carrier",
+    "label": "boost mobile"
+  },
+  {
+    "id": "carrier_net10",
+    "type": "Carrier",
+    "label": "net10"
+  },
+  {
+    "id": "carrier_metro_by_tmobile",
+    "type": "Carrier",
+    "label": "metro by t-mobile"
+  },
+  {
+    "id": "carrier_telcel",
+    "type": "Carrier",
+    "label": "telcel"
+  },
+  {
+    "id": "carrier_consumer_cellular",
+    "type": "Carrier",
+    "label": "consumer cellular"
+  },
+  {
+    "id": "carrier_vodafone",
+    "type": "Carrier",
+    "label": "vodafone"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "source": "cat_cell_phones",
+    "target": "cat_cell_phones_accessories",
+    "relationship": "SUBCATEGORY_OF"
+  }
+]

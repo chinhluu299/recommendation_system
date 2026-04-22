@@ -1,0 +1,28 @@
+{
+  "total_nodes": 223284,
+  "total_edges": 369707,
+  "nodes_by_type": {
+    "Product": 7607,
+    "Brand": 682,
+    "Store": 565,
+    "Category": 2,
+    "Feature": 19225,
+    "Spec": 7509,
+    "Technology": 128,
+    "Carrier": 16,
+    "Accessory": 1016,
+    "User": 186534
+  },
+  "edges_by_relationship": {
+    "MANUFACTURED_BY": 7592,
+    "SOLD_BY": 7592,
+    "BELONGS_TO": 7607,
+    "SUBCATEGORY_OF": 1,
+    "HAS_FEATURE": 32051,
+    "HAS_SPEC": 72400,
+    "USES_TECHNOLOGY": 25813,
+    "SUPPORTS_CARRIER": 2861,
+    "INCLUDES_ACCESSORY": 10540,
+    "RATE": 203250
+  }
+}

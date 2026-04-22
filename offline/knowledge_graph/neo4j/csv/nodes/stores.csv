@@ -1,0 +1,566 @@
+id,label
+store_alcatel,alcatel
+store_blu,blu
+store_samsung,samsung
+store_motorola,motorola
+store_amazon_renewed,amazon renewed
+store_ulefone,ulefone
+store_umidigi,umidigi
+store_nuu,nuu
+store_oukitel,oukitel
+store_google,google
+store_blackview,blackview
+store_asus,asus
+store_zte,zte
+store_acogedor,acogedor
+store_tracfone,tracfone
+store_sudroid,sudroid
+store_lg,lg
+store_xiaomi,xiaomi
+store_folosafenar,folosafenar
+store_kxd,kxd
+store_mirusi,mirusi
+store_palm,palm
+store_sony,sony
+store_indigi,indigi
+store_huawei,huawei
+store_tosuny,tosuny
+store_microsoft,microsoft
+store_tcl,tcl
+store_aspercreme,aspercreme
+store_kyocera,kyocera
+store_azfunn,azfunn
+store_cubot,cubot
+store_slideco,slide-co
+store_total_by_verizon,total by verizon
+store_cellallure,cellallure
+store_newtion,newtion
+store_sony_ericsson,sony ericsson
+store_doogee,doogee
+store_uleway,uleway
+store_tianhoo,tianhoo
+store_gigaset,gigaset
+store_pantech,pantech
+store_net10,net10
+store_plum,plum
+store_sidekick,sidekick
+store_htc,htc
+store_agm,agm
+store_sprint,sprint
+store_galaxy_buds,galaxy buds
+store_pomya,pomya
+store_firefly,firefly
+store_ecandy,ecandy
+store_oneplus,oneplus
+store_iridium,iridium
+store_idroid,idroid
+store_generic,generic
+store_xgody,xgody
+store_easyfone,easyfone
+store_lansxxy,lansxxy
+store_audiovox,audiovox
+store_sanyo,sanyo
+store_ilight,ilight
+store_phonemax,phonemax
+store_dpofirs,dpofirs
+store_pusokei,pusokei
+store_lcydz,lcydz
+store_yoidesu,yoidesu
+store_servo,servo
+store_exachat,exachat
+store_ciglow,ciglow
+store_lock_socket,lock socket
+store_lavir,lavir
+store_kta_mobile_communications,kta mobile communications
+store_sanshreuni,sanshreuni
+store_apple,apple
+store_fujitsu,fujitsu
+store_total_wireless,total wireless
+store_vbestlife,vbestlife
+store_atevense,atevense
+store_tihebeyan,tihebeyan
+store_iocean,iocean
+store_samsung_electronics_store,samsung electronics store
+store_realme,realme
+store_hotwav,hotwav
+store_sharp,sharp
+store_ken_xin_da,ken xin da
+store_black_shark,black shark
+store_unknown,unknown
+store_ge,ge
+store_conquest,conquest
+store_yuntab,yuntab
+store_ps_mobile,ps mobile
+store_yezz,yezz
+store_yunseity,yunseity
+store_straight_talk,straight talk
+store_nono,no!no!
+store_victony,victony
+store_logic,logic
+store_redmagic,redmagic
+store_ushining,ushining
+store_lenovo,lenovo
+store_winntech,winn-tech
+store_novatel,novatel
+store_simple_mobile,simple mobile
+store_a_m_a_z_o_n,a m a z o n
+store_hewlett_packard,hewlett packard
+store_hp,hp
+store_aderroo,aderroo
+store_xplora,xplora
+store_binj,binj
+store_newmind,newmind
+store_egen,egen
+store_poco_llc,"poco, llc"
+store_l8star,l8star
+store_virgin_mobile,virgin mobile
+store_redmi,redmi
+store_v_mobile,v mobile
+store_setpot,setpot
+store_diydeg,diydeg
+store_yasashe,yasashe
+store_republic_wireless,republic wireless
+store_sonim,sonim
+store_tuanzi,tuanzi
+store_hilitand,hilitand
+store_s_smooth,s smooth
+store_zanco,zanco
+store_dilwe,dilwe
+store_siemens,siemens
+store_kudoo,kudoo
+store_artist_unknown,artist unknown
+store_jiake,jiake
+store_sanyo_rl2500,sanyo rl-2500
+store_cat_phone,cat phone
+store_honor,honor
+store_rca,rca
+store_ciciglow,ciciglow
+store_kata,kata
+store_uniwa,uniwa
+store_nuu_mobile,nuu mobile
+store_kidsconnect,kidsconnect
+store_tmobile,t-mobile
+store_attwireless,at&t-wireless
+store_samsung_electronics,samsung electronics
+store_vtech,vtech
+store_zerone,zerone
+store_aivmolikjafuam,aivmolik?jafuam
+store_jethro_trading_ltd,jethro trading ltd.
+store_artfone,artfone
+store_xboss,xboss
+store_simbros,simbros
+store_heayzoki,heayzoki
+store_chefzbest,chefzbest
+store_peedeu,peedeu
+store_schok,schok
+store_hipipooo,hipipooo
+store_hot_pepper,hot pepper
+store_firzero,firzero
+store_att,at&t
+store_cat,cat
+store_unihertz,unihertz
+store_jiasen,jiasen
+store_lively,lively
+store_sky_devices,sky devices
+store_asinno,asinno
+store_himalayan_chandra,himalayan chandra
+store_red,(red)
+store_covus,covus
+store_yealink,yealink
+store_homtom,homtom
+store_chargedy,chargedy
+store_tomengbeiaabbcc,tomengbeiaabbcc
+store_razer,razer
+store_rokit,rokit
+store_star,star
+store_freedompop,freedompop
+store_azumi,azumi
+store_consumer_cellular,consumer cellular
+store_garsentx,garsentx
+store_wwj,wwj
+store_a_phone,a phone
+store_vktech,vktech
+store_ebtools,ebtools
+store_meizu,meizu
+store_htc_wing,htc wing
+store_cuei,cuei
+store_sonyericsson,sonyericsson
+store_arcci,arcci
+store_x_gody,x gody
+store_sxyrn,sxyrn
+store_cuifati,cuifati
+store_epik_one,epik one
+store_vizio,vizio
+store_ytwtech,ytwtech
+store_galaxy_black,galaxy black
+store_kiaora_fit_apparel_llc,kiaora fit apparel llc
+store_loothive,loothive
+store_teracube,teracube
+store_shyekyo,shyekyo
+store_doctor_guard,doctor guard
+store_imate,i-mate
+store_bewinner,bewinner
+store_archuu,archuu
+store_mophie,mophie
+store_anycall_a,anycall a
+store_dell,dell
+store_sierra_wireless,sierra wireless
+store_q_link_wireless,q link wireless
+store_irulu,irulu
+store_ruggear,ruggear
+store_nextel,nextel
+store_cell_phone,cell phone
+store_usbnovel,usbnovel
+store_utstarcom,utstarcom
+store_t_osuny,t osuny
+store_ulimag,ulimag
+store_riv,riv
+store_mijue,mijue
+store_truely,truely
+store_vivo,vivo
+store_rainbuvvy,rainbuvvy
+store_oterkin,oterkin
+store_tiamat,tiamat+
+store_zunate,zunate
+store_at_t,at & t
+store_original_oppo,original oppo
+store_polaroid,polaroid
+store_suwen,suwen
+store_oppo,oppo
+store_phonevendor,phone_vendor
+store_verizon,verizon
+store_uniden,uniden
+store_odyssey,odyssey
+store_punkt,punkt.
+store_hafury,hafury
+store_oley,oley
+store_winhoo,winhoo
+store_hakeeta,hakeeta
+store_kmusculo,k-musculo
+store_topkech,topkech
+store_shotbow,shotbow
+store_portable_deals,portable deals
+store_vkworld,vkworld
+store_poptel,poptel
+store_casio,casio
+store_therj,therj
+store_axcelle,axcelle
+store_gowenic,gowenic
+store_att_prepaid,at&t prepaid
+store_yugioh,yu-gi-oh!
+store_boost_mobile,boost mobile
+store_fisherprice,fisher-price
+store_novatel_wireless,novatel wireless
+store_phone_merchant,phone merchant
+store_otterbox,otterbox
+store_gatca,gatca
+store_kelgod,kelgod
+store_nothing,nothing
+store_jxd,jxd
+store_ashata,ashata
+store_argin,argin
+store_kinggoo,kinggoo
+store_mlais,mlais
+store_hrwireless,hrwireless
+store_figo,figo
+store_open_mobile,open mobile
+store_janizz,janizz
+store_pantect,pantect
+store_cingular,cingular
+store_durakings,durakings
+store_fosa,fosa
+store_fairphone,fairphone
+store_just_1,just 1
+store_infinix,infinix
+store_ztotop,ztotop
+store_maxwest,maxwest
+store_gggarden,gggarden
+store_talkase,talkase
+store_sorandy,sorandy
+store_coolpad,coolpad
+store_yrmjk,yrmjk
+store_orbic,orbic
+store_at,at
+store_unnecto,unnecto
+store_etigood,etigood
+store_niega,niega
+store_ocye,ocye
+store_satellite_phone_store,satellite phone store
+store_wv_leisuremaster,wv leisuremaster
+store_supersonic,supersonic
+store_ernestwoolomd,ernestwoolomd
+store_amz_original,amz original
+store_posh_mobile,posh mobile
+store_timmy,timmy
+store_parla,parla
+store_hiegou,hiegou
+store_zyyini,zyyini
+store_el,e&l
+store_seals,seals
+store_dcp_products,dcp products
+store_tgllc,"tg,llc"
+store_lbstar,lbstar
+store_epassion,e-passion
+store_wese,wese
+store_essential,essential
+store_luckyu,luckyu
+store_smartphones_by_ets,smartphones by ets
+store_feiteng,feiteng
+store_blindshell,blindshell
+store_cricket,cricket
+store_snapfon,snapfon
+store_orfilaa,orfilaa
+store_pixel,pixel
+store_ulcool,ulcool
+store_thl,thl
+store_wawei_april,wawei april
+store_nubia,nubia
+store_garmin,garmin
+store_luqeeg,luqeeg
+store_sole_mobile,sole mobile
+store_idroid_usa,idroid usa
+store_nbz,nbz
+store_ecoo,ecoo
+store_relay,relay
+store_dilwe1,dilwe1
+store_koshercell,koshercell
+store_besiva,besiva
+store_monasay,monasay
+store_cpr_call_blocker,cpr call blocker
+store_echoamo,echoamo
+store_hopon,hop-on
+store_ttfone,ttfone
+store_diyeeni,diyeeni
+store_doro,doro
+store_hadad_bros,hadad bros.
+store_hopon_wireless,hop-on wireless
+store_lucky_goldstar,lucky goldstar
+store_gostcai,gostcai
+store_zopsc,zopsc
+store_page_plus,page plus
+store_argom_tech,argom tech
+store_otium,otium
+store_duoduogo,duoduogo
+store_hightech_place,high-tech place
+store_fosa1,fosa1
+store_unbrand,unbrand
+store_note_ultra,note ultra
+store_hisense,hisense
+store_gzone,g-zone
+store_sora,sora
+store_crisis,crisis
+store_iphone,iphone
+store_luminira,luminira
+store_pansonite,pansonite
+store_longcz,long-cz
+store_resway,resway
+store_kacul,kacul
+store_gb,gbâ
+store_bm01,bm-01
+store_intex,intex
+store_paddsun,paddsun
+store_metropcs,metropcs
+store_goophone,goophone
+store_niu_niu,niu niu
+store_leagoo,leagoo
+store_easysmx,easysmx
+store_alltravel,alltravel
+store_yapple,yapple
+store_dracotek,dracotek
+store_telestial,telestial
+store_nokia,nokia
+store_sky,sky
+store_otw_samsung,otw samsung
+store_oppo_digital,oppo digital
+store_sanpyl,sanpyl
+store_mode_money_phone,mode money phone
+store_realme_dealer,realme dealer
+store_virgin,virgin
+store_mgdyss,mgdyss
+store_quikunlock,quikunlock
+store_greatcall,greatcall
+store_essential_products_inc,essential products inc.
+store_sam,sam
+store_jopwkuin,jopwkuin
+store_tradeage,tradeage
+store_newrang,newrang
+store_prepaid,prepaid
+store_saunders,saunders
+store_mslan,mslan
+store_tangxi,tangxi
+store_xiaoqiao,xiaoqiao
+store_kpyja,kpyja
+store_radiotone,radio-tone
+store_free_light,free light
+store_kikyo,kikyo
+store_cellphoneunlock,cellphoneunlock
+store_jivi,jivi
+store_jitterbug,jitterbug
+store_hualong_technology_limited,hualong technology limited
+store_adz,adz
+store_bter,bter
+store_geameon,geameon
+store_sn,sn
+store_vmobile,vmobile
+store_thuraya,thuraya
+store_ips_ip_smart,ips ip smart
+store_sam_sung,sam sung
+store_fineusea,fineusea
+store_freetel,freetel
+store_ep,ep
+store_duet,duet
+store_ans,ans
+store_peek,peek…
+store_verizon_wireless,verizon wireless
+store_nldk,nldk
+store_verykool,verykool
+store_tkexun,tkexun
+store_s_erounder,s erounder
+store_ruggear_americas,ruggear americas
+store_liberty_mobile,liberty mobile
+store_iview,iview
+store_inmarsat,inmarsat
+store_red_chili,red chili
+store_gshock,g-shock
+store_virgin_mobile_slice,virgin mobile slice
+store_raptic,raptic
+store_black,black
+store_micromax,micromax
+store_erwazi,erwazi
+store_national_geographic,national geographic
+store_bittium,bittium
+store_johns,johns
+store_h2o_wireless,h2o wireless
+store_yota,yota
+store_yingtai,yingtai
+store_alcatel_cingular_flip_2_att_32_bundle,alcatel cingular flip 2 at&t 32 bundle
+store_pcd,pcd
+store_chattem_labs,chattem labs
+store_zsddzzy,zsddzzy
+store_autel,autel
+store_simplicity,simplicity
+store_yixin,yixin
+store_umi,umi
+store_tmobile_sidekick_slider,tmobile sidekick slider
+store_jovers,jovers
+store_long_cz,long cz
+store_ericsson,ericsson
+store_stopsignsandmore,stopsignsandmore
+store_slide,slide
+store_argom_mobile,argom mobile
+store_brakites,brakites
+store_spypoint,spypoint
+store_kraiovim,kraiovim
+store_speedtalk_mobile,speedtalk mobile
+store_energizer,energizer
+store_dauerhaft,dauerhaft
+store_lilyhood,lilyhood
+store_caterpillar,caterpillar
+store_wuyi,wuyi
+store_virizon,virizon
+store_dewalt,dewalt
+store_creazydog,creazydog
+store_net10_unlimited,net10 unlimited
+store_houmat,houmat
+store_alcatel5,alcatel5
+store_spareone,spareone
+store_voiceping,voiceping
+store_betsey_johnson,betsey johnson
+store_elyan,elyan
+store_insta360,insta360
+store_amoi,amoi
+store_mysaga,mysaga
+store_rendon,rendon
+store_qtek,qtek
+store_masai_store,masai store
+store_tbest,tbest
+store_fvh,fvh
+store_jectse,jectse
+store_phonak,phonak
+store_vertu,vertu
+store_yunir,yunir
+store_qimhai,qimhai
+store_oukite,oukite
+store_mann,mann
+store_alvinlite,alvinlite
+store_wholesale_center,wholesale center
+store_comdry,comdry
+store_kajeet,kajeet
+store_fossibot,fossibot
+store_asixxsix,asixxsix
+store_earmzrt,earmzrt
+store_gsm_harbour,gsm harbour
+store_spiny_turtle,spiny turtle
+store_dorland,dorland
+store_qiilu,qiilu
+store_maxwest_nitro_55,maxwest nitro 5.5
+store_ocaler,ocaler
+store_xixaomiro,xixaomiro
+store_vipxyc,vipxyc
+store_hyundai,hyundai
+store_apobob,apobob
+store_liquidnano,liquidnano
+store_elephone,elephone
+store_lumigon,lumigon
+store_bml_one_mini,bml one mini
+store_new,new
+store_emax,emax
+store_poropl,poropl
+store_suave,suave
+store_thailand,thailand
+store_houshu,houshu
+store_oreilet,oreilet
+store_ariarly,ariarly
+store_septpenta,septpenta
+store_galaxy_z_fold,galaxy z fold
+store_china,china
+store_caoy,caoy
+store_galaxy_telecom,galaxy telecom
+store_smartphones,smartphones
+store_funck,funck
+store_telular,telular
+store_momker,momker
+store_patagoony,patagoony
+store_snorain,snorain
+store_detroit_packing_co,detroit packing co.
+store_qualcomm,qualcomm
+store_sugift,sugift
+store_snopow,snopow
+store_innos,innos
+store_goawtfafs,goawtfafs
+store_fydun,fydun
+store_gaoag,gaoag
+store_sunion,s-union
+store_dozen,dozen
+store_blujoy,blujoy
+store_lairun,lairun
+store_wava,wava
+store_research_in_motion,research in motion
+store_zapoos,zapoos
+store_krip,krip
+store_amzer,amzer
+store_lumen,lumen
+store_smart_walkie,smart walkie
+store_vernee,vernee
+store_glgzzom,glgzzom
+store_jazar,jazar
+store_inew,inew
+store_svp,svp
+store_4smarts,4smarts
+store_0,0
+store_ropel,ropel
+store_lhclotus,lhclotus
+store_vivo_v,vivo v
+store_huleo,huleo
+store_junlucki,junlucki
+store_coach,coach
+store_ccylez,ccylez
+store_the_light_phone,the light phone
+store_siemens_ag,siemens ag
+store_satphonestore,satphonestore
+store_acer,acer
+store_amgoo_telecom,amgoo telecom
+store_ipro_model_v7,ipro model v7
+store_sendo,sendo
+store_digital_mobile,digital mobile
+store_aeku,aeku
