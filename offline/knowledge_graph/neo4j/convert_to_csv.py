@@ -1,53 +1,36 @@
 #!/usr/bin/env python3
-"""
-Convert knowledge graph JSON → CSV files for Neo4j LOAD CSV import.
-
-Input  : ../knowledge_graph/output/{nodes,edges}/*.json
-Output : csv/{nodes,edges}/*.csv  (created next to this script)
-
-Usage:
-    python3 convert_to_csv.py
-"""
-
 import csv
 import json
 from pathlib import Path
 
 
-# ─── Paths ────────────────────────────────────────────────────────────────────
+SCRIPT_DIR = Path(__file__).parent
+KG_DIR = SCRIPT_DIR.parent / "output"
+CSV_NODES = SCRIPT_DIR / "csv" / "nodes"
+CSV_EDGES = SCRIPT_DIR / "csv" / "edges"
 
-SCRIPT_DIR  = Path(__file__).parent
-KG_DIR      = SCRIPT_DIR.parent / "output"
-CSV_NODES   = SCRIPT_DIR / "csv" / "nodes"
-CSV_EDGES   = SCRIPT_DIR / "csv" / "edges"
-
-# ─── Node configs: (json_file, csv_file, extra_property_keys) ─────────────────
-# Products get all flattened properties; others only need id + label.
 
 PRODUCT_PROPS = [
     "asin", "title", "average_rating", "rating_number", "price",
     "color", "dimensions", "weight", "model_number",
     "date_first_available", "screen_size", "display_resolution",
     "form_factor", "operating_system", "display_technology", "model_name",
-    "ram_gb", "storage_gb",   # shortcut properties cho Cypher filter (không cần MATCH Spec)
+    "ram_gb", "storage_gb",
 ]
 
 NODE_CONFIGS = {
-    "products.json":    ("products.csv",    PRODUCT_PROPS),
-    "brands.json":      ("brands.csv",      []),
-    "categories.json":  ("categories.csv",  []),
-    "features.json":    ("features.csv",    []),
-    "specs.json":       ("specs.csv",       ["key", "value", "label", "numeric_value", "unit"]),
-    "carriers.json":    ("carriers.csv",    []),
-    "technologies.json":("technologies.csv",[]),
+    "products.json": ("products.csv", PRODUCT_PROPS),
+    "brands.json": ("brands.csv", []),
+    "categories.json": ("categories.csv", []),
+    "features.json": ("features.csv", []),
+    "specs.json": ("specs.csv", ["key", "value", "label", "numeric_value", "unit"]),
+    "carriers.json": ("carriers.csv", []),
+    "technologies.json": ("technologies.csv", []),
     "accessories.json": ("accessories.csv", []),
-    "stores.json":      ("stores.csv",      []),
-    "users.json":       ("users.csv",       ["user_id"]),
+    "stores.json": ("stores.csv", []),
+    "users.json": ("users.csv", ["user_id"]),
 }
 
-# ─── Edge configs ─────────────────────────────────────────────────────────────
-
-# Edges không có properties (chỉ source, target, relationship)
 EDGE_FILES = [
     "manufactured_by.json",
     "sold_by.json",
@@ -61,16 +44,12 @@ EDGE_FILES = [
     "bought_together.json",
 ]
 
-# Edges có properties bổ sung: (json_file, [extra_property_keys])
 EDGE_FILES_WITH_PROPS = [
     ("rate.json", ["rating"]),
 ]
 
 
-# ─── Helpers ─────────────────────────────────────────────────────────────────
-
 def none_to_empty(val) -> str:
-    """Convert None / missing values to empty string for CSV."""
     if val is None:
         return ""
     return str(val)
@@ -120,13 +99,11 @@ def write_edge_csv(json_path: Path, csv_path: Path, prop_keys: list = None):
     print(f"  ✓  {csv_path.name:<35}  ({len(edges):>6} rows)")
 
 
-# ─── Main ─────────────────────────────────────────────────────────────────────
-
 def main():
     print("=== Converting nodes ===")
     for json_name, (csv_name, prop_keys) in NODE_CONFIGS.items():
         json_path = KG_DIR / "nodes" / json_name
-        csv_path  = CSV_NODES / csv_name
+        csv_path = CSV_NODES / csv_name
         if json_path.exists():
             write_node_csv(json_path, csv_path, prop_keys)
         else:
@@ -135,7 +112,7 @@ def main():
     print("\n=== Converting edges ===")
     for edge_name in EDGE_FILES:
         json_path = KG_DIR / "edges" / edge_name
-        csv_path  = CSV_EDGES / edge_name.replace(".json", ".csv")
+        csv_path = CSV_EDGES / edge_name.replace(".json", ".csv")
         if json_path.exists():
             write_edge_csv(json_path, csv_path)
         else:
@@ -143,7 +120,7 @@ def main():
 
     for edge_name, prop_keys in EDGE_FILES_WITH_PROPS:
         json_path = KG_DIR / "edges" / edge_name
-        csv_path  = CSV_EDGES / edge_name.replace(".json", ".csv")
+        csv_path = CSV_EDGES / edge_name.replace(".json", ".csv")
         if json_path.exists():
             write_edge_csv(json_path, csv_path, prop_keys)
         else:

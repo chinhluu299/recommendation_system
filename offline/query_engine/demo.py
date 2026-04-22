@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-demo.py — CLI test search_pipeline.
-
-Usage:
-    python3 -m api.offline.query_engine.demo
-    python3 -m api.offline.query_engine.demo "Tìm điện thoại Samsung dưới 300 đô"
-    python3 -m api.offline.query_engine.demo --batch
-"""
 import sys
 import os
 

@@ -1,22 +1,3 @@
-"""
-build_vector_index.py — Xây dựng vector index cho Product nodes trong Neo4j.
-
-Chạy 1 lần duy nhất (hoặc khi muốn rebuild):
-    python -m knowledge_graph.build_vector_index
-    python -m knowledge_graph.build_vector_index --batch_size 64 --recreate
-
-Cách hoạt động:
-  1. Đọc toàn bộ Product nodes từ Neo4j (asin + metadata).
-  2. Build text document từ toàn bộ fields của meta_filtered.csv.
-  3. Embed bằng multilingual-e5-small (chạy CPU được).
-  4. Ghi vector vào property `text_embedding` của mỗi Product node.
-  5. Tạo Neo4j vector index `product_text_index` (cosine, 384 dims).
-
-Yêu cầu:
-    pip install sentence-transformers
-    Neo4j >= 5.11
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -26,33 +7,26 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-# ── Config ────────────────────────────────────────────────────────────────────
 
-NEO4J_URI   = "bolt://localhost:7687"
-NEO4J_USER  = "neo4j"
-NEO4J_PASS  = "1234567890"
-NEO4J_DB    = "recphones"
+NEO4J_URI = "bolt://localhost:7687"
+NEO4J_USER = "neo4j"
+NEO4J_PASS = "1234567890"
+NEO4J_DB = "recphones"
 
-DATA_DIR    = Path(__file__).parent.parent / "data"
+DATA_DIR = Path(__file__).parent.parent / "data"
 EMBED_MODEL = "intfloat/multilingual-e5-small"
-VECTOR_DIM  = 384
-INDEX_NAME  = "product_text_index"
-MAX_CHARS   = 1000   # ~512 tokens cho e5-small
+VECTOR_DIM = 384
+INDEX_NAME = "product_text_index"
+MAX_CHARS = 1000
 
-
-# ── Text builder ──────────────────────────────────────────────────────────────
 
 def build_product_text(row: pd.Series) -> str:
-    """
-    Ghép toàn bộ metadata thành 1 chuỗi text để embed.
-    Title được thêm 2 lần để tăng trọng số.
-    """
     parts = []
 
     title = str(row.get("title") or "").strip()
     if title:
         parts.append(title)
-        parts.append(title)   # boost title
+        parts.append(title)
 
     if row.get("main_category"):
         parts.append(str(row["main_category"]))
@@ -84,15 +58,12 @@ def build_product_text(row: pd.Series) -> str:
     return text[:MAX_CHARS]
 
 
-# ── Neo4j helpers ─────────────────────────────────────────────────────────────
-
 def _get_driver():
     from neo4j import GraphDatabase
     return GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASS))
 
 
 def _create_vector_index(driver, recreate: bool) -> None:
-    """Tạo Neo4j vector index. Nếu recreate=True thì xoá index cũ trước."""
     with driver.session(database=NEO4J_DB) as session:
         if recreate:
             session.run(f"DROP INDEX {INDEX_NAME} IF EXISTS")
@@ -113,7 +84,6 @@ def _create_vector_index(driver, recreate: bool) -> None:
 
 
 def _write_embeddings_batch(session, batch: list[tuple[str, list[float]]]) -> None:
-    """Ghi embedding vào Neo4j theo batch."""
     session.run(
         """
         UNWIND $rows AS row
@@ -124,16 +94,12 @@ def _write_embeddings_batch(session, batch: list[tuple[str, list[float]]]) -> No
     )
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
-
 def build(batch_size: int, recreate: bool, skip_existing: bool) -> None:
-    # Load embed model
     print(f"Loading embed model: {EMBED_MODEL} ...")
     from sentence_transformers import SentenceTransformer
     model = SentenceTransformer(EMBED_MODEL)
     print(f"  Model loaded. Dim={VECTOR_DIM}\n")
 
-    # Load meta
     print("Loading meta_filtered.csv ...")
     meta = pd.read_csv(
         DATA_DIR / "meta_filtered.csv",
@@ -143,12 +109,10 @@ def build(batch_size: int, recreate: bool, skip_existing: bool) -> None:
 
     driver = _get_driver()
 
-    # Tạo / recreate vector index
     print("Setting up vector index ...")
     _create_vector_index(driver, recreate)
     print()
 
-    # Lấy danh sách ASINs từ Neo4j
     print("Fetching product ASINs từ Neo4j ...")
     with driver.session(database=NEO4J_DB) as session:
         rows = session.run(
@@ -156,8 +120,8 @@ def build(batch_size: int, recreate: bool, skip_existing: bool) -> None:
             "(p.text_embedding IS NOT NULL) AS has_emb"
         ).data()
 
-    all_asins  = [r["asin"] for r in rows]
-    has_emb    = {r["asin"] for r in rows if r["has_emb"]}
+    all_asins = [r["asin"] for r in rows]
+    has_emb = {r["asin"] for r in rows if r["has_emb"]}
     print(f"  Tổng Product nodes: {len(all_asins)}")
     print(f"  Đã có embedding:    {len(has_emb)}")
 
@@ -173,10 +137,9 @@ def build(batch_size: int, recreate: bool, skip_existing: bool) -> None:
         driver.close()
         return
 
-    # Embed theo batch
-    t0      = time.time()
-    n_done  = 0
-    n_skip  = 0
+    t0 = time.time()
+    n_done = 0
+    n_skip = 0
 
     with driver.session(database=NEO4J_DB) as session:
         batch_buf: list[tuple[str, list[float]]] = []
@@ -187,7 +150,7 @@ def build(batch_size: int, recreate: bool, skip_existing: bool) -> None:
                 continue
 
             text = "passage: " + build_product_text(meta.loc[asin])
-            emb  = model.encode(text, normalize_embeddings=True).tolist()
+            emb = model.encode(text, normalize_embeddings=True).tolist()
             batch_buf.append((asin, emb))
 
             if len(batch_buf) >= batch_size:
@@ -198,7 +161,6 @@ def build(batch_size: int, recreate: bool, skip_existing: bool) -> None:
                       f"({n_done/elapsed:.1f} products/s)")
                 batch_buf = []
 
-        # Flush phần còn lại
         if batch_buf:
             _write_embeddings_batch(session, batch_buf)
             n_done += len(batch_buf)
@@ -213,12 +175,12 @@ def build(batch_size: int, recreate: bool, skip_existing: bool) -> None:
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description="Build Neo4j vector index cho Product nodes")
-    p.add_argument("--batch_size",    type=int,  default=32,    help="Batch size khi ghi Neo4j")
-    p.add_argument("--recreate",      action="store_true",       help="Xoá và tạo lại index")
-    p.add_argument("--no_skip",       action="store_true",       help="Embed lại cả nodes đã có embedding")
+    p.add_argument("--batch_size", type=int, default=32, help="Batch size khi ghi Neo4j")
+    p.add_argument("--recreate", action="store_true", help="Xoá và tạo lại index")
+    p.add_argument("--no_skip", action="store_true", help="Embed lại cả nodes đã có embedding")
     args = p.parse_args()
     build(
-        batch_size    = args.batch_size,
-        recreate      = args.recreate,
-        skip_existing = not args.no_skip,
+        batch_size=args.batch_size,
+        recreate=args.recreate,
+        skip_existing=not args.no_skip,
     )

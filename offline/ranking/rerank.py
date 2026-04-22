@@ -1,10 +1,6 @@
-#!/usr/bin/env python3
-
-
 from __future__ import annotations
 
 import json
-import pickle
 import re
 from pathlib import Path
 from typing import Optional
@@ -14,11 +10,10 @@ import torch
 
 from ranking.model import KGAT
 
-_ROOT    = Path(__file__).parent
+_ROOT = Path(__file__).parent
 DATA_DIR = _ROOT / "data"
 CKPT_DIR = _ROOT / "checkpoints"
 
-# Các key phổ biến trong Neo4j records chứa ASIN
 _ASIN_KEY_CANDIDATES = [
     "p.asin", "asin", "product.asin", "p.parent_asin",
     "parent_asin", "ASIN", "item_id",
@@ -27,16 +22,6 @@ _ASIN_PATTERN = re.compile(r"^[A-Z0-9]{10}$")
 
 
 class KGATReranker:
-    """
-    Load KGAT checkpoint một lần → phục vụ nhiều request re-ranking.
-
-    Args:
-        checkpoint    : đường dẫn tới file .pt  (default: checkpoints/best_model.pt)
-        device        : "auto" | "cpu" | "cuda"
-        fallback_score: score cho sản phẩm không có trong KG
-                        (default 0.0 — sắp xếp sau các sản phẩm đã biết)
-    """
-
     def __init__(
         self,
         checkpoint: str | Path | None = None,
@@ -56,8 +41,6 @@ class KGATReranker:
 
         self._load(Path(checkpoint))
 
-    # ── Setup ──────────────────────────────────────────────────────────────────
-
     def _load(self, ckpt_path: Path) -> None:
         if not ckpt_path.exists():
             raise FileNotFoundError(
@@ -72,13 +55,10 @@ class KGATReranker:
         self.model.load_state_dict(ckpt["state_dict"])
         self.model.eval()
 
-        # Mappings
         self.entity2id: dict[str, int] = json.loads(
             (DATA_DIR / "entity2id.json").read_text(encoding="utf-8")
         )
 
-        # Tập user thực sự được train (có interactions trong tập train)
-        # Dùng để phân biệt "embedding đã học" vs "embedding random chưa train"
         split_file = CKPT_DIR / "kgat_split.json"
         if split_file.exists():
             split = json.loads(split_file.read_text(encoding="utf-8"))
@@ -86,10 +66,8 @@ class KGATReranker:
             trained_int_ids |= set(int(k) for k in split.get("val_inter", {}).keys())
             self._trained_user_ids: set[int] = trained_int_ids
         else:
-            # Fallback: coi tất cả là cold-start
             self._trained_user_ids = set()
 
-        # Pre-compute entity embeddings (frozen, dùng cho mọi request)
         ckg = np.load(DATA_DIR / "ckg_triples.npy")
         ckg_t = torch.from_numpy(ckg).long().to(self.device)
         with torch.no_grad():
@@ -103,8 +81,6 @@ class KGATReranker:
             + (f", Recall@10={meta:.4f}" if meta else "")
         )
 
-    # ── Public API ─────────────────────────────────────────────────────────────
-
     def rerank(
         self,
         user_id: str,
@@ -112,17 +88,6 @@ class KGATReranker:
         *,
         return_scores: bool = False,
     ) -> list[str] | list[tuple[str, float]]:
-        """
-        Re-rank danh sách ASIN theo personalized score của user.
-
-        Args:
-            user_id       : raw user_id string (khớp với users.json)
-            product_asins : danh sách ASIN cần rank
-            return_scores : nếu True, trả về [(asin, score), ...] thay vì [asin, ...]
-
-        Returns:
-            Danh sách ASIN đã sort (cao nhất trước), hoặc tuples nếu return_scores=True.
-        """
         if not product_asins:
             return []
 
@@ -137,19 +102,6 @@ class KGATReranker:
         records: list[dict],
         asin_key: str | None = None,
     ) -> list[dict]:
-        """
-        Re-rank list records từ Neo4j (output của query_engine.pipeline.ask()).
-
-        Args:
-            user_id  : raw user_id string
-            records  : list[dict] từ run_query()
-            asin_key : key trong record chứa ASIN.
-                       Nếu None, tự động detect từ danh sách candidate keys.
-
-        Returns:
-            List record đã re-rank (record tốt nhất đứng đầu).
-            Trả về records gốc nếu không tìm được key ASIN.
-        """
         if not records:
             return records
 
@@ -157,15 +109,12 @@ class KGATReranker:
         if key is None:
             return records
 
-        asins  = [str(r.get(key, "")) for r in records]
+        asins = [str(r.get(key, "")) for r in records]
         scores = self._score_asins(f"user_{user_id}", asins)
         paired = sorted(zip(records, scores), key=lambda x: x[1], reverse=True)
         return [r for r, _ in paired]
 
-    # ── Scoring ────────────────────────────────────────────────────────────────
-
     def _score_asins(self, uid_str: str, asins: list[str]) -> list[float]:
-        """Tính personalised score cho mỗi ASIN."""
         e_u = self._get_user_emb(uid_str)
 
         scores = []
@@ -173,8 +122,8 @@ class KGATReranker:
             for asin in asins:
                 pid_str = f"product_{asin}"
                 if pid_str in self.entity2id:
-                    pid   = self.entity2id[pid_str]
-                    e_p   = self._entity_emb[pid]
+                    pid = self.entity2id[pid_str]
+                    e_p = self._entity_emb[pid]
                     score = float((e_u * e_p).sum())
                 else:
                     score = self.fallback_score
@@ -182,19 +131,11 @@ class KGATReranker:
         return scores
 
     def _get_user_emb(self, uid_str: str) -> torch.Tensor:
-        """
-        Lấy embedding của user.
-        - User đã được train: dùng embedding đã học.
-        - User trong KG nhưng không được train (bị lọc): fallback centroid.
-        - User mới hoàn toàn: fallback centroid.
-        """
         if uid_str in self.entity2id:
             uid = self.entity2id[uid_str]
             if uid in self._trained_user_ids:
                 return self._entity_emb[uid]
-            # User có trong KG nhưng embedding chưa được train → dùng centroid
 
-        # Cold-start: tính một lần rồi cache (chỉ trung bình user đã train)
         if self._user_centroid is None:
             if self._trained_user_ids:
                 idx = torch.tensor(
@@ -211,23 +152,15 @@ class KGATReranker:
             )
         return self._user_centroid
 
-    # ── Batch API (tùy chọn, dùng khi có nhiều users cùng lúc) ───────────────
-
     @torch.no_grad()
     def batch_score(
         self,
         user_ids: list[str],
         product_asins: list[str],
     ) -> np.ndarray:
-        """
-        Tính ma trận score cho nhiều users và nhiều items cùng lúc.
-
-        Returns:
-            ndarray (n_users, n_items) — score[i][j] = score(user_i, item_j)
-        """
         e_users = torch.stack([
             self._get_user_emb(f"user_{uid}") for uid in user_ids
-        ])   # (U, D*)
+        ])
 
         e_items = []
         for asin in product_asins:
@@ -237,16 +170,13 @@ class KGATReranker:
             else:
                 e_items.append(torch.zeros(self._entity_emb.shape[1],
                                            device=self.device))
-        e_items = torch.stack(e_items)   # (I, D*)
+        e_items = torch.stack(e_items)
 
-        scores = (e_users @ e_items.T)   # (U, I)
+        scores = (e_users @ e_items.T)
         return scores.cpu().numpy()
 
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
-
 def _detect_asin_key(records: list[dict]) -> Optional[str]:
-    """Tìm key trong record dict chứa ASIN (10 ký tự alphanum hoa)."""
     if not records:
         return None
     sample = records[0]
@@ -255,7 +185,6 @@ def _detect_asin_key(records: list[dict]) -> Optional[str]:
         if key in sample:
             return key
 
-    # Fallback: tìm key có giá trị trông như ASIN
     for key, val in sample.items():
         if isinstance(val, str) and _ASIN_PATTERN.match(val):
             return key

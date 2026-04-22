@@ -1,19 +1,3 @@
-"""
-_llm_client.py
-Singleton OpenAI-compatible client trỏ tới Gemini API.
-
-Gemini hỗ trợ OpenAI-compatible endpoint:
-  https://generativelanguage.googleapis.com/v1beta/openai/
-
-Đặt API key vào biến môi trường:
-  export GEMINI_API_KEY="your-key-here"
-Hoặc tạo file ver2/.env:
-  GEMINI_API_KEY=your-key-here
-
-Model mặc định: gemini-2.0-flash (nhanh, rẻ, đủ dùng cho NL2Cypher/Intent)
-Đổi sang gemini-1.5-pro nếu cần reasoning phức tạp hơn.
-"""
-
 from __future__ import annotations
 
 import os
@@ -21,22 +5,14 @@ import time
 import re
 from openai import OpenAI
 
-# ── Config ────────────────────────────────────────────────────────────────────
 
 GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
-# GEMINI_MODEL    = "gemini-3.1-flash-lite-preview"
-GEMINI_MODEL    = "gemini-2.5-flash"
+GEMINI_MODEL = "gemini-2.5-flash"
 
-# # LM Studio (local) — comment lại, giữ để rollback nhanh nếu cần
-# GEMINI_BASE_URL = "http://localhost:1234/v1"
-# GEMINI_MODEL    = "gpt-oss-20b"
-# GEMINI_MODEL    = "google/gemma-3-4b"
-
-# Retry config cho 429
-_MAX_RETRIES   = 5
-_BASE_WAIT     = 15   # giây — theo retryDelay từ Gemini response
-_MAX_WAIT      = 120  # giây — không chờ quá 2 phút
-_MAX_CONTINUES = 3    # số lần nối thêm nếu output bị cắt giữa chừng
+_MAX_RETRIES = 5
+_BASE_WAIT = 15
+_MAX_WAIT = 120
+_MAX_CONTINUES = 3
 
 
 def _load_api_key() -> str:
@@ -45,7 +21,6 @@ def _load_api_key() -> str:
         from dotenv import load_dotenv
         load_dotenv(dotenv_path=env_path)
     except ImportError:
-        # Fallback: đọc .env thủ công nếu python-dotenv chưa cài
         if os.path.isfile(env_path):
             with open(env_path) as f:
                 for line in f:
@@ -65,8 +40,6 @@ def _load_api_key() -> str:
     return key
 
 
-# ── Singleton ─────────────────────────────────────────────────────────────────
-
 _client: OpenAI | None = None
 
 
@@ -74,8 +47,8 @@ def get_client() -> OpenAI:
     global _client
     if _client is None:
         _client = OpenAI(
-            base_url = GEMINI_BASE_URL,
-            api_key  = _load_api_key(),
+            base_url=GEMINI_BASE_URL,
+            api_key=_load_api_key(),
         )
     return _client
 
@@ -84,10 +57,7 @@ def get_model() -> str:
     return GEMINI_MODEL
 
 
-# ── Rate-limit-aware chat ─────────────────────────────────────────────────────
-
 def _extract_text(resp) -> str:
-    """Lấy text an toàn từ OpenAI-compatible response."""
     content = resp.choices[0].message.content
     if isinstance(content, str):
         return content
@@ -106,9 +76,6 @@ def _extract_text(resp) -> str:
 
 
 def _create_completion(client: OpenAI, model: str, messages: list[dict], max_tokens: int, temperature: float):
-    """
-    Thử nhiều biến thể token param để tương thích tốt hơn giữa các endpoint.
-    """
     base = {
         "model": model,
         "messages": messages,
@@ -166,10 +133,6 @@ def _request_with_retry(client: OpenAI, model: str, messages: list[dict], max_to
 
 
 def chat(messages: list[dict], max_tokens: int = 2048, temperature: float = 0.1) -> str:
-    """
-    Gọi Gemini với retry khi gặp 429.
-    Nếu output bị cắt do giới hạn token, tự nối thêm tối đa _MAX_CONTINUES lần.
-    """
     client = get_client()
     model  = get_model()
 

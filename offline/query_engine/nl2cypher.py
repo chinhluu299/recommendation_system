@@ -1,17 +1,10 @@
-"""
-nl2cypher.py
-NL question → filter_query + semantic_query (Cypher cho Neo4j).
-
-LLM chỉ sinh phần WHERE — toàn bộ MATCH/RETURN được build bởi code.
-"""
 from __future__ import annotations
 import re
-from offline.query_engine.schema  import load_enum_values
+from offline.query_engine.schema import load_enum_values
 from offline.query_engine.scoring import TOTAL_LIMIT
 
-MAX_TOK = 512   # WHERE clause ngắn, không cần nhiều token
+MAX_TOK = 512
 
-# ── Prompt ────────────────────────────────────────────────────────────────────
 
 _FILTER_SCHEMA = """Bạn là hệ thống sinh điều kiện WHERE cho Cypher query Neo4j.
 
@@ -79,8 +72,6 @@ def _build_prompt() -> str:
     return _FILTER_SCHEMA + enum_block + _FILTER_SUFFIX
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
-
 def _clean(raw: str) -> str:
     raw = raw.strip()
     raw = re.sub(r"^```(?:cypher)?\s*", "", raw, flags=re.IGNORECASE)
@@ -100,21 +91,7 @@ def _call_llm(messages: list[dict]) -> str:
     return chat(messages, max_tokens=MAX_TOK, temperature=0.1)
 
 
-# ── Public API ────────────────────────────────────────────────────────────────
-
 def generate_queries(question: str) -> dict:
-    """
-    Sinh filter_query + semantic_query từ câu hỏi tự nhiên.
-
-    Returns:
-        {
-            "filter_query"  : Cypher lọc theo điều kiện structured,
-            "semantic_query": Cypher tìm kiếm theo vector embedding ($query_embedding),
-            "where_clause"  : WHERE clause gốc (để debug/trace),
-        }
-    Raises:
-        ValueError nếu LLM trả về output không hợp lệ.
-    """
     where = _clean(_call_llm([
         {"role": "system", "content": _build_prompt()},
         {"role": "user",   "content": question},
@@ -148,11 +125,10 @@ def generate_queries(question: str) -> dict:
     )
 
     return {
-        "filter_query":   filter_query,
+        "filter_query": filter_query,
         "semantic_query": semantic_query,
-        "where_clause":   where,
+        "where_clause": where,
     }
 
 
-# Backward-compat alias
 nl_to_cypher = generate_queries

@@ -1,22 +1,4 @@
 #!/usr/bin/env python3
-"""
-import_all.py
-Nạp Knowledge Graph vào Neo4j Desktop (local, không Docker).
-
-Pipeline:
-  1. Convert JSON → CSV  (gọi convert_to_csv.py)
-  2. Auto-detect DBMS path + JRE bundle của Neo4j Desktop
-  3. Copy csv/ → <dbms>/import/
-  4. Tạo database recphones nếu chưa có
-  5. Chạy 01_constraints → 02_import_nodes → 03_import_edges
-
-Usage:
-    python3 import_all.py
-    python3 import_all.py --password mypass   # truyền password trực tiếp
-    python3 import_all.py --skip-convert      # bỏ qua bước 1 nếu CSV đã có
-    python3 import_all.py --wipe              # xoá dữ liệu cũ trước khi import
-"""
-
 import argparse
 import json
 import os
@@ -26,28 +8,19 @@ import sys
 from pathlib import Path
 
 
-# ─── Config ───────────────────────────────────────────────────────────────────
+SCRIPT_DIR = Path(__file__).parent
+CSV_DIR = SCRIPT_DIR / "csv"
+DB_NAME = "recphones"
+NEO4J_USER = "neo4j"
+NEO4J_PASS = "1234567890"
+BOLT_URI = "bolt://localhost:7687"
 
-SCRIPT_DIR  = Path(__file__).parent
-CSV_DIR     = SCRIPT_DIR / "csv"
-DB_NAME     = "recphones"
-NEO4J_USER  = "neo4j"
-NEO4J_PASS  = "1234567890"        # đổi nếu cần, hoặc dùng --password
-BOLT_URI    = "bolt://localhost:7687"
-
-# Thư mục gốc Neo4j Desktop (macOS)
-DESKTOP_ROOT      = Path.home() / "Library/Application Support/neo4j-desktop/Application"
+DESKTOP_ROOT = Path.home() / "Library/Application Support/neo4j-desktop/Application"
 DESKTOP_DBMS_ROOT = DESKTOP_ROOT / "Data/dbmss"
-DESKTOP_JRE_ROOT  = DESKTOP_ROOT / "Cache/runtime"
+DESKTOP_JRE_ROOT = DESKTOP_ROOT / "Cache/runtime"
 
-
-# ─── Auto-detect helpers ──────────────────────────────────────────────────────
 
 def find_dbms() -> Path:
-    """
-    Tìm DBMS trong Neo4j Desktop.
-    Ưu tiên DBMS chứa database recphones; fallback lấy DBMS mới nhất.
-    """
     if not DESKTOP_DBMS_ROOT.exists():
         die(
             f"Không tìm thấy thư mục Neo4j Desktop:\n  {DESKTOP_DBMS_ROOT}\n"
@@ -70,15 +43,10 @@ def find_dbms() -> Path:
             if DB_NAME in dbs:
                 return dbms
 
-    return candidates[0]   # fallback: DBMS mới nhất
+    return candidates[0]
 
 
 def find_java_home() -> str | None:
-    """
-    Tìm JRE bundle mà Neo4j Desktop tự đóng gói.
-    Đường dẫn điển hình (macOS):
-      Cache/runtime/<jdk>/zulu-*.jdk/Contents/Home
-    """
     if not DESKTOP_JRE_ROOT.exists():
         return None
 
@@ -90,7 +58,6 @@ def find_java_home() -> str | None:
     if candidates:
         return str(candidates[0])
 
-    # Fallback: tìm java binary bất kỳ
     java_bins = sorted(
         DESKTOP_JRE_ROOT.glob("**/bin/java"),
         key=lambda p: p.stat().st_mtime,
@@ -100,7 +67,6 @@ def find_java_home() -> str | None:
 
 
 def make_env(java_home: str | None) -> dict:
-    """Build subprocess environment với JAVA_HOME được set đúng."""
     env = os.environ.copy()
     if java_home:
         env["JAVA_HOME"] = java_home
@@ -108,11 +74,8 @@ def make_env(java_home: str | None) -> dict:
     return env
 
 
-# ─── Cypher runners ───────────────────────────────────────────────────────────
-
 def run_cypher(cypher_shell: Path, env: dict, query: str,
                database: str = DB_NAME, password: str = NEO4J_PASS) -> bool:
-    """Chạy một câu Cypher inline qua cypher-shell."""
     result = subprocess.run(
         [str(cypher_shell), "-a", BOLT_URI, "-u", NEO4J_USER,
          "-p", password, "-d", database, query],
@@ -128,7 +91,6 @@ def run_cypher(cypher_shell: Path, env: dict, query: str,
 
 def run_cypher_file(cypher_shell: Path, env: dict, cypher_file: Path,
                     database: str = DB_NAME, password: str = NEO4J_PASS):
-    """Chạy một file .cypher qua cypher-shell, hiển thị output gọn."""
     print(f"  → {cypher_file.name}")
     result = subprocess.run(
         [str(cypher_shell), "-a", BOLT_URI, "-u", NEO4J_USER,
@@ -147,8 +109,6 @@ def run_cypher_file(cypher_shell: Path, env: dict, cypher_file: Path,
         die(f"Lỗi khi chạy {cypher_file.name}:\n{stderr}")
 
 
-# ─── Misc ─────────────────────────────────────────────────────────────────────
-
 def die(msg: str):
     print(f"\n[ERROR] {msg}", file=sys.stderr)
     sys.exit(1)
@@ -157,8 +117,6 @@ def die(msg: str):
 def step(n: int, total: int, msg: str):
     print(f"\n[{n}/{total}] {msg}")
 
-
-# ─── Main pipeline ────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(description="Import Knowledge Graph vào Neo4j Desktop")
@@ -170,10 +128,9 @@ def main():
                         help="Xoá toàn bộ node/edge cũ trong recphones trước khi import")
     args = parser.parse_args()
 
-    password    = args.password
+    password = args.password
     TOTAL_STEPS = 4 if args.skip_convert else 5
 
-    # ── Bước 1: Convert JSON → CSV ────────────────────────────
     if not args.skip_convert:
         step(1, TOTAL_STEPS, "Chuyển đổi JSON → CSV...")
         result = subprocess.run([sys.executable, str(SCRIPT_DIR / "convert_to_csv.py")])
@@ -182,14 +139,13 @@ def main():
 
     offset = 0 if args.skip_convert else 1
 
-    # ── Bước 2: Detect DBMS + JRE ────────────────────────────
     step(offset + 1, TOTAL_STEPS, "Tìm DBMS + JRE bundle của Neo4j Desktop...")
 
-    dbms_path    = find_dbms()
+    dbms_path = find_dbms()
     cypher_shell = dbms_path / "bin" / "cypher-shell"
-    import_dir   = dbms_path / "import"
-    java_home    = find_java_home()
-    env          = make_env(java_home)
+    import_dir = dbms_path / "import"
+    java_home = find_java_home()
+    env = make_env(java_home)
 
     if not cypher_shell.exists():
         die(f"Không tìm thấy cypher-shell tại:\n  {cypher_shell}")
@@ -199,7 +155,6 @@ def main():
     print(f"  JAVA_HOME    : {java_home or '(dùng system Java)'}")
     print(f"  import dir   : {import_dir}")
 
-    # ── Bước 3: Copy CSV → import dir ────────────────────────
     step(offset + 2, TOTAL_STEPS, f"Copy CSV → Neo4j import dir...")
     for subdir in ("nodes", "edges"):
         src = CSV_DIR / subdir
@@ -212,7 +167,6 @@ def main():
         count = len(list(dst.glob("*.csv")))
         print(f"  ✓ {subdir}/  ({count} files)")
 
-    # ── Bước 4: Tạo / khởi động database ─────────────────────
     step(offset + 3, TOTAL_STEPS, f"Kiểm tra / tạo database '{DB_NAME}'...")
     run_cypher(cypher_shell, env,
                f"CREATE DATABASE {DB_NAME} IF NOT EXISTS",
@@ -228,7 +182,6 @@ def main():
                    database=DB_NAME, password=password)
         print("  ✓ Đã xoá xong.")
 
-    # ── Bước 5: Chạy Cypher import scripts ───────────────────
     step(offset + 4, TOTAL_STEPS, "Chạy Cypher import scripts...")
     for fname in ("01_constraints.cypher",
                   "02_import_nodes.cypher",
@@ -236,8 +189,7 @@ def main():
         run_cypher_file(cypher_shell, env, SCRIPT_DIR / fname,
                         database=DB_NAME, password=password)
 
-    # ── Xác nhận kết quả ─────────────────────────────────────
-    print("\n" + "─" * 52)
+    print()
     print(f"Thống kê nodes trong database '{DB_NAME}':")
     run_cypher(
         cypher_shell, env,

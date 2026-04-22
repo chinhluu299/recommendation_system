@@ -1,24 +1,3 @@
-"""
-Evaluate correctness of the knowledge graph built by build_graph.py.
-
-Metrics
--------
-carrier      – Precision / Recall / F1 of SUPPORTS_CARRIER vs CSV ground truth
-technology   – Precision / Recall / F1 of USES_TECHNOLOGY  vs CSV ground truth
-brand        – Accuracy of MANUFACTURED_BY vs details["Brand"] in CSV
-spec         – How many spec nodes were merged by normalize_spec_value
-feature      – Feature-node dedup ratio after slug-based normalization
-completeness – % products that have each relationship type
-integrity    – % edges whose endpoints both exist in nodes
-
-Usage
------
-  python evaluate.py <output_dir> <meta_csv>
-
-  output_dir  path to graph output dir (contains nodes/ and edges/ sub-dirs)
-  meta_csv    path to meta_filtered.csv
-"""
-
 import ast
 import csv
 import json
@@ -27,9 +6,6 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-
-# ─── Same lookup tables as build_graph.py ────────────────────────────────────
-# (kept in sync manually; normalize both sides of every comparison)
 
 CARRIER_LOOKUP = {
     "at&t":               "AT&T",
@@ -83,8 +59,6 @@ TECH_LOOKUP = {
 _TECH_SORTED = sorted(TECH_LOOKUP.items(), key=lambda x: len(x[0]), reverse=True)
 
 
-# ─── Helpers ─────────────────────────────────────────────────────────────────
-
 def safe_parse(val):
     try:
         return ast.literal_eval(val) if val else None
@@ -104,7 +78,6 @@ def normalize_spec_value(val: str) -> str:
 
 
 def _canonical_carrier(raw: str):
-    """Map a raw carrier string to canonical name via CARRIER_LOOKUP."""
     lower = raw.strip().lower()
     for kw, canon in CARRIER_LOOKUP.items():
         if re.search(rf"\b{re.escape(kw)}\b", lower):
@@ -113,7 +86,6 @@ def _canonical_carrier(raw: str):
 
 
 def _canonical_tech(raw: str) -> str:
-    """Map a raw tech string to canonical name via TECH_LOOKUP."""
     lower = raw.strip().lower()
     for kw, canon in _TECH_SORTED:
         if kw in lower:
@@ -121,13 +93,7 @@ def _canonical_tech(raw: str) -> str:
     return raw.strip()
 
 
-# ─── Load graph output ───────────────────────────────────────────────────────
-
 def load_graph(output_dir: str):
-    """
-    Load all node and edge JSON files from the output directory.
-    Returns (nodes_dict, edges_list) where nodes_dict maps id → node.
-    """
     out = Path(output_dir)
     nodes: dict = {}
     for f in sorted((out / "nodes").glob("*.json")):
@@ -141,13 +107,7 @@ def load_graph(output_dir: str):
     return nodes, edges
 
 
-# ─── Build product-centric lookup ────────────────────────────────────────────
-
 def build_product_lookup(nodes: dict, edges: list) -> dict:
-    """
-    Returns: product_id → {relationship → set(canonical_label.lower())}
-    Skips edges whose target is not in nodes (e.g. BOUGHT_TOGETHER to unknown ASINs).
-    """
     product_to: dict = defaultdict(lambda: defaultdict(set))
     for e in edges:
         src, rel, tgt = e["source"], e["relationship"], e["target"]
@@ -159,14 +119,7 @@ def build_product_lookup(nodes: dict, edges: list) -> dict:
     return product_to
 
 
-# ─── eval_carrier ────────────────────────────────────────────────────────────
-
 def eval_carrier(csv_path: str, product_to: dict) -> dict:
-    """
-    Ground truth: 'Wireless Carrier' field in details, normalized via CARRIER_LOOKUP.
-    Prediction: SUPPORTS_CARRIER edges in graph (canonical labels, lowercased).
-    Unlocked products have no true carriers → skip.
-    """
     TP = FP = FN = 0
     with open(csv_path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -196,13 +149,7 @@ def eval_carrier(csv_path: str, product_to: dict) -> dict:
             "f1": round(f1, 4), "TP": TP, "FP": FP, "FN": FN}
 
 
-# ─── eval_tech ───────────────────────────────────────────────────────────────
-
 def eval_tech(csv_path: str, product_to: dict) -> dict:
-    """
-    Ground truth: structured tech fields in details, normalized via TECH_LOOKUP.
-    Prediction: USES_TECHNOLOGY edges in graph.
-    """
     TECH_KEYS = [
         "Cellular Technology",
         "Connectivity Technology",
@@ -239,13 +186,7 @@ def eval_tech(csv_path: str, product_to: dict) -> dict:
             "f1": round(f1, 4), "TP": TP, "FP": FP, "FN": FN}
 
 
-# ─── eval_brand ──────────────────────────────────────────────────────────────
-
 def eval_brand(csv_path: str, product_to: dict) -> dict:
-    """
-    Compare MANUFACTURED_BY edges against details['Brand'] / 'Manufacturer'
-    in CSV. Falls back to store name (same priority as build_graph.py).
-    """
     correct = wrong = missing = total = 0
     with open(csv_path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -275,14 +216,7 @@ def eval_brand(csv_path: str, product_to: dict) -> dict:
     }
 
 
-# ─── eval_spec ───────────────────────────────────────────────────────────────
-
 def eval_spec(csv_path: str, nodes: dict) -> dict:
-    """
-    Measure how many spec node IDs were merged by normalize_spec_value.
-    raw_unique_ids:        distinct IDs without normalization
-    normalized_unique_ids: distinct IDs with normalization (= actual graph)
-    """
     SPEC_FIELDS = {"RAM": "ram", "Memory Storage Capacity": "storage"}
     raw_ids: set = set()
     norm_ids: set = set()
@@ -305,17 +239,7 @@ def eval_spec(csv_path: str, nodes: dict) -> dict:
     }
 
 
-# ─── eval_feature ────────────────────────────────────────────────────────────
-
 def eval_feature(csv_path: str, nodes: dict, edges: list) -> dict:
-    """
-    Measure feature-node deduplication from slug-based IDs.
-
-    raw_feature_texts:    total feature strings across all products
-    unique_feature_nodes: distinct Feature nodes in graph (after slug dedup)
-    dedup_ratio:          fraction of raw texts collapsed into shared nodes
-    avg_products_per_feature: how many products share a feature on average
-    """
     total_raw = 0
     with open(csv_path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -334,10 +258,7 @@ def eval_feature(csv_path: str, nodes: dict, edges: list) -> dict:
     }
 
 
-# ─── eval_completeness ───────────────────────────────────────────────────────
-
 def eval_completeness(product_to: dict) -> dict:
-    """% of products that have at least one edge of each relationship type."""
     RELS = [
         "MANUFACTURED_BY", "BELONGS_TO", "SOLD_BY",
         "USES_TECHNOLOGY", "SUPPORTS_CARRIER",
@@ -354,14 +275,7 @@ def eval_completeness(product_to: dict) -> dict:
     return {rel: round(counts[rel] / total, 4) for rel in RELS}
 
 
-# ─── eval_integrity ──────────────────────────────────────────────────────────
-
 def eval_integrity(nodes: dict, edges: list) -> dict:
-    """
-    Check that both endpoints of every edge exist in nodes.
-    Broken edges typically come from BOUGHT_TOGETHER pointing to ASINs
-    not present in meta_filtered.csv.
-    """
     broken_by_rel: dict = defaultdict(int)
     for e in edges:
         if e["source"] not in nodes or e["target"] not in nodes:
@@ -375,8 +289,6 @@ def eval_integrity(nodes: dict, edges: list) -> dict:
         "broken_by_rel":   dict(broken_by_rel),
     }
 
-
-# ─── Main ────────────────────────────────────────────────────────────────────
 
 def evaluate_all(output_dir: str, csv_path: str) -> dict:
     print(f"  Loading graph from {output_dir} …")
@@ -405,7 +317,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     output_dir = sys.argv[1]
-    csv_path   = sys.argv[2]
+    csv_path = sys.argv[2]
 
     metrics = evaluate_all(output_dir, csv_path)
     with open("evaluate_metrics.json", "w", encoding="utf-8") as f:

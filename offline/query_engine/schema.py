@@ -1,17 +1,5 @@
-"""
-schema.py
-Mô tả schema của Knowledge Graph để đưa vào system prompt cho LLM.
-
-Có 2 loại prompt:
-  SYSTEM_PROMPT      — One-pass: LLM sinh Cypher trực tiếp (fallback cho aggregate)
-  INTENT_SYSTEM_PROMPT — Two-pass: LLM sinh Intent JSON (dùng cho search/hybrid)
-
-Enum values (Spec/Technology/Carrier) được load động từ Neo4j qua load_enum_values().
-"""
-
 from __future__ import annotations
 
-# ─── Schema dạng text ─────────────────────────────────────────────────────────
 
 SCHEMA_TEXT = """
 ## GRAPH SCHEMA — Smartphone Knowledge Graph
@@ -55,8 +43,6 @@ Spec.key  : 'ram', 'storage'
 Spec.value: '2 GB','3 GB','4 GB','6 GB','8 GB','12 GB'  (RAM)
             '16 GB','32 GB','64 GB','128 GB','256 GB'    (storage)
 """
-
-# ─── Few-shot examples ────────────────────────────────────────────────────────
 
 FEW_SHOT_EXAMPLES = [
     {
@@ -127,25 +113,9 @@ LIMIT 10""",
     },
 ]
 
-# ─── System prompt đầy đủ ─────────────────────────────────────────────────────
-
-# ─── Enum loader (dynamic, load từ Neo4j) ────────────────────────────────────
-
 _enum_cache: dict | None = None
 
 def load_enum_values() -> dict:
-    """
-    Query Neo4j lấy distinct values cho các node dùng exact-match filter.
-    Kết quả được cache sau lần đầu gọi.
-
-    Returns:
-        {
-            "ram_values":     ["2 GB", "4 GB", ...],
-            "storage_values": ["16 GB", "32 GB", ...],
-            "technologies":   ["5G", "4G LTE", ...],
-            "carriers":       ["AT&T", "T-Mobile", ...],
-        }
-    """
     global _enum_cache
     if _enum_cache is not None:
         return _enum_cache
@@ -153,32 +123,30 @@ def load_enum_values() -> dict:
     try:
         from offline.query_engine.graph_search import run_query
         queries = {
-            "ram_values":     "MATCH (s:Spec {key:'ram'})     RETURN DISTINCT s.value AS v ORDER BY v",
+            "ram_values": "MATCH (s:Spec {key:'ram'})     RETURN DISTINCT s.value AS v ORDER BY v",
             "storage_values": "MATCH (s:Spec {key:'storage'}) RETURN DISTINCT s.value AS v ORDER BY v",
-            "technologies":   "MATCH (t:Technology)            RETURN DISTINCT t.label AS v ORDER BY v",
-            "carriers":       "MATCH (c:Carrier)               RETURN DISTINCT c.label AS v ORDER BY v",
+            "technologies": "MATCH (t:Technology)            RETURN DISTINCT t.label AS v ORDER BY v",
+            "carriers": "MATCH (c:Carrier)               RETURN DISTINCT c.label AS v ORDER BY v",
         }
         _enum_cache = {
             key: [r["v"] for r in run_query(cypher) if r.get("v")]
             for key, cypher in queries.items()
         }
     except Exception:
-        # Neo4j chưa chạy → dùng fallback tĩnh
         _enum_cache = {
-            "ram_values":     ["2 GB", "3 GB", "4 GB", "6 GB", "8 GB", "12 GB"],
+            "ram_values": ["2 GB", "3 GB", "4 GB", "6 GB", "8 GB", "12 GB"],
             "storage_values": ["16 GB", "32 GB", "64 GB", "128 GB", "256 GB"],
-            "technologies":   ["5G", "4G LTE", "4G", "LTE", "3G", "GSM",
-                               "Wi-Fi", "Bluetooth", "NFC"],
-            "carriers":       ["AT&T", "T-Mobile", "Verizon", "Cricket",
-                               "Sprint", "Boost Mobile", "TracFone",
-                               "Straight Talk", "Google Fi"],
+            "technologies": ["5G", "4G LTE", "4G", "LTE", "3G", "GSM",
+                             "Wi-Fi", "Bluetooth", "NFC"],
+            "carriers": ["AT&T", "T-Mobile", "Verizon", "Cricket",
+                         "Sprint", "Boost Mobile", "TracFone",
+                         "Straight Talk", "Google Fi"],
         }
 
     return _enum_cache
 
 
 def _enum_section() -> str:
-    """Sinh phần enum values để inject vào prompt."""
     try:
         enums = load_enum_values()
     except Exception:
@@ -192,8 +160,6 @@ Technology    : {enums["technologies"]}
 Carrier       : {enums["carriers"]}
 """
 
-
-# ─── Intent JSON prompt ───────────────────────────────────────────────────────
 
 INTENT_SYSTEM_PROMPT = """Bạn là hệ thống phân tích câu hỏi tìm kiếm sản phẩm.
 Nhiệm vụ: chuyển câu hỏi tiếng Việt thành JSON intent. KHÔNG sinh Cypher.
@@ -267,8 +233,6 @@ Câu hỏi: "điện thoại 5G cổng mở, camera 64MP, quay 8K, giá khoảng
 {"query_type":"search","structured":{"brand":null,"technology":"5G","carrier":null,"spec":null,"price":null,"rating":null},"semantic_query":"cổng mở camera 64MP quay 8K giá khoảng 400k","sort":"rating_desc","limit":100}
 """
 
-
-# ─── One-pass Cypher prompt (giữ nguyên, dùng cho fallback aggregate) ─────────
 
 SYSTEM_PROMPT = f"""Bạn là chuyên gia chuyển đổi câu hỏi tiếng Việt thành câu truy vấn Cypher cho Neo4j.
 

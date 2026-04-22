@@ -1,24 +1,13 @@
-"""
-pipeline.py
-Hybrid search pipeline — 5 bước rõ ràng:
-
-  1. NL → Cypher queries     (nl2cypher.generate_queries)
-  2. Embed câu hỏi           (SentenceTransformer multilingual-e5-small)
-  3. Search Neo4j             (filter query + semantic/vector query)
-  4. Score graph-based        (scoring.hybrid_merge: filter_bonus + sem + popularity)
-  5. Rerank personalized      (0.5 × KGAT_score + 0.5 × graph_score, cả hai normalize [0,1])
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any
 
-from offline.query_engine.nl2cypher   import generate_queries
+from offline.query_engine.nl2cypher import generate_queries
 from offline.query_engine.graph_search import run_query
-from offline.query_engine.scoring     import hybrid_merge, HybridResult
+from offline.query_engine.scoring import hybrid_merge, HybridResult
 from offline.query_engine._llm_client import chat
 
-# ── Embed model singleton ─────────────────────────────────────────────────────
 
 _embed_model = None
 
@@ -35,8 +24,6 @@ def _embed(text: str) -> list[float]:
     ).tolist()
 
 
-# ── Reranker singleton ────────────────────────────────────────────────────────
-
 _reranker = None
 
 def _get_reranker():
@@ -47,8 +34,6 @@ def _get_reranker():
     return _reranker
 
 
-# ── Normalize helper ──────────────────────────────────────────────────────────
-
 def _minmax(values: list[float]) -> list[float]:
     lo, hi = min(values), max(values)
     if hi == lo:
@@ -56,37 +41,24 @@ def _minmax(values: list[float]) -> list[float]:
     return [(v - lo) / (hi - lo) for v in values]
 
 
-# ── Result dataclass ──────────────────────────────────────────────────────────
-
 @dataclass
 class SearchResult:
-    product_id:  str
+    product_id: str
     final_score: float
     graph_score: float
-    kgat_score:  float
+    kgat_score: float
     from_filter: bool
-    sem_score:   float
-    pop_score:   float
+    sem_score: float
+    pop_score: float
 
-
-# ── Core pipeline ─────────────────────────────────────────────────────────────
 
 def search(
     question: str,
-    user_id:  str | None = None,
-    top_k:    int        = 100,
+    user_id: str | None = None,
+    top_k: int = 100,
 ) -> tuple[list[SearchResult], dict[str, Any]]:
-    """
-    Full hybrid search pipeline.
-
-    Returns:
-        (results, trace)
-        results — list[SearchResult] sorted by final_score desc.
-        trace   — dict với debug info từng bước.
-    """
     trace: dict[str, Any] = {"question": question, "user_id": user_id, "steps": []}
 
-    # ── Bước 1: NL → Cypher queries ──────────────────────────────────────────
     try:
         queries = generate_queries(question)
     except Exception as e:
@@ -94,58 +66,54 @@ def search(
         return [], trace
 
     trace["steps"].append({
-        "id":             "nl2cypher",
-        "where_clause":   queries["where_clause"],
-        "filter_query":   queries["filter_query"],
+        "id": "nl2cypher",
+        "where_clause": queries["where_clause"],
+        "filter_query": queries["filter_query"],
         "semantic_query": queries["semantic_query"],
     })
 
-    # ── Bước 2: Embed câu hỏi ────────────────────────────────────────────────
     try:
         embedding = _embed(question)
     except Exception as e:
         trace["error"] = f"[Bước 2] Embed thất bại: {e}"
         return [], trace
 
-    # ── Bước 3: Search Neo4j ─────────────────────────────────────────────────
     try:
-        filter_rows   = run_query(queries["filter_query"])
+        filter_rows = run_query(queries["filter_query"])
         semantic_rows = run_query(queries["semantic_query"], {"query_embedding": embedding})
     except Exception as e:
         trace["error"] = f"[Bước 3] Neo4j query thất bại: {e}"
         return [], trace
 
     trace["steps"].append({
-        "id":             "neo4j_search",
-        "filter_count":   len(filter_rows),
+        "id": "neo4j_search",
+        "filter_count": len(filter_rows),
         "semantic_count": len(semantic_rows),
     })
 
-    # ── Bước 4: Graph-based scoring ──────────────────────────────────────────
     merged: list[HybridResult] = hybrid_merge(filter_rows, semantic_rows, total_limit=top_k)
     if not merged:
         trace["steps"].append({"id": "graph_scoring", "count": 0})
         return [], trace
 
     graph_map = {r.product_id: r for r in merged}
-    asins     = [r.product_id for r in merged]
+    asins = [r.product_id for r in merged]
 
     trace["steps"].append({
-        "id":    "graph_scoring",
+        "id": "graph_scoring",
         "count": len(merged),
-        "top5":  [
+        "top5": [
             {
                 "product_id": r.product_id,
-                "score":      round(r.score, 4),
-                "filter":     r.from_filter,
-                "sem":        round(r.sem_score, 4),
-                "pop":        round(r.pop_score, 4),
+                "score": round(r.score, 4),
+                "filter": r.from_filter,
+                "sem": round(r.sem_score, 4),
+                "pop": round(r.pop_score, 4),
             }
             for r in merged[:5]
         ],
     })
 
-    # ── Bước 5: Rerank personalized ──────────────────────────────────────────
     try:
         reranker = _get_reranker()
         kgat_pairs: list[tuple[str, float]] = reranker.rerank(
@@ -156,14 +124,12 @@ def search(
         kgat_map = dict(kgat_pairs)
         rerank_ok = True
     except Exception as e:
-        # Fallback: chỉ dùng graph score
-        kgat_map  = {pid: 0.0 for pid in asins}
+        kgat_map = {pid: 0.0 for pid in asins}
         rerank_ok = False
         trace["steps"].append({"id": "rerank", "error": str(e), "fallback": True})
 
-    # Normalize cả hai về [0, 1] rồi combine 50/50
-    g_vals = [graph_map[pid].score         for pid in asins]
-    k_vals = [kgat_map.get(pid, 0.0)       for pid in asins]
+    g_vals = [graph_map[pid].score for pid in asins]
+    k_vals = [kgat_map.get(pid, 0.0) for pid in asins]
     g_norm = _minmax(g_vals)
     k_norm = _minmax(k_vals)
 
@@ -171,26 +137,26 @@ def search(
     for pid, gn, kn in zip(asins, g_norm, k_norm):
         hr = graph_map[pid]
         results.append(SearchResult(
-            product_id  = pid,
-            final_score = 0.5 * kn + 0.5 * gn,
-            graph_score = hr.score,
-            kgat_score  = kgat_map.get(pid, 0.0),
-            from_filter = hr.from_filter,
-            sem_score   = hr.sem_score,
-            pop_score   = hr.pop_score,
+            product_id=pid,
+            final_score=0.5 * kn + 0.5 * gn,
+            graph_score=hr.score,
+            kgat_score=kgat_map.get(pid, 0.0),
+            from_filter=hr.from_filter,
+            sem_score=hr.sem_score,
+            pop_score=hr.pop_score,
         ))
 
     results.sort(key=lambda r: -r.final_score)
 
     if rerank_ok:
         trace["steps"].append({
-            "id":   "rerank",
+            "id": "rerank",
             "top5": [
                 {
                     "product_id": r.product_id,
-                    "final":      round(r.final_score, 4),
-                    "graph":      round(r.graph_score, 4),
-                    "kgat":       round(r.kgat_score,  4),
+                    "final": round(r.final_score, 4),
+                    "graph": round(r.graph_score, 4),
+                    "kgat": round(r.kgat_score, 4),
                 }
                 for r in results[:5]
             ],
@@ -199,44 +165,30 @@ def search(
     return results[:top_k], trace
 
 
-# ── Public API ────────────────────────────────────────────────────────────────
-
 def search_ranked(query: str, user_id: str | None = None) -> list[str]:
-    """Trả về list product_id sắp xếp theo final_score."""
     results, _ = search(query, user_id=user_id)
     return [r.product_id for r in results]
 
 
 def search_ranked_with_trace(
-    query:   str,
+    query: str,
     user_id: str | None = None,
 ) -> tuple[list[str], dict[str, Any]]:
-    """Trả về (list[product_id], trace_dict)."""
     results, trace = search(query, user_id=user_id)
     return [r.product_id for r in results], trace
 
 
-# ── ask(): câu hỏi tự nhiên → QueryResult với answer văn bản ─────────────────
-
 @dataclass
 class QueryResult:
     question: str
-    cypher:   str
-    records:  list[dict]
-    answer:   str
-    error:    str | None = None
-    mode:     str        = "hybrid"
+    cypher: str
+    records: list[dict]
+    answer: str
+    error: str | None = None
+    mode: str = "hybrid"
 
 
 def ask(question: str, user_id: str | None = None, format_answer: bool = True) -> QueryResult:
-    """
-    Câu hỏi tự nhiên → QueryResult.
-
-    Args:
-        question      : Câu hỏi tiếng Việt / English.
-        user_id       : User ID để personalize (None = cold-start).
-        format_answer : True = dùng LLM diễn giải thành câu văn.
-    """
     results, trace = search(question, user_id=user_id)
 
     if not results:
@@ -245,14 +197,13 @@ def ask(question: str, user_id: str | None = None, format_answer: bool = True) -
 
     records = [
         {
-            "product_id":  r.product_id,
+            "product_id": r.product_id,
             "final_score": round(r.final_score, 4),
             "from_filter": r.from_filter,
         }
         for r in results
     ]
 
-    # Lấy filter_query để hiển thị/debug
     cypher = next(
         (s.get("filter_query", "") for s in trace.get("steps", []) if s.get("id") == "nl2cypher"),
         "",
