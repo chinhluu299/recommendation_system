@@ -1,25 +1,4 @@
-"""
-baseline_search.py
-──────────────────
-Đánh giá BM25, TF-IDF và Semantic Search trên bộ 100 test queries.
-
-Input  : evaluation/filter_intent_queries_v3.json
-Corpus : offline/data/meta_filtered.csv
-
-Metrics tính trên toàn bộ 100 queries, phân theo query_type:
-  Hit@K     — target_asin có trong top-K không (0/1)
-  MRR@K     — 1/rank nếu rank ≤ K, else 0
-  NDCG@K    — 1/log2(rank+1) nếu rank ≤ K, else 0  (binary relevance)
-
-Chạy:
-    cd recommendation_system/evaluation
-    python3 baseline_search.py                      # BM25 + TF-IDF + Semantic
-    python3 baseline_search.py --k 10 20 50
-    python3 baseline_search.py --no-tfidf           # bỏ TF-IDF
-    python3 baseline_search.py --no-semantic        # bỏ Semantic Search
-    python3 baseline_search.py --sem-model intfloat/multilingual-e5-small
-    python3 baseline_search.py --verbose            # in rank từng query
-"""
+"""Đánh giá BM25 và Semantic Search trên bộ 100 test queries."""
 
 from __future__ import annotations
 
@@ -35,7 +14,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-# ── Paths ─────────────────────────────────────────────────────────────────────
 EVAL_DIR   = Path(__file__).resolve().parent
 ROOT       = EVAL_DIR.parent
 DATA_DIR   = ROOT / "offline" / "data"
@@ -44,12 +22,7 @@ QUERY_PATH = EVAL_DIR / "filter_intent_queries_v2.json"
 OUT_PATH   = EVAL_DIR / "baseline_results_v2.json"
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# Metrics
-# ══════════════════════════════════════════════════════════════════════════════
-
 def rank_of(ranked: list[str], target: str) -> int | None:
-    """1-indexed rank của target. None nếu không có trong danh sách."""
     try:
         return ranked.index(target) + 1
     except ValueError:
@@ -65,7 +38,6 @@ def mrr_at_k(rank: int | None, k: int) -> float:
 
 
 def ndcg_at_k(rank: int | None, k: int) -> float:
-    """NDCG@K với binary relevance (IDCG = 1 vì chỉ có 1 item relevant)."""
     return (1.0 / math.log2(rank + 1)) if (rank is not None and rank <= k) else 0.0
 
 
@@ -91,20 +63,13 @@ def aggregate(records: list[dict], system: str, k_values: list[int]) -> dict:
     return row
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# Text helpers
-# ══════════════════════════════════════════════════════════════════════════════
-
 def build_product_text(row: pd.Series) -> str:
-    """
-    Ghép text của sản phẩm để index.
-    Title được lặp lại 2 lần (boost weight) để khớp với query tốt hơn.
-    """
+    # Title lặp 2 lần để boost weight khi matching
     parts: list[str] = []
     title = str(row.get("title") or "").strip()
     if title:
-        parts.append(title)       # lần 1 (boost)
-        parts.append(title)       # lần 2
+        parts.append(title)
+        parts.append(title)
     for col in ("main_category", "categories", "features"):
         val = str(row.get(col) or "").strip()
         if val and val not in ("nan", "[]", "{}"):
@@ -113,48 +78,33 @@ def build_product_text(row: pd.Series) -> str:
 
 
 def tokenize(text: str) -> list[str]:
-    """Lowercase + loại bỏ ký tự đặc biệt, split whitespace."""
     return re.sub(r"[^a-z0-9\s]", " ", text.lower()).split()
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# BM25 (Okapi BM25 — không cần thư viện ngoài)
-# ══════════════════════════════════════════════════════════════════════════════
-
 class BM25Index:
-    """
-    BM25 Okapi implemented from scratch.
-    k1=1.5, b=0.75 (giá trị mặc định tốt cho IR).
-    """
-
     def __init__(self, corpus_texts: list[str], k1: float = 1.5, b: float = 0.75):
         self.k1 = k1
         self.b  = b
 
-        # Tokenize
         tokenized = [tokenize(t) for t in corpus_texts]
         n         = len(tokenized)
         dl        = [len(d) for d in tokenized]
         self._avgdl = sum(dl) / n if n else 1.0
 
-        # Document frequency
         df: Counter[str] = Counter()
         for doc in tokenized:
             for term in set(doc):
                 df[term] += 1
 
-        # IDF (Okapi BM25 formula)
         self._idf: dict[str, float] = {
             t: math.log((n - freq + 0.5) / (freq + 0.5) + 1)
             for t, freq in df.items()
         }
 
-        # Per-document TF + length
         self._tf  = [Counter(doc) for doc in tokenized]
         self._dl  = dl
 
     def search(self, query: str, top_k: int) -> list[int]:
-        """Trả về list index (0-based) theo thứ tự score giảm dần."""
         tokens = tokenize(query)
         scores: list[float] = []
         for tf_doc, dl in zip(self._tf, self._dl):
@@ -168,7 +118,6 @@ class BM25Index:
                     )
             scores.append(s)
 
-        # Lấy top-k index (partial sort, nhanh hơn full sort)
         n = len(scores)
         k = min(top_k, n)
         top_idx = np.argpartition(scores, -k)[-k:]
@@ -176,65 +125,7 @@ class BM25Index:
         return top_idx.tolist()
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# TF-IDF (sklearn TfidfVectorizer + cosine similarity)
-# ══════════════════════════════════════════════════════════════════════════════
-
-class TFIDFIndex:
-    """
-    TF-IDF với sklearn TfidfVectorizer.
-    Cosine similarity giữa query vector và document matrix.
-    Dùng sublinear_tf=True (1 + log(tf)) để giảm ảnh hưởng của từ xuất hiện nhiều.
-    """
-
-    def __init__(self, corpus_texts: list[str]):
-        from sklearn.feature_extraction.text import TfidfVectorizer
-
-        self._vectorizer = TfidfVectorizer(
-            sublinear_tf=True,          # 1 + log(tf) thay vì tf
-            min_df=2,                   # bỏ term chỉ xuất hiện trong 1 doc
-            max_df=0.95,                # bỏ term quá phổ biến (> 95% docs)
-            ngram_range=(1, 2),         # unigram + bigram
-            analyzer="word",
-            token_pattern=r"[a-z0-9]+(?:[a-z0-9])",  # chỉ alphanum
-            strip_accents="unicode",
-        )
-
-        # Chuẩn bị text (lowercase để khớp token_pattern)
-        cleaned = [re.sub(r"[^a-z0-9\s]", " ", t.lower()) for t in corpus_texts]
-        self._doc_matrix = self._vectorizer.fit_transform(cleaned)   # (n_docs, vocab)
-
-    def search(self, query: str, top_k: int) -> list[int]:
-        """Trả về list index (0-based) theo cosine similarity giảm dần."""
-        q_clean = re.sub(r"[^a-z0-9\s]", " ", query.lower())
-        q_vec   = self._vectorizer.transform([q_clean])              # (1, vocab)
-
-        # Cosine similarity = dot product khi L2-normalized
-        # TfidfVectorizer đã normalize bằng l2 mặc định
-        scores = (self._doc_matrix @ q_vec.T).toarray().ravel()      # (n_docs,)
-
-        k = min(top_k, len(scores))
-        top_idx = np.argpartition(scores, -k)[-k:]
-        top_idx = top_idx[np.argsort(scores[top_idx])[::-1]]
-        return top_idx.tolist()
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# Semantic Search (SentenceTransformer + cosine similarity)
-# ══════════════════════════════════════════════════════════════════════════════
-
 class SemanticIndex:
-    """
-    Semantic search dùng SentenceTransformer + cosine similarity.
-
-    Dùng cùng model với pipeline đề xuất (multilingual-e5-small) để so sánh
-    fair: lợi thế của pipeline đến từ KG filter + KGAT, không phải model khác.
-
-    multilingual-e5 yêu cầu prefix:
-      - Document: "passage: <text>"
-      - Query:    "query: <text>"
-    """
-
     DEFAULT_MODEL = "intfloat/multilingual-e5-small"
 
     def __init__(self, corpus_texts: list[str],
@@ -246,10 +137,9 @@ class SemanticIndex:
         self._model_name = model_name
         self._model      = SentenceTransformer(model_name)
 
-        # Thêm "passage: " prefix theo spec của multilingual-e5
+        # multilingual-e5 yêu cầu prefix "passage: " cho corpus
         prefixed = ["passage: " + t[:512] for t in corpus_texts]
 
-        # Dùng cache nếu có (tránh encode lại khi chạy nhiều lần)
         if cache_path and cache_path.exists():
             print(f"    Semantic: load embeddings từ cache {cache_path.name} …", end=" ", flush=True)
             self._doc_emb = np.load(str(cache_path))
@@ -260,7 +150,7 @@ class SemanticIndex:
                 prefixed,
                 batch_size=batch_size,
                 show_progress_bar=True,
-                normalize_embeddings=True,   # L2-normalize → cosine sim = dot product
+                normalize_embeddings=True,
                 convert_to_numpy=True,
             )
             if cache_path:
@@ -268,7 +158,6 @@ class SemanticIndex:
                 print(f"    Semantic: đã cache embeddings → {cache_path.name}")
 
     def search(self, query: str, top_k: int) -> list[int]:
-        """Trả về list index (0-based) theo cosine similarity giảm dần."""
         q_emb  = self._model.encode(
             ["query: " + query],
             normalize_embeddings=True,
@@ -281,12 +170,7 @@ class SemanticIndex:
         return top_idx.tolist()
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# Main evaluation
-# ══════════════════════════════════════════════════════════════════════════════
-
 def print_table(summary_rows: list[dict], k_values: list[int]) -> None:
-    """In bảng so sánh dạng đẹp."""
     metric_cols = []
     for k in k_values:
         metric_cols += [f"Hit@{k}", f"MRR@{k}", f"NDCG@{k}"]
@@ -323,7 +207,7 @@ def print_table(summary_rows: list[dict], k_values: list[int]) -> None:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Đánh giá BM25, TF-IDF, Semantic Search baseline"
+        description="Đánh giá BM25, Semantic Search baseline"
     )
     parser.add_argument("--queries", type=Path, default=QUERY_PATH,
                         help="File JSON chứa queries")
@@ -333,8 +217,6 @@ def main():
                         help="Các giá trị K để tính metrics (default: 5 10 20)")
     parser.add_argument("--top-k", type=int, default=100,
                         help="Số kết quả tối đa mỗi query (default: 100)")
-    parser.add_argument("--no-tfidf", action="store_true",
-                        help="Bỏ qua TF-IDF")
     parser.add_argument("--no-semantic", action="store_true",
                         help="Bỏ qua Semantic Search")
     parser.add_argument("--sem-model", type=str,
@@ -353,7 +235,6 @@ def main():
     max_k     = max(k_values)
     top_k_ret = max(args.top_k, max_k)
 
-    # ── 1. Load queries ────────────────────────────────────────────────────────
     if not args.queries.exists():
         print(f"[ERR] Không tìm thấy: {args.queries}")
         sys.exit(1)
@@ -381,20 +262,12 @@ def main():
     asins = meta["parent_asin"].tolist()
     texts = [build_product_text(row) for _, row in meta.iterrows()]
 
-    # ── 3. Build indexes ───────────────────────────────────────────────────────
     print(f"\n[2/3] Xây search indexes …")
 
     t0 = time.time()
     print("    BM25: building index …", end=" ", flush=True)
     bm25 = BM25Index(texts)
     print(f"xong ({time.time()-t0:.1f}s)")
-
-    tfidf = None
-    if not args.no_tfidf:
-        t0 = time.time()
-        print("    TF-IDF: building index …", end=" ", flush=True)
-        tfidf = TFIDFIndex(texts)
-        print(f"xong ({time.time()-t0:.1f}s)")
 
     semantic = None
     if not args.no_semantic:
@@ -404,11 +277,9 @@ def main():
         print(f"    Semantic: xong ({time.time()-t0:.1f}s)")
 
     systems = (["BM25"]
-               + (["TF-IDF"]   if tfidf    else [])
                + (["Semantic"]  if semantic else []))
     print(f"    Systems: {systems}")
 
-    # ── 4. Evaluate ────────────────────────────────────────────────────────────
     print(f"\n[3/3] Đánh giá {len(queries)} queries …\n")
 
     per_query: list[dict] = []
@@ -430,7 +301,6 @@ def main():
             "product_title": q.get("product_title", ""),
         }
 
-        # BM25
         t0 = time.time()
         ranked_bm25 = [asins[j] for j in bm25.search(query, top_k=top_k_ret)]
         m_bm25 = compute_metrics(ranked_bm25, target, k_values)
@@ -443,21 +313,6 @@ def main():
                   "  ".join(f"Hit@{k}={int(m_bm25[f'hit@{k}'])}" for k in k_values) +
                   f"  ({m_bm25['latency_ms']:.0f}ms)")
 
-        # TF-IDF
-        if tfidf:
-            t0 = time.time()
-            ranked_tf = [asins[j] for j in tfidf.search(query, top_k=top_k_ret)]
-            m_tf = compute_metrics(ranked_tf, target, k_values)
-            m_tf["latency_ms"] = round((time.time() - t0) * 1000, 2)
-            entry["TF-IDF"] = m_tf
-
-            if args.verbose:
-                r = m_tf["rank"]
-                print(f"       TF-IDF   rank={'None' if r is None else r:<5}  " +
-                      "  ".join(f"Hit@{k}={int(m_tf[f'hit@{k}'])}" for k in k_values) +
-                      f"  ({m_tf['latency_ms']:.0f}ms)")
-
-        # Semantic Search
         if semantic:
             t0 = time.time()
             ranked_sem = [asins[j] for j in semantic.search(query, top_k=top_k_ret)]
@@ -473,7 +328,6 @@ def main():
 
         per_query.append(entry)
 
-    # ── 5. Aggregate metrics ───────────────────────────────────────────────────
     def agg(qs: list[dict], system: str, label: str) -> dict:
         metrics_list = [q[system] for q in qs if system in q]
         return aggregate(metrics_list, f"{system} ({label})", k_values)
@@ -488,10 +342,8 @@ def main():
         for sys_name in systems:
             summary_rows.append(agg(qs, sys_name, label))
 
-    # ── 6. Print table ─────────────────────────────────────────────────────────
     print_table(summary_rows, k_values)
 
-    # ── 7. Chi tiết + latency ──────────────────────────────────────────────────
     print("Chi tiết theo query type:")
     for label, qs in [("Filter", [q for q in per_query if q["query_type"] == "filter"]),
                       ("Intent", [q for q in per_query if q["query_type"] == "intent"])]:
@@ -508,7 +360,6 @@ def main():
         lat = np.mean([q[sys_name]["latency_ms"] for q in per_query if sys_name in q])
         print(f"  {sys_name:<10}: {lat:.1f} ms")
 
-    # ── 8. Save kết quả ────────────────────────────────────────────────────────
     results = {
         "systems":   systems,
         "k_values":  k_values,
@@ -522,7 +373,7 @@ def main():
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✓ Kết quả chi tiết → {args.out}")
+    print(f"\nKết quả chi tiết → {args.out}")
 
 
 if __name__ == "__main__":

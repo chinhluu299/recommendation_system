@@ -15,17 +15,12 @@ from sentence_transformers import SentenceTransformer
 
 from app.search.model import KGAT
 
-# ---------------------------------------------------------------------------
-# Config
-# ---------------------------------------------------------------------------
 
 NEO4J_URI  = "bolt://localhost:7687"
 NEO4J_USER = "neo4j"
 NEO4J_PASS = "1234567890"
 NEO4J_DB   = "recphones"
 
-# _GEMINI_URL   = "https://generativelanguage.googleapis.com/v1beta/openai/"
-# _GEMINI_MODEL = "gemini-2.5-flash"
 GEMINI_URL   = "http://localhost:1234/v1"
 GEMINI_MODEL = "gpt-oss-20b"
 
@@ -48,9 +43,6 @@ def find_ranking_dir() -> Path:
 
 RANKING_DIR = find_ranking_dir()
 
-# ---------------------------------------------------------------------------
-# LLM client
-# ---------------------------------------------------------------------------
 
 llm_client: OpenAI | None = None
 
@@ -84,9 +76,6 @@ def chat(messages: list[dict], max_tokens: int = 512, temperature: float = 0.1) 
             time.sleep(min(15 * (2 ** attempt), 120))
     return ""
 
-# ---------------------------------------------------------------------------
-# Neo4j
-# ---------------------------------------------------------------------------
 
 neo4j_driver = None
 
@@ -103,9 +92,6 @@ def run_query(cypher: str, params: dict | None = None) -> list[dict]:
     except CypherSyntaxError as e:
         raise SyntaxError(f"Cypher không hợp lệ: {e.message}")
 
-# ---------------------------------------------------------------------------
-# Embedding
-# ---------------------------------------------------------------------------
 
 embed_model: SentenceTransformer | None = None
 
@@ -116,9 +102,6 @@ def embed(text: str) -> list[float]:
         embed_model = SentenceTransformer("intfloat/multilingual-e5-small")
     return embed_model.encode(text, normalize_embeddings=True).tolist()
 
-# ---------------------------------------------------------------------------
-# KGAT Reranker
-# ---------------------------------------------------------------------------
 
 class KGATReranker:
     def __init__(self):
@@ -173,9 +156,6 @@ def get_reranker() -> KGATReranker:
         reranker = KGATReranker()
     return reranker
 
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
 
 enum_cache: dict | None = None
 
@@ -279,10 +259,7 @@ Không có filter rõ ràng → trả về {{}}.
 Chỉ JSON, không giải thích.\
 """
 
-#   "điện thoại tốt giá rẻ"
-#     → {{}}
 
-# Không có filter rõ ràng → trả về {{}}.
 def escape_cypher(val: str) -> str:
     return val.replace("'", "\\'")
 
@@ -400,7 +377,6 @@ def build_filter_query(intent: dict) -> str | None:
                 checks.append(f"v <= {float(mx)}")
             if checks:
                 where_conds.append(f"ANY(v IN {alias} WHERE {' AND '.join(checks)})")
-
     if intent.get("price_min") is not None:
         where_conds.append(f"p.price >= {float(intent['price_min'])}")
     if intent.get("price_max") is not None:
@@ -450,9 +426,6 @@ def pop_scores(rows: list[dict]) -> dict[str, float]:
     lo, hi = min(bay.values()), max(bay.values())
     return {k: 0.5 for k in bay} if hi == lo else {k: (v - lo) / (hi - lo) for k, v in bay.items()}
 
-# ---------------------------------------------------------------------------
-# Public API
-# ---------------------------------------------------------------------------
 
 def search_ranked(query: str, user_id: str | None = None) -> list[str]:
     return search_ranked_with_trace(query, user_id)[0]
@@ -461,6 +434,7 @@ def search_ranked(query: str, user_id: str | None = None) -> list[str]:
 def search_ranked_with_trace(
     query: str,
     user_id: str | None = None,
+    cold_start_kgat: bool = False
 ) -> tuple[list[str], dict[str, Any]]:
     trace: dict[str, Any] = {"query": query, "pipeline_mode": "pipeline", "error": None, "steps": []}
 
@@ -569,6 +543,15 @@ def search_ranked_with_trace(
                 "title": "KGAT Rerank",
                 "payload": {"mode": "kgat", "top5": [a for a, _ in kgat_pairs[:5]]},
             })
+        elif cold_start_kgat:
+            kgat_pairs = ranker.rerank(user_id or "__cold_start__", asins)
+            k_vals = [s for _, s in sorted(kgat_pairs, key=lambda x: asins.index(x[0]))]
+            trace["steps"].append({
+                "id": "rerank",
+                "title": "KGAT Rerank",
+                "payload": {"mode": "kgat_cold_start_centroid",
+                            "top5": [a for a, _ in kgat_pairs[:5]]},
+            })
         else:
             k_vals = [0.0] * len(asins)
             trace["steps"].append({
@@ -594,9 +577,6 @@ def search_ranked_with_trace(
     print(trace)
     return [pid for pid, _ in ranked], trace
 
-# ---------------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
     import argparse

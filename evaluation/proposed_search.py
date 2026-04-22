@@ -1,26 +1,28 @@
 """
 proposed_search.py
 ──────────────────
-Đánh giá KG + KGAT pipeline (hệ thống đề xuất) trên bộ 100 test queries.
+Đánh giá KG pipeline (hệ thống đề xuất) trên bộ 100 test queries.
+Mỗi query sinh 2 kết quả để so sánh:
+  1. Proposed       — pipeline gốc (cold-start, KGAT bị skip)
+  2. Proposed+KGAT  — pipeline + KGAT rerank cold-start (centroid user embedding)
 
-Pipeline flow (từ pipeline.py):
+Pipeline flow (từ app.search_pipeline):
   câu hỏi
-    ↓ nl2cypher (LLM sinh Cypher, có semantic embedding)
-    ↓ run_query trên Neo4j Knowledge Graph
-    ↓ extract ASINs từ kết quả
-    ↓ KGAT re-rank (nếu available)
+    ↓ translate → nl2cypher (LLM sinh intent + Cypher)
+    ↓ run_query trên Neo4j Knowledge Graph (filter + semantic)
+    ↓ graph_scoring (filter_bonus + sem + popularity)
+    ↓ [Mode 2 only] KGAT re-rank với centroid (cold-start)
     → danh sách ASIN xếp hạng
 
-Input  : evaluation/filter_intent_queries.json
-Output : evaluation/proposed_results.json
+Input  : evaluation/filter_intent_queries_v3.json
+Output : evaluation/proposed_results_3.json
 
-So sánh: nếu tồn tại baseline_results.json sẽ in bảng so sánh kèm baseline.
+So sánh: nếu tồn tại baseline_results sẽ in bảng so sánh kèm baseline.
 
 Chạy:
     cd recommendation_system/api
     python3 ../evaluation/proposed_search.py
     python3 ../evaluation/proposed_search.py --k 5 10 20 --verbose
-    python3 ../evaluation/proposed_search.py --no-rerank
     python3 ../evaluation/proposed_search.py --out ../evaluation/proposed_results.json
 """
 
@@ -44,9 +46,9 @@ API_DIR  = ROOT / "api"
 if str(API_DIR) not in sys.path:
     sys.path.insert(0, str(API_DIR))
 
-QUERY_PATH    = EVAL_DIR / "filter_intent_queries_v3.json"
-BASELINE_PATH = EVAL_DIR / "baseline_results_3.json"
-OUT_PATH      = EVAL_DIR / "proposed_results_3.json"
+QUERY_PATH    = EVAL_DIR / "filter_intent_queries_v2.json"
+BASELINE_PATH = EVAL_DIR / "baseline_results_v2.json"
+OUT_PATH      = EVAL_DIR / "proposed_results_2.json"
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -115,27 +117,29 @@ def search_proposed(
     query: str,
     user_id: str | None,
     search_fn,
+    cold_start_kgat: bool = False,
 ) -> tuple[list[str], dict, float]:
     """
     Gọi pipeline và trả về (ranked_asins, trace, latency_ms).
 
     Args:
-        query      : câu hỏi tự nhiên
-        user_id    : Amazon user_id để personalize (None = cold-start)
-        search_fn  : search_ranked_with_trace function
-        no_rerank  : nếu True, bỏ qua KGAT rerank (trả về thứ tự từ KG)
+        query           : câu hỏi tự nhiên
+        user_id         : Amazon user_id để personalize (None = cold-start)
+        search_fn       : search_ranked_with_trace function
+        cold_start_kgat : nếu True, bật KGAT rerank với centroid cho cold-start
     """
     t0 = time.time()
     try:
-        ranked, trace = search_fn(query=query, user_id=user_id)
+        ranked, trace = search_fn(
+            query=query,
+            user_id=user_id,
+            cold_start_kgat=cold_start_kgat,
+        )
     except Exception as e:
         latency = (time.time() - t0) * 1000
         return [], {"error": str(e)}, latency
 
     latency = (time.time() - t0) * 1000
-
-    # --no-rerank không được hỗ trợ bởi pipeline mới (KGAT luôn chạy nếu checkpoint tồn tại)
-
     return ranked, trace, latency
 
 
@@ -175,24 +179,19 @@ def print_table(summary_rows: list[dict], k_values: list[int], title: str) -> No
 
 
 def print_comparison(proposed_rows: list[dict], baseline_path: Path, k_values: list[int]) -> None:
-    """In bảng so sánh KG pipeline vs BM25 (baseline)."""
+    """In bảng so sánh KG pipeline vs baseline (BM25 + Semantic nếu có)."""
     if not baseline_path.exists():
         return
 
     with open(baseline_path, encoding="utf-8") as f:
         bl = json.load(f)
 
-    # Lọc lấy BM25 rows từ baseline (theo tên system)
-    bl_rows = [r for r in bl.get("summary", []) if r["system"].startswith("BM25")]
+    bl_rows = [r for r in bl.get("summary", [])
+               if r["system"].startswith(("BM25", "Semantic"))]
 
-    combined = []
-    for pr in proposed_rows:
-        combined.append(pr)
-    for br in bl_rows:
-        combined.append(br)
-
+    combined = list(proposed_rows) + bl_rows
     if combined:
-        print_table(combined, k_values, "KG Pipeline vs BM25 Baseline")
+        print_table(combined, k_values, "KG Pipeline vs Baseline")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -218,7 +217,11 @@ def main():
     args = parser.parse_args()
 
     k_values = sorted(set(args.k))
-    system_name = "KG+KGAT"
+    systems: list[tuple[str, bool]] = [
+        ("Proposed",      False),   # pipeline gốc, cold-start KGAT tắt
+        ("Proposed+KGAT", True),    # pipeline + KGAT rerank cold-start (centroid)
+    ]
+    system_names = [name for name, _ in systems]
 
     # ── 1. Load queries ────────────────────────────────────────────────────────
     if not args.queries.exists():
@@ -232,11 +235,10 @@ def main():
     intent_qs = [q for q in queries if q["query_type"] == "intent"]
 
     print(f"\n{'─'*60}")
-    print(f"  System  : {system_name}")
+    print(f"  Systems : {system_names}")
     print(f"  Queries : {len(queries)} tổng  ({len(filter_qs)} filter + {len(intent_qs)} intent)")
     print(f"  K values: {k_values}")
     print(f"  User ID : {args.user_id or 'cold-start'}")
-    print(f"  Rerank  : KGAT")
 
     # ── 2. Import pipeline ────────────────────────────────────────────────────
     print(f"\n[1/3] Import KG pipeline …")
@@ -244,11 +246,11 @@ def main():
     print(f"    → OK (nl2cypher + Neo4j + KGAT reranker)")
 
     # ── 3. Evaluate ───────────────────────────────────────────────────────────
-    print(f"\n[2/3] Chạy {len(queries)} queries …\n")
+    print(f"\n[2/3] Chạy {len(queries)} queries × {len(systems)} systems …\n")
 
     per_query: list[dict] = []
-    latencies: list[float] = []
-    errors: list[str] = []
+    latencies: dict[str, list[float]] = {name: [] for name in system_names}
+    errors: dict[str, list[str]] = {name: [] for name in system_names}
 
     for i, q in enumerate(queries, 1):
         qid    = q["id"]
@@ -259,77 +261,80 @@ def main():
         if args.verbose:
             print(f"  [{i:>3}/{len(queries)}] [{qtype:>6}] {query[:65]}")
 
-        ranked, trace, latency = search_proposed(
-            query=query,
-            user_id=args.user_id,
-            search_fn=search_fn,
-        )
-        latencies.append(latency)
-
-        m = compute_metrics(ranked, target, k_values)
-        m["latency_ms"] = round(latency, 2)
-
-        # Ghi nhận lỗi từ trace
-        if trace.get("error"):
-            errors.append(f"[{qid}] {trace['error']}")
-            m["error"] = trace["error"]
-
         entry: dict = {
             "id":            qid,
             "query_type":    qtype,
             "query":         query,
             "target_asin":   target,
             "product_title": q.get("product_title", ""),
-            system_name:     m,
         }
 
-        # Lưu trace rút gọn theo step IDs của search_pipeline
-        steps_summary = {}
-        for step in trace.get("steps", []):
-            sid = step.get("id", "")
-            if sid == "nl2cypher":
-                steps_summary["where_clause"] = step.get("where_clause", "")
-            elif sid == "neo4j":
-                steps_summary["filter_count"]   = step.get("filter_count", 0)
-                steps_summary["sem_count"]       = step.get("sem_count", 0)
-            elif sid == "graph_scoring":
-                steps_summary["candidate_count"] = step.get("count", 0)
-            elif sid == "rerank":
-                steps_summary["rerank_fallback"] = step.get("fallback", False)
-                steps_summary["rerank_error"]    = step.get("error", "")
-        entry["trace"] = steps_summary
+        for sys_name, cold_kgat in systems:
+            ranked, trace, latency = search_proposed(
+                query=query,
+                user_id=args.user_id,
+                search_fn=search_fn,
+                cold_start_kgat=cold_kgat,
+            )
+            latencies[sys_name].append(latency)
 
-        if args.verbose:
-            r = m["rank"]
-            where_preview = steps_summary.get("where_clause", "")[:80].replace("\n", " ")
-            print(f"       rank={'None' if r is None else r:<5}  " +
-                  "  ".join(f"Hit@{k}={int(m[f'hit@{k}'])}" for k in k_values) +
-                  f"  ({latency:.0f}ms)")
-            if where_preview:
-                print(f"       WHERE: {where_preview}")
-            if m.get("error"):
-                print(f"       [ERR] {m['error'][:80]}")
+            m = compute_metrics(ranked, target, k_values)
+            m["latency_ms"] = round(latency, 2)
+
+            if trace.get("error"):
+                errors[sys_name].append(f"[{qid}] {trace['error']}")
+                m["error"] = trace["error"]
+
+            entry[sys_name] = m
+
+            # Lưu trace rút gọn theo step IDs của search_pipeline
+            steps_summary = {}
+            for step in trace.get("steps", []):
+                sid = step.get("id", "")
+                if sid == "nl2cypher":
+                    steps_summary["where_clause"] = step.get("where_clause", "")
+                elif sid == "neo4j":
+                    steps_summary["filter_count"] = step.get("filter_count", 0)
+                    steps_summary["sem_count"]    = step.get("sem_count", 0)
+                elif sid == "graph_scoring":
+                    steps_summary["candidate_count"] = step.get("count", 0)
+                elif sid == "rerank":
+                    payload = step.get("payload", {})
+                    steps_summary["rerank_mode"]  = payload.get("mode", "")
+                    steps_summary["rerank_error"] = payload.get("error", "")
+            entry[f"{sys_name}_trace"] = steps_summary
+
+            if args.verbose:
+                r = m["rank"]
+                print(f"       [{sys_name:<14}] rank={'None' if r is None else r:<5}  " +
+                      "  ".join(f"Hit@{k}={int(m[f'hit@{k}'])}" for k in k_values) +
+                      f"  ({latency:.0f}ms)")
+                if m.get("error"):
+                    print(f"       [ERR] {m['error'][:80]}")
 
         per_query.append(entry)
 
     # ── 4. Aggregate ──────────────────────────────────────────────────────────
     print(f"\n[3/3] Tổng hợp kết quả …")
 
-    def agg(qs: list[dict], label: str) -> dict:
-        metrics_list = [q[system_name] for q in qs if system_name in q]
-        return aggregate(metrics_list, f"{system_name} ({label})", k_values)
+    def agg(qs: list[dict], sys_name: str, label: str) -> dict:
+        metrics_list = [q[sys_name] for q in qs if sys_name in q]
+        return aggregate(metrics_list, f"{sys_name} ({label})", k_values)
 
     groups = [
         ("All",    per_query),
         ("Filter", [q for q in per_query if q["query_type"] == "filter"]),
         ("Intent", [q for q in per_query if q["query_type"] == "intent"]),
     ]
-    summary_rows = [agg(qs, label) for label, qs in groups]
+    summary_rows: list[dict] = []
+    for label, qs in groups:
+        for sys_name in system_names:
+            summary_rows.append(agg(qs, sys_name, label))
 
     # ── 5. Print tables ───────────────────────────────────────────────────────
-    print_table(summary_rows, k_values, f"{system_name} — Evaluation Results")
+    print_table(summary_rows, k_values, "Proposed vs Proposed+KGAT — Evaluation Results")
 
-    # So sánh với BM25 baseline (nếu có)
+    # So sánh với baseline (nếu có)
     if args.compare:
         print_comparison(summary_rows, BASELINE_PATH, k_values)
 
@@ -337,36 +342,41 @@ def main():
     print("Chi tiết theo query type:")
     for label, qs in [("Filter", [q for q in per_query if q["query_type"] == "filter"]),
                        ("Intent", [q for q in per_query if q["query_type"] == "intent"])]:
-        found = sum(1 for q in qs if system_name in q and q[system_name]["rank"] is not None)
-        found_top5  = sum(1 for q in qs if system_name in q and q[system_name].get("hit@5", 0))
-        found_top10 = sum(1 for q in qs if system_name in q and q[system_name].get("hit@10", 0))
-        n = len(qs)
-        print(f"  [{system_name}] {label:6}: tìm thấy {found}/{n} targets "
-              f"| top-5: {found_top5} | top-10: {found_top10}")
+        for sys_name in system_names:
+            found       = sum(1 for q in qs if sys_name in q and q[sys_name]["rank"] is not None)
+            found_top5  = sum(1 for q in qs if sys_name in q and q[sys_name].get("hit@5", 0))
+            found_top10 = sum(1 for q in qs if sys_name in q and q[sys_name].get("hit@10", 0))
+            n = len(qs)
+            print(f"  [{sys_name:<14}] {label:6}: tìm thấy {found}/{n} targets "
+                  f"| top-5: {found_top5} | top-10: {found_top10}")
 
-    if latencies:
-        import statistics
-        print(f"\nLatency (ms/query):")
-        print(f"  Mean   : {statistics.mean(latencies):.1f}")
-        print(f"  Median : {statistics.median(latencies):.1f}")
-        print(f"  Max    : {max(latencies):.1f}")
-        print(f"  Min    : {min(latencies):.1f}")
+    import statistics
+    print(f"\nLatency (ms/query):")
+    for sys_name in system_names:
+        lats = latencies[sys_name]
+        if not lats:
+            continue
+        print(f"  [{sys_name:<14}] mean={statistics.mean(lats):.1f}  "
+              f"median={statistics.median(lats):.1f}  "
+              f"min={min(lats):.1f}  max={max(lats):.1f}")
 
-    if errors:
-        print(f"\n[WARN] {len(errors)} queries bị lỗi:")
-        for e in errors[:10]:
-            print(f"  {e}")
-        if len(errors) > 10:
-            print(f"  ... (còn {len(errors) - 10} lỗi nữa)")
+    for sys_name in system_names:
+        errs = errors[sys_name]
+        if errs:
+            print(f"\n[WARN] [{sys_name}] {len(errs)} queries bị lỗi:")
+            for e in errs[:10]:
+                print(f"  {e}")
+            if len(errs) > 10:
+                print(f"  ... (còn {len(errs) - 10} lỗi nữa)")
 
     # ── 7. Save ───────────────────────────────────────────────────────────────
     results = {
-        "system":      system_name,
+        "systems":     system_names,
         "k_values":    k_values,
         "n_queries":   len(per_query),
         "n_filter":    len(filter_qs),
         "n_intent":    len(intent_qs),
-        "n_errors":    len(errors),
+        "n_errors":    {name: len(errors[name]) for name in system_names},
         "summary":     summary_rows,
         "per_query":   per_query,
     }
