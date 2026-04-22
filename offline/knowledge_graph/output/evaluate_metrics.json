@@ -1,0 +1,52 @@
+{
+  "carrier": {
+    "precision": 1.0,
+    "recall": 0.9592,
+    "f1": 0.9792,
+    "TP": 517,
+    "FP": 0,
+    "FN": 22
+  },
+  "technology": {
+    "precision": 0.9987,
+    "recall": 0.9983,
+    "f1": 0.9985,
+    "TP": 4578,
+    "FP": 6,
+    "FN": 8
+  },
+  "brand": {
+    "accuracy": 1.0,
+    "missing_rate": 0.0,
+    "wrong_rate": 0.0,
+    "total": 1179
+  },
+  "spec": {
+    "raw_unique_ids": 62,
+    "normalized_unique_ids": 62,
+    "nodes_merged_by_normalization": 0,
+    "actual_spec_nodes_in_graph": 62
+  },
+  "feature": {
+    "raw_feature_texts": 5738,
+    "unique_feature_nodes": 4278,
+    "dedup_ratio": 0.2544,
+    "has_feature_edges": 5706,
+    "avg_products_per_feature": 1.33
+  },
+  "completeness": {
+    "MANUFACTURED_BY": 1.0,
+    "BELONGS_TO": 1.0,
+    "SOLD_BY": 1.0,
+    "USES_TECHNOLOGY": 0.9746,
+    "SUPPORTS_CARRIER": 0.3885,
+    "HAS_FEATURE": 0.9449,
+    "HAS_SPEC": 0.9025
+  },
+  "integrity": {
+    "total_edges": 44163,
+    "broken_edges": 0,
+    "integrity_rate": 1.0,
+    "broken_by_rel": {}
+  }
+}

@@ -77,7 +77,17 @@ Response chuẩn chung cho tất cả endpoint:
 - `products`
 - `interactions`
 
-## 5) Example Recommendation Payload
+## 5) Gemini Client (Optional)
+
+Thêm vào `.env` để dùng `GeminiClient` trong pipeline riêng của bạn:
+
+```env
+GEMINI_API_KEY=your_api_key
+GEMINI_MODEL=gemini-2.0-flash
+GEMINI_TIMEOUT_SECONDS=12
+```
+
+## 6) Example Recommendation Payload
 
 ```json
 {
@@ -87,7 +97,7 @@ Response chuẩn chung cho tất cả endpoint:
 }
 ```
 
-Core service expected response:
+Recommendation response:
 
 ```json
 {

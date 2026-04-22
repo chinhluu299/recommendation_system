@@ -5,7 +5,7 @@ from app.core.database import get_db
 from app.core.security import create_access_token, hash_password, verify_password
 from app.models.user import User
 from app.schemas.common import ApiResponse
-from app.schemas.auth import AuthTokenResponse, LoginRequest, RegisterRequest
+from app.schemas.auth import AuthTokenResponse, LoginAsRequest, LoginRequest, RegisterRequest
 
 router = APIRouter(prefix="/auth", tags=["Auth"])
 
@@ -38,7 +38,12 @@ def register(payload: RegisterRequest, db: Session = Depends(get_db)):
 
     token = create_access_token(str(user.id))
     return ApiResponse(
-        data=AuthTokenResponse(access_token=token, user_id=user.id, email=user.email),
+        data=AuthTokenResponse(
+            access_token=token,
+            user_id=user.id,
+            email=user.email,
+            external_user_id=user.external_user_id,
+        ),
         message="Register successful",
         code=status.HTTP_201_CREATED,
     )
@@ -62,7 +67,39 @@ def login(payload: LoginRequest, db: Session = Depends(get_db)):
 
     token = create_access_token(str(user.id))
     return ApiResponse(
-        data=AuthTokenResponse(access_token=token, user_id=user.id, email=user.email),
+        data=AuthTokenResponse(
+            access_token=token,
+            user_id=user.id,
+            email=user.email,
+            external_user_id=user.external_user_id,
+        ),
+        message="Login successful",
+        code=status.HTTP_200_OK,
+    )
+
+
+@router.post(
+    "/login-as",
+    response_model=ApiResponse[AuthTokenResponse],
+    summary="Demo login (không cần password)",
+    description="Đăng nhập bằng external_user_id (Amazon ID). Dùng cho demo — không yêu cầu password.",
+    responses={
+        404: {"description": "Không tìm thấy user"},
+    },
+)
+def login_as(payload: LoginAsRequest, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.external_user_id == payload.external_user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    token = create_access_token(str(user.id))
+    return ApiResponse(
+        data=AuthTokenResponse(
+            access_token=token,
+            user_id=user.id,
+            email=user.email,
+            external_user_id=user.external_user_id,
+        ),
         message="Login successful",
         code=status.HTTP_200_OK,
     )

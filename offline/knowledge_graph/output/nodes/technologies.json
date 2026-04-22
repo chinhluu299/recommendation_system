@@ -1,0 +1,642 @@
+[
+  {
+    "id": "tech_wifi",
+    "type": "Technology",
+    "label": "wi-fi"
+  },
+  {
+    "id": "tech_gsm",
+    "type": "Technology",
+    "label": "gsm"
+  },
+  {
+    "id": "tech_2g",
+    "type": "Technology",
+    "label": "2g"
+  },
+  {
+    "id": "tech_lte",
+    "type": "Technology",
+    "label": "lte"
+  },
+  {
+    "id": "tech_4g",
+    "type": "Technology",
+    "label": "4g"
+  },
+  {
+    "id": "tech_cdma",
+    "type": "Technology",
+    "label": "cdma"
+  },
+  {
+    "id": "tech_5g",
+    "type": "Technology",
+    "label": "5g"
+  },
+  {
+    "id": "tech_bluetooth",
+    "type": "Technology",
+    "label": "bluetooth"
+  },
+  {
+    "id": "tech_3g",
+    "type": "Technology",
+    "label": "3g"
+  },
+  {
+    "id": "tech_hotspot",
+    "type": "Technology",
+    "label": "hotspot"
+  },
+  {
+    "id": "tech_usb",
+    "type": "Technology",
+    "label": "usb"
+  },
+  {
+    "id": "tech_nfc",
+    "type": "Technology",
+    "label": "nfc"
+  },
+  {
+    "id": "tech_umts",
+    "type": "Technology",
+    "label": "umts"
+  },
+  {
+    "id": "tech_infrared",
+    "type": "Technology",
+    "label": "infrared"
+  },
+  {
+    "id": "tech_auxiliary",
+    "type": "Technology",
+    "label": "auxiliary"
+  },
+  {
+    "id": "tech_4g_lte",
+    "type": "Technology",
+    "label": "4g lte"
+  },
+  {
+    "id": "tech_hdmi",
+    "type": "Technology",
+    "label": "hdmi"
+  },
+  {
+    "id": "tech_hspa",
+    "type": "Technology",
+    "label": "hspa"
+  },
+  {
+    "id": "tech_evdo",
+    "type": "Technology",
+    "label": "ev-do"
+  },
+  {
+    "id": "tech_wireless",
+    "type": "Technology",
+    "label": "wireless"
+  },
+  {
+    "id": "tech_ble_50",
+    "type": "Technology",
+    "label": "ble 5.0"
+  },
+  {
+    "id": "tech_otg",
+    "type": "Technology",
+    "label": "otg"
+  },
+  {
+    "id": "tech_unknown",
+    "type": "Technology",
+    "label": "unknown"
+  },
+  {
+    "id": "tech_wi_fi",
+    "type": "Technology",
+    "label": "wi fi"
+  },
+  {
+    "id": "tech_35_jack",
+    "type": "Technology",
+    "label": "3.5 jack"
+  },
+  {
+    "id": "tech_see_more",
+    "type": "Technology",
+    "label": "…  see more"
+  },
+  {
+    "id": "tech_supports_aptx_aptx_hd_aptx_adaptive_ldac_lhdc_aptx_tws_audio_transfer",
+    "type": "Technology",
+    "label": "supports aptx & aptx hd & aptx adaptive & ldac & lhdc & aptx tws audio transfer"
+  },
+  {
+    "id": "tech_5g_nr",
+    "type": "Technology",
+    "label": "5g nr"
+  },
+  {
+    "id": "tech_vga",
+    "type": "Technology",
+    "label": "vga"
+  },
+  {
+    "id": "tech_wirelessnetwork",
+    "type": "Technology",
+    "label": "wirelessnetwork"
+  },
+  {
+    "id": "tech_ble_42",
+    "type": "Technology",
+    "label": "ble 4.2"
+  },
+  {
+    "id": "tech_hsdpa",
+    "type": "Technology",
+    "label": "hsdpa"
+  },
+  {
+    "id": "tech_tds",
+    "type": "Technology",
+    "label": "tds"
+  },
+  {
+    "id": "tech_gps",
+    "type": "Technology",
+    "label": "gps"
+  },
+  {
+    "id": "tech_volte",
+    "type": "Technology",
+    "label": "volte"
+  },
+  {
+    "id": "tech_amps",
+    "type": "Technology",
+    "label": "amps"
+  },
+  {
+    "id": "tech_wired",
+    "type": "Technology",
+    "label": "wired"
+  },
+  {
+    "id": "tech_typec",
+    "type": "Technology",
+    "label": "type-c"
+  },
+  {
+    "id": "tech_verizon_wireless",
+    "type": "Technology",
+    "label": "verizon wireless"
+  },
+  {
+    "id": "tech_iden",
+    "type": "Technology",
+    "label": "iden"
+  },
+  {
+    "id": "tech_edge",
+    "type": "Technology",
+    "label": "edge"
+  },
+  {
+    "id": "tech_dual_sim",
+    "type": "Technology",
+    "label": "dual sim"
+  },
+  {
+    "id": "tech_128gb",
+    "type": "Technology",
+    "label": "128gb"
+  },
+  {
+    "id": "tech_umtshspahsdpa",
+    "type": "Technology",
+    "label": "umts/hspa+/hsdpa"
+  },
+  {
+    "id": "tech_glonass",
+    "type": "Technology",
+    "label": "glonass"
+  },
+  {
+    "id": "tech_26",
+    "type": "Technology",
+    "label": "26"
+  },
+  {
+    "id": "tech_46",
+    "type": "Technology",
+    "label": "46"
+  },
+  {
+    "id": "tech_beidou",
+    "type": "Technology",
+    "label": "beidou"
+  },
+  {
+    "id": "tech_40",
+    "type": "Technology",
+    "label": "40"
+  },
+  {
+    "id": "tech_30",
+    "type": "Technology",
+    "label": "30"
+  },
+  {
+    "id": "tech_9",
+    "type": "Technology",
+    "label": "9"
+  },
+  {
+    "id": "tech_12",
+    "type": "Technology",
+    "label": "12"
+  },
+  {
+    "id": "tech_17",
+    "type": "Technology",
+    "label": "17"
+  },
+  {
+    "id": "tech_20",
+    "type": "Technology",
+    "label": "20"
+  },
+  {
+    "id": "tech_29",
+    "type": "Technology",
+    "label": "29"
+  },
+  {
+    "id": "tech_5",
+    "type": "Technology",
+    "label": "5"
+  },
+  {
+    "id": "tech_39",
+    "type": "Technology",
+    "label": "39"
+  },
+  {
+    "id": "tech_2",
+    "type": "Technology",
+    "label": "2"
+  },
+  {
+    "id": "tech_25",
+    "type": "Technology",
+    "label": "25"
+  },
+  {
+    "id": "tech_1",
+    "type": "Technology",
+    "label": "1"
+  },
+  {
+    "id": "tech_66",
+    "type": "Technology",
+    "label": "66"
+  },
+  {
+    "id": "tech_41",
+    "type": "Technology",
+    "label": "41"
+  },
+  {
+    "id": "tech_supports_up_to_dl_cat_20ul_cat_18_20gbps_200mbps",
+    "type": "Technology",
+    "label": "supports up to dl cat 20/ul cat 18 (2.0gbps /200mbps)"
+  },
+  {
+    "id": "tech_7",
+    "type": "Technology",
+    "label": "7"
+  },
+  {
+    "id": "tech_19",
+    "type": "Technology",
+    "label": "19"
+  },
+  {
+    "id": "tech_38",
+    "type": "Technology",
+    "label": "38"
+  },
+  {
+    "id": "tech_4",
+    "type": "Technology",
+    "label": "4"
+  },
+  {
+    "id": "tech_28",
+    "type": "Technology",
+    "label": "28"
+  },
+  {
+    "id": "tech_3",
+    "type": "Technology",
+    "label": "3"
+  },
+  {
+    "id": "tech_18",
+    "type": "Technology",
+    "label": "18"
+  },
+  {
+    "id": "tech_13",
+    "type": "Technology",
+    "label": "13"
+  },
+  {
+    "id": "tech_8",
+    "type": "Technology",
+    "label": "8"
+  },
+  {
+    "id": "tech_galileo_e1e5a_dual_band",
+    "type": "Technology",
+    "label": "galileo (e1+e5a dual band)"
+  },
+  {
+    "id": "tech_48_nr_n2",
+    "type": "Technology",
+    "label": "48; nr: n2"
+  },
+  {
+    "id": "tech_71",
+    "type": "Technology",
+    "label": "71"
+  },
+  {
+    "id": "tech_wma",
+    "type": "Technology",
+    "label": "wma"
+  },
+  {
+    "id": "tech_hdp",
+    "type": "Technology",
+    "label": "hdp"
+  },
+  {
+    "id": "tech_di",
+    "type": "Technology",
+    "label": "di"
+  },
+  {
+    "id": "tech_hsp",
+    "type": "Technology",
+    "label": "hsp"
+  },
+  {
+    "id": "tech_hid",
+    "type": "Technology",
+    "label": "hid"
+  },
+  {
+    "id": "tech_hfp",
+    "type": "Technology",
+    "label": "hfp"
+  },
+  {
+    "id": "tech_avrcp",
+    "type": "Technology",
+    "label": "avrcp"
+  },
+  {
+    "id": "tech_agps",
+    "type": "Technology",
+    "label": "a-gps"
+  },
+  {
+    "id": "tech_pan",
+    "type": "Technology",
+    "label": "pan"
+  },
+  {
+    "id": "tech_pbap",
+    "type": "Technology",
+    "label": "pbap"
+  },
+  {
+    "id": "tech_opp",
+    "type": "Technology",
+    "label": "opp"
+  },
+  {
+    "id": "tech_gavdp",
+    "type": "Technology",
+    "label": "gavdp"
+  },
+  {
+    "id": "tech_g_see_more",
+    "type": "Technology",
+    "label": "g…  see more"
+  },
+  {
+    "id": "tech_map",
+    "type": "Technology",
+    "label": "map"
+  },
+  {
+    "id": "tech_gatt",
+    "type": "Technology",
+    "label": "gatt"
+  },
+  {
+    "id": "tech_cellular",
+    "type": "Technology",
+    "label": "cellular"
+  },
+  {
+    "id": "tech_wi_fi_built_in",
+    "type": "Technology",
+    "label": "wi fi built in"
+  },
+  {
+    "id": "tech_gprs",
+    "type": "Technology",
+    "label": "gprs"
+  },
+  {
+    "id": "tech_ldac",
+    "type": "Technology",
+    "label": "ldac"
+  },
+  {
+    "id": "tech_aptx",
+    "type": "Technology",
+    "label": "apt-x"
+  },
+  {
+    "id": "tech_35mm_headset_jack",
+    "type": "Technology",
+    "label": "3.5mm headset jack"
+  },
+  {
+    "id": "tech_headphone_jack",
+    "type": "Technology",
+    "label": "headphone jack"
+  },
+  {
+    "id": "tech_wifi_6",
+    "type": "Technology",
+    "label": "wi-fi 6"
+  },
+  {
+    "id": "tech_80211_bgn",
+    "type": "Technology",
+    "label": "802.11 b/g/n"
+  },
+  {
+    "id": "tech_24_ghz_50_ghz",
+    "type": "Technology",
+    "label": "2.4 ghz + 5.0 ghz"
+  },
+  {
+    "id": "tech_wireless_network",
+    "type": "Technology",
+    "label": "wireless network"
+  },
+  {
+    "id": "tech_utms",
+    "type": "Technology",
+    "label": "utms"
+  },
+  {
+    "id": "tech_he80",
+    "type": "Technology",
+    "label": "he80"
+  },
+  {
+    "id": "tech_mimo",
+    "type": "Technology",
+    "label": "mimo"
+  },
+  {
+    "id": "tech_glo_see_more",
+    "type": "Technology",
+    "label": "glo…  see more"
+  },
+  {
+    "id": "tech_supl",
+    "type": "Technology",
+    "label": "supl"
+  },
+  {
+    "id": "tech_galileo_sim_card_hybrid_dual_sim_2_nano_sims_1_nano_sim_1_microsd_see_more",
+    "type": "Technology",
+    "label": "galileo sim card hybrid dual sim (2 nano sims / 1 nano sim + 1 microsd)  see more"
+  },
+  {
+    "id": "tech_google_assistant",
+    "type": "Technology",
+    "label": "google assistant"
+  },
+  {
+    "id": "tech_hot_spot",
+    "type": "Technology",
+    "label": "hot spot"
+  },
+  {
+    "id": "tech_wireless_ac",
+    "type": "Technology",
+    "label": "wireless ac"
+  },
+  {
+    "id": "tech_wireless_g",
+    "type": "Technology",
+    "label": "wireless g"
+  },
+  {
+    "id": "tech_wireless_b",
+    "type": "Technology",
+    "label": "wireless b"
+  },
+  {
+    "id": "tech_wireless_n",
+    "type": "Technology",
+    "label": "wireless n"
+  },
+  {
+    "id": "tech_wireless_a",
+    "type": "Technology",
+    "label": "wireless a"
+  },
+  {
+    "id": "tech_tmobile_wireless",
+    "type": "Technology",
+    "label": "t-mobile wireless"
+  },
+  {
+    "id": "tech_24_ghz_5_ghz",
+    "type": "Technology",
+    "label": "2.4 ghz / 5 ghz"
+  },
+  {
+    "id": "tech_vht80",
+    "type": "Technology",
+    "label": "vht80"
+  },
+  {
+    "id": "tech_network_att_tmobile",
+    "type": "Technology",
+    "label": "network att & tmobile"
+  },
+  {
+    "id": "tech_xt1952t_carrier_aggregation",
+    "type": "Technology",
+    "label": "xt1952-t. carrier aggregation"
+  },
+  {
+    "id": "tech_glonass_sim_card_single_nanosimnetworks_bands_models_xt19524",
+    "type": "Technology",
+    "label": "glonass sim card single nano-simnetworks + bands models: xt1952-4"
+  },
+  {
+    "id": "tech_xt1952dl",
+    "type": "Technology",
+    "label": "xt1952-dl"
+  },
+  {
+    "id": "tech_umts_hspa",
+    "type": "Technology",
+    "label": "umts / hspa+"
+  },
+  {
+    "id": "tech_networks_bands_models_xt19524",
+    "type": "Technology",
+    "label": "networks + bands models: xt1952-4"
+  },
+  {
+    "id": "tech_a2dp",
+    "type": "Technology",
+    "label": "a2dp"
+  },
+  {
+    "id": "tech_wiffi",
+    "type": "Technology",
+    "label": "wif-fi"
+  },
+  {
+    "id": "tech_cellular_wireless",
+    "type": "Technology",
+    "label": "cellular & wireless"
+  },
+  {
+    "id": "tech_ethernet",
+    "type": "Technology",
+    "label": "ethernet"
+  },
+  {
+    "id": "tech_radio_frequency",
+    "type": "Technology",
+    "label": "radio frequency"
+  }
+]

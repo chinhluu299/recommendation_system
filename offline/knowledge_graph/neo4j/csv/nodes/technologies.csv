@@ -1,0 +1,129 @@
+id,label
+tech_wifi,wi-fi
+tech_gsm,gsm
+tech_2g,2g
+tech_lte,lte
+tech_4g,4g
+tech_cdma,cdma
+tech_5g,5g
+tech_bluetooth,bluetooth
+tech_3g,3g
+tech_hotspot,hotspot
+tech_usb,usb
+tech_nfc,nfc
+tech_umts,umts
+tech_infrared,infrared
+tech_auxiliary,auxiliary
+tech_4g_lte,4g lte
+tech_hdmi,hdmi
+tech_hspa,hspa
+tech_evdo,ev-do
+tech_wireless,wireless
+tech_ble_50,ble 5.0
+tech_otg,otg
+tech_unknown,unknown
+tech_wi_fi,wi fi
+tech_35_jack,3.5 jack
+tech_see_more,…  see more
+tech_supports_aptx_aptx_hd_aptx_adaptive_ldac_lhdc_aptx_tws_audio_transfer,supports aptx & aptx hd & aptx adaptive & ldac & lhdc & aptx tws audio transfer
+tech_5g_nr,5g nr
+tech_vga,vga
+tech_wirelessnetwork,wirelessnetwork
+tech_ble_42,ble 4.2
+tech_hsdpa,hsdpa
+tech_tds,tds
+tech_gps,gps
+tech_volte,volte
+tech_amps,amps
+tech_wired,wired
+tech_typec,type-c
+tech_verizon_wireless,verizon wireless
+tech_iden,iden
+tech_edge,edge
+tech_dual_sim,dual sim
+tech_128gb,128gb
+tech_umtshspahsdpa,umts/hspa+/hsdpa
+tech_glonass,glonass
+tech_26,26
+tech_46,46
+tech_beidou,beidou
+tech_40,40
+tech_30,30
+tech_9,9
+tech_12,12
+tech_17,17
+tech_20,20
+tech_29,29
+tech_5,5
+tech_39,39
+tech_2,2
+tech_25,25
+tech_1,1
+tech_66,66
+tech_41,41
+tech_supports_up_to_dl_cat_20ul_cat_18_20gbps_200mbps,supports up to dl cat 20/ul cat 18 (2.0gbps /200mbps)
+tech_7,7
+tech_19,19
+tech_38,38
+tech_4,4
+tech_28,28
+tech_3,3
+tech_18,18
+tech_13,13
+tech_8,8
+tech_galileo_e1e5a_dual_band,galileo (e1+e5a dual band)
+tech_48_nr_n2,48; nr: n2
+tech_71,71
+tech_wma,wma
+tech_hdp,hdp
+tech_di,di
+tech_hsp,hsp
+tech_hid,hid
+tech_hfp,hfp
+tech_avrcp,avrcp
+tech_agps,a-gps
+tech_pan,pan
+tech_pbap,pbap
+tech_opp,opp
+tech_gavdp,gavdp
+tech_g_see_more,g…  see more
+tech_map,map
+tech_gatt,gatt
+tech_cellular,cellular
+tech_wi_fi_built_in,wi fi built in
+tech_gprs,gprs
+tech_ldac,ldac
+tech_aptx,apt-x
+tech_35mm_headset_jack,3.5mm headset jack
+tech_headphone_jack,headphone jack
+tech_wifi_6,wi-fi 6
+tech_80211_bgn,802.11 b/g/n
+tech_24_ghz_50_ghz,2.4 ghz + 5.0 ghz
+tech_wireless_network,wireless network
+tech_utms,utms
+tech_he80,he80
+tech_mimo,mimo
+tech_glo_see_more,glo…  see more
+tech_supl,supl
+tech_galileo_sim_card_hybrid_dual_sim_2_nano_sims_1_nano_sim_1_microsd_see_more,galileo sim card hybrid dual sim (2 nano sims / 1 nano sim + 1 microsd)  see more
+tech_google_assistant,google assistant
+tech_hot_spot,hot spot
+tech_wireless_ac,wireless ac
+tech_wireless_g,wireless g
+tech_wireless_b,wireless b
+tech_wireless_n,wireless n
+tech_wireless_a,wireless a
+tech_tmobile_wireless,t-mobile wireless
+tech_24_ghz_5_ghz,2.4 ghz / 5 ghz
+tech_vht80,vht80
+tech_network_att_tmobile,network att & tmobile
+tech_xt1952t_carrier_aggregation,xt1952-t. carrier aggregation
+tech_glonass_sim_card_single_nanosimnetworks_bands_models_xt19524,glonass sim card single nano-simnetworks + bands models: xt1952-4
+tech_xt1952dl,xt1952-dl
+tech_umts_hspa,umts / hspa+
+tech_networks_bands_models_xt19524,networks + bands models: xt1952-4
+tech_a2dp,a2dp
+tech_wiffi,wif-fi
+tech_cellular_wireless,cellular & wireless
+tech_ethernet,ethernet
+tech_radio_frequency,radio frequency

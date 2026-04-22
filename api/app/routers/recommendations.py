@@ -1,8 +1,6 @@
-import httpx
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from app.core.config import settings
 from app.core.database import get_db
 from app.models.user import User
 from app.routers.deps import get_current_user
@@ -16,13 +14,12 @@ router = APIRouter(prefix="/recommendations", tags=["Recommendations"])
     "",
     response_model=ApiResponse[RecommendationResponse],
     summary="Lấy gợi ý sản phẩm",
-    description="Nhận `user_id` và `query`, gọi Core service `/recommend` và trả danh sách gợi ý.",
+    description="Nhận `user_id` và `query`, chạy pipeline offline và trả danh sách gợi ý.",
     response_description="Danh sách sản phẩm gợi ý cho user.",
     responses={
         401: {"description": "Thiếu hoặc sai token"},
         403: {"description": "Không có quyền lấy recommendation cho user khác"},
         404: {"description": "Không tìm thấy user"},
-        502: {"description": "Lỗi kết nối hoặc lỗi phản hồi từ Core service"},
         422: {"description": "Dữ liệu đầu vào không hợp lệ"},
     },
 )
@@ -38,23 +35,18 @@ async def get_recommendations(
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
-    request_data = payload.model_dump()
-
     try:
-        async with httpx.AsyncClient(timeout=10.0) as client:
-            response = await client.post(f"{settings.core_service_url}/recommend", json=request_data)
-            response.raise_for_status()
-    except httpx.HTTPStatusError as exc:
-        raise HTTPException(status_code=502, detail=f"Core service error: {exc.response.text}") from exc
-    except httpx.RequestError as exc:
-        raise HTTPException(status_code=502, detail=f"Cannot reach core service: {exc}") from exc
+        from offline.search_pipeline import search_ranked
+        asins = search_ranked(payload.query, user_id=str(user.id))
+        items = [{"asin": a, "rank": i + 1} for i, a in enumerate(asins[:20])]
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Pipeline error: {exc}") from exc
 
-    data = response.json()
     return ApiResponse(
         data=RecommendationResponse(
             user_id=payload.user_id,
             query=payload.query,
-            items=data.get("items", []),
+            items=items,
         ),
         message="Recommendations retrieved",
         code=200,

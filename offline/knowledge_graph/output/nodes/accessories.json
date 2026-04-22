@@ -1,0 +1,5082 @@
+[
+  {
+    "id": "accessory_charger",
+    "type": "Accessory",
+    "label": "charger"
+  },
+  {
+    "id": "accessory_usb_cable",
+    "type": "Accessory",
+    "label": "usb cable"
+  },
+  {
+    "id": "accessory_adapter",
+    "type": "Accessory",
+    "label": "adapter"
+  },
+  {
+    "id": "accessory_earphone",
+    "type": "Accessory",
+    "label": "earphone"
+  },
+  {
+    "id": "accessory_sim_tray_ejector_x1",
+    "type": "Accessory",
+    "label": "sim tray ejector x1"
+  },
+  {
+    "id": "accessory_screen_protector_x1",
+    "type": "Accessory",
+    "label": "screen protector x1"
+  },
+  {
+    "id": "accessory_usb_cable_x_1",
+    "type": "Accessory",
+    "label": "usb cable x 1"
+  },
+  {
+    "id": "accessory_phone_case_x_1",
+    "type": "Accessory",
+    "label": "phone case x 1"
+  },
+  {
+    "id": "accessory_charger_adapter",
+    "type": "Accessory",
+    "label": "charger adapter"
+  },
+  {
+    "id": "accessory_1",
+    "type": "Accessory",
+    "label": "1"
+  },
+  {
+    "id": "accessory_video_recorder",
+    "type": "Accessory",
+    "label": "video recorder"
+  },
+  {
+    "id": "accessory_camera",
+    "type": "Accessory",
+    "label": "camera"
+  },
+  {
+    "id": "accessory_user_manual",
+    "type": "Accessory",
+    "label": "user manual"
+  },
+  {
+    "id": "accessory_sim_tray_ejector",
+    "type": "Accessory",
+    "label": "sim tray ejector"
+  },
+  {
+    "id": "accessory_data_cable",
+    "type": "Accessory",
+    "label": "data cable"
+  },
+  {
+    "id": "accessory_usb",
+    "type": "Accessory",
+    "label": "usb"
+  },
+  {
+    "id": "accessory_handsfree",
+    "type": "Accessory",
+    "label": "handsfree"
+  },
+  {
+    "id": "accessory_manual",
+    "type": "Accessory",
+    "label": "manual"
+  },
+  {
+    "id": "accessory_sim_tray",
+    "type": "Accessory",
+    "label": "sim tray"
+  },
+  {
+    "id": "accessory_type_c_cable",
+    "type": "Accessory",
+    "label": "type c cable"
+  },
+  {
+    "id": "accessory_inc",
+    "type": "Accessory",
+    "label": "inc"
+  },
+  {
+    "id": "accessory_unknown",
+    "type": "Accessory",
+    "label": "电话盒"
+  },
+  {
+    "id": "accessory_headset",
+    "type": "Accessory",
+    "label": "headset"
+  },
+  {
+    "id": "accessory_screen_protector",
+    "type": "Accessory",
+    "label": "screen protector"
+  },
+  {
+    "id": "accessory_quick_guide",
+    "type": "Accessory",
+    "label": "quick guide"
+  },
+  {
+    "id": "accessory_protective_case",
+    "type": "Accessory",
+    "label": "protective case"
+  },
+  {
+    "id": "accessory_sim_key",
+    "type": "Accessory",
+    "label": "sim key"
+  },
+  {
+    "id": "accessory_quick_reference_manual",
+    "type": "Accessory",
+    "label": "quick reference manual"
+  },
+  {
+    "id": "accessory_iphone",
+    "type": "Accessory",
+    "label": "iphone"
+  },
+  {
+    "id": "accessory_mfi_cable",
+    "type": "Accessory",
+    "label": "mfi cable"
+  },
+  {
+    "id": "accessory_sim_pin_ejector",
+    "type": "Accessory",
+    "label": "sim pin ejector"
+  },
+  {
+    "id": "accessory_stylus",
+    "type": "Accessory",
+    "label": "stylus"
+  },
+  {
+    "id": "accessory_quick_reference_guide",
+    "type": "Accessory",
+    "label": "quick reference guide"
+  },
+  {
+    "id": "accessory_micro_usb_connector",
+    "type": "Accessory",
+    "label": "micro usb connector"
+  },
+  {
+    "id": "accessory_sim_tra",
+    "type": "Accessory",
+    "label": "sim tra"
+  },
+  {
+    "id": "accessory_5_mp_camera",
+    "type": "Accessory",
+    "label": "5 mp camera"
+  },
+  {
+    "id": "accessory_android",
+    "type": "Accessory",
+    "label": "android"
+  },
+  {
+    "id": "accessory_fast_car_charger",
+    "type": "Accessory",
+    "label": "fast car charger"
+  },
+  {
+    "id": "accessory_headphones",
+    "type": "Accessory",
+    "label": "headphones"
+  },
+  {
+    "id": "accessory_key",
+    "type": "Accessory",
+    "label": "key"
+  },
+  {
+    "id": "accessory_silicone_case",
+    "type": "Accessory",
+    "label": "silicone case"
+  },
+  {
+    "id": "accessory_battery",
+    "type": "Accessory",
+    "label": "battery"
+  },
+  {
+    "id": "accessory_charger_and_quick_guide",
+    "type": "Accessory",
+    "label": "charger and quick guide"
+  },
+  {
+    "id": "accessory_otg_dongle",
+    "type": "Accessory",
+    "label": "otg dongle"
+  },
+  {
+    "id": "accessory_silicon_case",
+    "type": "Accessory",
+    "label": "silicon case"
+  },
+  {
+    "id": "accessory_qsg",
+    "type": "Accessory",
+    "label": "qsg"
+  },
+  {
+    "id": "accessory_quick_start_guide",
+    "type": "Accessory",
+    "label": "quick start guide"
+  },
+  {
+    "id": "accessory_wall_charger",
+    "type": "Accessory",
+    "label": "wall charger"
+  },
+  {
+    "id": "accessory_service_guide",
+    "type": "Accessory",
+    "label": "service guide"
+  },
+  {
+    "id": "accessory_instruction_manual",
+    "type": "Accessory",
+    "label": "instruction manual"
+  },
+  {
+    "id": "accessory_menthol_10",
+    "type": "Accessory",
+    "label": "menthol 10%"
+  },
+  {
+    "id": "accessory_phone_x1",
+    "type": "Accessory",
+    "label": "phone x1"
+  },
+  {
+    "id": "accessory_usb_cable_x1",
+    "type": "Accessory",
+    "label": "usb cable x1"
+  },
+  {
+    "id": "accessory_charger_x1",
+    "type": "Accessory",
+    "label": "charger x1"
+  },
+  {
+    "id": "accessory_cue_card_x1",
+    "type": "Accessory",
+    "label": "cue card x1"
+  },
+  {
+    "id": "accessory_user_manual_x1",
+    "type": "Accessory",
+    "label": "user manual x1"
+  },
+  {
+    "id": "accessory_protect_case_x1",
+    "type": "Accessory",
+    "label": "protect case x1"
+  },
+  {
+    "id": "accessory_travel_adapter",
+    "type": "Accessory",
+    "label": "travel adapter"
+  },
+  {
+    "id": "accessory_ejection_pin",
+    "type": "Accessory",
+    "label": "ejection pin"
+  },
+  {
+    "id": "accessory_kkk",
+    "type": "Accessory",
+    "label": "kkk"
+  },
+  {
+    "id": "accessory_1_data_cable",
+    "type": "Accessory",
+    "label": "1 data cable"
+  },
+  {
+    "id": "accessory_1_protective_cover",
+    "type": "Accessory",
+    "label": "1 protective cover"
+  },
+  {
+    "id": "accessory_1_user_manual",
+    "type": "Accessory",
+    "label": "1 user manual"
+  },
+  {
+    "id": "accessory_1_handset",
+    "type": "Accessory",
+    "label": "1 handset"
+  },
+  {
+    "id": "accessory_1_battery",
+    "type": "Accessory",
+    "label": "1 battery"
+  },
+  {
+    "id": "accessory_1_charger",
+    "type": "Accessory",
+    "label": "1 charger"
+  },
+  {
+    "id": "accessory_1_screen_protector",
+    "type": "Accessory",
+    "label": "1 screen protector"
+  },
+  {
+    "id": "accessory_lightning_to_usb_cable",
+    "type": "Accessory",
+    "label": "lightning to usb cable"
+  },
+  {
+    "id": "accessory_screen_protect",
+    "type": "Accessory",
+    "label": "screen protect"
+  },
+  {
+    "id": "accessory_sim",
+    "type": "Accessory",
+    "label": "sim"
+  },
+  {
+    "id": "accessory_us_charger",
+    "type": "Accessory",
+    "label": "us charger"
+  },
+  {
+    "id": "accessory_tempered_glass_screen_protector",
+    "type": "Accessory",
+    "label": "tempered glass screen protector"
+  },
+  {
+    "id": "accessory_armor_x10_rugged_phone",
+    "type": "Accessory",
+    "label": "armor x10 rugged phone"
+  },
+  {
+    "id": "accessory_sim_needle_1x_sling",
+    "type": "Accessory",
+    "label": "sim needle+ 1x sling"
+  },
+  {
+    "id": "accessory_1_x_card_slot_opener_1_x_manual_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x card slot opener / 1 x manual / 1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_antiexplosion_filmpreapplied",
+    "type": "Accessory",
+    "label": "1 x anti-explosion film(pre-applied)"
+  },
+  {
+    "id": "accessory_1_x_typec_to_typec_cable",
+    "type": "Accessory",
+    "label": "1 x type-c to type-c cable"
+  },
+  {
+    "id": "accessory_1_x_doogee_s89_rugged_phone",
+    "type": "Accessory",
+    "label": "1 x doogee s89 rugged phone"
+  },
+  {
+    "id": "accessory_1_x_charger_11v3a",
+    "type": "Accessory",
+    "label": "1 x charger (11v/3a)"
+  },
+  {
+    "id": "accessory_usbcable",
+    "type": "Accessory",
+    "label": "usb_cable"
+  },
+  {
+    "id": "accessory_desk_top_charger",
+    "type": "Accessory",
+    "label": "desk top charger"
+  },
+  {
+    "id": "accessory_screw_driver",
+    "type": "Accessory",
+    "label": "screw driver"
+  },
+  {
+    "id": "accessory_cling",
+    "type": "Accessory",
+    "label": "cling"
+  },
+  {
+    "id": "accessory_std_battery",
+    "type": "Accessory",
+    "label": "std battery"
+  },
+  {
+    "id": "accessory_usb_c_cable",
+    "type": "Accessory",
+    "label": "usb c cable"
+  },
+  {
+    "id": "accessory_usb_c_earphones",
+    "type": "Accessory",
+    "label": "usb c earphones"
+  },
+  {
+    "id": "accessory_doogee_s96gt_rugged_smartphone",
+    "type": "Accessory",
+    "label": "doogee s96gt rugged smartphone"
+  },
+  {
+    "id": "accessory_usb_typec_cable",
+    "type": "Accessory",
+    "label": "usb type-c cable"
+  },
+  {
+    "id": "accessory_phone_case",
+    "type": "Accessory",
+    "label": "phone case"
+  },
+  {
+    "id": "accessory_charging_cable_and_block",
+    "type": "Accessory",
+    "label": "charging cable and block"
+  },
+  {
+    "id": "accessory_charge_adapter",
+    "type": "Accessory",
+    "label": "charge adapter"
+  },
+  {
+    "id": "accessory_micro_usb_cable",
+    "type": "Accessory",
+    "label": "micro usb cable"
+  },
+  {
+    "id": "accessory_device_quick_guide_charger",
+    "type": "Accessory",
+    "label": "device; quick guide; charger"
+  },
+  {
+    "id": "accessory_cell_phone",
+    "type": "Accessory",
+    "label": "cell phone"
+  },
+  {
+    "id": "accessory_iridium_extreme_satellite_phonerechargeable_liion_batteryac_travel_chargerinternational_plug_kitdc_car_chargerportable_auxiliary_magnetic_vehicle_mount_antenna_with_15m_cableleather_holsterusbmini_cablehandsfree_headsetadapter_for_usb_and_poweradapter_for_usb",
+    "type": "Accessory",
+    "label": "iridium extreme satellite phone^rechargeable li-ion battery^ac travel charger^international plug kit^dc car charger^portable auxiliary magnetic vehicle mount antenna with 1.5m cable^leather holster^usb-mini cable^handsfree headset^adapter for usb and power^adapter for usb"
+  },
+  {
+    "id": "accessory_power",
+    "type": "Accessory",
+    "label": "power"
+  },
+  {
+    "id": "accessory_and_external_antenna_with_tnc_connectorminiusb_data_portdata_cdromuser_guidequick_start_guide",
+    "type": "Accessory",
+    "label": "and external antenna with tnc connector^mini-usb data port^data cd-rom^user guide^quick start guide"
+  },
+  {
+    "id": "accessory_handsetchargeruser_manual",
+    "type": "Accessory",
+    "label": "handset^charger^user manual"
+  },
+  {
+    "id": "accessory_1_a7_senior_phone",
+    "type": "Accessory",
+    "label": "1* a7 senior phone"
+  },
+  {
+    "id": "accessory_1_charging_dock",
+    "type": "Accessory",
+    "label": "1* charging dock"
+  },
+  {
+    "id": "accessory_1_usb_cable",
+    "type": "Accessory",
+    "label": "1* usb cable"
+  },
+  {
+    "id": "accessory_1_us_standard_charger",
+    "type": "Accessory",
+    "label": "1* us standard charger"
+  },
+  {
+    "id": "accessory_usb_charging_cable",
+    "type": "Accessory",
+    "label": "usb charging cable"
+  },
+  {
+    "id": "accessory_usb_charger_block",
+    "type": "Accessory",
+    "label": "usb charger block"
+  },
+  {
+    "id": "accessory_use_manual",
+    "type": "Accessory",
+    "label": "use manual"
+  },
+  {
+    "id": "accessory_terms_condtions",
+    "type": "Accessory",
+    "label": "terms & condtions"
+  },
+  {
+    "id": "accessory_health_safety_guide",
+    "type": "Accessory",
+    "label": "health & safety guide"
+  },
+  {
+    "id": "accessory_safety_information",
+    "type": "Accessory",
+    "label": "safety information"
+  },
+  {
+    "id": "accessory_ca_232cd_data_cable",
+    "type": "Accessory",
+    "label": "ca 232cd data cable"
+  },
+  {
+    "id": "accessory_20",
+    "type": "Accessory",
+    "label": "20"
+  },
+  {
+    "id": "accessory_stereo_headset",
+    "type": "Accessory",
+    "label": "stereo headset"
+  },
+  {
+    "id": "accessory_sim_pin",
+    "type": "Accessory",
+    "label": "sim pin"
+  },
+  {
+    "id": "accessory_psi",
+    "type": "Accessory",
+    "label": "psi"
+  },
+  {
+    "id": "accessory_kickstand",
+    "type": "Accessory",
+    "label": "kickstand"
+  },
+  {
+    "id": "accessory_accessories",
+    "type": "Accessory",
+    "label": "accessories"
+  },
+  {
+    "id": "accessory_360_camera_mod",
+    "type": "Accessory",
+    "label": "360 camera mod"
+  },
+  {
+    "id": "accessory_power_adapter",
+    "type": "Accessory",
+    "label": "power adapter"
+  },
+  {
+    "id": "accessory_750mah_lithium_polymer_battery",
+    "type": "Accessory",
+    "label": "750mah lithium polymer battery"
+  },
+  {
+    "id": "accessory_adapter_usb_cable",
+    "type": "Accessory",
+    "label": "adapter; usb cable"
+  },
+  {
+    "id": "accessory_phone_cover",
+    "type": "Accessory",
+    "label": "phone cover"
+  },
+  {
+    "id": "accessory_type_c_cdma_earphones",
+    "type": "Accessory",
+    "label": "type c cdma earphones"
+  },
+  {
+    "id": "accessory_wall_adapter",
+    "type": "Accessory",
+    "label": "wall adapter"
+  },
+  {
+    "id": "accessory_charging_cable",
+    "type": "Accessory",
+    "label": "charging cable"
+  },
+  {
+    "id": "accessory_1_year_us",
+    "type": "Accessory",
+    "label": "1 year us"
+  },
+  {
+    "id": "accessory_handset_cling",
+    "type": "Accessory",
+    "label": "handset + cling"
+  },
+  {
+    "id": "accessory_terms_conditionshealth_safety_guide",
+    "type": "Accessory",
+    "label": "terms & conditions/health & safety guide"
+  },
+  {
+    "id": "accessory_unlocked_cell_phone",
+    "type": "Accessory",
+    "label": "unlocked cell phone"
+  },
+  {
+    "id": "accessory_data",
+    "type": "Accessory",
+    "label": "data"
+  },
+  {
+    "id": "accessory_usb_type_c_charger",
+    "type": "Accessory",
+    "label": "usb type c charger"
+  },
+  {
+    "id": "accessory_usb_type_d_cable",
+    "type": "Accessory",
+    "label": "usb type d cable"
+  },
+  {
+    "id": "accessory_unlocked_smartphone",
+    "type": "Accessory",
+    "label": "unlocked smartphone"
+  },
+  {
+    "id": "accessory_1_galaxy_s21_5g_2_c_to_c_data_cable_3_ejection_pin",
+    "type": "Accessory",
+    "label": "1. galaxy s21+ 5g 2. c to c data cable 3. ejection pin"
+  },
+  {
+    "id": "accessory_akg_headset",
+    "type": "Accessory",
+    "label": "akg headset"
+  },
+  {
+    "id": "accessory_handset_and_headset",
+    "type": "Accessory",
+    "label": "handset and headset"
+  },
+  {
+    "id": "accessory_turbo_charger",
+    "type": "Accessory",
+    "label": "turbo charger"
+  },
+  {
+    "id": "accessory_product",
+    "type": "Accessory",
+    "label": "product"
+  },
+  {
+    "id": "accessory_adapter_phone_case",
+    "type": "Accessory",
+    "label": "adapter; phone case"
+  },
+  {
+    "id": "accessory_card_holder",
+    "type": "Accessory",
+    "label": "card holder"
+  },
+  {
+    "id": "accessory_blu_ray",
+    "type": "Accessory",
+    "label": "blu ray"
+  },
+  {
+    "id": "accessory_1xac_power_charger_adapter_100240v_us_plug",
+    "type": "Accessory",
+    "label": "1xac power charger adapter ( 100~240v / us plug)"
+  },
+  {
+    "id": "accessory_1xdata_cable_100cm",
+    "type": "Accessory",
+    "label": "1xdata cable (100cm)"
+  },
+  {
+    "id": "accessory_1xphone",
+    "type": "Accessory",
+    "label": "1xphone"
+  },
+  {
+    "id": "accessory_1xsling",
+    "type": "Accessory",
+    "label": "1xsling"
+  },
+  {
+    "id": "accessory_1xsim_card_needle",
+    "type": "Accessory",
+    "label": "1xsim card needle"
+  },
+  {
+    "id": "accessory_lg_cellphone",
+    "type": "Accessory",
+    "label": "lg cellphone"
+  },
+  {
+    "id": "accessory_1_t200_senior_phone",
+    "type": "Accessory",
+    "label": "1* t200 senior phone"
+  },
+  {
+    "id": "accessory_micro_usb_wall_charger",
+    "type": "Accessory",
+    "label": "micro usb wall charger"
+  },
+  {
+    "id": "accessory_usb_type_c",
+    "type": "Accessory",
+    "label": "usb type c"
+  },
+  {
+    "id": "accessory_black_shark_5",
+    "type": "Accessory",
+    "label": "black shark 5"
+  },
+  {
+    "id": "accessory_fast_charge_power_adapter120w",
+    "type": "Accessory",
+    "label": "fast charge power adapter(120w)"
+  },
+  {
+    "id": "accessory_sim_trayejector",
+    "type": "Accessory",
+    "label": "sim trayejector"
+  },
+  {
+    "id": "accessory_usb_typec_data_cable",
+    "type": "Accessory",
+    "label": "usb type-c data cable"
+  },
+  {
+    "id": "accessory_sim_tray_opener",
+    "type": "Accessory",
+    "label": "sim tray opener"
+  },
+  {
+    "id": "accessory_jelly_case",
+    "type": "Accessory",
+    "label": "jelly case"
+  },
+  {
+    "id": "accessory_galaxy_note_10",
+    "type": "Accessory",
+    "label": "galaxy note 10+"
+  },
+  {
+    "id": "accessory_speedtalk_sim_card",
+    "type": "Accessory",
+    "label": "speedtalk sim card"
+  },
+  {
+    "id": "accessory_charger_suit",
+    "type": "Accessory",
+    "label": "charger suit"
+  },
+  {
+    "id": "accessory_phone_handset",
+    "type": "Accessory",
+    "label": "phone handset"
+  },
+  {
+    "id": "accessory_device_and_charger",
+    "type": "Accessory",
+    "label": "device and charger"
+  },
+  {
+    "id": "accessory_usbc_to_usba_quick_switch_adapter",
+    "type": "Accessory",
+    "label": "usb-c to usb-a quick switch adapter"
+  },
+  {
+    "id": "accessory_google_pixel_usbc_earbuds_limited_geographies",
+    "type": "Accessory",
+    "label": "google pixel usb-c™ earbuds [limited geographies]"
+  },
+  {
+    "id": "accessory_18w_charger",
+    "type": "Accessory",
+    "label": "18w charger"
+  },
+  {
+    "id": "accessory_10m_usbc_to_usbc_c1_cable",
+    "type": "Accessory",
+    "label": "1.0m usb-c to usb-c c1 cable"
+  },
+  {
+    "id": "accessory_1_x_antiexplosion_film_1_x_sim_card_pin_1_x_wrist_rope_1_x_packing_box_1_x_manual_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x anti-explosion film / 1 x sim card pin / 1 x wrist rope / 1 x packing box / 1 x manual / 1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_typec_usb_cable",
+    "type": "Accessory",
+    "label": "1 x type-c usb cable"
+  },
+  {
+    "id": "accessory_1_x_doogee_s61_pro_rugged_smartphone",
+    "type": "Accessory",
+    "label": "1 x doogee s61 pro rugged smartphone"
+  },
+  {
+    "id": "accessory_1_x_charger_5v2a",
+    "type": "Accessory",
+    "label": "1 x charger (5v/2a)"
+  },
+  {
+    "id": "accessory_1_x_protective_filmpreapplied",
+    "type": "Accessory",
+    "label": "1 x protective film(pre-applied)"
+  },
+  {
+    "id": "accessory_adapter_and_usb",
+    "type": "Accessory",
+    "label": "adapter and usb"
+  },
+  {
+    "id": "accessory_warranty_card",
+    "type": "Accessory",
+    "label": "warranty card"
+  },
+  {
+    "id": "accessory_cubot_x30_unlocked_smartphone",
+    "type": "Accessory",
+    "label": "cubot x30 unlocked smartphone"
+  },
+  {
+    "id": "accessory_protector_case",
+    "type": "Accessory",
+    "label": "protector case"
+  },
+  {
+    "id": "accessory_data_cable_100cm",
+    "type": "Accessory",
+    "label": "data cable (100cm)"
+  },
+  {
+    "id": "accessory_protective_film_preinstalled",
+    "type": "Accessory",
+    "label": "protective film (pre-installed)"
+  },
+  {
+    "id": "accessory_ac_power_charger_100240v_us_plug",
+    "type": "Accessory",
+    "label": "ac power charger (100~240v /us plug)"
+  },
+  {
+    "id": "accessory_sim_picklanyard",
+    "type": "Accessory",
+    "label": "sim pick+lanyard"
+  },
+  {
+    "id": "accessory_user_pamphlet",
+    "type": "Accessory",
+    "label": "user pamphlet"
+  },
+  {
+    "id": "accessory_earbuds",
+    "type": "Accessory",
+    "label": "earbuds"
+  },
+  {
+    "id": "accessory_radio_fm_internet_explorer",
+    "type": "Accessory",
+    "label": "radio fm / internet explorer"
+  },
+  {
+    "id": "accessory_wifi",
+    "type": "Accessory",
+    "label": "wi-fi"
+  },
+  {
+    "id": "accessory_play_store_android_store",
+    "type": "Accessory",
+    "label": "play store (android store)"
+  },
+  {
+    "id": "accessory_redmagic_smartphone_x_1_clear_phone_case_x_1_power_adapter_x_1_typec_data_cable_x_1_sim_tray_ejector_x_1",
+    "type": "Accessory",
+    "label": "redmagic smartphone x 1 clear phone case x 1 power adapter x 1 type-c data cable x 1 sim tray ejector x 1"
+  },
+  {
+    "id": "accessory_battery1",
+    "type": "Accessory",
+    "label": "battery*1"
+  },
+  {
+    "id": "accessory_charger1",
+    "type": "Accessory",
+    "label": "charger*1"
+  },
+  {
+    "id": "accessory_user_manual1",
+    "type": "Accessory",
+    "label": "user manual*1"
+  },
+  {
+    "id": "accessory_charging_dock1",
+    "type": "Accessory",
+    "label": "charging dock*1"
+  },
+  {
+    "id": "accessory_phone1",
+    "type": "Accessory",
+    "label": "phone*1"
+  },
+  {
+    "id": "accessory_1_x_typec_to_35mm_audio_adapter",
+    "type": "Accessory",
+    "label": "1 x type-c to 3.5mm audio adapter"
+  },
+  {
+    "id": "accessory_1_x_ulefone_armor_12_5g_rugged_smartphone",
+    "type": "Accessory",
+    "label": "1 x ulefone armor 12 5g rugged smartphone"
+  },
+  {
+    "id": "accessory_1xsim_needle_1xsling_ps_if_need_any_supports",
+    "type": "Accessory",
+    "label": "1xsim needle & 1xsling (ps: if need any supports"
+  },
+  {
+    "id": "accessory_please_contact_amazonulefonecom",
+    "type": "Accessory",
+    "label": "please contact : amazon@ulefone.com)"
+  },
+  {
+    "id": "accessory_1_x_ac_power_charger_us_plug",
+    "type": "Accessory",
+    "label": "1 x ac power charger (us plug)"
+  },
+  {
+    "id": "accessory_1_x_tempered_glass_screen_protector",
+    "type": "Accessory",
+    "label": "1 x tempered glass screen protector"
+  },
+  {
+    "id": "accessory_cell_phone_service",
+    "type": "Accessory",
+    "label": "cell phone service"
+  },
+  {
+    "id": "accessory_phone_x_1",
+    "type": "Accessory",
+    "label": "phone x 1"
+  },
+  {
+    "id": "accessory_charger_x_1",
+    "type": "Accessory",
+    "label": "charger x 1"
+  },
+  {
+    "id": "accessory_usb_typec_cable_x_1",
+    "type": "Accessory",
+    "label": "usb type-c cable x 1"
+  },
+  {
+    "id": "accessory_user_manual_x_1",
+    "type": "Accessory",
+    "label": "user manual x 1"
+  },
+  {
+    "id": "accessory_protector_case_x_1",
+    "type": "Accessory",
+    "label": "protector case x 1"
+  },
+  {
+    "id": "accessory_earphone_x_1",
+    "type": "Accessory",
+    "label": "earphone x 1"
+  },
+  {
+    "id": "accessory_pin_x_1",
+    "type": "Accessory",
+    "label": "pin x 1"
+  },
+  {
+    "id": "accessory_1_x_wrist_rope1_x_packing_box1_x_manual1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x wrist rope/1 x packing box/1 x manual/1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_doogee_s41_pro_rugged_smartphone",
+    "type": "Accessory",
+    "label": "1 x doogee s41 pro rugged smartphone"
+  },
+  {
+    "id": "accessory_1_x_charger_5v1a",
+    "type": "Accessory",
+    "label": "1 x charger (5v/1a)"
+  },
+  {
+    "id": "accessory_a7_printed_generic_startup_guidebungo",
+    "type": "Accessory",
+    "label": "a7 printed - generic startup guidebungo"
+  },
+  {
+    "id": "accessory_audio_cable",
+    "type": "Accessory",
+    "label": "audio cable"
+  },
+  {
+    "id": "accessory_ec260",
+    "type": "Accessory",
+    "label": "ec260"
+  },
+  {
+    "id": "accessory_part_13109805_elabelgreco",
+    "type": "Accessory",
+    "label": "part: 1310-9805 e-labelgreco"
+  },
+  {
+    "id": "accessory_charger_head",
+    "type": "Accessory",
+    "label": "charger head"
+  },
+  {
+    "id": "accessory_uch20typec_cable_bird_2",
+    "type": "Accessory",
+    "label": "uch20type-c cable bird 2"
+  },
+  {
+    "id": "accessory_ucb20",
+    "type": "Accessory",
+    "label": "ucb20"
+  },
+  {
+    "id": "accessory_black",
+    "type": "Accessory",
+    "label": "black"
+  },
+  {
+    "id": "accessory_part_13112054ian",
+    "type": "Accessory",
+    "label": "part: 1311-2054ian"
+  },
+  {
+    "id": "accessory_mh750_with_gold_plug_isharp_black",
+    "type": "Accessory",
+    "label": "mh750 with gold plug i-sharp (black)"
+  },
+  {
+    "id": "accessory_tbd",
+    "type": "Accessory",
+    "label": "tbd"
+  },
+  {
+    "id": "accessory_quick_start",
+    "type": "Accessory",
+    "label": "quick start"
+  },
+  {
+    "id": "accessory_airtime_card",
+    "type": "Accessory",
+    "label": "airtime card"
+  },
+  {
+    "id": "accessory_1x_oneplus_3t",
+    "type": "Accessory",
+    "label": "1x oneplus 3t"
+  },
+  {
+    "id": "accessory_1x_sim_tray_ejector",
+    "type": "Accessory",
+    "label": "1x sim tray ejector"
+  },
+  {
+    "id": "accessory_1x_dash_typec_cable",
+    "type": "Accessory",
+    "label": "1x dash type-c cable"
+  },
+  {
+    "id": "accessory_1x_dash_power_adapter",
+    "type": "Accessory",
+    "label": "1x dash power adapter"
+  },
+  {
+    "id": "accessory_1x_quick_start_guide",
+    "type": "Accessory",
+    "label": "1x quick start guide"
+  },
+  {
+    "id": "accessory_1x_safety_information",
+    "type": "Accessory",
+    "label": "1x safety information"
+  },
+  {
+    "id": "accessory_1x_screen_protector_preapplied",
+    "type": "Accessory",
+    "label": "1x screen protector (pre-applied)"
+  },
+  {
+    "id": "accessory_1_unlocked_smartphone",
+    "type": "Accessory",
+    "label": "1 unlocked smartphone"
+  },
+  {
+    "id": "accessory_usb_wall_charger",
+    "type": "Accessory",
+    "label": "usb wall charger"
+  },
+  {
+    "id": "accessory_moto_e_plus",
+    "type": "Accessory",
+    "label": "moto e plus"
+  },
+  {
+    "id": "accessory_s_pen",
+    "type": "Accessory",
+    "label": "s pen"
+  },
+  {
+    "id": "accessory_type_c_usb_cable",
+    "type": "Accessory",
+    "label": "type c usb cable"
+  },
+  {
+    "id": "accessory_wall_charger_120w",
+    "type": "Accessory",
+    "label": "wall charger 120w"
+  },
+  {
+    "id": "accessory_cdsvmloft_loft",
+    "type": "Accessory",
+    "label": "cdsvmloft loft"
+  },
+  {
+    "id": "accessory_galaxy_a12",
+    "type": "Accessory",
+    "label": "galaxy a12"
+  },
+  {
+    "id": "accessory_terms_condi",
+    "type": "Accessory",
+    "label": "terms & condi"
+  },
+  {
+    "id": "accessory_activation_guide",
+    "type": "Accessory",
+    "label": "activation guide"
+  },
+  {
+    "id": "accessory_usbtype_c_cable_wall_adapter_sold_separately",
+    "type": "Accessory",
+    "label": "usb-type c cable (wall adapter sold separately)"
+  },
+  {
+    "id": "accessory_usb_connector",
+    "type": "Accessory",
+    "label": "usb connector"
+  },
+  {
+    "id": "accessory_setpot_screen_protector",
+    "type": "Accessory",
+    "label": "setpot screen protector"
+  },
+  {
+    "id": "accessory_zte_z610dl",
+    "type": "Accessory",
+    "label": "zte z610dl"
+  },
+  {
+    "id": "accessory_needle_for_sim_card",
+    "type": "Accessory",
+    "label": "needle for sim card"
+  },
+  {
+    "id": "accessory_65w_fast_charge_power_adapter",
+    "type": "Accessory",
+    "label": "65w fast charge power adapter"
+  },
+  {
+    "id": "accessory_black_shark_4",
+    "type": "Accessory",
+    "label": "black shark 4"
+  },
+  {
+    "id": "accessory_moto_g_3rd_gen",
+    "type": "Accessory",
+    "label": "moto g (3rd gen.)"
+  },
+  {
+    "id": "accessory_motorola_wall_charger",
+    "type": "Accessory",
+    "label": "motorola wall charger"
+  },
+  {
+    "id": "accessory_sim_card_installed",
+    "type": "Accessory",
+    "label": "sim card (installed)"
+  },
+  {
+    "id": "accessory_a7_printed_generic_startup_guide_elabel_quick_charger_head",
+    "type": "Accessory",
+    "label": "a7 printed - generic startup guide e-label quick charger head"
+  },
+  {
+    "id": "accessory_uch12_standard_master_pack_label_standard_mobile_phone_label_standard_sales_item_label_typec_usb_cablebird",
+    "type": "Accessory",
+    "label": "uch12 standard master pack label standard mobile phone label standard sales item label type-c usb cable-bird"
+  },
+  {
+    "id": "accessory_ucb20_w1649",
+    "type": "Accessory",
+    "label": "ucb20 (w1649~)"
+  },
+  {
+    "id": "accessory_part_13021935",
+    "type": "Accessory",
+    "label": "part: 1302-1935"
+  },
+  {
+    "id": "accessory_mh410_wired_headset",
+    "type": "Accessory",
+    "label": "mh410 wired headset"
+  },
+  {
+    "id": "accessory_lithium_polymer_battery",
+    "type": "Accessory",
+    "label": "lithium polymer battery"
+  },
+  {
+    "id": "accessory_soyes_xs12_smartphone1_charging_cable1_charging_adapterus_standard1_sim_card_pin1_silicone_case1_screen_film1_user_manaul1",
+    "type": "Accessory",
+    "label": "soyes xs12 smartphone*1 charging cable*1 charging adapter(us standard)*1 sim card pin*1 silicone case*1 screen film*1 user manaul*1"
+  },
+  {
+    "id": "accessory_travel_adapter_usb_cable",
+    "type": "Accessory",
+    "label": "travel adapter & usb cable"
+  },
+  {
+    "id": "accessory_charger_and_typec_usb_cable",
+    "type": "Accessory",
+    "label": "charger and type-c usb cable"
+  },
+  {
+    "id": "accessory_phone_and_charger",
+    "type": "Accessory",
+    "label": "phone and charger"
+  },
+  {
+    "id": "accessory_5g_uw",
+    "type": "Accessory",
+    "label": "5g uw"
+  },
+  {
+    "id": "accessory_pin",
+    "type": "Accessory",
+    "label": "pin"
+  },
+  {
+    "id": "accessory_cubot_c30_unlocked_cell_phone",
+    "type": "Accessory",
+    "label": "cubot c30 unlocked cell phone"
+  },
+  {
+    "id": "accessory_mobile_phone",
+    "type": "Accessory",
+    "label": "mobile phone"
+  },
+  {
+    "id": "accessory_1_smart_cover",
+    "type": "Accessory",
+    "label": "1 smart cover"
+  },
+  {
+    "id": "accessory_3_interchangeable_back_covers_and_1_screen_protector",
+    "type": "Accessory",
+    "label": "3 interchangeable back covers and 1 screen protector."
+  },
+  {
+    "id": "accessory_primea1_pro",
+    "type": "Accessory",
+    "label": "prime-a1 pro"
+  },
+  {
+    "id": "accessory_earpod",
+    "type": "Accessory",
+    "label": "earpod"
+  },
+  {
+    "id": "accessory_documentation",
+    "type": "Accessory",
+    "label": "documentation"
+  },
+  {
+    "id": "accessory_microusb_wall_charger_and_user_manual",
+    "type": "Accessory",
+    "label": "micro-usb wall charger and user manual"
+  },
+  {
+    "id": "accessory_gift_card",
+    "type": "Accessory",
+    "label": "gift card"
+  },
+  {
+    "id": "accessory_motorola_low_cost_battery_mod",
+    "type": "Accessory",
+    "label": "motorola low cost battery mod"
+  },
+  {
+    "id": "accessory_1_senior_flip_phone",
+    "type": "Accessory",
+    "label": "1* senior flip phone"
+  },
+  {
+    "id": "accessory_powerwall_charger",
+    "type": "Accessory",
+    "label": "power/wall charger"
+  },
+  {
+    "id": "accessory_case",
+    "type": "Accessory",
+    "label": "case"
+  },
+  {
+    "id": "accessory_usbc_cable_and_sim_ejection_tool",
+    "type": "Accessory",
+    "label": "usb-c cable and sim ejection tool."
+  },
+  {
+    "id": "accessory_galaxy_s10",
+    "type": "Accessory",
+    "label": "galaxy s10+"
+  },
+  {
+    "id": "accessory_1xprotective_case",
+    "type": "Accessory",
+    "label": "1xprotective case"
+  },
+  {
+    "id": "accessory_1xprotective_film_preinstalled",
+    "type": "Accessory",
+    "label": "1xprotective film (pre-installed）"
+  },
+  {
+    "id": "accessory_1xac_power_charger_adapter100240v_us_plug",
+    "type": "Accessory",
+    "label": "1xac power charger adapter(100~240v /us plug)"
+  },
+  {
+    "id": "accessory_fast_51w_car_charger",
+    "type": "Accessory",
+    "label": "fast 51w car charger"
+  },
+  {
+    "id": "accessory_mobile_unit",
+    "type": "Accessory",
+    "label": "mobile unit"
+  },
+  {
+    "id": "accessory_liion_battery",
+    "type": "Accessory",
+    "label": "li-ion battery"
+  },
+  {
+    "id": "accessory_35mm_stereo_headset",
+    "type": "Accessory",
+    "label": "3.5mm stereo headset"
+  },
+  {
+    "id": "accessory_screen_protector_leaflet",
+    "type": "Accessory",
+    "label": "screen protector leaflet"
+  },
+  {
+    "id": "accessory_smart_switch_insert",
+    "type": "Accessory",
+    "label": "smart switch insert"
+  },
+  {
+    "id": "accessory_terms_conditions_health_safety_guide",
+    "type": "Accessory",
+    "label": "terms & conditions/ health & safety guide"
+  },
+  {
+    "id": "accessory_cell_phone_accessory",
+    "type": "Accessory",
+    "label": "cell phone accessory"
+  },
+  {
+    "id": "accessory_galaxy_a01",
+    "type": "Accessory",
+    "label": "galaxy a01"
+  },
+  {
+    "id": "accessory_terms_conditions",
+    "type": "Accessory",
+    "label": "terms & conditions"
+  },
+  {
+    "id": "accessory_galaxy_s22",
+    "type": "Accessory",
+    "label": "galaxy s22+"
+  },
+  {
+    "id": "accessory_preinstalled_sim_card",
+    "type": "Accessory",
+    "label": "pre–installed sim card"
+  },
+  {
+    "id": "accessory_data_cable_type_c_to_c",
+    "type": "Accessory",
+    "label": "data cable type c to c"
+  },
+  {
+    "id": "accessory_terms_and_conditions",
+    "type": "Accessory",
+    "label": "terms and conditions"
+  },
+  {
+    "id": "accessory_data_cable_100cm_1",
+    "type": "Accessory",
+    "label": "data cable (100cm) *1"
+  },
+  {
+    "id": "accessory_ac_power_charger_100240v_us_plug_1",
+    "type": "Accessory",
+    "label": "ac power charger (100~240v /us plug) *1"
+  },
+  {
+    "id": "accessory_multilanguage_user_manual_1_ps_if_need_any_supports",
+    "type": "Accessory",
+    "label": "multi-language user manual *1 (ps: if need any supports"
+  },
+  {
+    "id": "accessory_tws_earbuds_2",
+    "type": "Accessory",
+    "label": "tws earbuds *2"
+  },
+  {
+    "id": "accessory_tempered_glass_screen_protector_1",
+    "type": "Accessory",
+    "label": "tempered glass screen protector *1"
+  },
+  {
+    "id": "accessory_galaxy",
+    "type": "Accessory",
+    "label": "galaxy"
+  },
+  {
+    "id": "accessory_pre_installed_sim_card",
+    "type": "Accessory",
+    "label": "pre installed sim card"
+  },
+  {
+    "id": "accessory_usbc_digital_earbud",
+    "type": "Accessory",
+    "label": "usb-c digital earbud"
+  },
+  {
+    "id": "accessory_stereo_earbud",
+    "type": "Accessory",
+    "label": "stereo earbud"
+  },
+  {
+    "id": "accessory_1_battery_and_1_user_manual",
+    "type": "Accessory",
+    "label": "1* battery and 1* user manual"
+  },
+  {
+    "id": "accessory_1_t100_senior_phone",
+    "type": "Accessory",
+    "label": "1* t100 senior phone"
+  },
+  {
+    "id": "accessory_1_speedtalk_3in1_sim_card",
+    "type": "Accessory",
+    "label": "1* speedtalk 3in1 sim card"
+  },
+  {
+    "id": "accessory_1_charging_dock_and_1_usb_cable",
+    "type": "Accessory",
+    "label": "1* charging dock and 1* usb cable"
+  },
+  {
+    "id": "accessory_1_year_us_warranty",
+    "type": "Accessory",
+    "label": "1 year us warranty"
+  },
+  {
+    "id": "accessory_phonechargerusb_cablequick_guide",
+    "type": "Accessory",
+    "label": "phone^charger^usb cable^quick guide"
+  },
+  {
+    "id": "accessory_ds642126",
+    "type": "Accessory",
+    "label": "ds6421-26"
+  },
+  {
+    "id": "accessory_and_sim_tray_removal_tool",
+    "type": "Accessory",
+    "label": "and sim tray removal tool"
+  },
+  {
+    "id": "accessory_power_cord",
+    "type": "Accessory",
+    "label": "power cord"
+  },
+  {
+    "id": "accessory_ear_buds",
+    "type": "Accessory",
+    "label": "ear buds"
+  },
+  {
+    "id": "accessory_10w_wall_charger",
+    "type": "Accessory",
+    "label": "10w wall charger"
+  },
+  {
+    "id": "accessory_charging_dock",
+    "type": "Accessory",
+    "label": "charging dock"
+  },
+  {
+    "id": "accessory_jethro_mobile_sim_card",
+    "type": "Accessory",
+    "label": "jethro mobile sim card"
+  },
+  {
+    "id": "accessory_ac_power_charger",
+    "type": "Accessory",
+    "label": "ac power charger"
+  },
+  {
+    "id": "accessory_sim_needle_lanyard_1",
+    "type": "Accessory",
+    "label": "sim needle & lanyard *1"
+  },
+  {
+    "id": "accessory_otg_cable",
+    "type": "Accessory",
+    "label": "otg cable"
+  },
+  {
+    "id": "accessory_data_c",
+    "type": "Accessory",
+    "label": "data c"
+  },
+  {
+    "id": "accessory_zte_z3",
+    "type": "Accessory",
+    "label": "zte z3"
+  },
+  {
+    "id": "accessory_7_photo_cards",
+    "type": "Accessory",
+    "label": "7 photo cards"
+  },
+  {
+    "id": "accessory_bts_sticker",
+    "type": "Accessory",
+    "label": "bts sticker"
+  },
+  {
+    "id": "accessory_cable",
+    "type": "Accessory",
+    "label": "cable"
+  },
+  {
+    "id": "accessory_phonechargersim_cardinstallation_guide",
+    "type": "Accessory",
+    "label": "phone^charger^sim card^installation guide"
+  },
+  {
+    "id": "accessory_mp3",
+    "type": "Accessory",
+    "label": "mp3"
+  },
+  {
+    "id": "accessory_mp4",
+    "type": "Accessory",
+    "label": "mp4"
+  },
+  {
+    "id": "accessory_fm_radio",
+    "type": "Accessory",
+    "label": "fm radio"
+  },
+  {
+    "id": "accessory_prepaid_smartphone",
+    "type": "Accessory",
+    "label": "prepaid smartphone"
+  },
+  {
+    "id": "accessory_1_oukitel_wp17_cellphone_case",
+    "type": "Accessory",
+    "label": "1 * oukitel wp17 cellphone case"
+  },
+  {
+    "id": "accessory_1_sim_tray_ejector",
+    "type": "Accessory",
+    "label": "1 *sim tray ejector"
+  },
+  {
+    "id": "accessory_1_unlocked_cell_phone_oukitel_wp17",
+    "type": "Accessory",
+    "label": "1 * unlocked cell phone oukitel wp17"
+  },
+  {
+    "id": "accessory_1_quick_start_guide",
+    "type": "Accessory",
+    "label": "1 *quick start guide"
+  },
+  {
+    "id": "accessory_wall",
+    "type": "Accessory",
+    "label": "wall"
+  },
+  {
+    "id": "accessory_1xprotective_film",
+    "type": "Accessory",
+    "label": "1xprotective film"
+  },
+  {
+    "id": "accessory_card_pin_x1",
+    "type": "Accessory",
+    "label": "card pin x1"
+  },
+  {
+    "id": "accessory_typec_earphone_x1",
+    "type": "Accessory",
+    "label": "type-c earphone x1"
+  },
+  {
+    "id": "accessory_handsetchargerusb_cableheadsetscreen_protectorcase",
+    "type": "Accessory",
+    "label": "handset^charger^usb cable^headset^screen protector^case^"
+  },
+  {
+    "id": "accessory_motorola_one_action_xt2013",
+    "type": "Accessory",
+    "label": "motorola one action xt2013"
+  },
+  {
+    "id": "accessory_wireless_earbuds",
+    "type": "Accessory",
+    "label": "wireless earbuds"
+  },
+  {
+    "id": "accessory_1_x_charger",
+    "type": "Accessory",
+    "label": "1 x charger"
+  },
+  {
+    "id": "accessory_1_x_antiexplosion_film",
+    "type": "Accessory",
+    "label": "1 x anti-explosion film"
+  },
+  {
+    "id": "accessory_1_x_packing_box",
+    "type": "Accessory",
+    "label": "1 x packing box"
+  },
+  {
+    "id": "accessory_1_x_cellphone",
+    "type": "Accessory",
+    "label": "1 x cellphone"
+  },
+  {
+    "id": "accessory_1_x_typc_c_to_typc_c_cable",
+    "type": "Accessory",
+    "label": "1 x typc c to typc c cable"
+  },
+  {
+    "id": "accessory_1_x_manual",
+    "type": "Accessory",
+    "label": "1 x manual"
+  },
+  {
+    "id": "accessory_usb_c",
+    "type": "Accessory",
+    "label": "usb c"
+  },
+  {
+    "id": "accessory_headphones_with_rubber_earbuds",
+    "type": "Accessory",
+    "label": "headphones with rubber earbuds"
+  },
+  {
+    "id": "accessory_warranty",
+    "type": "Accessory",
+    "label": "warranty"
+  },
+  {
+    "id": "accessory_smartphonemicrousb_cordglass_screen_protectorfingerloopenglish_manualusb_charging_brick",
+    "type": "Accessory",
+    "label": "smartphone^microusb cord^glass screen protector^fingerloop^english manual^usb charging brick"
+  },
+  {
+    "id": "accessory_typec_charger1",
+    "type": "Accessory",
+    "label": "type-c charger*1"
+  },
+  {
+    "id": "accessory_1xplastic_spudger",
+    "type": "Accessory",
+    "label": "1xplastic spudger"
+  },
+  {
+    "id": "accessory_1xtempered_glass_screen_protector",
+    "type": "Accessory",
+    "label": "1xtempered glass screen protector"
+  },
+  {
+    "id": "accessory_box",
+    "type": "Accessory",
+    "label": "box"
+  },
+  {
+    "id": "accessory_oukitel_wp18_pro_phone",
+    "type": "Accessory",
+    "label": "oukitel wp18 pro phone"
+  },
+  {
+    "id": "accessory_2a_typec_data_cable",
+    "type": "Accessory",
+    "label": "2a type-c data cable"
+  },
+  {
+    "id": "accessory_packing_box",
+    "type": "Accessory",
+    "label": "packing box"
+  },
+  {
+    "id": "accessory_warranty_cardcolor_protective_film",
+    "type": "Accessory",
+    "label": "warranty card、color protective film"
+  },
+  {
+    "id": "accessory_18w_fast_charger",
+    "type": "Accessory",
+    "label": "18w fast charger"
+  },
+  {
+    "id": "accessory_google",
+    "type": "Accessory",
+    "label": "google"
+  },
+  {
+    "id": "accessory_cubot_x50_unlocked_cell_phone_micro_usb_typec_cable_power_adapter_ejector_tool_user_manual_protector_case",
+    "type": "Accessory",
+    "label": "cubot x50 unlocked cell phone; micro usb type-c cable; power adapter; ejector tool; user manual; protector case"
+  },
+  {
+    "id": "accessory_flip_phone",
+    "type": "Accessory",
+    "label": "flip phone"
+  },
+  {
+    "id": "accessory_charging_suit",
+    "type": "Accessory",
+    "label": "charging suit"
+  },
+  {
+    "id": "accessory_item",
+    "type": "Accessory",
+    "label": "item"
+  },
+  {
+    "id": "accessory_safety_warranty",
+    "type": "Accessory",
+    "label": "safety & warranty"
+  },
+  {
+    "id": "accessory_fast_car_charger_51w",
+    "type": "Accessory",
+    "label": "fast car charger 51w"
+  },
+  {
+    "id": "accessory_adapterusb_typec_cable",
+    "type": "Accessory",
+    "label": "adapter/usb type-c cable"
+  },
+  {
+    "id": "accessory_iphone_with_ios",
+    "type": "Accessory",
+    "label": "iphone with ios"
+  },
+  {
+    "id": "accessory_earpods_with_lightning_connector",
+    "type": "Accessory",
+    "label": "earpods with lightning connector"
+  },
+  {
+    "id": "accessory_usb_power_adapter",
+    "type": "Accessory",
+    "label": "usb power adapter"
+  },
+  {
+    "id": "accessory_phones",
+    "type": "Accessory",
+    "label": "phones"
+  },
+  {
+    "id": "accessory_us_power_adapt",
+    "type": "Accessory",
+    "label": "us power adapt"
+  },
+  {
+    "id": "accessory_sim_card_ejector",
+    "type": "Accessory",
+    "label": "sim card ejector"
+  },
+  {
+    "id": "accessory_sim_card_tray_pin",
+    "type": "Accessory",
+    "label": "sim card tray pin"
+  },
+  {
+    "id": "accessory_typec_cable",
+    "type": "Accessory",
+    "label": "type-c cable"
+  },
+  {
+    "id": "accessory_zmax10_smartphone",
+    "type": "Accessory",
+    "label": "zmax10 smartphone"
+  },
+  {
+    "id": "accessory_welcome_kit",
+    "type": "Accessory",
+    "label": "welcome kit"
+  },
+  {
+    "id": "accessory_wireless_agreement",
+    "type": "Accessory",
+    "label": "wireless agreement"
+  },
+  {
+    "id": "accessory_usbc_charging_cable_and_plug",
+    "type": "Accessory",
+    "label": "usb-c charging cable and plug"
+  },
+  {
+    "id": "accessory_sim_tray_key",
+    "type": "Accessory",
+    "label": "sim tray key"
+  },
+  {
+    "id": "accessory_micro_usb_usb_cable",
+    "type": "Accessory",
+    "label": "micro usb usb cable"
+  },
+  {
+    "id": "accessory_cubot_note_20_pro_unlocked_cell_phone",
+    "type": "Accessory",
+    "label": "cubot note 20 pro unlocked cell phone"
+  },
+  {
+    "id": "accessory_usbc_cable",
+    "type": "Accessory",
+    "label": "usb-c cable"
+  },
+  {
+    "id": "accessory_usbc_power_adapter",
+    "type": "Accessory",
+    "label": "usb-c power adapter"
+  },
+  {
+    "id": "accessory_usba_to_usb_typec_20_charger_cable_1m_1",
+    "type": "Accessory",
+    "label": "usb-a to usb type-c 2.0 charger cable (1m) * 1"
+  },
+  {
+    "id": "accessory_user_manual_1_ps_if_need_any_supports",
+    "type": "Accessory",
+    "label": "user manual * 1 (ps: if need any supports"
+  },
+  {
+    "id": "accessory_sim_needle_1",
+    "type": "Accessory",
+    "label": "sim needle * 1"
+  },
+  {
+    "id": "accessory_tpu_protective_case_1",
+    "type": "Accessory",
+    "label": "tpu protective case * 1"
+  },
+  {
+    "id": "accessory_adaptador",
+    "type": "Accessory",
+    "label": "adaptador"
+  },
+  {
+    "id": "accessory_1xtempered_glass_protective_film",
+    "type": "Accessory",
+    "label": "1xtempered glass protective film"
+  },
+  {
+    "id": "accessory_1xsim_needle",
+    "type": "Accessory",
+    "label": "1xsim needle"
+  },
+  {
+    "id": "accessory_usb_otg_adapter",
+    "type": "Accessory",
+    "label": "usb otg adapter"
+  },
+  {
+    "id": "accessory_1_x_sim_card_pin_1x_wrist_rope1_x_packing_box1_x_manual_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x sim card pin / 1x wrist rope/1 x packing box/1 x manual / 1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_doogee_s51_rugged_phone",
+    "type": "Accessory",
+    "label": "1 x doogee s51 rugged phone"
+  },
+  {
+    "id": "accessory_charger_cable",
+    "type": "Accessory",
+    "label": "charger cable"
+  },
+  {
+    "id": "accessory_ac_power_charger_100240v_ca_plug",
+    "type": "Accessory",
+    "label": "ac power charger (100~240v /ca plug)"
+  },
+  {
+    "id": "accessory_sim_needle",
+    "type": "Accessory",
+    "label": "sim needle"
+  },
+  {
+    "id": "accessory_lanyard",
+    "type": "Accessory",
+    "label": "lanyard"
+  },
+  {
+    "id": "accessory_teracube_wireless_sim",
+    "type": "Accessory",
+    "label": "teracube wireless sim"
+  },
+  {
+    "id": "accessory_screen_protector_preinstalled",
+    "type": "Accessory",
+    "label": "screen protector (pre-installed)"
+  },
+  {
+    "id": "accessory_lg_xpression_plus",
+    "type": "Accessory",
+    "label": "lg xpression plus"
+  },
+  {
+    "id": "accessory_moto_x_pure_edition",
+    "type": "Accessory",
+    "label": "moto x pure edition"
+  },
+  {
+    "id": "accessory_user_manuel",
+    "type": "Accessory",
+    "label": "user manuel"
+  },
+  {
+    "id": "accessory_triband_mobile_phone",
+    "type": "Accessory",
+    "label": "triband mobile phone"
+  },
+  {
+    "id": "accessory_moto_e5_play",
+    "type": "Accessory",
+    "label": "moto e5 play"
+  },
+  {
+    "id": "accessory_getting_started_guide",
+    "type": "Accessory",
+    "label": "getting started guide"
+  },
+  {
+    "id": "accessory_galaxy_note_10_lite",
+    "type": "Accessory",
+    "label": "galaxy note 10 lite"
+  },
+  {
+    "id": "accessory_1_x_usb_cable",
+    "type": "Accessory",
+    "label": "1 x usb cable"
+  },
+  {
+    "id": "accessory_1_x_user_manual",
+    "type": "Accessory",
+    "label": "1 x user manual"
+  },
+  {
+    "id": "accessory_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_us_plug_power_adapter",
+    "type": "Accessory",
+    "label": "1 x us plug power adapter"
+  },
+  {
+    "id": "accessory_1_x_umidigi_one_mobile_phone",
+    "type": "Accessory",
+    "label": "1 x umidigi one mobile phone"
+  },
+  {
+    "id": "accessory_1_x_eject_pin",
+    "type": "Accessory",
+    "label": "1 x eject pin"
+  },
+  {
+    "id": "accessory_sim_card_adapter",
+    "type": "Accessory",
+    "label": "sim card adapter"
+  },
+  {
+    "id": "accessory_microusb_charging_cord",
+    "type": "Accessory",
+    "label": "microusb charging cord"
+  },
+  {
+    "id": "accessory_quickguide",
+    "type": "Accessory",
+    "label": "quickguide"
+  },
+  {
+    "id": "accessory_hands_free",
+    "type": "Accessory",
+    "label": "hands free"
+  },
+  {
+    "id": "accessory_protective_silicone_case",
+    "type": "Accessory",
+    "label": "protective silicone case"
+  },
+  {
+    "id": "accessory_sim_card_ejection_pin",
+    "type": "Accessory",
+    "label": "sim card ejection pin"
+  },
+  {
+    "id": "accessory_rechargeable_battery",
+    "type": "Accessory",
+    "label": "rechargeable battery"
+  },
+  {
+    "id": "accessory_sim_card",
+    "type": "Accessory",
+    "label": "sim card"
+  },
+  {
+    "id": "accessory_tool",
+    "type": "Accessory",
+    "label": "tool"
+  },
+  {
+    "id": "accessory_1x_type",
+    "type": "Accessory",
+    "label": "1x type"
+  },
+  {
+    "id": "accessory_usb_adaptor",
+    "type": "Accessory",
+    "label": "usb adaptor"
+  },
+  {
+    "id": "accessory_earphones",
+    "type": "Accessory",
+    "label": "earphones"
+  },
+  {
+    "id": "accessory_bettery",
+    "type": "Accessory",
+    "label": "bettery"
+  },
+  {
+    "id": "accessory_device_moto_g_stylus_5g_components_charger",
+    "type": "Accessory",
+    "label": "device moto g stylus 5g components charger"
+  },
+  {
+    "id": "accessory_guides",
+    "type": "Accessory",
+    "label": "guides"
+  },
+  {
+    "id": "accessory_sim_tool",
+    "type": "Accessory",
+    "label": "sim tool"
+  },
+  {
+    "id": "accessory_oneplus_8t_warp_charge_65_power_adapter_warp_charge_typec_to_typec_cable_quick_start_guide_welcome_letter_safety_information_and_warranty_card_logo_sticker_screen_protector_sim_tray_ejector",
+    "type": "Accessory",
+    "label": "oneplus 8t warp charge 65 power adapter warp charge type-c to type-c cable quick start guide welcome letter safety information and warranty card logo sticker screen protector sim tray ejector"
+  },
+  {
+    "id": "accessory_1_x_umidigi_one_pro_mobile_phone",
+    "type": "Accessory",
+    "label": "1 x umidigi one pro mobile phone"
+  },
+  {
+    "id": "accessory_microfiber_cloth",
+    "type": "Accessory",
+    "label": "microfiber cloth"
+  },
+  {
+    "id": "accessory_cat_s48c",
+    "type": "Accessory",
+    "label": "cat s48c"
+  },
+  {
+    "id": "accessory_screen_protector_factory_fitted",
+    "type": "Accessory",
+    "label": "screen protector (factory fitted)"
+  },
+  {
+    "id": "accessory_charger_with_separate_usb_cable",
+    "type": "Accessory",
+    "label": "charger with separate usb cable"
+  },
+  {
+    "id": "accessory_cubot_note_7_unlocked_smartphone",
+    "type": "Accessory",
+    "label": "cubot note 7 unlocked smartphone"
+  },
+  {
+    "id": "accessory_1_phone",
+    "type": "Accessory",
+    "label": "1 phone"
+  },
+  {
+    "id": "accessory_phone_and_feature_guide",
+    "type": "Accessory",
+    "label": "phone and feature guide"
+  },
+  {
+    "id": "accessory_gophone_quick_start_guide",
+    "type": "Accessory",
+    "label": "gophone quick start guide"
+  },
+  {
+    "id": "accessory_microusb_cord",
+    "type": "Accessory",
+    "label": "microusb cord"
+  },
+  {
+    "id": "accessory_warranty_safety_guide",
+    "type": "Accessory",
+    "label": "warranty & safety guide"
+  },
+  {
+    "id": "accessory_sim_card_preinstalled",
+    "type": "Accessory",
+    "label": "sim card (pre-installed)"
+  },
+  {
+    "id": "accessory_ta",
+    "type": "Accessory",
+    "label": "ta"
+  },
+  {
+    "id": "accessory_galaxy_a51_smartphone",
+    "type": "Accessory",
+    "label": "galaxy a51 smartphone"
+  },
+  {
+    "id": "accessory_phone_cable",
+    "type": "Accessory",
+    "label": "phone cable"
+  },
+  {
+    "id": "accessory_smart_phone",
+    "type": "Accessory",
+    "label": "smart phone"
+  },
+  {
+    "id": "accessory_charging_adapter",
+    "type": "Accessory",
+    "label": "charging adapter"
+  },
+  {
+    "id": "accessory_sim_card_tray_ejector",
+    "type": "Accessory",
+    "label": "sim card tray ejector"
+  },
+  {
+    "id": "accessory_usb_type_b_to_a_cable",
+    "type": "Accessory",
+    "label": "usb type b to a cable"
+  },
+  {
+    "id": "accessory_sim_free",
+    "type": "Accessory",
+    "label": "sim free"
+  },
+  {
+    "id": "accessory_zte_z2",
+    "type": "Accessory",
+    "label": "zte z2"
+  },
+  {
+    "id": "accessory_c_to_c_cable",
+    "type": "Accessory",
+    "label": "c to c cable"
+  },
+  {
+    "id": "accessory_cradle",
+    "type": "Accessory",
+    "label": "cradle"
+  },
+  {
+    "id": "accessory_hybrid_sim_tray",
+    "type": "Accessory",
+    "label": "hybrid sim tray"
+  },
+  {
+    "id": "accessory_user_guide",
+    "type": "Accessory",
+    "label": "user guide"
+  },
+  {
+    "id": "accessory_us_charger_not_included",
+    "type": "Accessory",
+    "label": "us charger not included"
+  },
+  {
+    "id": "accessory_headphones_and_screen_protector",
+    "type": "Accessory",
+    "label": "headphones and screen protector"
+  },
+  {
+    "id": "accessory_car_charger",
+    "type": "Accessory",
+    "label": "car charger"
+  },
+  {
+    "id": "accessory_quick_switch_adapter",
+    "type": "Accessory",
+    "label": "quick switch adapter"
+  },
+  {
+    "id": "accessory_usbc_to_usbc_cable",
+    "type": "Accessory",
+    "label": "usb-c to usb-c cable"
+  },
+  {
+    "id": "accessory_multilanguage_user_manual",
+    "type": "Accessory",
+    "label": "multi-language user manual"
+  },
+  {
+    "id": "accessory_usbc_to_c_cable",
+    "type": "Accessory",
+    "label": "usb-c to c cable"
+  },
+  {
+    "id": "accessory_ac_adapter",
+    "type": "Accessory",
+    "label": "ac adapter"
+  },
+  {
+    "id": "accessory_hafury_gt20_unlocked_cell_phone",
+    "type": "Accessory",
+    "label": "hafury gt20 unlocked cell phone"
+  },
+  {
+    "id": "accessory_protected_case",
+    "type": "Accessory",
+    "label": "protected case"
+  },
+  {
+    "id": "accessory_boxdevivechargerusb_cablescreen_protectorbatteryquick_guidehead_phones",
+    "type": "Accessory",
+    "label": "box^devive^charger^usb cable^screen protector^battery^quick guide^head phones"
+  },
+  {
+    "id": "accessory_1x18w_qc30_ac_power_adapter_100240vus_plug",
+    "type": "Accessory",
+    "label": "1x18w qc3.0 ac power adapter ( 100~240v/us plug)"
+  },
+  {
+    "id": "accessory_1xtypec_to_35mm_audio_adapter",
+    "type": "Accessory",
+    "label": "1xtype-c to 3.5mm audio adapter"
+  },
+  {
+    "id": "accessory_usba_to_mirco_usb_20_charger_cable_1m",
+    "type": "Accessory",
+    "label": "usb-a to mirco usb 2.0 charger cable (1m)"
+  },
+  {
+    "id": "accessory_protective_film_2_one_protective_film_preinstalled",
+    "type": "Accessory",
+    "label": "protective film *2 (one protective film pre-installed)"
+  },
+  {
+    "id": "accessory_a50_smartphone",
+    "type": "Accessory",
+    "label": "a50 smartphone"
+  },
+  {
+    "id": "accessory_a7_printed_generic_startup_guideelabelgreco",
+    "type": "Accessory",
+    "label": "a7 printed - generic startup guidee-labelgreco"
+  },
+  {
+    "id": "accessory_uch20standard_master_pack_labelstandard_mobile_phone_labelstandard_sales_item_labeltypec_usb_cablebird",
+    "type": "Accessory",
+    "label": "uch20standard master pack labelstandard mobile phone labelstandard sales item labeltype-c usb cable-bird"
+  },
+  {
+    "id": "accessory_phone_head_set_sim_pin_charger",
+    "type": "Accessory",
+    "label": "phone head set sim pin charger"
+  },
+  {
+    "id": "accessory_tws_earbuds_built_in",
+    "type": "Accessory",
+    "label": "tws earbuds (built in)"
+  },
+  {
+    "id": "accessory_ac_power_charger_us_plug",
+    "type": "Accessory",
+    "label": "ac power charger (us plug)"
+  },
+  {
+    "id": "accessory_sim_needle_sling",
+    "type": "Accessory",
+    "label": "sim needle & sling"
+  },
+  {
+    "id": "accessory_earphone_headset",
+    "type": "Accessory",
+    "label": "earphone headset"
+  },
+  {
+    "id": "accessory_usb_c_to_a_cable",
+    "type": "Accessory",
+    "label": "usb c to a cable"
+  },
+  {
+    "id": "accessory_quick",
+    "type": "Accessory",
+    "label": "quick"
+  },
+  {
+    "id": "accessory_usb_cable_charging_cube",
+    "type": "Accessory",
+    "label": "usb cable & charging cube"
+  },
+  {
+    "id": "accessory_screen",
+    "type": "Accessory",
+    "label": "screen"
+  },
+  {
+    "id": "accessory_1_x_tp_protective_filmpreapplied",
+    "type": "Accessory",
+    "label": "1 x tp protective film(pre-applied)"
+  },
+  {
+    "id": "accessory_1_x_sim_card_pin_1_x_packing_box_1_x_manual_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x sim card pin /1 x packing box 1 x manual / 1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_doogee_x97_pro_unlocked_smartphone",
+    "type": "Accessory",
+    "label": "1 x doogee x97 pro unlocked smartphone"
+  },
+  {
+    "id": "accessory_sim_ejector",
+    "type": "Accessory",
+    "label": "sim ejector"
+  },
+  {
+    "id": "accessory_premium_headset",
+    "type": "Accessory",
+    "label": "premium headset"
+  },
+  {
+    "id": "accessory_sim_ejector_tool",
+    "type": "Accessory",
+    "label": "sim ejector tool"
+  },
+  {
+    "id": "accessory_1xmultilanguage_user_manual",
+    "type": "Accessory",
+    "label": "1xmulti-language user manual"
+  },
+  {
+    "id": "accessory_1xac_power_charger_100240v_us_plug",
+    "type": "Accessory",
+    "label": "1xac power charger (100~240v / us plug)"
+  },
+  {
+    "id": "accessory_1xtype_c_to_microusb_adapter",
+    "type": "Accessory",
+    "label": "1xtype c to micro-usb adapter"
+  },
+  {
+    "id": "accessory_1xotg_cable",
+    "type": "Accessory",
+    "label": "1xotg cable"
+  },
+  {
+    "id": "accessory_black_shark_4_pro",
+    "type": "Accessory",
+    "label": "black shark 4 pro"
+  },
+  {
+    "id": "accessory_120w_fast_charge_power_adapter",
+    "type": "Accessory",
+    "label": "120w fast charge power adapter"
+  },
+  {
+    "id": "accessory_lg_classic_flip_phone_charger_battery_activation_card_services_guide",
+    "type": "Accessory",
+    "label": "lg classic flip phone charger battery activation card services guide"
+  },
+  {
+    "id": "accessory_hand",
+    "type": "Accessory",
+    "label": "hand"
+  },
+  {
+    "id": "accessory_1x_umidigi_a3",
+    "type": "Accessory",
+    "label": "1x umidigi a3"
+  },
+  {
+    "id": "accessory_1x_highquality_phone_case",
+    "type": "Accessory",
+    "label": "1x high-quality phone case"
+  },
+  {
+    "id": "accessory_1x_micro_5pin_cable",
+    "type": "Accessory",
+    "label": "1x micro 5pin cable"
+  },
+  {
+    "id": "accessory_1x_power_adapter",
+    "type": "Accessory",
+    "label": "1x power adapter"
+  },
+  {
+    "id": "accessory_1_x_charger_65w",
+    "type": "Accessory",
+    "label": "1 x charger (65w)"
+  },
+  {
+    "id": "accessory_1_x_antiexplosion_film_1_x_card_slot_opener_1_x_phone_case_1_x_packing_box_1_x_manual_1_x_aftersale_card",
+    "type": "Accessory",
+    "label": "1 x anti-explosion film / 1 x card slot opener/ 1 x phone case / 1 x packing box / 1 x manual / 1 x after-sale card"
+  },
+  {
+    "id": "accessory_1_x_doogee_s89pro_rugged_phone",
+    "type": "Accessory",
+    "label": "1 x doogee s89pro rugged phone"
+  },
+  {
+    "id": "accessory_zs600kls8458g128g_asus_rog_phone",
+    "type": "Accessory",
+    "label": "zs600kl-s845-8g128g asus rog phone"
+  },
+  {
+    "id": "accessory_power_adapter_cord",
+    "type": "Accessory",
+    "label": "power adapter & cord"
+  },
+  {
+    "id": "accessory_rog_phone_aeroactive_cooler",
+    "type": "Accessory",
+    "label": "rog phone aeroactive cooler"
+  },
+  {
+    "id": "accessory_1_x_doogee_s41_rugged_phone",
+    "type": "Accessory",
+    "label": "1 x doogee s41 rugged phone"
+  },
+  {
+    "id": "accessory_adapter_compatible_with_galaxy_a01",
+    "type": "Accessory",
+    "label": "adapter compatible with galaxy a01"
+  },
+  {
+    "id": "accessory_back_clip",
+    "type": "Accessory",
+    "label": "back clip"
+  },
+  {
+    "id": "accessory_bumper_case",
+    "type": "Accessory",
+    "label": "bumper case"
+  },
+  {
+    "id": "accessory_usb_type_c_to_a_cable",
+    "type": "Accessory",
+    "label": "usb type c to a cable"
+  },
+  {
+    "id": "accessory_phablet",
+    "type": "Accessory",
+    "label": "phablet"
+  },
+  {
+    "id": "accessory_quick_installation_guide",
+    "type": "Accessory",
+    "label": "quick installation guide"
+  },
+  {
+    "id": "accessory_blade_force_handset",
+    "type": "Accessory",
+    "label": "blade force handset"
+  },
+  {
+    "id": "accessory_usb_20_cable",
+    "type": "Accessory",
+    "label": "usb 2.0 cable"
+  },
+  {
+    "id": "accessory_important_information_booklet_and_sim_card_installed",
+    "type": "Accessory",
+    "label": "important information booklet and sim card installed."
+  },
+  {
+    "id": "accessory_25w_samsung_wall_charger",
+    "type": "Accessory",
+    "label": "25w samsung wall charger"
+  },
+  {
+    "id": "accessory_1_data_cable_2_travel_adapter_3_ejection_pin",
+    "type": "Accessory",
+    "label": "1. data cable 2. travel adapter 3. ejection pin"
+  },
+  {
+    "id": "accessory_usba_to_mirco_usb_20_charger_cable_1m_1",
+    "type": "Accessory",
+    "label": "usb-a to mirco usb 2.0 charger cable (1m) *1"
+  },
+  {
+    "id": "accessory_devicebatteryscreen_protectorusbchargerear_budsquick_guide",
+    "type": "Accessory",
+    "label": "device^battery^screen protector^usb^charger^ear buds^quick guide^"
+  },
+  {
+    "id": "accessory_usba_to_usb_typec_20_charger_cable_1m",
+    "type": "Accessory",
+    "label": "usb-a to usb type-c 2.0 charger cable (1m)"
+  },
+  {
+    "id": "accessory_tpu_protective_case",
+    "type": "Accessory",
+    "label": "tpu protective case"
+  },
+  {
+    "id": "accessory_generic_charging_cable_that_is_certified_mfi_made_for_iphone",
+    "type": "Accessory",
+    "label": "generic charging cable that is certified mfi (made for iphone)"
+  },
+  {
+    "id": "accessory_generic_wall_plug_that_is_ul_certified_for_performance_and_safety",
+    "type": "Accessory",
+    "label": "generic wall plug that is ul certified for performance and safety"
+  },
+  {
+    "id": "accessory_sim_tray_removal_tool",
+    "type": "Accessory",
+    "label": "sim tray removal tool"
+  },
+  {
+    "id": "accessory_10_watt_rapid_charger",
+    "type": "Accessory",
+    "label": "10 watt rapid charger"
+  },
+  {
+    "id": "accessory_hsdpa",
+    "type": "Accessory",
+    "label": "hsdpa"
+  },
+  {
+    "id": "accessory_1_x_screen_protector",
+    "type": "Accessory",
+    "label": "1 x screen protector"
+  },
+  {
+    "id": "accessory_1_x_quick_guide",
+    "type": "Accessory",
+    "label": "1 x quick guide"
+  },
+  {
+    "id": "accessory_1_x_charger_5v_2a",
+    "type": "Accessory",
+    "label": "1 x charger (5v 2a)"
+  },
+  {
+    "id": "accessory_1_x_tcl_30_se_mobile_phone_case",
+    "type": "Accessory",
+    "label": "1 x tcl 30 se mobile phone case"
+  },
+  {
+    "id": "accessory_1_x_typec_cable",
+    "type": "Accessory",
+    "label": "1 x type-c cable"
+  },
+  {
+    "id": "accessory_bluetooth",
+    "type": "Accessory",
+    "label": "bluetooth"
+  },
+  {
+    "id": "accessory_gps",
+    "type": "Accessory",
+    "label": "gps"
+  },
+  {
+    "id": "accessory_power_adapterno_included",
+    "type": "Accessory",
+    "label": "power adapter（no included）"
+  },
+  {
+    "id": "accessory_zb570tlmt673g32gbk_zenfone_max_plus_smartphone",
+    "type": "Accessory",
+    "label": "zb570tl-mt67-3g32g-bk zenfone max plus smartphone"
+  },
+  {
+    "id": "accessory_user_emanual",
+    "type": "Accessory",
+    "label": "user e-manual"
+  },
+  {
+    "id": "accessory_phone_charger",
+    "type": "Accessory",
+    "label": "phone & charger"
+  },
+  {
+    "id": "accessory_galaxy_note_9_n960u",
+    "type": "Accessory",
+    "label": "galaxy note 9 n960u"
+  },
+  {
+    "id": "accessory_product_charger",
+    "type": "Accessory",
+    "label": "product & charger"
+  },
+  {
+    "id": "accessory_sim_card_included",
+    "type": "Accessory",
+    "label": "sim card included"
+  },
+  {
+    "id": "accessory_lg_g6preinstalled_sim_cardwall_chargertypec_usb_cable",
+    "type": "Accessory",
+    "label": "lg g6;pre-installed sim card;wall charger;type-c usb cable"
+  },
+  {
+    "id": "accessory_brochures",
+    "type": "Accessory",
+    "label": "brochures"
+  },
+  {
+    "id": "accessory_a6_phone",
+    "type": "Accessory",
+    "label": "a6 phone"
+  },
+  {
+    "id": "accessory_3_sim_adaptors",
+    "type": "Accessory",
+    "label": "3 sim adaptors"
+  },
+  {
+    "id": "accessory_qwerty_keyboard",
+    "type": "Accessory",
+    "label": "qwerty keyboard"
+  },
+  {
+    "id": "accessory_device_with_battery",
+    "type": "Accessory",
+    "label": "device with battery"
+  },
+  {
+    "id": "accessory_transparent_shell",
+    "type": "Accessory",
+    "label": "transparent shell"
+  },
+  {
+    "id": "accessory_simpin",
+    "type": "Accessory",
+    "label": "sim-pin"
+  },
+  {
+    "id": "accessory_external_fm_radio",
+    "type": "Accessory",
+    "label": "external fm radio"
+  },
+  {
+    "id": "accessory_adaptor",
+    "type": "Accessory",
+    "label": "adaptor"
+  },
+  {
+    "id": "accessory_1_phone_1_battery_1_charger",
+    "type": "Accessory",
+    "label": "1 * phone 1 * battery 1 * charger"
+  },
+  {
+    "id": "accessory_phonequick_guideusb_cablechargerbattery",
+    "type": "Accessory",
+    "label": "phone^quick guide^usb cable^charger^battery"
+  },
+  {
+    "id": "accessory_type_c_to_a_cable",
+    "type": "Accessory",
+    "label": "type c to a cable"
+  },
+  {
+    "id": "accessory_aeroactive_cooler",
+    "type": "Accessory",
+    "label": "aeroactive cooler"
+  },
+  {
+    "id": "accessory_asus_rog_phone_zs600kls8458g512g",
+    "type": "Accessory",
+    "label": "asus rog phone zs600kl-s845-8g512g"
+  },
+  {
+    "id": "accessory_back_case",
+    "type": "Accessory",
+    "label": "back case"
+  },
+  {
+    "id": "accessory_cellphone",
+    "type": "Accessory",
+    "label": "cellphone"
+  },
+  {
+    "id": "accessory_earphones_adapter",
+    "type": "Accessory",
+    "label": "earphones adapter"
+  },
+  {
+    "id": "accessory_5mp_front_camera",
+    "type": "Accessory",
+    "label": "5mp front camera"
+  },
+  {
+    "id": "accessory_headphone_extension_cable",
+    "type": "Accessory",
+    "label": "headphone extension cable"
+  },
+  {
+    "id": "accessory_10_w_rapid_charger",
+    "type": "Accessory",
+    "label": "10 w rapid charger"
+  },
+  {
+    "id": "accessory_1_x_typec_port_cable",
+    "type": "Accessory",
+    "label": "1 x type-c port cable"
+  },
+  {
+    "id": "accessory_1_x_sim_card_pin_1_x_protective_case_1_x_packing_box_1_x_manual_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x sim card pin /1 x protective case/ 1 x packing box / 1 x manual / 1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_doogee_x98_pro_cell_phone",
+    "type": "Accessory",
+    "label": "1 x doogee x98 pro cell phone"
+  },
+  {
+    "id": "accessory_micro_usb_c",
+    "type": "Accessory",
+    "label": "micro usb c"
+  },
+  {
+    "id": "accessory_battery_cover",
+    "type": "Accessory",
+    "label": "battery cover"
+  },
+  {
+    "id": "accessory_videos",
+    "type": "Accessory",
+    "label": "videos"
+  },
+  {
+    "id": "accessory_oneplus_nord_n200_5g",
+    "type": "Accessory",
+    "label": "oneplus nord n200 5g"
+  },
+  {
+    "id": "accessory_batteries_included",
+    "type": "Accessory",
+    "label": "batteries included"
+  },
+  {
+    "id": "accessory_battery_charger",
+    "type": "Accessory",
+    "label": "battery charger"
+  },
+  {
+    "id": "accessory_travel_adapter_usb_cable_quick_start_guide_headphones",
+    "type": "Accessory",
+    "label": "travel adapter & usb cable / quick start guide* / headphones"
+  },
+  {
+    "id": "accessory_1x_highquality_case",
+    "type": "Accessory",
+    "label": "1x high-quality case"
+  },
+  {
+    "id": "accessory_1x_headphone_jack_adapter",
+    "type": "Accessory",
+    "label": "1x headphone jack adapter"
+  },
+  {
+    "id": "accessory_1x_umidigi_z2_phone",
+    "type": "Accessory",
+    "label": "1x umidigi z2 phone"
+  },
+  {
+    "id": "accessory_1x_typec_cable",
+    "type": "Accessory",
+    "label": "1x type-c cable"
+  },
+  {
+    "id": "accessory_35mm_stereo_headset_with_mic",
+    "type": "Accessory",
+    "label": "3.5mm stereo headset with mic"
+  },
+  {
+    "id": "accessory_usba_to_usbc",
+    "type": "Accessory",
+    "label": "usb-a to usb-c"
+  },
+  {
+    "id": "accessory_18w_charger_quickcharge_30",
+    "type": "Accessory",
+    "label": "18w charger quickcharge 3.0"
+  },
+  {
+    "id": "accessory_sim_tray_tool",
+    "type": "Accessory",
+    "label": "sim tray tool"
+  },
+  {
+    "id": "accessory_safety_warranty_guide",
+    "type": "Accessory",
+    "label": "safety & warranty guide"
+  },
+  {
+    "id": "accessory_1_x_tcl_30z_android_phone",
+    "type": "Accessory",
+    "label": "1 x tcl 30z android phone"
+  },
+  {
+    "id": "accessory_1_x_micro_usb_cable",
+    "type": "Accessory",
+    "label": "1 x micro usb cable"
+  },
+  {
+    "id": "accessory_1_x_charger_5v_1a",
+    "type": "Accessory",
+    "label": "1 x charger (5v 1a)"
+  },
+  {
+    "id": "accessory_wall_fast_charger",
+    "type": "Accessory",
+    "label": "wall fast charger"
+  },
+  {
+    "id": "accessory_car_fast_charger",
+    "type": "Accessory",
+    "label": "car fast charger"
+  },
+  {
+    "id": "accessory_1ghz_2gb_prepaid_lte_verizon_smartphone",
+    "type": "Accessory",
+    "label": ".1ghz 2gb prepaid lte verizon smartphone"
+  },
+  {
+    "id": "accessory_carrier_locked_to_verizon_prepaid",
+    "type": "Accessory",
+    "label": "carrier locked to verizon prepaid"
+  },
+  {
+    "id": "accessory_devicel",
+    "type": "Accessory",
+    "label": "devicel"
+  },
+  {
+    "id": "accessory_sim_tray_e",
+    "type": "Accessory",
+    "label": "sim tray e"
+  },
+  {
+    "id": "accessory_typec_usb_cable_x1_charger_66w_x1",
+    "type": "Accessory",
+    "label": "type-c usb cable x1 / charger (66w) x1"
+  },
+  {
+    "id": "accessory_doogee_v30t_unlocked_rugged_smartphone_x1",
+    "type": "Accessory",
+    "label": "doogee v30t unlocked rugged smartphone x1"
+  },
+  {
+    "id": "accessory_antiexplosion_filmpreapplied_x1_antiexplosion_film_x1",
+    "type": "Accessory",
+    "label": "anti-explosion film(pre-applied) x1 / anti-explosion film x1"
+  },
+  {
+    "id": "accessory_packing_box_x1_manual_warranty_card_x1",
+    "type": "Accessory",
+    "label": "packing box x1/ manual/ warranty card x1"
+  },
+  {
+    "id": "accessory_sim_pick_lanyard",
+    "type": "Accessory",
+    "label": "sim pick & lanyard"
+  },
+  {
+    "id": "accessory_tracfoner_tfzez558vcp_zfiver_c_lte",
+    "type": "Accessory",
+    "label": "tracfone(r) tfzez558vcp zfive(r) c lte"
+  },
+  {
+    "id": "accessory_adapt",
+    "type": "Accessory",
+    "label": "adapt"
+  },
+  {
+    "id": "accessory_sim_ejectory",
+    "type": "Accessory",
+    "label": "sim ejectory"
+  },
+  {
+    "id": "accessory_1xac_power_charger_adapter_100240vus_plug",
+    "type": "Accessory",
+    "label": "1xac power charger adapter ( 100~240v/us plug)"
+  },
+  {
+    "id": "accessory_1xwarranty_card",
+    "type": "Accessory",
+    "label": "1xwarranty card"
+  },
+  {
+    "id": "accessory_sim_card_pin",
+    "type": "Accessory",
+    "label": "sim card pin"
+  },
+  {
+    "id": "accessory_qg",
+    "type": "Accessory",
+    "label": "qg"
+  },
+  {
+    "id": "accessory_transparent_tpu_case",
+    "type": "Accessory",
+    "label": "transparent tpu case"
+  },
+  {
+    "id": "accessory_5v2a_charger",
+    "type": "Accessory",
+    "label": "5v2a charger"
+  },
+  {
+    "id": "accessory_galaxy_s10_smartphone",
+    "type": "Accessory",
+    "label": "galaxy s10 smartphone"
+  },
+  {
+    "id": "accessory_sprint_re",
+    "type": "Accessory",
+    "label": "sprint re"
+  },
+  {
+    "id": "accessory_mobile_phone_case",
+    "type": "Accessory",
+    "label": "mobile phone case"
+  },
+  {
+    "id": "accessory_scre_driver",
+    "type": "Accessory",
+    "label": "scre driver"
+  },
+  {
+    "id": "accessory_osg",
+    "type": "Accessory",
+    "label": "osg"
+  },
+  {
+    "id": "accessory_1_ac_power_charger_100240v_us_plug",
+    "type": "Accessory",
+    "label": "1 * ac power charger (100~240v /us plug)"
+  },
+  {
+    "id": "accessory_1_tempered_glass_screen_protector",
+    "type": "Accessory",
+    "label": "1 * tempered glass screen protector"
+  },
+  {
+    "id": "accessory_1_sim_needle",
+    "type": "Accessory",
+    "label": "1 * sim needle"
+  },
+  {
+    "id": "accessory_1_sling",
+    "type": "Accessory",
+    "label": "1 * sling"
+  },
+  {
+    "id": "accessory_1_data_cable_328_ft",
+    "type": "Accessory",
+    "label": "1 * data cable (3.28 ft)"
+  },
+  {
+    "id": "accessory_1_multilanguage_user_manual_ps_if_need_any_supports",
+    "type": "Accessory",
+    "label": "1 * multi-language user manual (ps: if need any supports"
+  },
+  {
+    "id": "accessory_1_ulefone_armor_x10_rugged_phone",
+    "type": "Accessory",
+    "label": "1 * ulefone armor x10 rugged phone"
+  },
+  {
+    "id": "accessory_cd",
+    "type": "Accessory",
+    "label": "cd"
+  },
+  {
+    "id": "accessory_user_manual_1",
+    "type": "Accessory",
+    "label": "user manual *1"
+  },
+  {
+    "id": "accessory_tempered_glass_protective_film_1",
+    "type": "Accessory",
+    "label": "tempered glass protective film *1"
+  },
+  {
+    "id": "accessory_1x_umidigi_z2_pro",
+    "type": "Accessory",
+    "label": "1x umidigi z2 pro"
+  },
+  {
+    "id": "accessory_1x_translucent_case",
+    "type": "Accessory",
+    "label": "1x translucent case"
+  },
+  {
+    "id": "accessory_mirco_usb_20_cable",
+    "type": "Accessory",
+    "label": "mirco usb 2.0 cable"
+  },
+  {
+    "id": "accessory_ulefone_note_7_smartphone",
+    "type": "Accessory",
+    "label": "ulefone note 7 smartphone"
+  },
+  {
+    "id": "accessory_sierra_wireless_aircard_875",
+    "type": "Accessory",
+    "label": "sierra wireless aircard 875"
+  },
+  {
+    "id": "accessory_root_guide",
+    "type": "Accessory",
+    "label": "root guide"
+  },
+  {
+    "id": "accessory_photo_card",
+    "type": "Accessory",
+    "label": "photo card"
+  },
+  {
+    "id": "accessory_1_tpu_protective_case",
+    "type": "Accessory",
+    "label": "1 * tpu protective case"
+  },
+  {
+    "id": "accessory_1_user_manual_ps_if_need_any_supports",
+    "type": "Accessory",
+    "label": "1 * user manual (ps: if need any supports"
+  },
+  {
+    "id": "accessory_1_ulefone_note_13p_unlocked_phone",
+    "type": "Accessory",
+    "label": "1 * ulefone note 13p unlocked phone"
+  },
+  {
+    "id": "accessory_black_shark_5_pro",
+    "type": "Accessory",
+    "label": "black shark 5 pro"
+  },
+  {
+    "id": "accessory_inbox_motorola_one_5g",
+    "type": "Accessory",
+    "label": "in-box: motorola one 5g"
+  },
+  {
+    "id": "accessory_15w_rapid_charger",
+    "type": "Accessory",
+    "label": "15w rapid charger"
+  },
+  {
+    "id": "accessory_kingkong_5_pro_rugged_smartphone_usb_cable_charger_cue_card_earphone_ejector_tool_user_manual",
+    "type": "Accessory",
+    "label": "kingkong 5 pro rugged smartphone; usb cable; charger; cue card; earphone; ejector tool; user manual"
+  },
+  {
+    "id": "accessory_user_e_manual",
+    "type": "Accessory",
+    "label": "user e manual"
+  },
+  {
+    "id": "accessory_power_adapt",
+    "type": "Accessory",
+    "label": "power adapt"
+  },
+  {
+    "id": "accessory_1x_charger_66w",
+    "type": "Accessory",
+    "label": "1x charger (66w)"
+  },
+  {
+    "id": "accessory_1_x_doogee_s100_rugged_smartphone",
+    "type": "Accessory",
+    "label": "1 x doogee s100 rugged smartphone"
+  },
+  {
+    "id": "accessory_1x_antiexplosion_film_1_x_user_manual_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1x anti-explosion film / 1 x user manual / 1 x warranty card"
+  },
+  {
+    "id": "accessory_warp_charge_30_power_adapter",
+    "type": "Accessory",
+    "label": "warp charge 30 power adapter"
+  },
+  {
+    "id": "accessory_warp_typec_cable_support_usb_20",
+    "type": "Accessory",
+    "label": "warp type-c cable (support usb 2.0)"
+  },
+  {
+    "id": "accessory_welcome_letter",
+    "type": "Accessory",
+    "label": "welcome letter"
+  },
+  {
+    "id": "accessory_safety_information_and_warranty_card",
+    "type": "Accessory",
+    "label": "safety information and warranty card"
+  },
+  {
+    "id": "accessory_logo_sticker",
+    "type": "Accessory",
+    "label": "logo sticker"
+  },
+  {
+    "id": "accessory_screen_protector_preapplied",
+    "type": "Accessory",
+    "label": "screen protector (pre-applied)"
+  },
+  {
+    "id": "accessory_standard_lithium_ion_battery_750_mah",
+    "type": "Accessory",
+    "label": "standard lithium ion battery 750 mah"
+  },
+  {
+    "id": "accessory_battery_door",
+    "type": "Accessory",
+    "label": "battery door"
+  },
+  {
+    "id": "accessory_standard_charger",
+    "type": "Accessory",
+    "label": "standard charger"
+  },
+  {
+    "id": "accessory_devicequick_guidecharger",
+    "type": "Accessory",
+    "label": "device;quick guide;charger"
+  },
+  {
+    "id": "accessory_zenfone_5z_blue",
+    "type": "Accessory",
+    "label": "zenfone 5z blue"
+  },
+  {
+    "id": "accessory_power_adapter_usb_cord",
+    "type": "Accessory",
+    "label": "power adapter & usb cord"
+  },
+  {
+    "id": "accessory_1_x_18w_charger_9v_2a",
+    "type": "Accessory",
+    "label": "1 x 18w charger (9v 2a)"
+  },
+  {
+    "id": "accessory_1_x_sim_card_tray_pin",
+    "type": "Accessory",
+    "label": "1 x sim card tray pin"
+  },
+  {
+    "id": "accessory_1_x_tcl_30_xl_mobile_phone",
+    "type": "Accessory",
+    "label": "1 x tcl 30 xl mobile phone"
+  },
+  {
+    "id": "accessory_1_x_lcd_sticker",
+    "type": "Accessory",
+    "label": "1 x lcd sticker"
+  },
+  {
+    "id": "accessory_handsetusb_cord",
+    "type": "Accessory",
+    "label": "handsetusb cord"
+  },
+  {
+    "id": "accessory_wall_plug",
+    "type": "Accessory",
+    "label": "wall plug"
+  },
+  {
+    "id": "accessory_lumia_950",
+    "type": "Accessory",
+    "label": "lumia 950"
+  },
+  {
+    "id": "accessory_pre_installed_sim",
+    "type": "Accessory",
+    "label": "pre installed sim"
+  },
+  {
+    "id": "accessory_galaxy_a01_smartphone",
+    "type": "Accessory",
+    "label": "galaxy a01 smartphone"
+  },
+  {
+    "id": "accessory_wireless_charging_block",
+    "type": "Accessory",
+    "label": "wireless charging block"
+  },
+  {
+    "id": "accessory_1_x_sim_card_pin_1_x_tpu_protective_case_1_x_packing_box_1_x_manual_1_x_warranty_card",
+    "type": "Accessory",
+    "label": "1 x sim card pin / 1 x tpu protective case /1 x packing box /1 x manual /1 x warranty card"
+  },
+  {
+    "id": "accessory_1_x_charger_9v2a",
+    "type": "Accessory",
+    "label": "1 x charger (9v/2a)"
+  },
+  {
+    "id": "accessory_moto_z3_play",
+    "type": "Accessory",
+    "label": "moto z3 play"
+  },
+  {
+    "id": "accessory_sim_removal_tool_kit",
+    "type": "Accessory",
+    "label": "sim removal tool kit"
+  },
+  {
+    "id": "accessory_18w_turbopower_charger",
+    "type": "Accessory",
+    "label": "18w turbopower charger"
+  },
+  {
+    "id": "accessory_motorola_razr_5g_256gb_unlocked",
+    "type": "Accessory",
+    "label": "motorola razr 5g 256gb (unlocked)"
+  },
+  {
+    "id": "accessory_wireless_aircard_595",
+    "type": "Accessory",
+    "label": "wireless aircard 595"
+  },
+  {
+    "id": "accessory_wallet_case",
+    "type": "Accessory",
+    "label": "wallet case"
+  },
+  {
+    "id": "accessory_note_12p_smartphone",
+    "type": "Accessory",
+    "label": "note 12p smartphone"
+  },
+  {
+    "id": "accessory_protect",
+    "type": "Accessory",
+    "label": "protect"
+  },
+  {
+    "id": "accessory_cs900_cell_phone",
+    "type": "Accessory",
+    "label": "cs900 cell phone"
+  },
+  {
+    "id": "accessory_charging_cradle",
+    "type": "Accessory",
+    "label": "charging cradle"
+  },
+  {
+    "id": "accessory_plug_charger",
+    "type": "Accessory",
+    "label": "plug charger"
+  },
+  {
+    "id": "accessory_oneplus_10_pro",
+    "type": "Accessory",
+    "label": "oneplus 10 pro"
+  },
+  {
+    "id": "accessory_65w_supervooc_power_adapter",
+    "type": "Accessory",
+    "label": "65w supervooc power adapter"
+  },
+  {
+    "id": "accessory_usb_dongle_typea_to_typec",
+    "type": "Accessory",
+    "label": "usb dongle (type-a to type-c )"
+  },
+  {
+    "id": "accessory_a7_printed_generic_startup_guide_bungo",
+    "type": "Accessory",
+    "label": "a7 printed - generic startup guide bungo"
+  },
+  {
+    "id": "accessory_part_13109805_elabel_greco",
+    "type": "Accessory",
+    "label": "part: 1310-9805 e-label greco"
+  },
+  {
+    "id": "accessory_uch20_typec_cable_bird_2",
+    "type": "Accessory",
+    "label": "uch20 type-c cable bird 2"
+  },
+  {
+    "id": "accessory_part_13112054_ian",
+    "type": "Accessory",
+    "label": "part: 1311-2054 ian"
+  },
+  {
+    "id": "accessory_micro_usb",
+    "type": "Accessory",
+    "label": "micro usb"
+  },
+  {
+    "id": "accessory_usb_type_c_cable",
+    "type": "Accessory",
+    "label": "usb type c cable"
+  },
+  {
+    "id": "accessory_lg_v10",
+    "type": "Accessory",
+    "label": "lg v10"
+  },
+  {
+    "id": "accessory_document",
+    "type": "Accessory",
+    "label": "document"
+  },
+  {
+    "id": "accessory_user_documentation",
+    "type": "Accessory",
+    "label": "user documentation"
+  },
+  {
+    "id": "accessory_charger_block",
+    "type": "Accessory",
+    "label": "charger block"
+  },
+  {
+    "id": "accessory_usb_cc_cable",
+    "type": "Accessory",
+    "label": "usb c-c cable"
+  },
+  {
+    "id": "accessory_printed_leaflets",
+    "type": "Accessory",
+    "label": "printed leaflets"
+  },
+  {
+    "id": "accessory_usb_c_charger",
+    "type": "Accessory",
+    "label": "usb c charger"
+  },
+  {
+    "id": "accessory_char",
+    "type": "Accessory",
+    "label": "char"
+  },
+  {
+    "id": "accessory_welcome_sticker",
+    "type": "Accessory",
+    "label": "welcome sticker"
+  },
+  {
+    "id": "accessory_usb_cable_charger",
+    "type": "Accessory",
+    "label": "usb cable charger"
+  },
+  {
+    "id": "accessory_hswarranty_guide",
+    "type": "Accessory",
+    "label": "h&s/warranty guide"
+  },
+  {
+    "id": "accessory_tpu",
+    "type": "Accessory",
+    "label": "tpu"
+  },
+  {
+    "id": "accessory_mp3_player",
+    "type": "Accessory",
+    "label": "mp3 player"
+  },
+  {
+    "id": "accessory_calculator",
+    "type": "Accessory",
+    "label": "calculator"
+  },
+  {
+    "id": "accessory_alarm_clock",
+    "type": "Accessory",
+    "label": "alarm clock"
+  },
+  {
+    "id": "accessory_calendar",
+    "type": "Accessory",
+    "label": "calendar"
+  },
+  {
+    "id": "accessory_dual_led_flashlight",
+    "type": "Accessory",
+    "label": "dual led flashlight"
+  },
+  {
+    "id": "accessory_usb_typec",
+    "type": "Accessory",
+    "label": "usb type-c"
+  },
+  {
+    "id": "accessory_x19_cell_phone",
+    "type": "Accessory",
+    "label": "x19 cell phone"
+  },
+  {
+    "id": "accessory_2500_mah_battery",
+    "type": "Accessory",
+    "label": "2500 mah battery"
+  },
+  {
+    "id": "accessory_back_cover",
+    "type": "Accessory",
+    "label": "back cover"
+  },
+  {
+    "id": "accessory_microusb_cable",
+    "type": "Accessory",
+    "label": "micro-usb cable"
+  },
+  {
+    "id": "accessory_batter",
+    "type": "Accessory",
+    "label": "batter"
+  },
+  {
+    "id": "accessory_1_x_smartphone",
+    "type": "Accessory",
+    "label": "1 x smartphone"
+  },
+  {
+    "id": "accessory_1_x_charger_adapter",
+    "type": "Accessory",
+    "label": "1 x charger adapter"
+  },
+  {
+    "id": "accessory_1_x_headphones",
+    "type": "Accessory",
+    "label": "1 x headphones"
+  },
+  {
+    "id": "accessory_1_x_phone_case",
+    "type": "Accessory",
+    "label": "1 x phone case"
+  },
+  {
+    "id": "accessory_1_x_protection_film",
+    "type": "Accessory",
+    "label": "1 x protection film"
+  },
+  {
+    "id": "accessory_turbo_power_charger",
+    "type": "Accessory",
+    "label": "turbo power charger"
+  },
+  {
+    "id": "accessory_motorola_one_zoom",
+    "type": "Accessory",
+    "label": "motorola one zoom"
+  },
+  {
+    "id": "accessory_1_x_note_9p_phonebattery_included",
+    "type": "Accessory",
+    "label": "1 x note 9p phone(battery included)"
+  },
+  {
+    "id": "accessory_1_x_protective_film",
+    "type": "Accessory",
+    "label": "1 x protective film"
+  },
+  {
+    "id": "accessory_1_x_protective_case",
+    "type": "Accessory",
+    "label": "1 x protective case"
+  },
+  {
+    "id": "accessory_1_x_ac_power_charger100240vus_plug",
+    "type": "Accessory",
+    "label": "1 x ac power charger(100~240v/us plug)"
+  },
+  {
+    "id": "accessory_1_x_data_cable_100cm",
+    "type": "Accessory",
+    "label": "1 x data cable (100cm)"
+  },
+  {
+    "id": "accessory_reg",
+    "type": "Accessory",
+    "label": "reg"
+  },
+  {
+    "id": "accessory_earpods",
+    "type": "Accessory",
+    "label": "earpods"
+  },
+  {
+    "id": "accessory_lightning_cable",
+    "type": "Accessory",
+    "label": "lightning cable"
+  },
+  {
+    "id": "accessory_type_b_to_a_cable",
+    "type": "Accessory",
+    "label": "type b to a cable"
+  },
+  {
+    "id": "accessory_x_charge_handset",
+    "type": "Accessory",
+    "label": "x charge handset"
+  },
+  {
+    "id": "accessory_waterproof_cell_phone",
+    "type": "Accessory",
+    "label": "waterproof cell phone"
+  },
+  {
+    "id": "accessory_1xbattery",
+    "type": "Accessory",
+    "label": "1xbattery"
+  },
+  {
+    "id": "accessory_1xpower_charger_adapter_1xdata_cable_100cm",
+    "type": "Accessory",
+    "label": "1xpower charger adapter + 1xdata cable (100cm)"
+  },
+  {
+    "id": "accessory_1xuser_manual",
+    "type": "Accessory",
+    "label": "1xuser manual"
+  },
+  {
+    "id": "accessory_1xtpu_protective_case_1xprotective_film",
+    "type": "Accessory",
+    "label": "1xtpu protective case + 1xprotective film"
+  },
+  {
+    "id": "accessory_phonescreen_protectorquick_guidebatterystero_headphoneschargerusb_cable",
+    "type": "Accessory",
+    "label": "phone^screen protector^quick guide^battery^stero headphones^charger^usb cable^"
+  },
+  {
+    "id": "accessory_s_pen_accessory",
+    "type": "Accessory",
+    "label": "s pen accessory"
+  },
+  {
+    "id": "accessory_samsung_galaxy_s20",
+    "type": "Accessory",
+    "label": "samsung galaxy s20"
+  },
+  {
+    "id": "accessory_phone_stand_wallet_with_umagnet",
+    "type": "Accessory",
+    "label": "phone stand wallet with umagnet"
+  },
+  {
+    "id": "accessory_galaxy_note_9",
+    "type": "Accessory",
+    "label": "galaxy note 9"
+  },
+  {
+    "id": "accessory_device_charger_quick_guide",
+    "type": "Accessory",
+    "label": "device; charger; quick guide"
+  },
+  {
+    "id": "accessory_1_x_tcl_30_se_mobile_phone",
+    "type": "Accessory",
+    "label": "1 x tcl 30 se mobile phone"
+  },
+  {
+    "id": "accessory_1_x_5v2a_charger",
+    "type": "Accessory",
+    "label": "1 x 5v/2a charger"
+  },
+  {
+    "id": "accessory_1_x_doogee_s61_rugged_smartphone",
+    "type": "Accessory",
+    "label": "1 x doogee s61 rugged smartphone"
+  },
+  {
+    "id": "accessory_manuals",
+    "type": "Accessory",
+    "label": "manuals"
+  },
+  {
+    "id": "accessory_magnetic",
+    "type": "Accessory",
+    "label": "magnetic"
+  },
+  {
+    "id": "accessory_moto_g_plus",
+    "type": "Accessory",
+    "label": "moto g plus"
+  },
+  {
+    "id": "accessory_block",
+    "type": "Accessory",
+    "label": "block"
+  },
+  {
+    "id": "accessory_type_c_charger",
+    "type": "Accessory",
+    "label": "type c charger"
+  },
+  {
+    "id": "accessory_rugged_phone_x1",
+    "type": "Accessory",
+    "label": "rugged phone x1"
+  },
+  {
+    "id": "accessory_samsung",
+    "type": "Accessory",
+    "label": "samsung"
+  },
+  {
+    "id": "accessory_tmobile_unlocked_android_smartphone",
+    "type": "Accessory",
+    "label": "t-mobile unlocked android smartphone"
+  },
+  {
+    "id": "accessory_gizmopal_2",
+    "type": "Accessory",
+    "label": "gizmopal 2"
+  },
+  {
+    "id": "accessory_pixel_3_camera",
+    "type": "Accessory",
+    "label": "pixel 3 camera"
+  },
+  {
+    "id": "accessory_1_year_warranty",
+    "type": "Accessory",
+    "label": "1 year warranty"
+  },
+  {
+    "id": "accessory_1_x_multilanguage_user_manual",
+    "type": "Accessory",
+    "label": "1 x multi-language user manual"
+  },
+  {
+    "id": "accessory_1_x_ulefone_note_12_unlocked_cell_phone",
+    "type": "Accessory",
+    "label": "1 x ulefone note 12 unlocked cell phone"
+  },
+  {
+    "id": "accessory_1_x_screen_protector_phone_case",
+    "type": "Accessory",
+    "label": "1 x screen protector & phone case"
+  },
+  {
+    "id": "accessory_1_x_multi_function_instruction_card_ps_if_need_any_supports",
+    "type": "Accessory",
+    "label": "1 x multi function instruction card (ps: if need any supports"
+  },
+  {
+    "id": "accessory_sim_eject_pin",
+    "type": "Accessory",
+    "label": "sim eject pin"
+  },
+  {
+    "id": "accessory_usb_charger",
+    "type": "Accessory",
+    "label": "usb charger"
+  },
+  {
+    "id": "accessory_unlocked_cell_phones",
+    "type": "Accessory",
+    "label": "unlocked cell phones"
+  },
+  {
+    "id": "accessory_startup_guide",
+    "type": "Accessory",
+    "label": "startup guide"
+  },
+  {
+    "id": "accessory_important_information_leaflet",
+    "type": "Accessory",
+    "label": "important information leaflet"
+  },
+  {
+    "id": "accessory_micro",
+    "type": "Accessory",
+    "label": "micro"
+  },
+  {
+    "id": "accessory_battery_cover_removal_tool",
+    "type": "Accessory",
+    "label": "battery cover removal tool"
+  },
+  {
+    "id": "accessory_type_c_cable_x1",
+    "type": "Accessory",
+    "label": "type c cable x1"
+  },
+  {
+    "id": "accessory_doogee_v30_unlocked_rugged_smartphone_x1",
+    "type": "Accessory",
+    "label": "doogee v30 unlocked rugged smartphone x1"
+  },
+  {
+    "id": "accessory_antiexplosion_filmpreapplied_x1",
+    "type": "Accessory",
+    "label": "anti-explosion film(pre-applied) x1"
+  },
+  {
+    "id": "accessory_66w_fast_charger",
+    "type": "Accessory",
+    "label": "66w fast charger"
+  },
+  {
+    "id": "accessory_antiexplosion_film_x1_card_slot_opener_x1_user_manual_x1_warranty_card_x1",
+    "type": "Accessory",
+    "label": "anti-explosion film x1 / card slot opener x1 / user manual x1 / warranty card x1"
+  },
+  {
+    "id": "accessory_siemens_sx66_pda",
+    "type": "Accessory",
+    "label": "siemens sx66 pda"
+  },
+  {
+    "id": "accessory_galaxy_fold",
+    "type": "Accessory",
+    "label": "galaxy fold"
+  },
+  {
+    "id": "accessory_turbo_starter_guide",
+    "type": "Accessory",
+    "label": "turbo starter guide"
+  },
+  {
+    "id": "accessory_waterplugs_x_2",
+    "type": "Accessory",
+    "label": "waterplugs x 2"
+  },
+  {
+    "id": "accessory_agm_sticker",
+    "type": "Accessory",
+    "label": "agm sticker"
+  },
+  {
+    "id": "accessory_charging_dongle",
+    "type": "Accessory",
+    "label": "charging dongle"
+  },
+  {
+    "id": "accessory_speedtalk_sim_card1",
+    "type": "Accessory",
+    "label": "speedtalk sim card*1"
+  },
+  {
+    "id": "accessory_nfc",
+    "type": "Accessory",
+    "label": "nfc"
+  },
+  {
+    "id": "accessory_doogee_s61pro",
+    "type": "Accessory",
+    "label": "doogee s61pro"
+  },
+  {
+    "id": "accessory_usg_cc_cable",
+    "type": "Accessory",
+    "label": "usg c-c cable"
+  },
+  {
+    "id": "accessory_type_c_to_phone_jack_connector",
+    "type": "Accessory",
+    "label": "type c to phone jack connector"
+  },
+  {
+    "id": "accessory_otgadapter",
+    "type": "Accessory",
+    "label": "otg-adapter"
+  },
+  {
+    "id": "accessory_tablet",
+    "type": "Accessory",
+    "label": "tablet"
+  },
+  {
+    "id": "accessory_ac_charger",
+    "type": "Accessory",
+    "label": "ac charger"
+  },
+  {
+    "id": "accessory_placeholder",
+    "type": "Accessory",
+    "label": "placeholder"
+  },
+  {
+    "id": "accessory_prepaid_phone",
+    "type": "Accessory",
+    "label": "prepaid phone"
+  },
+  {
+    "id": "accessory_card_adapter",
+    "type": "Accessory",
+    "label": "card adapter"
+  },
+  {
+    "id": "accessory_typec_cable_x1",
+    "type": "Accessory",
+    "label": "type-c cable x1"
+  },
+  {
+    "id": "accessory_doogee_v_max_unlocked_rugged_smartphone_x1",
+    "type": "Accessory",
+    "label": "doogee v max unlocked rugged smartphone x1"
+  },
+  {
+    "id": "accessory_charger_block33w_x1",
+    "type": "Accessory",
+    "label": "charger block(33w) x1"
+  },
+  {
+    "id": "accessory_moto_g_pure_32gb_unlocked",
+    "type": "Accessory",
+    "label": "moto g pure (32gb) unlocked"
+  },
+  {
+    "id": "accessory_10w_charger",
+    "type": "Accessory",
+    "label": "10w charger"
+  },
+  {
+    "id": "accessory_iphone_8_plus",
+    "type": "Accessory",
+    "label": "iphone 8 plus"
+  },
+  {
+    "id": "accessory_bm10_mini_phone",
+    "type": "Accessory",
+    "label": "bm10 mini phone"
+  },
+  {
+    "id": "accessory_quick_start_guides",
+    "type": "Accessory",
+    "label": "quick start guides"
+  },
+  {
+    "id": "accessory_travel_charger",
+    "type": "Accessory",
+    "label": "travel charger"
+  },
+  {
+    "id": "accessory_phone_holder",
+    "type": "Accessory",
+    "label": "phone holder"
+  },
+  {
+    "id": "accessory_otg",
+    "type": "Accessory",
+    "label": "otg"
+  },
+  {
+    "id": "accessory_data_cable_usbc_to_usbc",
+    "type": "Accessory",
+    "label": "data cable usb-c to usb-c"
+  },
+  {
+    "id": "accessory_li_ion_battery",
+    "type": "Accessory",
+    "label": "li ion battery"
+  },
+  {
+    "id": "accessory_rubber",
+    "type": "Accessory",
+    "label": "rubber"
+  },
+  {
+    "id": "accessory_finger_ring_loop_holder",
+    "type": "Accessory",
+    "label": "finger ring loop holder"
+  },
+  {
+    "id": "accessory_pcd_wrangler",
+    "type": "Accessory",
+    "label": "pcd wrangler"
+  },
+  {
+    "id": "accessory_lithium_ion_battery",
+    "type": "Accessory",
+    "label": "lithium ion battery"
+  },
+  {
+    "id": "accessory_batterypreinstalled",
+    "type": "Accessory",
+    "label": "battery(pre-installed)"
+  },
+  {
+    "id": "accessory_phonescreen_protectorcasechargerusb_cable",
+    "type": "Accessory",
+    "label": "phone^screen protector^case^charger^usb cable^"
+  },
+  {
+    "id": "accessory_oneplus_nord_n20_5g",
+    "type": "Accessory",
+    "label": "oneplus nord n20 5g"
+  },
+  {
+    "id": "accessory_welcome_start_guide",
+    "type": "Accessory",
+    "label": "welcome start guide"
+  },
+  {
+    "id": "accessory_unlocked_cell_phone_x1_usb_cable_x1_charger_x1_cue_card_x1_user_manual_x1_protect_case_x1",
+    "type": "Accessory",
+    "label": "unlocked cell phone x1; usb cable x1; charger x1; cue card x1; user manual x1; protect case x1"
+  },
+  {
+    "id": "accessory_zs676ks16g512gbk",
+    "type": "Accessory",
+    "label": "zs676ks-16g512g-bk"
+  },
+  {
+    "id": "accessory_cellphone_service",
+    "type": "Accessory",
+    "label": "cellphone service"
+  },
+  {
+    "id": "accessory_usb_calbe",
+    "type": "Accessory",
+    "label": "usb calbe"
+  },
+  {
+    "id": "accessory_htc_one_m9",
+    "type": "Accessory",
+    "label": "htc one m9"
+  },
+  {
+    "id": "accessory_lens_protector",
+    "type": "Accessory",
+    "label": "lens protector"
+  },
+  {
+    "id": "accessory_handsetchargermicrousb_cablequick_start_guidewarranty_card",
+    "type": "Accessory",
+    "label": "handset^charger^microusb cable^quick start guide^warranty card"
+  },
+  {
+    "id": "accessory_usba_to_c_cable_50_cm_usbc_to_c_also_supported",
+    "type": "Accessory",
+    "label": "usb-a to c cable (50 cm)* / *usb-c to c also supported."
+  },
+  {
+    "id": "accessory_simtray_tool",
+    "type": "Accessory",
+    "label": "sim-tray tool"
+  },
+  {
+    "id": "accessory_usbc_to_35mm_headphone_jack_adapter_9cm",
+    "type": "Accessory",
+    "label": "usb-c to 3.5mm headphone jack adapter (9cm)"
+  },
+  {
+    "id": "accessory_mp02_mobile_phone",
+    "type": "Accessory",
+    "label": "mp02 mobile phone"
+  },
+  {
+    "id": "accessory_senior_citizen_phone",
+    "type": "Accessory",
+    "label": "senior citizen phone"
+  },
+  {
+    "id": "accessory_cell_phone_accessory_kit",
+    "type": "Accessory",
+    "label": "cell phone accessory kit"
+  },
+  {
+    "id": "accessory_in_the_box_includes_new_number_first_month_of_boost_mobile_50_unlimited_talktext_35gb_4g5g_prepaid_service",
+    "type": "Accessory",
+    "label": "in the box - includes new number & first month of boost mobile $50 unlimited talk/text & 35gb 4g/5g prepaid service"
+  },
+  {
+    "id": "accessory_the_a32_5g",
+    "type": "Accessory",
+    "label": "the a32 5g"
+  },
+  {
+    "id": "accessory_and_guides",
+    "type": "Accessory",
+    "label": "and guides."
+  },
+  {
+    "id": "accessory_face_unlocked_smartphone",
+    "type": "Accessory",
+    "label": "face unlocked smartphone"
+  },
+  {
+    "id": "accessory_devicesilicone_casescreen_protectorusb_cablebatterychargerear_budsquick_guide",
+    "type": "Accessory",
+    "label": "device^silicone case^screen protector^usb cable^battery^charger^ear buds^quick guide^"
+  },
+  {
+    "id": "accessory_waterproof_plugs",
+    "type": "Accessory",
+    "label": "waterproof plugs"
+  },
+  {
+    "id": "accessory_agm_customized_sticker",
+    "type": "Accessory",
+    "label": "agm customized sticker"
+  },
+  {
+    "id": "accessory_usb_data_cable",
+    "type": "Accessory",
+    "label": "usb data cable"
+  },
+  {
+    "id": "accessory_5w_charger",
+    "type": "Accessory",
+    "label": "5w charger"
+  },
+  {
+    "id": "accessory_icsi_brochure",
+    "type": "Accessory",
+    "label": "icsi brochure"
+  },
+  {
+    "id": "accessory_cubot_king_kong_5_pro_rugged_cell_phone",
+    "type": "Accessory",
+    "label": "cubot king kong 5 pro rugged cell phone"
+  },
+  {
+    "id": "accessory_typec_original_headphones",
+    "type": "Accessory",
+    "label": "type-c original headphones"
+  },
+  {
+    "id": "accessory_power_armor_14_pro_rugged_phone",
+    "type": "Accessory",
+    "label": "power armor 14 pro rugged phone"
+  },
+  {
+    "id": "accessory_hands_free_cable",
+    "type": "Accessory",
+    "label": "hands free cable"
+  },
+  {
+    "id": "accessory_wall_charge",
+    "type": "Accessory",
+    "label": "wall charge"
+  },
+  {
+    "id": "accessory_batteries",
+    "type": "Accessory",
+    "label": "batteries"
+  },
+  {
+    "id": "accessory_a14_5g_smart_phone",
+    "type": "Accessory",
+    "label": "a14 5g smart phone"
+  },
+  {
+    "id": "accessory_quick_reference_guideterms_and_conditions",
+    "type": "Accessory",
+    "label": "quick reference guide/terms and conditions"
+  },
+  {
+    "id": "accessory_sim_ejection_pin",
+    "type": "Accessory",
+    "label": "sim ejection pin"
+  },
+  {
+    "id": "accessory_1_x_sim_card_pin",
+    "type": "Accessory",
+    "label": "1 x sim card pin"
+  },
+  {
+    "id": "accessory_1_x_wrist_rope",
+    "type": "Accessory",
+    "label": "1 x wrist rope"
+  },
+  {
+    "id": "accessory_cell_phone_tracfone",
+    "type": "Accessory",
+    "label": "cell phone tracfone"
+  },
+  {
+    "id": "accessory_charging",
+    "type": "Accessory",
+    "label": "charging"
+  },
+  {
+    "id": "accessory_galaxy_a30s_smartphone",
+    "type": "Accessory",
+    "label": "galaxy a30s smartphone"
+  },
+  {
+    "id": "accessory_z432",
+    "type": "Accessory",
+    "label": "z432"
+  },
+  {
+    "id": "accessory_preinstalled_gophone_sim_card",
+    "type": "Accessory",
+    "label": "pre-installed gophone sim card"
+  },
+  {
+    "id": "accessory_gophone_plan_terms_terms_of_service",
+    "type": "Accessory",
+    "label": "gophone plan terms & terms of service."
+  },
+  {
+    "id": "accessory_1_x_multi_function_instruction_card",
+    "type": "Accessory",
+    "label": "1 x multi function instruction card"
+  },
+  {
+    "id": "accessory_studio_energy_x_plus_cellular_phone_silver",
+    "type": "Accessory",
+    "label": "studio energy x plus cellular phone (silver)"
+  },
+  {
+    "id": "accessory_easyfone_t6_phone",
+    "type": "Accessory",
+    "label": "easyfone t6 phone"
+  },
+  {
+    "id": "accessory_cubot_cell_phone",
+    "type": "Accessory",
+    "label": "cubot cell phone"
+  },
+  {
+    "id": "accessory_ac_power_charger_adapter_100240v_us_plug_1",
+    "type": "Accessory",
+    "label": "ac power charger adapter ( 100~240v / us plug) *1"
+  },
+  {
+    "id": "accessory_typec_to_35mm_audio_adapter_1",
+    "type": "Accessory",
+    "label": "type-c to 3.5mm audio adapter *1"
+  },
+  {
+    "id": "accessory_tempered_glass_screen_protector_spudger_1",
+    "type": "Accessory",
+    "label": "tempered glass screen protector & spudger *1"
+  },
+  {
+    "id": "accessory_english_manual",
+    "type": "Accessory",
+    "label": "english manual"
+  },
+  {
+    "id": "accessory_sim_card_key",
+    "type": "Accessory",
+    "label": "sim card key"
+  },
+  {
+    "id": "accessory_foldable_case",
+    "type": "Accessory",
+    "label": "foldable case"
+  },
+  {
+    "id": "accessory_usb_charging_brick",
+    "type": "Accessory",
+    "label": "usb charging brick"
+  },
+  {
+    "id": "accessory_finger_loop",
+    "type": "Accessory",
+    "label": "finger loop"
+  },
+  {
+    "id": "accessory_micro_usb_charging_cord",
+    "type": "Accessory",
+    "label": "micro usb charging cord"
+  },
+  {
+    "id": "accessory_w12_smartphone",
+    "type": "Accessory",
+    "label": "w12 smartphone"
+  },
+  {
+    "id": "accessory_usbc_to_35_mm_adapter",
+    "type": "Accessory",
+    "label": "usb-c to 3.5 mm adapter"
+  },
+  {
+    "id": "accessory_usb_c_to_c_cable",
+    "type": "Accessory",
+    "label": "usb c to c cable"
+  },
+  {
+    "id": "accessory_magnetic_case",
+    "type": "Accessory",
+    "label": "magnetic case"
+  },
+  {
+    "id": "accessory_motorola_moto_e5_go",
+    "type": "Accessory",
+    "label": "motorola moto e5 go"
+  },
+  {
+    "id": "accessory_slim_battery",
+    "type": "Accessory",
+    "label": "slim battery"
+  },
+  {
+    "id": "accessory_carry_holster",
+    "type": "Accessory",
+    "label": "carry holster"
+  },
+  {
+    "id": "accessory_nokia_microusb_charger",
+    "type": "Accessory",
+    "label": "nokia microusb charger"
+  },
+  {
+    "id": "accessory_chargingdata_cable",
+    "type": "Accessory",
+    "label": "charging/data cable"
+  },
+  {
+    "id": "accessory_gift_read",
+    "type": "Accessory",
+    "label": "gift read"
+  },
+  {
+    "id": "accessory_phonescreen_protectorcasechargerusb_cableheadphonesuser_manual",
+    "type": "Accessory",
+    "label": "phone^screen protector^case^charger^usb cable^headphones^user manual^"
+  },
+  {
+    "id": "accessory_protective_cover",
+    "type": "Accessory",
+    "label": "protective cover"
+  },
+  {
+    "id": "accessory_1_usb_charger",
+    "type": "Accessory",
+    "label": "1 * usb charger"
+  },
+  {
+    "id": "accessory_1_usb_type_c_cable",
+    "type": "Accessory",
+    "label": "1 * usb type c cable"
+  },
+  {
+    "id": "accessory_instaprint_mod",
+    "type": "Accessory",
+    "label": "instaprint mod"
+  },
+  {
+    "id": "accessory_1_x_sim_needle",
+    "type": "Accessory",
+    "label": "1 x sim needle"
+  },
+  {
+    "id": "accessory_1_x_armor_x3_phone",
+    "type": "Accessory",
+    "label": "1 x armor x3 phone"
+  },
+  {
+    "id": "accessory_1_x_tempered_glass_protective_film",
+    "type": "Accessory",
+    "label": "1 x tempered glass protective film"
+  },
+  {
+    "id": "accessory_lumia_435_handset",
+    "type": "Accessory",
+    "label": "lumia 435 handset"
+  },
+  {
+    "id": "accessory_1x_screen_protector_preapplied1x_translucent_case",
+    "type": "Accessory",
+    "label": "1x screen protector (pre-applied)1x translucent case"
+  },
+  {
+    "id": "accessory_print",
+    "type": "Accessory",
+    "label": "print"
+  },
+  {
+    "id": "accessory_galaxy_note_20",
+    "type": "Accessory",
+    "label": "galaxy note 20"
+  },
+  {
+    "id": "accessory_770mah_lithium_polymer_battery",
+    "type": "Accessory",
+    "label": "770mah lithium polymer battery"
+  },
+  {
+    "id": "accessory_g70_smartphone",
+    "type": "Accessory",
+    "label": "g70 smartphone"
+  },
+  {
+    "id": "accessory_usb_charging_block",
+    "type": "Accessory",
+    "label": "usb charging block"
+  },
+  {
+    "id": "accessory_wall_charger_67w",
+    "type": "Accessory",
+    "label": "wall charger 67w"
+  },
+  {
+    "id": "accessory_device_moto_z4",
+    "type": "Accessory",
+    "label": "device moto z4"
+  },
+  {
+    "id": "accessory_user_guides",
+    "type": "Accessory",
+    "label": "user guides"
+  },
+  {
+    "id": "accessory_10w_rapid_charger",
+    "type": "Accessory",
+    "label": "10w rapid charger"
+  },
+  {
+    "id": "accessory_device_moto_g_stylus",
+    "type": "Accessory",
+    "label": "device - moto g stylus"
+  },
+  {
+    "id": "accessory_cases",
+    "type": "Accessory",
+    "label": "cases"
+  },
+  {
+    "id": "accessory_moto_e6",
+    "type": "Accessory",
+    "label": "moto e6"
+  },
+  {
+    "id": "accessory_audio_adapter",
+    "type": "Accessory",
+    "label": "audio adapter"
+  },
+  {
+    "id": "accessory_zte_blade_a3_2020",
+    "type": "Accessory",
+    "label": "zte blade a3 2020"
+  },
+  {
+    "id": "accessory_sim_ejector_tray",
+    "type": "Accessory",
+    "label": "sim ejector tray"
+  },
+  {
+    "id": "accessory_cubot_x50_unlocked_cell_phone",
+    "type": "Accessory",
+    "label": "cubot x50 unlocked cell phone"
+  },
+  {
+    "id": "accessory_micro_typec_original_headphones",
+    "type": "Accessory",
+    "label": "micro type-c original headphones"
+  },
+  {
+    "id": "accessory_micro_usb_typec_cable",
+    "type": "Accessory",
+    "label": "micro usb type-c cable"
+  },
+  {
+    "id": "accessory_devicechargerquick_guide",
+    "type": "Accessory",
+    "label": "device;charger;quick guide"
+  },
+  {
+    "id": "accessory_boxphonebatteryquick_guidecharger",
+    "type": "Accessory",
+    "label": "box^phone^battery^quick guide^charger"
+  },
+  {
+    "id": "accessory_phonecharging_cableuser_manual",
+    "type": "Accessory",
+    "label": "phone^charging cable^user manual"
+  },
+  {
+    "id": "accessory_rapid_charger",
+    "type": "Accessory",
+    "label": "rapid charger"
+  },
+  {
+    "id": "accessory_agm_customized_stickers",
+    "type": "Accessory",
+    "label": "agm customized stickers"
+  },
+  {
+    "id": "accessory_wall_30w_charger",
+    "type": "Accessory",
+    "label": "wall 30w charger"
+  },
+  {
+    "id": "accessory_1usb_cable",
+    "type": "Accessory",
+    "label": "1*usb cable"
+  },
+  {
+    "id": "accessory_1mobile_phone",
+    "type": "Accessory",
+    "label": "1*mobile phone"
+  },
+  {
+    "id": "accessory_1instruction",
+    "type": "Accessory",
+    "label": "1*instruction"
+  },
+  {
+    "id": "accessory_hd_screen_protector_tempered_film",
+    "type": "Accessory",
+    "label": "hd screen protector; tempered film"
+  },
+  {
+    "id": "accessory_phone_case_usb_cable",
+    "type": "Accessory",
+    "label": "phone case; usb cable"
+  },
+  {
+    "id": "accessory_x18_cell_phone",
+    "type": "Accessory",
+    "label": "x18 cell phone"
+  },
+  {
+    "id": "accessory_sim_card_tray_pin_user_manual",
+    "type": "Accessory",
+    "label": "sim card tray pin; user manual"
+  },
+  {
+    "id": "accessory_htc_one_a9",
+    "type": "Accessory",
+    "label": "htc one a9"
+  },
+  {
+    "id": "accessory_5_android_dual_core_smartphone_with_dual_camera",
+    "type": "Accessory",
+    "label": "5\" android dual core smartphone with dual camera"
+  },
+  {
+    "id": "accessory_micro_usb_cables",
+    "type": "Accessory",
+    "label": "micro usb cables"
+  },
+  {
+    "id": "accessory_headset_with_mic",
+    "type": "Accessory",
+    "label": "headset with mic"
+  },
+  {
+    "id": "accessory_1xtype_c_to_35mm_audio_adapter",
+    "type": "Accessory",
+    "label": "1xtype c to 3.5mm audio adapter"
+  },
+  {
+    "id": "accessory_huawei_p30_lite",
+    "type": "Accessory",
+    "label": "huawei p30 lite"
+  },
+  {
+    "id": "accessory_quad_band_phone",
+    "type": "Accessory",
+    "label": "quad band phone"
+  },
+  {
+    "id": "accessory_emergency_mobile_cellular_phone",
+    "type": "Accessory",
+    "label": "emergency mobile cellular phone"
+  },
+  {
+    "id": "accessory_micro_sd_card",
+    "type": "Accessory",
+    "label": "micro sd card"
+  },
+  {
+    "id": "accessory_sim_tray_eje",
+    "type": "Accessory",
+    "label": "sim tray eje"
+  },
+  {
+    "id": "accessory_microusb_charging_cable",
+    "type": "Accessory",
+    "label": "microusb charging cable"
+  },
+  {
+    "id": "accessory_galaxy_a02s",
+    "type": "Accessory",
+    "label": "galaxy a02s"
+  },
+  {
+    "id": "accessory_iphone_8",
+    "type": "Accessory",
+    "label": "iphone 8"
+  },
+  {
+    "id": "accessory_screen_protectorquick_guide",
+    "type": "Accessory",
+    "label": "screen protector'quick guide"
+  },
+  {
+    "id": "accessory_travel_adapter_usb_cable_quick_start_guide",
+    "type": "Accessory",
+    "label": "travel adapter & usb cable / quick start guide*"
+  },
+  {
+    "id": "accessory_lightning",
+    "type": "Accessory",
+    "label": "lightning"
+  },
+  {
+    "id": "accessory_htc_desire_510",
+    "type": "Accessory",
+    "label": "htc desire 510"
+  },
+  {
+    "id": "accessory_bv9800_pro_us_power_adapter_typec_usb_cable_35mm_headphone_normal_screen_protector_sim_tool_user_manual",
+    "type": "Accessory",
+    "label": "bv9800 pro/ us power adapter/ type-c usb cable/ 3.5mm headphone/ normal screen protector/ sim tool/ user manual"
+  },
+  {
+    "id": "accessory_screen_protectors",
+    "type": "Accessory",
+    "label": "screen protectors"
+  },
+  {
+    "id": "accessory_66w_usb_fast_adapter",
+    "type": "Accessory",
+    "label": "66w usb fast adapter"
+  },
+  {
+    "id": "accessory_rugged_smartphone",
+    "type": "Accessory",
+    "label": "rugged smartphone"
+  },
+  {
+    "id": "accessory_phone_film",
+    "type": "Accessory",
+    "label": "phone film"
+  },
+  {
+    "id": "accessory_ivertu_phone1_phone_charger1_type_c_cable1_user_manual1_authenticity_card_x_1_warranty_card_x_1",
+    "type": "Accessory",
+    "label": "✔️ivertu phone*1 ✔️phone charger*1 ✔️type c cable*1 ✔️user manual*1 ✔️authenticity card x 1 ✔️warranty card x 1"
+  },
+  {
+    "id": "accessory_1_sim_adapter_kit",
+    "type": "Accessory",
+    "label": "1 sim adapter kit"
+  },
+  {
+    "id": "accessory_4_handset",
+    "type": "Accessory",
+    "label": "4 handset"
+  },
+  {
+    "id": "accessory_bundle_15w_samsung_wall_charger",
+    "type": "Accessory",
+    "label": "bundle 15w samsung wall charger"
+  },
+  {
+    "id": "accessory_micro_usb_5pin",
+    "type": "Accessory",
+    "label": "micro usb 5pin"
+  },
+  {
+    "id": "accessory_wp8_pro_smartphone",
+    "type": "Accessory",
+    "label": "wp8 pro smartphone"
+  },
+  {
+    "id": "accessory_wrist_strap",
+    "type": "Accessory",
+    "label": "wrist strap"
+  },
+  {
+    "id": "accessory_1_x_back_clip",
+    "type": "Accessory",
+    "label": "1 x back clip"
+  },
+  {
+    "id": "accessory_1_x_carabiner",
+    "type": "Accessory",
+    "label": "1 x carabiner"
+  },
+  {
+    "id": "accessory_1_x_phone_protective_case",
+    "type": "Accessory",
+    "label": "1 x phone protective case"
+  },
+  {
+    "id": "accessory_1sim_tray_ejector",
+    "type": "Accessory",
+    "label": "1×sim tray ejector"
+  },
+  {
+    "id": "accessory_1screen_protector",
+    "type": "Accessory",
+    "label": "1×screen protector"
+  },
+  {
+    "id": "accessory_1phone_case",
+    "type": "Accessory",
+    "label": "1×phone case"
+  },
+  {
+    "id": "accessory_black_shark_4fast_charge_power_adapterusb_typec_data_cablesim_tray_ejectorprotective_casescreen_protectorquick_start_guide",
+    "type": "Accessory",
+    "label": "black shark 4／fast charge power adapter／usb type-c data cable／sim tray ejector／protective case／screen protector／quick start guide"
+  },
+  {
+    "id": "accessory_dual_25w_wall_charger_type_c_usb",
+    "type": "Accessory",
+    "label": "dual 25w wall charger (type c + usb)"
+  },
+  {
+    "id": "accessory_item_package",
+    "type": "Accessory",
+    "label": "item package"
+  },
+  {
+    "id": "accessory_1_a6_4g_feature_cell_phone",
+    "type": "Accessory",
+    "label": "1* a6 4g feature cell phone"
+  },
+  {
+    "id": "accessory_1_1050_mah_battery",
+    "type": "Accessory",
+    "label": "1* 1050 mah battery"
+  },
+  {
+    "id": "accessory_antiexplosion_film_x1",
+    "type": "Accessory",
+    "label": "anti-explosion film x1"
+  },
+  {
+    "id": "accessory_charger_33w_x1",
+    "type": "Accessory",
+    "label": "charger (33w) x1"
+  },
+  {
+    "id": "accessory_doogee_v20_pro_rugged_smartphone_x1",
+    "type": "Accessory",
+    "label": "doogee v20 pro rugged smartphone x1"
+  },
+  {
+    "id": "accessory_typec_usb_cable_x1",
+    "type": "Accessory",
+    "label": "type-c usb cable x1"
+  },
+  {
+    "id": "accessory_important_product_information_warranty_card",
+    "type": "Accessory",
+    "label": "important product information (warranty card)"
+  },
+  {
+    "id": "accessory_sim_card_needle",
+    "type": "Accessory",
+    "label": "sim card needle"
+  },
+  {
+    "id": "accessory_blackview_bv8900_rugged_smartphone_unlocked_1",
+    "type": "Accessory",
+    "label": "blackview bv8900 rugged smartphone unlocked * 1"
+  },
+  {
+    "id": "accessory_power_adaptor_1",
+    "type": "Accessory",
+    "label": "power adaptor * 1"
+  },
+  {
+    "id": "accessory_type_c_cable_1",
+    "type": "Accessory",
+    "label": "type c cable * 1"
+  },
+  {
+    "id": "accessory_type_c_charging_cable",
+    "type": "Accessory",
+    "label": "type c charging cable"
+  },
+  {
+    "id": "accessory_galaxy_note_20_ultra",
+    "type": "Accessory",
+    "label": "galaxy note 20 ultra"
+  },
+  {
+    "id": "accessory_waterproof_cellphone",
+    "type": "Accessory",
+    "label": "waterproof cellphone"
+  },
+  {
+    "id": "accessory_oneplus_9",
+    "type": "Accessory",
+    "label": "oneplus 9"
+  },
+  {
+    "id": "accessory_warp_typec_cable",
+    "type": "Accessory",
+    "label": "warp type-c cable"
+  },
+  {
+    "id": "accessory_ejector_tool",
+    "type": "Accessory",
+    "label": "ejector tool"
+  },
+  {
+    "id": "accessory_1_x_tpu_protective_case",
+    "type": "Accessory",
+    "label": "1 x tpu protective case"
+  },
+  {
+    "id": "accessory_1_x_doogee_n50_pink",
+    "type": "Accessory",
+    "label": "1 x doogee n50 (pink)"
+  },
+  {
+    "id": "accessory_doogee_s100_pro_rugged_smartphone_x1",
+    "type": "Accessory",
+    "label": "doogee s100 pro rugged smartphone x1"
+  },
+  {
+    "id": "accessory_a_protective_case",
+    "type": "Accessory",
+    "label": "a protective case"
+  },
+  {
+    "id": "accessory_zte_axon_40_pro_cellphone",
+    "type": "Accessory",
+    "label": "zte axon 40 pro cellphone"
+  },
+  {
+    "id": "accessory_typec_data_cable",
+    "type": "Accessory",
+    "label": "type-c data cable"
+  },
+  {
+    "id": "accessory_1charging_head",
+    "type": "Accessory",
+    "label": "1*charging head"
+  },
+  {
+    "id": "accessory_1data_cable",
+    "type": "Accessory",
+    "label": "1*data cable"
+  },
+  {
+    "id": "accessory_1headset",
+    "type": "Accessory",
+    "label": "1*headset"
+  },
+  {
+    "id": "accessory_1phone_protection_film",
+    "type": "Accessory",
+    "label": "1*phone protection film"
+  },
+  {
+    "id": "accessory_1phone_card_card_holder",
+    "type": "Accessory",
+    "label": "1*phone card card holder"
+  },
+  {
+    "id": "accessory_1manual",
+    "type": "Accessory",
+    "label": "1*manual"
+  },
+  {
+    "id": "accessory_oneplus_10t",
+    "type": "Accessory",
+    "label": "oneplus 10t"
+  },
+  {
+    "id": "accessory_125w_supervooc_power_adapter",
+    "type": "Accessory",
+    "label": "125w supervooc power adapter"
+  },
+  {
+    "id": "accessory_fast_car_charger_extra",
+    "type": "Accessory",
+    "label": "fast car charger extra"
+  },
+  {
+    "id": "accessory_fast_car_charger_16w",
+    "type": "Accessory",
+    "label": "fast car charger 16w"
+  },
+  {
+    "id": "accessory_sony_ericsson_w595",
+    "type": "Accessory",
+    "label": "sony ericsson w595"
+  },
+  {
+    "id": "accessory_usbc_to_usb_standarda_plug_cable",
+    "type": "Accessory",
+    "label": "usb-c to usb standard-a plug cable"
+  },
+  {
+    "id": "accessory_safety_and_warranty_information",
+    "type": "Accessory",
+    "label": "safety and warranty information"
+  },
+  {
+    "id": "accessory_usbc_18_w_adaptor_with_usbpd",
+    "type": "Accessory",
+    "label": "usb-c 18 w adaptor with usb-pd"
+  },
+  {
+    "id": "accessory_pixel_phone",
+    "type": "Accessory",
+    "label": "pixel phone"
+  },
+  {
+    "id": "accessory_google_assistant_card",
+    "type": "Accessory",
+    "label": "google assistant card"
+  },
+  {
+    "id": "accessory_google_social_promo_card",
+    "type": "Accessory",
+    "label": "google social promo card"
+  },
+  {
+    "id": "accessory_1_x_charger_33w",
+    "type": "Accessory",
+    "label": "1 x charger (33w)"
+  },
+  {
+    "id": "accessory_1_x_v20_pro_black",
+    "type": "Accessory",
+    "label": "1 x v20 pro black"
+  },
+  {
+    "id": "accessory_blackview_a53_unlocked_cell_phone_1",
+    "type": "Accessory",
+    "label": "💙blackview a53 unlocked cell phone * 1"
+  },
+  {
+    "id": "accessory_power_adaptor_5v_2a_1",
+    "type": "Accessory",
+    "label": "💙power adaptor (5v 2a) * 1"
+  },
+  {
+    "id": "accessory_user_manual_1not_included_sim_cardsd_card",
+    "type": "Accessory",
+    "label": "💙user manual * 1，not included sim card/sd card"
+  },
+  {
+    "id": "accessory_protective_case_1",
+    "type": "Accessory",
+    "label": "💙protective case * 1"
+  },
+  {
+    "id": "accessory_t6_cell_phone",
+    "type": "Accessory",
+    "label": "t6 cell phone"
+  },
+  {
+    "id": "accessory_user_manual_easyfone_neck_lanyard",
+    "type": "Accessory",
+    "label": "user manual & easyfone neck lanyard"
+  },
+  {
+    "id": "accessory_battery_picture_cutting_adapter",
+    "type": "Accessory",
+    "label": "battery & picture cutting adapter"
+  },
+  {
+    "id": "accessory_sony_ericsson_t707",
+    "type": "Accessory",
+    "label": "sony ericsson t707"
+  },
+  {
+    "id": "accessory_phone_builtin_battery_1_charger_1_usb_typec_cable_1_flexible_clear_case_1_dependent_on_market_quick_start_guide_1_eject_tool_1",
+    "type": "Accessory",
+    "label": "phone (built-in battery) × 1 charger × 1 usb type-c cable × 1 flexible clear case × 1 (dependent on market) quick start guide × 1 eject tool × 1"
+  },
+  {
+    "id": "accessory_uab_cord",
+    "type": "Accessory",
+    "label": "uab cord"
+  },
+  {
+    "id": "accessory_80w_wall_charger",
+    "type": "Accessory",
+    "label": "80w wall charger"
+  },
+  {
+    "id": "accessory_51w_fast_car_charger",
+    "type": "Accessory",
+    "label": "51w fast car charger"
+  },
+  {
+    "id": "accessory_nokia_500_black",
+    "type": "Accessory",
+    "label": "nokia 500 black"
+  },
+  {
+    "id": "accessory_4pcs",
+    "type": "Accessory",
+    "label": "4pcs"
+  },
+  {
+    "id": "accessory_snap_pin",
+    "type": "Accessory",
+    "label": "snap pin"
+  },
+  {
+    "id": "accessory_typec_headphone_extension_cable",
+    "type": "Accessory",
+    "label": "type-c headphone extension cable"
+  },
+  {
+    "id": "accessory_1_x_smartphone_1_x_manual_1_x_phone_film_1_x_phone_case_1_x_usb_charger_1_x_typec_charging_cable_1_x_earphone",
+    "type": "Accessory",
+    "label": "1 x smartphone 1 x manual 1 x phone film 1 x phone case 1 x usb charger 1 x type-c charging cable 1 x earphone"
+  },
+  {
+    "id": "accessory_cooler_fan_7",
+    "type": "Accessory",
+    "label": "cooler fan 7"
+  },
+  {
+    "id": "accessory_1_x_cell_phone_n50_black",
+    "type": "Accessory",
+    "label": "1 x cell phone n50 (black)"
+  },
+  {
+    "id": "accessory_hands_free_earbuds",
+    "type": "Accessory",
+    "label": "hands free earbuds"
+  },
+  {
+    "id": "accessory_usb_adapter",
+    "type": "Accessory",
+    "label": "usb adapter"
+  },
+  {
+    "id": "accessory_adaptive_sheet",
+    "type": "Accessory",
+    "label": "adaptive sheet"
+  },
+  {
+    "id": "accessory_cubot_x50_unlocked_smartphone",
+    "type": "Accessory",
+    "label": "cubot x50 unlocked smartphone"
+  },
+  {
+    "id": "accessory_oukitel_wp22_rugged_smartphone",
+    "type": "Accessory",
+    "label": "oukitel wp22 rugged smartphone"
+  },
+  {
+    "id": "accessory_tab",
+    "type": "Accessory",
+    "label": "tab"
+  },
+  {
+    "id": "accessory_lumia_650",
+    "type": "Accessory",
+    "label": "lumia 650"
+  },
+  {
+    "id": "accessory_1m_usbc_to_usbc_cable",
+    "type": "Accessory",
+    "label": "1m usb-c to usb-c cable"
+  },
+  {
+    "id": "accessory_51w_fast_car_charger_extra",
+    "type": "Accessory",
+    "label": "51w fast car charger extra"
+  },
+  {
+    "id": "accessory_1_multilanguage_user_manual",
+    "type": "Accessory",
+    "label": "1 * multi-language user manual"
+  },
+  {
+    "id": "accessory_1_ulefone_note_12_cell_phone",
+    "type": "Accessory",
+    "label": "1 * ulefone note 12 cell phone"
+  },
+  {
+    "id": "accessory_1_usba_to_usb_typec_20_charger_cable_3937_inches",
+    "type": "Accessory",
+    "label": "1 * usb-a to usb type-c 2.0 charger cable (39.37 inches)"
+  },
+  {
+    "id": "accessory_1_protective_film_preinstalledtpu_protective_case_sim_needle",
+    "type": "Accessory",
+    "label": "1 * protective film (pre-installed)/tpu protective case/ sim needle"
+  },
+  {
+    "id": "accessory_ac_adapter_charger",
+    "type": "Accessory",
+    "label": "ac adapter (charger)"
+  },
+  {
+    "id": "accessory_cling_for_volume_and_power_keys_only_on_the_back_of_the_device",
+    "type": "Accessory",
+    "label": "cling for volume and power keys only (on the back of the device)"
+  },
+  {
+    "id": "accessory_front_cling",
+    "type": "Accessory",
+    "label": "front cling"
+  },
+  {
+    "id": "accessory_phone_feature_guide",
+    "type": "Accessory",
+    "label": "phone & feature guide"
+  },
+  {
+    "id": "accessory_product_safety_and_warranty_information",
+    "type": "Accessory",
+    "label": "product safety and warranty information"
+  }
+]

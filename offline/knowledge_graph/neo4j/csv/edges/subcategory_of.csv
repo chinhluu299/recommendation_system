@@ -1,0 +1,2 @@
+source,target,relationship
+cat_cell_phones,cat_cell_phones_accessories,SUBCATEGORY_OF

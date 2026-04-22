@@ -1,0 +1,15 @@
+{
+  "n_entities": 223284,
+  "n_users": 186534,
+  "n_items": 7607,
+  "n_other_entities": 29143,
+  "item_offset": 186534,
+  "n_relations_original": 11,
+  "n_relations_ckg": 22,
+  "n_kg_triples_with_inv": 332914,
+  "n_ckg_triples": 343040,
+  "n_positive_interactions": 5063,
+  "n_users_with_interactions": 1461,
+  "pos_rating_threshold": 3,
+  "min_user_interactions": 3
+}
